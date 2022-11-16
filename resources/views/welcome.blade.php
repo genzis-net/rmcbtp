@@ -8,15 +8,15 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>Demo Digital Agency 2 | Porto - Multipurpose Website Template</title>	
+		<title>RMC-BTP | Construire vos maisons clés à mains</title>	
 
 		<meta name="keywords" content="WebSite Template" />
 		<meta name="description" content="Porto - Multipurpose Website Template">
 		<meta name="author" content="okler.net">
 
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-		<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+		<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 
 		<!-- Mobile Metas -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
@@ -25,31 +25,31 @@
 		<link id="googleFonts" href="https://fonts.googleapis.com/css?family=family=Lora:400,400i,700,700i|Poppins:300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet" type="text/css">
 
 		<!-- Vendor CSS -->
-		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
-		<link rel="stylesheet" href="vendor/animate/animate.compat.css">
-		<link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css">
-		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">
-		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css">
-		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
+		<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/vendor/fontawesome-free/css/all.min.css">
+		<link rel="stylesheet" href="assets/vendor/animate/animate.compat.css">
+		<link rel="stylesheet" href="assets/vendor/simple-line-icons/css/simple-line-icons.min.css">
+		<link rel="stylesheet" href="assets/vendor/owl.carousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="assets/vendor/owl.carousel/assets/owl.theme.default.min.css">
+		<link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.min.css">
 
 		<!-- Theme CSS -->
-		<link rel="stylesheet" href="css/theme.css">
-		<link rel="stylesheet" href="css/theme-elements.css">
-		<link rel="stylesheet" href="css/theme-blog.css">
-		<link rel="stylesheet" href="css/theme-shop.css">
+		<link rel="stylesheet" href="assets/css/theme.css">
+		<link rel="stylesheet" href="assets/css/theme-elements.css">
+		<link rel="stylesheet" href="assets/css/theme-blog.css">
+		<link rel="stylesheet" href="assets/css/theme-shop.css">
 
 		<!-- Demo CSS -->
-		<link rel="stylesheet" href="css/demos/demo-digital-agency-2.css">
+		<link rel="stylesheet" href="assets/css/demos/demo-digital-agency-2.css">
 
 		<!-- Skin CSS -->
-		<link id="skinCSS" rel="stylesheet" href="css/skins/skin-digital-agency-2.css">
+		<link id="skinCSS" rel="stylesheet" href="assets/css/skins/skin-digital-agency-2.css">
 
 		<!-- Theme Custom CSS -->
-		<link rel="stylesheet" href="css/custom.css">
+		<link rel="stylesheet" href="assets/css/custom.css">
 
 		<!-- Head Libs -->
-		<script src="vendor/modernizr/modernizr.min.js"></script>
+		<script src="assets/vendor/modernizr/modernizr.min.js"></script>
 
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -74,7 +74,7 @@
 								<div class="header-row">
 									<div class="header-logo">
 										<a href="demo-digital-agency-2.html">
-											<img alt="Porto" width="139" height="59" src="img/demos/digital-agency-2/logos/logo-1.png">
+											<img alt="Porto" width="139" height="59" src="assets/img/demos/digital-agency-2/logos/logo-1.png">
 										</a>
 									</div>
 								</div>
@@ -85,87 +85,73 @@
 										<div class="header-nav-main header-nav-main-mobile-dark header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-effect-2 header-nav-main-sub-effect-1">
 											<nav class="collapse">
 												<ul class="nav nav-pills" id="mainNav">
-													<li class="dropdown-primary">
-														<a class="nav-link text-capitalize font-weight-semibold custom-text-3 active" href="demo-digital-agency-2.html">
+													<li class="dropdown">
+														<a class="" href="index.html">
 															Home
 														</a>
 													</li>
-													<li class="dropdown-primary">
-														<a class="nav-link text-capitalize font-weight-semibold custom-text-3" href="demo-digital-agency-2-about-us.html">
+                                                    <li class="dropdown">
+														<a class="" href="index.html">
 															About Us
 														</a>
 													</li>
 													<li class="dropdown">
-														<a class="nav-link dropdown-toggle text-capitalize font-weight-semibold custom-text-3" class="dropdown-toggle" href="demo-digital-agency-2-our-services.html">
-															Our Services
+														<a class="dropdown-item dropdown-toggle" href="#">
+															Services
 														</a>
 														<ul class="dropdown-menu">
-															<li>
-																<a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services.html">
-																	Overview
-																</a>
+															<li class="dropdown-submenu">
+																<a class="dropdown-item" href="#">RMC BTP</a>
+																<ul class="dropdown-menu">
+																	<li><a class="dropdown-item" href="contact-us-advanced.html">Service 1</a></li>
+																	<li><a class="dropdown-item" href="contact-us.html">Service 1</a></li>
+																	<li><a class="dropdown-item" href="contact-us-recaptcha.html">Service 1</a></li>
+																</ul>
 															</li>
-															<li>
-																<a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services-detail.html">
-																	UX Design
-																</a>
+															<li class="dropdown-submenu">
+																<a class="dropdown-item" href="#">SIMS QUINCAILLERIE</a>
+																<ul class="dropdown-menu">
+																	<li><a class="dropdown-item" href="about-us-advanced.html">Service 1</a></li>
+																	<li><a class="dropdown-item" href="about-us.html">Service 1</a></li>
+																	<li><a class="dropdown-item" href="about-me.html">Service 1</a></li>
+																</ul>
 															</li>
-															<li>
-																<a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services-detail.html">
-																	Web Development
-																</a>
-															</li>
-															<li>
-																<a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services-detail.html">
-																	B2B Software
-																</a>
-															</li>
-															<li>
-																<a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services-detail.html">
-																	Content Marketing
-																</a>
-															</li>
-															<li>
-																<a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services-detail.html">
-																	Email Marketing
-																</a>
-															</li>
-															<li>
-																<a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services-detail.html">
-																	Search Engine Optimize
-																</a>
-															</li>
-															<li>
-																<a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services-detail.html">
-																	Social Media Ads
-																</a>
-															</li>
-															<li>
-																<a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services-detail.html">
-																	Brand and Identity
-																</a>
-															</li>
-															<li>
-																<a class="dropdown-item font-weight-normal" href="demo-digital-agency-2-our-services-detail.html">
-																	Content Strategy
-																</a>
+															<li class="dropdown-submenu">
+																<a class="dropdown-item" href="#">SIMS DECOR</a>
+																<ul class="dropdown-menu">
+																	<li><a class="dropdown-item" href="page-full-width.html">Service 1</a></li>
+																	<li><a class="dropdown-item" href="page-left-sidebar.html">Service 1</a></li>
+																	<li><a class="dropdown-item" href="page-right-sidebar.html">Service 1</a></li>
+																</ul>
 															</li>
 														</ul>
 													</li>
-													<li class="dropdown-primary">
-														<a class="nav-link text-capitalize font-weight-semibold custom-text-3" href="demo-digital-agency-2-our-work.html">
+                                                    <li class="dropdown">
+														<a class="" href="index.html">
+															Blog
+														</a>
+													</li>
+                                                    <li class="dropdown">
+														<a class="" href="index.html">
 															Our Work
 														</a>
 													</li>
-													<li class="dropdown-primary">
-														<a class="nav-link text-capitalize font-weight-semibold custom-text-3" href="demo-digital-agency-2-our-blog.html">
-															Our Insights
+                                                    <li class="dropdown">
+														<a class="dropdown-item dropdown-toggle" href="#">
+															    Language
 														</a>
-													</li>
-													<li class="dropdown-primary">
-														<a class="nav-link text-capitalize font-weight-semibold custom-text-3" href="demo-digital-agency-2-contact-us.html">
-															Contact Us
-														</a>
+														<ul class="dropdown-menu">
+															<li class="dropdown">
+                                                                <a class="" href="index.html">
+                                                                    FR
+                                                                </a>
+                                                            </li>
+                                                            <li class="dropdown">
+                                                                <a class="" href="index.html">
+                                                                    EN
+                                                                </a>
+                                                            </li>
+														</ul>
 													</li>
 												</ul>
 											</nav>
@@ -179,9 +165,9 @@
 							<div class="header-column justify-content-end d-none d-lg-flex">
 								<div class="header-row">
 									<ul class="header-social-icons social-icons social-icons-clean social-icons-icon-light social-icons-big d-lg-flex m-0 ms-lg-2">
-										<li class="social-icons-instagram"><a href="http://www.instagram.com/" target="_blank" class="text-4" title="Instagram"><i class="fab fa-instagram"></i></a></li>
-										<li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" class="text-4" title="Twitter"><i class="fab fa-twitter"></i></a></li>
 										<li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" class="text-4" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+										<li class="social-icons-twitter"><a href="http://www.facebook.com/" target="_blank" class="text-4" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+										<li class="social-icons-instagram"><a href="http://www.facebook.com/" target="_blank" class="text-4" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
 									</ul>
 								</div>
 							</div>
@@ -192,7 +178,7 @@
 
 			<div role="main" class="main">
 
-				<section class="section custom-circles-container section-angled bg-dark border-0 m-0" style="background-image: url(img/demos/digital-agency-2/bg/bg-1.jpg); background-size: cover; background-position: center;">
+				<section class="section custom-circles-container section-angled bg-dark border-0 m-0" style="background-image: url(assets/img/demos/digital-agency-2/bg/bg-1.jpg); background-size: cover; background-position: center;">
 					<span class="custom-circle custom-circle-1 bg-color-light custom-circle-blur appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="100" data-plugin-options="{'forceAnimation': true}"></span>
 					<span class="custom-circle custom-circle-2 bg-color-primary appear-animation" data-appear-animation="zoomIn" data-appear-animation-delay="200" data-plugin-options="{'forceAnimation': true}"></span>
 					<span class="custom-circle custom-circle-3 bg-color-primary appear-animation" data-appear-animation="zoomIn" data-appear-animation-delay="300" data-plugin-options="{'forceAnimation': true}"></span>
@@ -204,8 +190,8 @@
 						<div class="container pt-md-5 pb-lg-4 mt-5 mb-lg-5">
 							<div class="row pb-lg-5 mt-5 mb-lg-5">
 								<div class="col-lg-7 pt-5 pt-md-0 pb-lg-5 mt-5 mb-md-5">
-									<h2 class="custom-title-with-icon custom-title-with-icon-primary font-weight-normal text-color-default text-5 mb-0 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="600">Welcome to the Age of Digital Transformation</h2>
-									<h1 class="text-color-light font-weight-extra-bold text-10 text-md-12-13 line-height-2 mb-4 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="850">Experience Design and Intelligent Marketing.</h1>
+									<h2 class="custom-title-with-icon custom-title-with-icon-primary font-weight-normal text-color-default text-5 mb-0 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="600">Welcome to RMC-BTP Official Website</h2>
+									<h1 class="text-color-light font-weight-extra-bold text-10 text-md-12-13 line-height-2 mb-4 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="850">Building Your Dream Home from Scratch.</h1>
 									<a href="#intro" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="btn btn-outline custom-btn-outline btn-primary rounded-0 font-weight-semibold text-color-light bg-color-hover-primary custom-btn-with-arrow text-4 btn-px-4 py-3 mt-2 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1100">Get Started</a>
 								</div>
 							</div>
@@ -220,27 +206,30 @@
 							<div class="col-lg-4 col-custom-cards">
 								<div class="card border-0 bg-color-dark rounded-0 z-index-1 p-5 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="100">
 									<div class="card-body d-flex flex-column justify-content-center align-items-center p-0 my-3">
-										<img src="img/demos/digital-agency-2/icons/solution.png" alt="Solution" class="mb-5">
-										<h4 class="card-title custom-text-8 font-weight-bold text-color-light text-center mb-3">Growth Marketing</h4>
-										<p class="card-text text-center custom-text-4 font-weight-lighter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra erat orci, ac auctor</p>
-									</div>
+										<img src="assets/img/demos/digital-agency-2/icons/solution.png" alt="Solution" class="mb-5">
+										<h4 class="card-title custom-text-8 font-weight-bold text-color-light text-center mb-3">RMC BTP</h4>
+										<p class="card-text text-center custom-text-4 font-weight-lighter">Our Contractors services to build yout houses and buildings from the ground up</p>
+									    <a href="#intro" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="btn btn-outline custom-btn-outline btn-primary rounded-0 font-weight-semibold text-color-light bg-color-hover-primary custom-btn-with-arrow text-4 btn-px-4 py-3 mt-2 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1100">Start Here</a>
+                                </div>
 								</div>
 							</div>
 							<div class="col-lg-4 col-custom-cards">
 								<div class="card border-0 bg-color-primary rounded-0 z-index-1 p-5 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">
 									<div class="card-body d-flex flex-column justify-content-center align-items-center p-0 my-3">
-										<img src="img/demos/digital-agency-2/icons/advertising.png" alt="Solution" class="mb-5">
-										<h4 class="card-title custom-text-8 font-weight-bold text-color-light text-center mb-3">Content Studio</h4>
-										<p class="card-text text-center custom-text-4 font-weight-lighter text-color-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra erat orci, ac auctor</p>
+										<img src="assets/img/demos/digital-agency-2/icons/feedback.png" alt="Solution" class="mb-5">
+										<h4 class="card-title custom-text-8 font-weight-bold text-color-light text-center mb-3">SIMS QUINCAILLERIE</h4>
+										<p class="card-text text-center custom-text-4 font-weight-lighter text-color-light">Our premium equipment store for all your construction needs. We Provide heavy duty and commonly needed materials and equipments</p>
+									    <a href="#intro" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="btn btn-outline custom-btn-outline btn-secondary rounded-0 font-weight-semibold text-color-light bg-color-hover-secondary custom-btn-with-arrow text-4 btn-px-4 py-3 mt-2 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1100">Start Here</a>
 									</div>
 								</div>
 							</div>
 							<div class="col-lg-4 col-custom-cards">
 								<div class="card border-0 bg-color-dark rounded-0 z-index-1 p-5 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="300">
 									<div class="card-body d-flex flex-column justify-content-center align-items-center p-0 my-3">
-										<img src="img/demos/digital-agency-2/icons/feedback.png" alt="Solution" class="mb-5">
-										<h4 class="card-title custom-text-8 font-weight-bold text-color-light text-center mb-3">Digital Marketing</h4>
-										<p class="card-text text-center custom-text-4 font-weight-lighter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra erat orci, ac auctor</p>
+										<img src="assets/img/demos/digital-agency-2/icons/feedback.png" alt="Solution" class="mb-5">
+										<h4 class="card-title custom-text-8 font-weight-bold text-color-light text-center mb-3">SIMS DECOR</h4>
+										<p class="card-text text-center custom-text-4 font-weight-lighter">The finish touches your new home or building needs to reflect your dreams</p>
+									    <a href="#intro" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="btn btn-outline custom-btn-outline btn-primary rounded-0 font-weight-semibold text-color-light bg-color-hover-primary custom-btn-with-arrow text-4 btn-px-4 py-3 mt-2 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1100">Start Here</a>
 									</div>
 								</div>
 							</div>
@@ -248,13 +237,17 @@
 					</div>
 				</section>
 
-				<section class="our-approach py-5 mb-4 mb-xl-5 mt-4 mt-xl-0 p-relative z-index-1" id="intro">
+				<section class="our-approach py-5 mb-4 mb-xl-5 mt-4 mt-xl-0 p-relative z-index-1" id="intro" style="background: url('assets/img/demos/digital-agency-2/bg/bg-10.png')">
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-6 col-xl-4 d-flex flex-column justify-content-center align-items-start">
-								<h4 class="custom-text-10 mb-4 pb-2 font-weight-bold custom-title-with-icon custom-title-with-icon-primary appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="100">Our Approach</h4>
-								<p class="custom-font-tertiary custom-text-6 line-height-6 font-weight-medium appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut tellus ante. Nam suscipit urna risus.</p>
-								<p class="custom-text-3 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur.</p>
+								<h4 class="custom-text-10 mb-4 pb-2 font-weight-bold custom-title-with-icon custom-title-with-icon-primary appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="100">What We Do</h4>
+								<p class="custom-font-tertiary custom-text-6 line-height-6 font-weight-medium appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200"><b>RMC-BTP</b> is all about delivering Quality Estate construction. We work with a large team of professionals, experienced and passionate workes
+                                    who know the value you seek in your projects. 
+                                </p>
+								<p class="custom-text-3 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">
+                                    We have organized our ressources to ease up your decision making. Hence, our teams can handle your projects from construction, material and deco. 
+                                </p>
 								<a herf="demo-digital-agency-2-about-us.html" class="btn btn-outline custom-btn-outline btn-light border-0 rounded-0 text-color-primary custom-text-5 font-weight-bold custom-btn-with-arrow bg-transparent p-0 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="600">Find Out More</a>
 							</div>
 							<div class="col-lg-4 py-4 py-lg-0">
@@ -268,9 +261,9 @@
 							</div>
 							<div class="col-lg-6 col-xl-4 d-flex align-items-center mt-4 mt-lg-0">
 								<ul class="custom-list list-unstyled ms-xl-2 ps-xl-1">
-									<li class="font-weight-medium custom-text-4 mb-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">Pellentesque ultricies nibh lorem ipsum</li>
-									<li class="font-weight-medium custom-text-4 mb-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">Ultricies nibh pellen</li>
-									<li class="font-weight-medium custom-text-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="600">Pellentesque ultricies nibh</li>
+									<li class="font-weight-medium custom-text-4 mb-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">We Design and Develop Real Estate Projects</li>
+									<li class="font-weight-medium custom-text-4 mb-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">Provide Consulting and Contracting Services</li>
+									<li class="font-weight-medium custom-text-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="600">Ensure a transparent Work with <b>long-term Follow-up</b></li>
 								</ul>
 							</div>
 						</div>
@@ -285,11 +278,11 @@
 									<div class="row w-100 m-0 isotope-item search-engine-optimize social-media-ads">
 										<div class="col-sm-12 custom-our-work overlay overlay-op-9 overlay-show p-0">
 											<a href="demo-digital-agency-2-our-work-detail.html" class="d-block">
-												<img src="img/demos/digital-agency-2/bg/bg-5.jpg" class="w-100">
+												<img src="assets/img/demos/digital-agency-2/bg/bg-5.jpg" class="w-100">
 												<div class="w-100 custom-our-work-text p-5 d-flex align-items-end p-absolute bottom-0">
 													<div class="text-start p-relative z-index-2 mb-3">
-														<h4 class="text-color-light custom-text-9 font-weight-bold text-decoration-none mb-2">Okler Campaing</h4>
-														<p class="text-uppercase custom-text-4 text-color-quaternary text-decoration-none mb-3">search engine optimize, social media ads</p>
+														<h4 class="text-color-light custom-text-9 font-weight-bold text-decoration-none mb-2">Explore our Recent Constructions</h4>
+														<p class="text-uppercase custom-text-4 text-color-quaternary text-decoration-none mb-3">We build all accross the country, from family homes to 5-stories tal buildings</p>
 														<span class="custom-text-4 font-weight-semibold m-0 p-0 text-color-light custom-btn-with-arrow custom-btn-with-arrow-primary text-decoration-none">View Work</span>
 													</div>
 												</div>
@@ -299,12 +292,12 @@
 									<div class="row w-100 m-0 isotope-item content-marketing email-marketing search-engine-optimize">
 										<div class="col-sm-12 custom-our-work overlay overlay-op-9 overlay-show p-0">
 											<a href="demo-digital-agency-2-our-work-detail.html" class="d-block">
-												<img src="img/demos/digital-agency-2/bg/bg-6.jpg" class="w-100">
+												<img src="assets/img/demos/digital-agency-2/bg/bg-6.jpg" class="w-100">
 												<div class="w-100 custom-our-work-text p-5 d-flex align-items-end p-absolute bottom-0">
 													<div class="text-start p-relative z-index-2 mb-3">
-														<h4 class="text-color-light custom-text-9 font-weight-bold text-decoration-none mb-2">Porto Dashboard</h4>
-														<p class="text-uppercase custom-text-4 text-color-quaternary text-decoration-none mb-3">content marketing, email marketing, search engine optimize</p>
-														<span class="custom-text-4 font-weight-semibold m-0 p-0 text-color-light custom-btn-with-arrow custom-btn-with-arrow-primary text-decoration-none">View Work</span>
+														<h4 class="text-color-light custom-text-9 font-weight-bold text-decoration-none mb-2">Explore Our Catalogue</h4>
+														<p class="text-uppercase custom-text-4 text-color-quaternary text-decoration-none mb-3">We have a collection of machines and maetrial for sale and for rent. Take a look. </p>
+														<span class="custom-text-4 font-weight-semibold m-0 p-0 text-color-light custom-btn-with-arrow custom-btn-with-arrow-primary text-decoration-none">View Catalogue</span>
 													</div>
 												</div>
 											</a>
@@ -313,11 +306,11 @@
 									<div class="row w-100 m-0 isotope-item ui-design web-development b2b-software">
 										<div class="col-sm-12 custom-our-work overlay overlay-op-9 overlay-show p-0">
 											<a href="demo-digital-agency-2-our-work-detail.html" class="d-block">
-												<img src="img/demos/digital-agency-2/bg/bg-7.jpg" class="w-100">
+												<img src="assets/img/demos/digital-agency-2/bg/bg-7.jpg" class="w-100">
 												<div class="w-100 custom-our-work-text p-5 d-flex align-items-end p-absolute bottom-0">
 													<div class="text-start p-relative z-index-2 mb-3">
-														<h4 class="text-color-light custom-text-9 font-weight-bold text-decoration-none mb-2">Okler Responsive Photos</h4>
-														<p class="text-uppercase custom-text-4 text-color-quaternary text-decoration-none mb-3">ui design, web development, b2b software</p>
+														<h4 class="text-color-light custom-text-9 font-weight-bold text-decoration-none mb-2">Home Design and Furnitures</h4>
+														<p class="text-uppercase custom-text-4 text-color-quaternary text-decoration-none mb-3">Check out what we offer for your futur home deco!</p>
 														<span class="custom-text-4 font-weight-semibold m-0 p-0 text-color-light custom-btn-with-arrow custom-btn-with-arrow-primary text-decoration-none">View Work</span>
 													</div>
 												</div>
@@ -327,12 +320,12 @@
 									<div class="row w-100 m-0 isotope-item brand-and-identity content-strategy">
 										<div class="col-sm-12 custom-our-work overlay overlay-op-9 overlay-show p-0">
 											<a href="demo-digital-agency-2-our-work-detail.html" class="d-block">
-												<img src="img/demos/digital-agency-2/bg/bg-8.jpg" class="w-100">
+												<img src="assets/img/demos/digital-agency-2/bg/bg-8.jpg" class="w-100">
 												<div class="w-100 custom-our-work-text p-5 d-flex align-items-end p-absolute bottom-0">
 													<div class="text-start p-relative z-index-2 mb-3">
-														<h4 class="text-color-light custom-text-9 font-weight-bold text-decoration-none mb-2">Okler Mobile App</h4>
-														<p class="text-uppercase custom-text-4 text-color-quaternary text-decoration-none mb-3">brand and identity, content strategy</p>
-														<span class="custom-text-4 font-weight-semibold m-0 p-0 text-color-light custom-btn-with-arrow custom-btn-with-arrow-primary text-decoration-none">View Work</span>
+														<h4 class="text-color-light custom-text-9 font-weight-bold text-decoration-none mb-2">Request an Arhitecture Design</h4>
+														<p class="text-uppercase custom-text-4 text-color-quaternary text-decoration-none mb-3">Your dream house is only days away with our prompt and professional deisgning services. Go bold on the results you want. </p>
+														<span class="custom-text-4 font-weight-semibold m-0 p-0 text-color-light custom-btn-with-arrow custom-btn-with-arrow-primary text-decoration-none">Request a Quote</span>
 													</div>
 												</div>
 											</a>
@@ -340,43 +333,11 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-xl-3 bg-color-dark px-xl-0 sticky-container position-relative">
+							<div class="col-xl-3 bg-color-dark px-xl-0 sticky-container position-relative" style="background: url('assets/img/demos/digital-agency-2/bg/bg-11.jpg'); background-size: cover;">
 								<div id="sidebar" class="side-menu-our-work sidebar position-relative">
 									<div data-plugin-sticky data-plugin-options="{'minWidth': 991, 'containerSelector': '.sticky-container', 'padding': {'top': 100}}">
 										<div class="py-5 my-2 ps-5 pe-0">
-											<h4 class="text-color-light custom-text-10 font-weight-bold custom-title-with-icon custom-title-with-icon-primary">Our Work</h4>
-											<ul class="list-unstyled sort-source" data-sort-id="portfolio" data-option-key="filter">
-												<li class="nav-item active" data-option-value="*">
-													<a href="#ourWork" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="text-color-quaternary text-color-hover-light text-decoration-none mb-2 py-0 d-block">View All</a>
-												</li>
-												<li class="nav-item" data-option-value=".ui-design">
-													<a href="#ourWork" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="text-color-quaternary text-color-hover-light text-decoration-none mb-2 py-0 d-block">UI Design</a>
-												</li>
-												<li class="nav-item" data-option-value=".web-development">
-													<a href="#ourWork" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="text-color-quaternary text-color-hover-light text-decoration-none mb-2 py-0 d-block">Web Development</a>
-												</li>
-												<li class="nav-item" data-option-value=".b2b-software">
-													<a href="#ourWork" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="text-color-quaternary text-color-hover-light text-decoration-none mb-2 py-0 d-block">B2B Software</a>
-												</li>
-												<li class="nav-item" data-option-value=".content-marketing">
-													<a href="#ourWork" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="text-color-quaternary text-color-hover-light text-decoration-none mb-2 py-0 d-block">Content Marketing</a>
-												</li>
-												<li class="nav-item" data-option-value=".email-marketing">
-													<a href="#ourWork" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="text-color-quaternary text-color-hover-light text-decoration-none mb-2 py-0 d-block">Email Marketing</a>
-												</li>
-												<li class="nav-item" data-option-value=".search-engine-optimize">
-													<a href="#ourWork" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="text-color-quaternary text-color-hover-light text-decoration-none mb-2 py-0 d-block">Search Engine Optimize</a>
-												</li>
-												<li class="nav-item" data-option-value=".social-media-ads">
-													<a href="#ourWork" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="text-color-quaternary text-color-hover-light text-decoration-none mb-2 py-0 d-block">Social Media Ads</a>
-												</li>
-												<li class="nav-item" data-option-value=".brand-and-identity">
-													<a href="#ourWork" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="text-color-quaternary text-color-hover-light text-decoration-none mb-2 py-0 d-block">Brand and Identity</a>
-												</li>
-												<li class="nav-item" data-option-value=".content-strategy">
-													<a href="#ourWork" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="text-color-quaternary text-color-hover-light text-decoration-none mb-2 py-0 d-block">Content Strategy</a>
-												</li>
-											</ul>
+											
 										</div>
 									</div>
 								</div>
@@ -392,75 +353,125 @@
 							<h4 class="text-color-dark custom-text-10 font-weight-bold text-center custom-title-with-icon-center custom-title-with-icon custom-title-with-icon-primary pb-5 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">We Can Help You With:</h4>
 						</div>
 						<div class="row">
-							<div class="col-xl-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">
-								<a href="demo-digital-agency-2-our-services-detail.html" class="text-decoration-none">
-									<div class="service-card mb-4 bg-color-tertiary bg-color-hover-primary text-color-hover-light w-100 font-weight-semibold custom-text-6 line-height-6 text-color-dark p-relative">
-										UX Design
-									</div>
-								</a>
-							</div>
-							<div class="col-xl-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">
-								<a href="demo-digital-agency-2-our-services-detail.html" class="text-decoration-none">
-									<div class="service-card mb-4 bg-color-dark bg-color-hover-primary w-100 font-weight-semibold custom-text-6 line-height-6 text-color-light p-relative">
-										Web Development
-									</div>
-								</a>
-							</div>
-							<div class="col-xl-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">
-								<a href="demo-digital-agency-2-our-services-detail.html" class="text-decoration-none">
-									<div class="service-card mb-4 bg-color-tertiary bg-color-hover-primary text-color-hover-light w-100 font-weight-semibold custom-text-6 line-height-6 text-color-dark p-relative">
-										B2B Software
-									</div>
-								</a>
-							</div>
+							<div class="col-md-6 col-lg-4 mb-5 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
+                                <div class="card flip-card flip-card-3d text-center rounded-0">
+                                    <div class="flip-front p-5">
+                                        <div class="flip-content my-4">
+                                            <strong class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block">01</strong>
+                                            <h4 class="font-weight-bold text-color-primary text-4">ARCHITECTURE</h4>
+                                            <p>
+                                                We design highways, bridges, houses, and buildings. 
+                                            </p>	
+                                        </div>
+                                    </div>
+                                    <div class="flip-back d-flex align-items-center p-5" style="background-image: url(https://wallpapercrafter.com/desktop/4950-bridge-dark-night-construction-4k.jpg); background-size: cover; background-position: center;">
+                                        <div class="flip-content my-4">
+                                            <h4 class="font-weight-bold text-color-light">FIRST MEETING</h4>
+                                            <p class="font-weight-light text-color-light opacity-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>
+                                            <a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">Request a Quote</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
+                                <div class="card flip-card flip-card-3d text-center rounded-0">
+                                    <div class="flip-front p-5">
+                                        <div class="flip-content my-4">
+                                            <strong class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block">02</strong>
+                                            <h4 class="font-weight-bold text-color-primary text-4">CONSTRUCTION</h4>
+                                            <p>
+                                                Our method involves following latest construction standarts.
+                                            </p>	
+                                        </div>
+                                    </div>
+                                    <div class="flip-back d-flex align-items-center p-5" style="background-image: url(https://wallpapercrafter.com/desktop/4950-bridge-dark-night-construction-4k.jpg); background-size: cover; background-position: center;">
+                                        <div class="flip-content my-4">
+                                            <h4 class="font-weight-bold text-color-light">MATERIAL AND MACHINES</h4>
+                                            <p class="font-weight-light text-color-light opacity-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>
+                                            <a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">Request a Quote</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
+                                <div class="card flip-card flip-card-3d text-center rounded-0">
+                                    <div class="flip-front p-5">
+                                        <div class="flip-content my-4">
+                                            <strong class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block">03</strong>
+                                            <h4 class="font-weight-bold text-color-primary text-4">MATERIAL AND MACHINES</h4>
+                                            <p>
+                                                Nails, hammers, Ciment, shovels, and all sort of machineries    
+                                            </p>	
+                                        </div>
+                                    </div>
+                                    <div class="flip-back d-flex align-items-center p-5" style="background-image: url(https://wallpapercrafter.com/desktop/4950-bridge-dark-night-construction-4k.jpg); background-size: cover; background-position: center;">
+                                        <div class="flip-content my-4">
+                                            <h4 class="font-weight-bold text-color-light">FIRST MEETING</h4>
+                                            <p class="font-weight-light text-color-light opacity-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>
+                                            <a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">Request a Quote</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top: 2rem">
+                            <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
+                                <div class="card flip-card flip-card-3d text-center rounded-0">
+                                    <div class="flip-front p-5">
+                                        <div class="flip-content my-4">
+                                            <strong class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block">04</strong>
+                                            <h4 class="font-weight-bold text-color-primary text-4">HOME RENOVATIONS</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>	
+                                        </div>
+                                    </div>
+                                    <div class="flip-back d-flex align-items-center p-5" style="background-image: url(https://wallpapercrafter.com/desktop/4950-bridge-dark-night-construction-4k.jpg); background-size: cover; background-position: center;">
+                                        <div class="flip-content my-4">
+                                            <h4 class="font-weight-bold text-color-light">FIRST MEETING</h4>
+                                            <p class="font-weight-light text-color-light opacity-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>
+                                            <a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">Request a Quote</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
+                                <div class="card flip-card flip-card-3d text-center rounded-0">
+                                    <div class="flip-front p-5">
+                                        <div class="flip-content my-4">
+                                            <strong class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block">05</strong>
+                                            <h4 class="font-weight-bold text-color-primary text-4">FURNITURES AND HOME DECO</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>	
+                                        </div>
+                                    </div>
+                                    <div class="flip-back d-flex align-items-center p-5" style="background-image: url(https://wallpapercrafter.com/desktop/4950-bridge-dark-night-construction-4k.jpg); background-size: cover; background-position: center;">
+                                        <div class="flip-content my-4">
+                                            <h4 class="font-weight-bold text-color-light">FURNITURES AND HOME DECO</h4>
+                                            <p class="font-weight-light text-color-light opacity-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>
+                                            <a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">Request a Quote</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
+                                <div class="card flip-card flip-card-3d text-center rounded-0">
+                                    <div class="flip-front p-5">
+                                        <div class="flip-content my-4">
+                                            <strong class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block">06</strong>
+                                            <h4 class="font-weight-bold text-color-primary text-4">CONSULTING</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>	
+                                        </div>
+                                    </div>
+                                    <div class="flip-back d-flex align-items-center p-5" style="background-image: url(https://wallpapercrafter.com/desktop/4950-bridge-dark-night-construction-4k.jpg); background-size: cover; background-position: center;">
+                                        <div class="flip-content my-4">
+                                            <h4 class="font-weight-bold text-color-light">FURNITURES AND HOME DECO</h4>
+                                            <p class="font-weight-light text-color-light opacity-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>
+                                            <a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">Request a Quote</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                         
 						</div>
-						<div class="row">
-							<div class="col-xl-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="500">
-								<a href="demo-digital-agency-2-our-services-detail.html" class="text-decoration-none">
-									<div class="service-card mb-4 bg-color-dark bg-color-hover-primary w-100 font-weight-semibold custom-text-6 line-height-6 text-color-light p-relative">
-										Content Marketing
-									</div>
-								</a>
-							</div>
-							<div class="col-xl-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="600">
-								<a href="demo-digital-agency-2-our-services-detail.html" class="text-decoration-none">
-									<div class="service-card mb-4 bg-color-tertiary bg-color-hover-primary text-color-hover-light w-100 font-weight-semibold custom-text-6 line-height-6 text-color-dark p-relative">
-										Email Marketing
-									</div>
-								</a>
-							</div>
-							<div class="col-xl-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="700">
-								<a href="demo-digital-agency-2-our-services-detail.html" class="text-decoration-none">
-									<div class="service-card mb-4 bg-color-dark bg-color-hover-primary w-100 font-weight-semibold custom-text-6 line-height-6 text-color-light p-relative">
-										Search Engine Optimize
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-xl-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="800">
-								<a href="demo-digital-agency-2-our-services-detail.html" class="text-decoration-none">
-									<div class="service-card mb-4 bg-color-tertiary bg-color-hover-primary text-color-hover-light w-100 font-weight-semibold custom-text-6 line-height-6 text-color-dark p-relative">
-										Social Media Ads
-									</div>
-								</a>
-							</div>
-							<div class="col-xl-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="900">
-								<a href="demo-digital-agency-2-our-services-detail.html" class="text-decoration-none">
-									<div class="service-card mb-4 bg-color-dark bg-color-hover-primary w-100 font-weight-semibold custom-text-6 line-height-6 text-color-light p-relative">
-										Brand and Identity
-									</div>
-								</a>
-							</div>
-							<div class="col-xl-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1000">
-								<a href="demo-digital-agency-2-our-services-detail.html" class="text-decoration-none">
-									<div class="service-card mb-4 bg-color-tertiary bg-color-hover-primary text-color-hover-light w-100 font-weight-semibold custom-text-6 line-height-6 text-color-dark p-relative">
-										Content Strategy
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="row justify-content-center">
+
+                        <div class="row justify-content-center">
 							<div class="col-xl-9">
 								<p class="custom-text-4 mt-4 mb-0 text-center appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at massa quam. Maecenas et sem accumsan, dictum arcu eu, consectetur eros. Nulla tortor est, lobortis vestibulum turpis sed, mollis commodo orci.
@@ -469,6 +480,80 @@
 						</div>
 					</div>
 				</section>
+
+                <section style="margin: 5rem; ">
+                    <div class="row">
+						<div class="col-lg-12">
+							<div class="masonry-loader masonry-loader-showing">
+								<div class="row products product-thumb-info-list" data-plugin-masonry data-plugin-options="{'layoutMode': 'fitRows'}">
+									<div class="col-sm-6 col-lg-4">
+										<div class="product mb-0">
+											<div class="product-thumb-info border-0 mb-3">
+												<a href="shop-product-sidebar-left.html">
+													<div class="product-thumb-info-image product-thumb-info-image-effect">
+														<img alt="" class="img-fluid" src="https://s.alicdn.com/@sc04/kf/H41081a316c1d4955872629e031d4a366v.jpg">
+
+															<img alt="" class="img-fluid" src="https://s.alicdn.com/@sc04/kf/H41081a316c1d4955872629e031d4a366v.jpg">
+
+													</div>
+												</a>
+											</div>
+											<div class="d-flex justify-content-between">
+												<div style="text-align: center">
+													<h3 class="text-3-5 font-weight-medium font-alternative text-transform-none line-height-3 mb-0"><a href="shop-product-sidebar-right.html" class="text-color-dark text-color-hover-primary">Trackteur</a></h3>
+												</div>
+											</div>
+									        <a href="#intro" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="btn btn-outline custom-btn-outline btn-primary rounded-0 font-weight-semibold text-color-dark bg-color-hover-primary custom-btn-with-arrow text-4 btn-px-4 py-3 mt-2 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1100">Rent Now</a>
+
+										</div>
+									</div>
+                                    <div class="col-sm-6 col-lg-4">
+										<div class="product mb-0">
+											<div class="product-thumb-info border-0 mb-3">
+												<a href="shop-product-sidebar-left.html">
+													<div class="product-thumb-info-image product-thumb-info-image-effect">
+														<img alt="" class="img-fluid" src="https://cdn11.bigcommerce.com/s-vtryl8/images/stencil/1280x1280/products/872/2405569/RAMMER_MTX70__81659.1637089231.jpg?c=2">
+
+															<img alt="" class="img-fluid" src="https://cdn11.bigcommerce.com/s-vtryl8/images/stencil/1280x1280/products/872/2405569/RAMMER_MTX70__81659.1637089231.jpg?c=2">
+
+													</div>
+												</a>
+											</div>
+											<div class="d-flex justify-content-between">
+												<div style="text-align: center">
+													<h3 class="text-3-5 font-weight-medium font-alternative text-transform-none line-height-3 mb-0"><a href="shop-product-sidebar-right.html" class="text-color-dark text-color-hover-primary">Trackteur</a></h3>
+												</div>
+											</div>
+									        <a href="#intro" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="btn btn-outline custom-btn-outline btn-primary rounded-0 font-weight-semibold text-color-dark bg-color-hover-primary custom-btn-with-arrow text-4 btn-px-4 py-3 mt-2 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1100">Rent Now</a>
+
+										</div>
+									</div>
+                                    <div class="col-sm-6 col-lg-4">
+										<div class="product mb-0">
+											<div class="product-thumb-info border-0 mb-3">
+												<a href="shop-product-sidebar-left.html">
+													<div class="product-thumb-info-image product-thumb-info-image-effect">
+														<img alt="" class="img-fluid" src="https://mobileimages.lowes.com/productimages/d0a683f0-b29c-400a-9c33-3762f91ee601/16251095.jpg?size=pdhism">
+
+															<img alt="" class="img-fluid" src="https://mobileimages.lowes.com/productimages/d0a683f0-b29c-400a-9c33-3762f91ee601/16251095.jpg?size=pdhism">
+
+													</div>
+												</a>
+											</div>
+											<div class="d-flex justify-content-between">
+												<div style="text-align: center">
+													<h3 class="text-3-5 font-weight-medium font-alternative text-transform-none line-height-3 mb-0"><a href="shop-product-sidebar-right.html" class="text-color-dark text-color-hover-primary">Trackteur</a></h3>
+												</div>
+											</div>
+									        <a href="#intro" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="btn btn-outline custom-btn-outline btn-primary rounded-0 font-weight-semibold text-color-dark bg-color-hover-primary custom-btn-with-arrow text-4 btn-px-4 py-3 mt-2 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1100">Rent Now</a>
+
+										</div>
+									</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
 				<section class="our-insights bg-color-tertiary p-relative py-5">
 					<span class="custom-circle custom-circle-2 bg-color-primary appear-animation" data-appear-animation="zoomIn" data-appear-animation-delay="100"></span>
@@ -517,20 +602,20 @@
 					</div>
 				</section>
 
-				<section class="get-in-touch bg-color-after-secondary overlay overlay-color-primary overlay-show p-relative overflow-hidden" style="background-image: url('img/demos/digital-agency-2/bg/bg-2.jpg'); background-size: cover; background-position: center;">
+				<section class="get-in-touch bg-color-after-secondary overlay overlay-color-primary overlay-show p-relative overflow-hidden" style="background-image: url('assets/img/demos/digital-agency-2/bg/bg-2.jpg'); background-size: cover; background-position: center;">
 					<span class="custom-circle custom-circle-1 bg-color-light appear-animation" data-appear-animation="zoomIn" data-appear-animation-delay="100"></span>
 					<span class="custom-circle custom-circle-2 bg-color-light appear-animation" data-appear-animation="zoomIn" data-appear-animation-delay="100"></span>
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-8">
-								<p class="mb-2 text-color-tertiary custom-text-7 custom-title-with-icon custom-title-with-icon-light appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">Let’s Get in Touch</p>
+								<p class="mb-2 text-color-tertiary custom-text-7 custom-title-with-icon custom-title-with-icon-light appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">Request a Quote</p>
 								<h4 class="text-color-light font-weight-bold custom-text-10 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">
 									We’re interested in talking<br/>
 									about your business.
 								</h4>
 							</div>
 							<div class="col-lg-4 d-flex align-items-center justify-content-start justify-content-lg-end mt-5 mt-lg-0">
-								<a herf="#" class="btn btn-outline custom-btn-outline btn-light border-white rounded-0 px-4 py-3 text-color-light text-color-hover-dark bg-color-hover-light custom-text-6 line-height-6 font-weight-semibold custom-btn-with-arrow appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="600">Let’s Talk!</a>
+								<a herf="#" class="btn btn-outline custom-btn-outline btn-light border-white rounded-0 px-4 py-3 text-color-light text-color-hover-dark bg-color-hover-light custom-text-6 line-height-6 font-weight-semibold custom-btn-with-arrow appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="600">Request a Quote</a>
 							</div>
 						</div>
 					</div>
@@ -599,8 +684,8 @@
 									<div class="col-auto">
 										<div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="100">
 											<ul class="header-social-icons social-icons social-icons-clean social-icons-icon-light social-icons-big d-none d-lg-block m-0 p-relative bottom-10">
-												<li class="social-icons-instagram"><a href="http://www.instagram.com/" target="_blank" class="text-4" title="Instagram"><i class="fab fa-instagram"></i></a></li>
-												<li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" class="text-4" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+												<li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" class="text-4" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+												<li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" class="text-4" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
 												<li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" class="text-4" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
 											</ul>
 										</div>
@@ -618,23 +703,17 @@
 			</footer>
 		</div>
 
-		<a class="style-switcher-open-loader" href="#" data-base-path="" data-skin-src="master/less/skin-digital-agency-2.less" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="right" title="Style Switcher"><i class="fas fa-cogs"></i><div class="style-switcher-tooltip"><strong>Style Switcher</strong><p>Check out different color options and styles.</p></div></a>
-		
-		<a class="envato-buy-redirect" href="https://themeforest.net/checkout/from_item/4106987?license=regular&amp;support=bundle_6month&amp;ref=Okler" target="_blank" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="right" title="Buy Porto"><i class="fas fa-shopping-cart"></i></a>
-		<a class="demos-redirect" href="index.html#demos" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="right" title="Demos"><img src="img/icons/demos-redirect.png" class="img-fluid" /></a>
-		
-
 		<!-- Vendor -->
-		<script src="vendor/plugins/js/plugins.min.js"></script>
+		<script src="assets/vendor/plugins/js/plugins.min.js"></script>
 
 		<!-- Theme Base, Components and Settings -->
-		<script src="js/theme.js"></script>
+		<script src="assets/js/theme.js"></script>
 
 		<!-- Current Page Vendor and Views -->
-		<script src="js/views/view.contact.js"></script>
+		<script src="assets/js/views/view.contact.js"></script>
 
 		<!-- Theme Initialization Files -->
-		<script src="js/theme.init.js"></script>
+		<script src="assets/js/theme.init.js"></script>
 
 	</body>
 
