@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/under-construction', function () {
+    return view('pages.underconstruction');
+})->name('underconstruction');
+
 /* BACK OFFICE ROUTES */
 
 

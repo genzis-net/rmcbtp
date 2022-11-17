@@ -73,7 +73,7 @@
 							<div class="header-column header-column-logo">
 								<div class="header-row">
 									<div class="header-logo">
-										<a href="demo-digital-agency-2.html">
+										<a href="/">
 											<img alt="Porto" width="139" height="59" src="assets/img/demos/digital-agency-2/logos/logo-1.png">
 										</a>
 									</div>
@@ -86,12 +86,12 @@
 											<nav class="collapse">
 												<ul class="nav nav-pills" id="mainNav">
 													<li class="dropdown">
-														<a class="" href="index.html">
+														<a class="" href="/">
 															Home
 														</a>
 													</li>
                                                     <li class="dropdown">
-														<a class="" href="index.html">
+														<a class="" href="{{ route('underconstruction') }}">
 															About Us
 														</a>
 													</li>
@@ -103,36 +103,36 @@
 															<li class="dropdown-submenu">
 																<a class="dropdown-item" href="#">RMC BTP</a>
 																<ul class="dropdown-menu">
-																	<li><a class="dropdown-item" href="contact-us-advanced.html">Service 1</a></li>
-																	<li><a class="dropdown-item" href="contact-us.html">Service 1</a></li>
-																	<li><a class="dropdown-item" href="contact-us-recaptcha.html">Service 1</a></li>
+																	<li><a class="dropdown-item" href="{{ route('underconstruction') }}">Service 1</a></li>
+																	<li><a class="dropdown-item" href="{{ route('underconstruction') }}">Service 1</a></li>
+																	<li><a class="dropdown-item" href="{{ route('underconstruction') }}">Service 1</a></li>
 																</ul>
 															</li>
 															<li class="dropdown-submenu">
 																<a class="dropdown-item" href="#">SIMS QUINCAILLERIE</a>
 																<ul class="dropdown-menu">
-																	<li><a class="dropdown-item" href="about-us-advanced.html">Service 1</a></li>
-																	<li><a class="dropdown-item" href="about-us.html">Service 1</a></li>
-																	<li><a class="dropdown-item" href="about-me.html">Service 1</a></li>
+																	<li><a class="dropdown-item" href="{{ route('underconstruction') }}">Service 1</a></li>
+																	<li><a class="dropdown-item" href="{{ route('underconstruction') }}">Service 1</a></li>
+																	<li><a class="dropdown-item" href="{{ route('underconstruction') }}">Service 1</a></li>
 																</ul>
 															</li>
 															<li class="dropdown-submenu">
 																<a class="dropdown-item" href="#">SIMS DECOR</a>
 																<ul class="dropdown-menu">
-																	<li><a class="dropdown-item" href="page-full-width.html">Service 1</a></li>
-																	<li><a class="dropdown-item" href="page-left-sidebar.html">Service 1</a></li>
-																	<li><a class="dropdown-item" href="page-right-sidebar.html">Service 1</a></li>
+																	<li><a class="dropdown-item" href="{{ route('underconstruction') }}">Service 1</a></li>
+																	<li><a class="dropdown-item" href="{{ route('underconstruction') }}">Service 1</a></li>
+																	<li><a class="dropdown-item" href="{{ route('underconstruction') }}">Service 1</a></li>
 																</ul>
 															</li>
 														</ul>
 													</li>
                                                     <li class="dropdown">
-														<a class="" href="index.html">
+														<a class="" href="{{ route('underconstruction') }}">
 															Blog
 														</a>
 													</li>
                                                     <li class="dropdown">
-														<a class="" href="index.html">
+														<a class="" href="{{ route('underconstruction') }}">
 															Our Work
 														</a>
 													</li>
@@ -142,12 +142,12 @@
 														</a>
 														<ul class="dropdown-menu">
 															<li class="dropdown">
-                                                                <a class="" href="index.html">
+                                                                <a class="" href="{{ route('underconstruction') }}">
                                                                     FR
                                                                 </a>
                                                             </li>
                                                             <li class="dropdown">
-                                                                <a class="" href="index.html">
+                                                                <a class="" href="{{ route('underconstruction') }}">
                                                                     EN
                                                                 </a>
                                                             </li>
@@ -277,7 +277,7 @@
 				                <div class="sort-destination w-100" data-sort-id="portfolio">
 									<div class="row w-100 m-0 isotope-item search-engine-optimize social-media-ads">
 										<div class="col-sm-12 custom-our-work overlay overlay-op-9 overlay-show p-0">
-											<a href="demo-digital-agency-2-our-work-detail.html" class="d-block">
+											<a href="{{ route('underconstruction') }}" class="d-block">
 												<img src="assets/img/demos/digital-agency-2/bg/bg-5.jpg" class="w-100">
 												<div class="w-100 custom-our-work-text p-5 d-flex align-items-end p-absolute bottom-0">
 													<div class="text-start p-relative z-index-2 mb-3">
@@ -291,7 +291,7 @@
 									</div>
 									<div class="row w-100 m-0 isotope-item content-marketing email-marketing search-engine-optimize">
 										<div class="col-sm-12 custom-our-work overlay overlay-op-9 overlay-show p-0">
-											<a href="demo-digital-agency-2-our-work-detail.html" class="d-block">
+											<a href="{{ route('underconstruction') }}" class="d-block">
 												<img src="assets/img/demos/digital-agency-2/bg/bg-6.jpg" class="w-100">
 												<div class="w-100 custom-our-work-text p-5 d-flex align-items-end p-absolute bottom-0">
 													<div class="text-start p-relative z-index-2 mb-3">
@@ -305,7 +305,7 @@
 									</div>
 									<div class="row w-100 m-0 isotope-item ui-design web-development b2b-software">
 										<div class="col-sm-12 custom-our-work overlay overlay-op-9 overlay-show p-0">
-											<a href="demo-digital-agency-2-our-work-detail.html" class="d-block">
+											<a href="{{ route('underconstruction') }}" class="d-block">
 												<img src="assets/img/demos/digital-agency-2/bg/bg-7.jpg" class="w-100">
 												<div class="w-100 custom-our-work-text p-5 d-flex align-items-end p-absolute bottom-0">
 													<div class="text-start p-relative z-index-2 mb-3">
@@ -319,7 +319,7 @@
 									</div>
 									<div class="row w-100 m-0 isotope-item brand-and-identity content-strategy">
 										<div class="col-sm-12 custom-our-work overlay overlay-op-9 overlay-show p-0">
-											<a href="demo-digital-agency-2-our-work-detail.html" class="d-block">
+											<a href="{{ route('underconstruction') }}" class="d-block">
 												<img src="assets/img/demos/digital-agency-2/bg/bg-8.jpg" class="w-100">
 												<div class="w-100 custom-our-work-text p-5 d-flex align-items-end p-absolute bottom-0">
 													<div class="text-start p-relative z-index-2 mb-3">
@@ -366,9 +366,7 @@
                                     </div>
                                     <div class="flip-back d-flex align-items-center p-5" style="background-image: url(https://wallpapercrafter.com/desktop/4950-bridge-dark-night-construction-4k.jpg); background-size: cover; background-position: center;">
                                         <div class="flip-content my-4">
-                                            <h4 class="font-weight-bold text-color-light">FIRST MEETING</h4>
-                                            <p class="font-weight-light text-color-light opacity-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>
-                                            <a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">Request a Quote</a>
+									        <a href="#intro" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="btn btn-outline custom-btn-outline btn-primary rounded-0 font-weight-semibold text-color-dark bg-color-hover-primary custom-btn-with-arrow text-4 btn-px-4 py-3 mt-2 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1100">Request a Quote</a>
                                         </div>
                                     </div>
                                 </div>
@@ -386,9 +384,7 @@
                                     </div>
                                     <div class="flip-back d-flex align-items-center p-5" style="background-image: url(https://wallpapercrafter.com/desktop/4950-bridge-dark-night-construction-4k.jpg); background-size: cover; background-position: center;">
                                         <div class="flip-content my-4">
-                                            <h4 class="font-weight-bold text-color-light">MATERIAL AND MACHINES</h4>
-                                            <p class="font-weight-light text-color-light opacity-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>
-                                            <a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">Request a Quote</a>
+									        <a href="#intro" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="btn btn-outline custom-btn-outline btn-primary rounded-0 font-weight-semibold text-color-dark bg-color-hover-primary custom-btn-with-arrow text-4 btn-px-4 py-3 mt-2 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1100">Request a Quote</a>
                                         </div>
                                     </div>
                                 </div>
@@ -406,9 +402,7 @@
                                     </div>
                                     <div class="flip-back d-flex align-items-center p-5" style="background-image: url(https://wallpapercrafter.com/desktop/4950-bridge-dark-night-construction-4k.jpg); background-size: cover; background-position: center;">
                                         <div class="flip-content my-4">
-                                            <h4 class="font-weight-bold text-color-light">FIRST MEETING</h4>
-                                            <p class="font-weight-light text-color-light opacity-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>
-                                            <a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">Request a Quote</a>
+									        <a href="#intro" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="btn btn-outline custom-btn-outline btn-primary rounded-0 font-weight-semibold text-color-dark bg-color-hover-primary custom-btn-with-arrow text-4 btn-px-4 py-3 mt-2 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1100">Request a Quote</a>
                                         </div>
                                     </div>
                                 </div>
@@ -421,14 +415,14 @@
                                         <div class="flip-content my-4">
                                             <strong class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block">04</strong>
                                             <h4 class="font-weight-bold text-color-primary text-4">HOME RENOVATIONS</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>	
+                                            <p>
+                                                Our qualified technicians are available at all time for your work at home.
+                                            </p>
                                         </div>
                                     </div>
                                     <div class="flip-back d-flex align-items-center p-5" style="background-image: url(https://wallpapercrafter.com/desktop/4950-bridge-dark-night-construction-4k.jpg); background-size: cover; background-position: center;">
                                         <div class="flip-content my-4">
-                                            <h4 class="font-weight-bold text-color-light">FIRST MEETING</h4>
-                                            <p class="font-weight-light text-color-light opacity-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>
-                                            <a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">Request a Quote</a>
+									        <a href="#intro" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="btn btn-outline custom-btn-outline btn-primary rounded-0 font-weight-semibold text-color-dark bg-color-hover-primary custom-btn-with-arrow text-4 btn-px-4 py-3 mt-2 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1100">Request a Quote</a>
                                         </div>
                                     </div>
                                 </div>
@@ -439,14 +433,12 @@
                                         <div class="flip-content my-4">
                                             <strong class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block">05</strong>
                                             <h4 class="font-weight-bold text-color-primary text-4">FURNITURES AND HOME DECO</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>	
+                                            <p>Get inspired and chose how you want your home to be.</p>	
                                         </div>
                                     </div>
                                     <div class="flip-back d-flex align-items-center p-5" style="background-image: url(https://wallpapercrafter.com/desktop/4950-bridge-dark-night-construction-4k.jpg); background-size: cover; background-position: center;">
                                         <div class="flip-content my-4">
-                                            <h4 class="font-weight-bold text-color-light">FURNITURES AND HOME DECO</h4>
-                                            <p class="font-weight-light text-color-light opacity-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>
-                                            <a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">Request a Quote</a>
+									        <a href="#intro" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="btn btn-outline custom-btn-outline btn-primary rounded-0 font-weight-semibold text-color-dark bg-color-hover-primary custom-btn-with-arrow text-4 btn-px-4 py-3 mt-2 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1100">Request a Quote</a>
                                         </div>
                                     </div>
                                 </div>
@@ -457,31 +449,32 @@
                                         <div class="flip-content my-4">
                                             <strong class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block">06</strong>
                                             <h4 class="font-weight-bold text-color-primary text-4">CONSULTING</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>	
+                                            <p>Need assistance with anything? We can help.</p>	
                                         </div>
                                     </div>
                                     <div class="flip-back d-flex align-items-center p-5" style="background-image: url(https://wallpapercrafter.com/desktop/4950-bridge-dark-night-construction-4k.jpg); background-size: cover; background-position: center;">
                                         <div class="flip-content my-4">
-                                            <h4 class="font-weight-bold text-color-light">FURNITURES AND HOME DECO</h4>
-                                            <p class="font-weight-light text-color-light opacity-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>
-                                            <a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">Request a Quote</a>
+									        <a href="#intro" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="btn btn-outline custom-btn-outline btn-primary rounded-0 font-weight-semibold text-color-dark bg-color-hover-primary custom-btn-with-arrow text-4 btn-px-4 py-3 mt-2 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1100">Request a Quote</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>                         
 						</div>
 
-                        <div class="row justify-content-center">
+                        <div class="row justify-content-center" style="margin-top: 3rem">
 							<div class="col-xl-9">
 								<p class="custom-text-4 mt-4 mb-0 text-center appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at massa quam. Maecenas et sem accumsan, dictum arcu eu, consectetur eros. Nulla tortor est, lobortis vestibulum turpis sed, mollis commodo orci.
-								</p>
+                                    At RMC-BTP we are offering more than just what you asked for. We want to make sure you get the best, including what you didn't know you needed, and at competitive prices. 
+                                </p>
 							</div>
 						</div>
 					</div>
 				</section>
 
                 <section style="margin: 5rem; ">
+                    <div class="row justify-content-center">
+                        <h4 class="text-color-dark custom-text-10 font-weight-bold text-center custom-title-with-icon-center custom-title-with-icon custom-title-with-icon-primary pb-5 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">Rent Your tools now!</h4>
+                    </div>
                     <div class="row">
 						<div class="col-lg-12">
 							<div class="masonry-loader masonry-loader-showing">
@@ -489,49 +482,7 @@
 									<div class="col-sm-6 col-lg-4">
 										<div class="product mb-0">
 											<div class="product-thumb-info border-0 mb-3">
-												<a href="shop-product-sidebar-left.html">
-													<div class="product-thumb-info-image product-thumb-info-image-effect">
-														<img alt="" class="img-fluid" src="https://s.alicdn.com/@sc04/kf/H41081a316c1d4955872629e031d4a366v.jpg">
-
-															<img alt="" class="img-fluid" src="https://s.alicdn.com/@sc04/kf/H41081a316c1d4955872629e031d4a366v.jpg">
-
-													</div>
-												</a>
-											</div>
-											<div class="d-flex justify-content-between">
-												<div style="text-align: center">
-													<h3 class="text-3-5 font-weight-medium font-alternative text-transform-none line-height-3 mb-0"><a href="shop-product-sidebar-right.html" class="text-color-dark text-color-hover-primary">Trackteur</a></h3>
-												</div>
-											</div>
-									        <a href="#intro" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="btn btn-outline custom-btn-outline btn-primary rounded-0 font-weight-semibold text-color-dark bg-color-hover-primary custom-btn-with-arrow text-4 btn-px-4 py-3 mt-2 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1100">Rent Now</a>
-
-										</div>
-									</div>
-                                    <div class="col-sm-6 col-lg-4">
-										<div class="product mb-0">
-											<div class="product-thumb-info border-0 mb-3">
-												<a href="shop-product-sidebar-left.html">
-													<div class="product-thumb-info-image product-thumb-info-image-effect">
-														<img alt="" class="img-fluid" src="https://cdn11.bigcommerce.com/s-vtryl8/images/stencil/1280x1280/products/872/2405569/RAMMER_MTX70__81659.1637089231.jpg?c=2">
-
-															<img alt="" class="img-fluid" src="https://cdn11.bigcommerce.com/s-vtryl8/images/stencil/1280x1280/products/872/2405569/RAMMER_MTX70__81659.1637089231.jpg?c=2">
-
-													</div>
-												</a>
-											</div>
-											<div class="d-flex justify-content-between">
-												<div style="text-align: center">
-													<h3 class="text-3-5 font-weight-medium font-alternative text-transform-none line-height-3 mb-0"><a href="shop-product-sidebar-right.html" class="text-color-dark text-color-hover-primary">Trackteur</a></h3>
-												</div>
-											</div>
-									        <a href="#intro" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="btn btn-outline custom-btn-outline btn-primary rounded-0 font-weight-semibold text-color-dark bg-color-hover-primary custom-btn-with-arrow text-4 btn-px-4 py-3 mt-2 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1100">Rent Now</a>
-
-										</div>
-									</div>
-                                    <div class="col-sm-6 col-lg-4">
-										<div class="product mb-0">
-											<div class="product-thumb-info border-0 mb-3">
-												<a href="shop-product-sidebar-left.html">
+												<a href="{{ route('underconstruction') }}">
 													<div class="product-thumb-info-image product-thumb-info-image-effect">
 														<img alt="" class="img-fluid" src="https://mobileimages.lowes.com/productimages/d0a683f0-b29c-400a-9c33-3762f91ee601/16251095.jpg?size=pdhism">
 
@@ -542,7 +493,49 @@
 											</div>
 											<div class="d-flex justify-content-between">
 												<div style="text-align: center">
-													<h3 class="text-3-5 font-weight-medium font-alternative text-transform-none line-height-3 mb-0"><a href="shop-product-sidebar-right.html" class="text-color-dark text-color-hover-primary">Trackteur</a></h3>
+													<h3 class="text-3-5 font-weight-medium font-alternative text-transform-none line-height-3 mb-0"><a href="{{ route('underconstruction') }}" class="text-color-dark text-color-hover-primary">Trackteur</a></h3>
+												</div>
+											</div>
+									        <a href="#intro" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="btn btn-outline custom-btn-outline btn-primary rounded-0 font-weight-semibold text-color-dark bg-color-hover-primary custom-btn-with-arrow text-4 btn-px-4 py-3 mt-2 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1100">Rent Now</a>
+
+										</div>
+									</div>
+                                    <div class="col-sm-6 col-lg-4">
+										<div class="product mb-0">
+											<div class="product-thumb-info border-0 mb-3">
+												<a href="{{ route('underconstruction') }}">
+													<div class="product-thumb-info-image product-thumb-info-image-effect">
+														<img alt="" class="img-fluid" src="https://mobileimages.lowes.com/productimages/d0a683f0-b29c-400a-9c33-3762f91ee601/16251095.jpg?size=pdhism">
+
+															<img alt="" class="img-fluid" src="https://mobileimages.lowes.com/productimages/d0a683f0-b29c-400a-9c33-3762f91ee601/16251095.jpg?size=pdhism">
+
+													</div>
+												</a>
+											</div>
+											<div class="d-flex justify-content-between">
+												<div style="text-align: center">
+													<h3 class="text-3-5 font-weight-medium font-alternative text-transform-none line-height-3 mb-0"><a href="{{ route('underconstruction') }}" class="text-color-dark text-color-hover-primary">Trackteur</a></h3>
+												</div>
+											</div>
+									        <a href="#intro" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="btn btn-outline custom-btn-outline btn-primary rounded-0 font-weight-semibold text-color-dark bg-color-hover-primary custom-btn-with-arrow text-4 btn-px-4 py-3 mt-2 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1100">Rent Now</a>
+
+										</div>
+									</div>
+                                    <div class="col-sm-6 col-lg-4">
+										<div class="product mb-0">
+											<div class="product-thumb-info border-0 mb-3">
+												<a href="{{ route('underconstruction') }}">
+													<div class="product-thumb-info-image product-thumb-info-image-effect">
+														<img alt="" class="img-fluid" src="https://mobileimages.lowes.com/productimages/d0a683f0-b29c-400a-9c33-3762f91ee601/16251095.jpg?size=pdhism">
+
+															<img alt="" class="img-fluid" src="https://mobileimages.lowes.com/productimages/d0a683f0-b29c-400a-9c33-3762f91ee601/16251095.jpg?size=pdhism">
+
+													</div>
+												</a>
+											</div>
+											<div class="d-flex justify-content-between">
+												<div style="text-align: center">
+													<h3 class="text-3-5 font-weight-medium font-alternative text-transform-none line-height-3 mb-0"><a href="{{ route('underconstruction') }}" class="text-color-dark text-color-hover-primary">Trackteur</a></h3>
 												</div>
 											</div>
 									        <a href="#intro" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="btn btn-outline custom-btn-outline btn-primary rounded-0 font-weight-semibold text-color-dark bg-color-hover-primary custom-btn-with-arrow text-4 btn-px-4 py-3 mt-2 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1100">Rent Now</a>
@@ -568,9 +561,9 @@
 							<div class="col pb-5">
 								<article>
 									<p class="custom-font-tertiary text-uppercase custom-text-2 mb-1 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">FEBRUARY 4, 2022</p>
-									<h4 class="text-color-dark custom-text-8 font-weight-bold mb-3 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400"><a href="demo-digital-agency-2-our-blog-post.html" class="text-color-dark text-color-hover-primary">An Interview With John Paul Doe</a></h4>
+									<h4 class="text-color-dark custom-text-8 font-weight-bold mb-3 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400"><a href="{{ route('underconstruction') }}" class="text-color-dark text-color-hover-primary">An Interview With John Paul Doe</a></h4>
 									<p class="custom-text-4 mb-2 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero.</p>
-									<a href="demo-digital-agency-2-our-blog-post.html" class="text-color-primary text-color-hover-secondary custom-text-4 font-weight-bold text-decoration-underline appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="800">Read More...</a>
+									<a href="{{ route('underconstruction') }}" class="text-color-primary text-color-hover-secondary custom-text-4 font-weight-bold text-decoration-underline appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="800">Read More...</a>
 								</article>
 							</div>
 						</div>
@@ -578,9 +571,9 @@
 							<div class="col pb-5">
 								<article>
 									<p class="custom-font-tertiary text-uppercase custom-text-2 mb-1 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">FEBRUARY 4, 2022</p>
-									<h4 class="text-color-dark custom-text-8 font-weight-bold mb-3 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400"><a href="demo-digital-agency-2-our-blog-post.html" class="text-color-dark text-color-hover-primary">Building An E-Commerce Site With CMS</a></h4>
+									<h4 class="text-color-dark custom-text-8 font-weight-bold mb-3 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400"><a href="{{ route('underconstruction') }}" class="text-color-dark text-color-hover-primary">Building An E-Commerce Site With CMS</a></h4>
 									<p class="custom-text-4 mb-2 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero.</p>
-									<a href="demo-digital-agency-2-our-blog-post.html" class="text-color-primary text-color-hover-secondary custom-text-4 font-weight-bold text-decoration-underline appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="800">Read More...</a>
+									<a href="{{ route('underconstruction') }}" class="text-color-primary text-color-hover-secondary custom-text-4 font-weight-bold text-decoration-underline appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="800">Read More...</a>
 								</article>
 							</div>
 						</div>
@@ -588,9 +581,9 @@
 							<div class="col pb-5">
 								<article>
 									<p class="custom-font-tertiary text-uppercase custom-text-2 mb-1 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">FEBRUARY 4, 2022</p>
-									<h4 class="text-color-dark custom-text-8 font-weight-bold mb-3 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400"><a href="demo-digital-agency-2-our-blog-post.html" class="text-color-dark text-color-hover-primary">How To Design Mobile Apps For Everyone</a></h4>
+									<h4 class="text-color-dark custom-text-8 font-weight-bold mb-3 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400"><a href="{{ route('underconstruction') }}" class="text-color-dark text-color-hover-primary">How To Design Mobile Apps For Everyone</a></h4>
 									<p class="custom-text-4 mb-2 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero.</p>
-									<a href="demo-digital-agency-2-our-blog-post.html" class="text-color-primary text-color-hover-secondary custom-text-4 font-weight-bold text-decoration-underline appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="800">Read More...</a>
+									<a href="{{ route('underconstruction') }}" class="text-color-primary text-color-hover-secondary custom-text-4 font-weight-bold text-decoration-underline appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="800">Read More...</a>
 								</article>
 							</div>
 						</div>
@@ -611,7 +604,7 @@
 								<p class="mb-2 text-color-tertiary custom-text-7 custom-title-with-icon custom-title-with-icon-light appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">Request a Quote</p>
 								<h4 class="text-color-light font-weight-bold custom-text-10 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">
 									We’re interested in talking<br/>
-									about your business.
+									about your Project.
 								</h4>
 							</div>
 							<div class="col-lg-4 d-flex align-items-center justify-content-start justify-content-lg-end mt-5 mt-lg-0">
@@ -644,16 +637,16 @@
 						<div class="col-sm-12 col-lg-6 col-xl-4 col-info-footer mt-4 mt-sm-5 mt-lg-0">
 							<div class="row">
 								<div class="col-md-6">
-									<span class="d-block text-start text-lg-end text-color-light font-weight-semibold text-5 pb-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">Los Angeles</span>
-									<p class="mb-0 text-start text-lg-end text-4 font-weight-medium appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="150">123 The Main Street</p>
-									<p class="mb-0 text-start text-lg-end text-4 font-weight-medium appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">Los Angeles, CA 1000</p>
-									<p class="mb-0 text-start text-lg-end text-4 font-weight-medium appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250"><a href="tel:+1234567890" class="text-color-default">(123) 456-7890</a></p>
+									<span class="d-block text-start text-lg-end text-color-light font-weight-semibold text-5 pb-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">Yaounde</span>
+									<p class="mb-0 text-start text-lg-end text-4 font-weight-medium appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="150">Yaounde</p>
+									<p class="mb-0 text-start text-lg-end text-4 font-weight-medium appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">Yaounde</p>
+									<p class="mb-0 text-start text-lg-end text-4 font-weight-medium appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250"><a href="tel:+23793909159" class="text-color-default">+237 693 909 159</a></p>
 								</div>
 								<div class="col-md-6 mt-3 mt-md-0">
-									<span class="d-block text-start text-lg-end text-color-light font-weight-semibold text-5 pb-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">New York</span>
-									<p class="mb-0 text-start text-lg-end text-4 font-weight-medium appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="150">123 The Main Street</p>
-									<p class="mb-0 text-start text-lg-end text-4 font-weight-medium appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">New York, NY 1000</p>
-									<p class="mb-0 text-start text-lg-end text-4 font-weight-medium appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250"><a href="tel:+1234567890" class="text-color-default">(123) 456-7890</a></p>
+									<span class="d-block text-start text-lg-end text-color-light font-weight-semibold text-5 pb-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">Yaounde</span>
+									<p class="mb-0 text-start text-lg-end text-4 font-weight-medium appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="150">Yaounde</p>
+									<p class="mb-0 text-start text-lg-end text-4 font-weight-medium appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">Yaounde</p>
+									<p class="mb-0 text-start text-lg-end text-4 font-weight-medium appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250"><a href="tel:+23793909159" class="text-color-default">+237 693 909 159</a></p>
 								</div>
 							</div>
 						</div>
@@ -668,13 +661,13 @@
 												<nav>
 													<ul class="nav" id="footerNav">
 														<li>
-															<a class="text-color-hover-primary font-weight-semibold custom-text-2 text-capitalize" href="demo-digital-agency-2-our-services.html">Our Services</a>
+															<a class="text-color-hover-primary font-weight-semibold custom-text-2 text-capitalize" href="{{ route('underconstruction') }}" style="color:aliceblue; text-decoration: underline">Our Services</a>
 														</li>
 														<li>
-															<a class="text-color-hover-primary font-weight-semibold custom-text-2 text-capitalize" href="demo-digital-agency-2-our-work.html">Our Work</a>
+															<a class="text-color-hover-primary font-weight-semibold custom-text-2 text-capitalize" href="{{ route('underconstruction') }}" style="color:aliceblue; text-decoration: underline">Our Work</a>
 														</li>
 														<li>
-															<a class="text-color-hover-primary font-weight-semibold custom-text-2 text-capitalize" href="demo-digital-agency-2-contact-us.html">Contact Us</a>
+															<a class="text-color-hover-primary font-weight-semibold custom-text-2 text-capitalize" href="{{ route('underconstruction') }}" style="color:aliceblue; text-decoration: underline">Contact Us</a>
 														</li>
 													</ul>
 												</nav>
@@ -695,7 +688,7 @@
 						</div>
 						<div class="col-sm-12 col-lg-5 col-xl-6">
 							<div class="d-flex justify-content-end custom-footer-copywriting pt-5 mt-0 mt-lg-4">
-								<p class="mb-0 text-start text-lg-end d-block w-100 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">Porto Digital Agency. ©  2022.  All Rights Reserved</p>
+								<p class="mb-0 text-start text-lg-end d-block w-100 appear-animation" style="color:aliceblue" data-appear-animation="fadeIn" data-appear-animation-delay="300">Delivered by <a href="https://genzis.net" style="color:aliceblue; text-decoration: underline">Genzis</a>. ©  2022.  All Rights Reserved</p>
 							</div>
 						</div>
 					</div>
