@@ -1,713 +1,1843 @@
 
 <!DOCTYPE html>
-<html class="light" data-style-switcher-options="{'changeLogo': false, 'backgroundColor': 'light', 'borderRadius': 0, 'colorPrimary': '#e41645', 'colorSecondary': '#292929', 'colorTertiary': '#e0e1e5', 'colorQuaternary': '#777777'}">
-	
+<html lang="en">
+
+
+<!-- Mirrored from 7xtheme.com/shapen/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Aug 2022 01:31:17 GMT -->
 <head>
-		
-		<!-- Basic -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>RMC-BTP | Construire vos maisons clés à mains</title>	
+	<!-- META -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="robots" content="" />    
+    <meta name="description" content="" />
+    
+    <!-- FAVICONS ICON -->
+    <link rel="icon" href="/assets/images/favicon.jpg" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.jpg" />
+    
+    <!-- PAGE TITLE HERE -->
+    <title>Shapen Template | Home Page Style 1</title>
+    
+    <!-- MOBILE SPECIFIC -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- [if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+	<![endif] -->
+    
+    <!-- BOOTSTRAP STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css">
+    
+    <!-- FONTAWESOME STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/fontawesome/css/font-awesome.min.css" />
 
-		<meta name="keywords" content="WebSite Template" />
-		<meta name="description" content="Porto - Multipurpose Website Template">
-		<meta name="author" content="okler.net">
+    <!-- OWL CAROUSEL STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/owl.carousel.min.css">
 
-		<!-- Favicon -->
-		<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
-		<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+    <!-- MAGNIFIC POPUP STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/magnific-popup.min.css">
+	
+    <!-- LOADER STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/loader.min.css"> 
 
-		<!-- Mobile Metas -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+    <!-- FLATICON STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/flaticon.min.css">	
+    
+    <!-- MAIN STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
 
-		<!-- Web Fonts  -->
-		<link id="googleFonts" href="https://fonts.googleapis.com/css?family=family=Lora:400,400i,700,700i|Poppins:300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet" type="text/css">
-
-		<!-- Vendor CSS -->
-		<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" href="assets/vendor/fontawesome-free/css/all.min.css">
-		<link rel="stylesheet" href="assets/vendor/animate/animate.compat.css">
-		<link rel="stylesheet" href="assets/vendor/simple-line-icons/css/simple-line-icons.min.css">
-		<link rel="stylesheet" href="assets/vendor/owl.carousel/assets/owl.carousel.min.css">
-		<link rel="stylesheet" href="assets/vendor/owl.carousel/assets/owl.theme.default.min.css">
-		<link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.min.css">
-
-		<!-- Theme CSS -->
-		<link rel="stylesheet" href="assets/css/theme.css">
-		<link rel="stylesheet" href="assets/css/theme-elements.css">
-		<link rel="stylesheet" href="assets/css/theme-blog.css">
-		<link rel="stylesheet" href="assets/css/theme-shop.css">
-
-		<!-- Demo CSS -->
-		<link rel="stylesheet" href="assets/css/demos/demo-digital-agency-2.css">
-
-		<!-- Skin CSS -->
-		<link id="skinCSS" rel="stylesheet" href="assets/css/skins/skin-digital-agency-2.css">
-
-		<!-- Theme Custom CSS -->
-		<link rel="stylesheet" href="assets/css/custom.css">
-
-		<!-- Head Libs -->
-		<script src="assets/vendor/modernizr/modernizr.min.js"></script>
+    <!-- Color Theme Change Css -->
+    <link rel="stylesheet" class="skin" type="text/css" href="/assets/css/skin/skin-1.css">  
+	
 
 
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42715764-11"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
+    <!-- REVOLUTION SLIDER CSS -->
+    <link rel="stylesheet" type="text/css" href="/assets/plugins/revolution/revolution/css/settings.css">
+	
+    <!-- REVOLUTION NAVIGATION STYLE -->
+    <link rel="stylesheet" type="text/css" href="/assets/plugins/revolution/revolution/css/navigation.css">
+    
+    <!-- Google Fonts -->
+    <link href="../../fonts.googleapis.com/cssad13.css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">  
+	<link href="../../fonts.googleapis.com/cssa3eb.css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-		  gtag('config', 'UA-42715764-11');
-		</script>
+</head>
 
-	</head>
-	<body>
+<body>
 
-		<div class="body">
-			<header id="header" class="header-transparent header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': false, 'stickyStartAt': 1, 'stickyHeaderContainerHeight': 100}">
-				<div class="header-body border-top-0 bg-color-dark box-shadow-none">
-					<div class="header-container container">
-						<div class="header-row">
-							<div class="header-column header-column-logo">
-								<div class="header-row">
-									<div class="header-logo">
-										<a href="/">
-											<img alt="Porto" width="139" height="59" src="assets/img/demos/digital-agency-2/logos/logo-1.png">
-										</a>
-									</div>
-								</div>
-							</div>
-							<div class="header-column header-column-nav-menu justify-content-end w-100">
-								<div class="header-row">
-									<div class="header-nav header-nav-links header-nav-dropdowns-dark header-nav-light-text order-2 order-lg-1">
-										<div class="header-nav-main header-nav-main-mobile-dark header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-effect-2 header-nav-main-sub-effect-1">
-											<nav class="collapse">
-												<ul class="nav nav-pills" id="mainNav">
-													<li class="dropdown">
-														<a class="" href="/">
-															Home
-														</a>
-													</li>
-                                                    <li class="dropdown">
-														<a class="" href="{{ route('underconstruction') }}">
-															About Us
-														</a>
-													</li>
-													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle" href="#">
-															Services
-														</a>
-														<ul class="dropdown-menu">
-															<li class="dropdown-submenu">
-																<a class="dropdown-item" href="#">RMC BTP</a>
-																<ul class="dropdown-menu">
-																	<li><a class="dropdown-item" href="{{ route('underconstruction') }}">Service 1</a></li>
-																	<li><a class="dropdown-item" href="{{ route('underconstruction') }}">Service 1</a></li>
-																	<li><a class="dropdown-item" href="{{ route('underconstruction') }}">Service 1</a></li>
-																</ul>
-															</li>
-															<li class="dropdown-submenu">
-																<a class="dropdown-item" href="#">SIMS QUINCAILLERIE</a>
-																<ul class="dropdown-menu">
-																	<li><a class="dropdown-item" href="{{ route('underconstruction') }}">Service 1</a></li>
-																	<li><a class="dropdown-item" href="{{ route('underconstruction') }}">Service 1</a></li>
-																	<li><a class="dropdown-item" href="{{ route('underconstruction') }}">Service 1</a></li>
-																</ul>
-															</li>
-															<li class="dropdown-submenu">
-																<a class="dropdown-item" href="#">SIMS DECOR</a>
-																<ul class="dropdown-menu">
-																	<li><a class="dropdown-item" href="{{ route('underconstruction') }}">Service 1</a></li>
-																	<li><a class="dropdown-item" href="{{ route('underconstruction') }}">Service 1</a></li>
-																	<li><a class="dropdown-item" href="{{ route('underconstruction') }}">Service 1</a></li>
-																</ul>
-															</li>
-														</ul>
-													</li>
-                                                    <li class="dropdown">
-														<a class="" href="{{ route('underconstruction') }}">
-															Blog
-														</a>
-													</li>
-                                                    <li class="dropdown">
-														<a class="" href="{{ route('underconstruction') }}">
-															Our Work
-														</a>
-													</li>
-                                                    <li class="dropdown">
-														<a class="dropdown-item dropdown-toggle" href="#">
-															    Language
-														</a>
-														<ul class="dropdown-menu">
-															<li class="dropdown">
-                                                                <a class="" href="{{ route('underconstruction') }}">
-                                                                    FR
-                                                                </a>
-                                                            </li>
-                                                            <li class="dropdown">
-                                                                <a class="" href="{{ route('underconstruction') }}">
-                                                                    EN
-                                                                </a>
-                                                            </li>
-														</ul>
-													</li>
-												</ul>
-											</nav>
-										</div>
-										<button class="btn header-btn-collapse-nav" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
-											<i class="fas fa-bars"></i>
-										</button>
-									</div>
-								</div>
-							</div>
-							<div class="header-column justify-content-end d-none d-lg-flex">
-								<div class="header-row">
-									<ul class="header-social-icons social-icons social-icons-clean social-icons-icon-light social-icons-big d-lg-flex m-0 ms-lg-2">
-										<li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" class="text-4" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-										<li class="social-icons-twitter"><a href="http://www.facebook.com/" target="_blank" class="text-4" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-										<li class="social-icons-instagram"><a href="http://www.facebook.com/" target="_blank" class="text-4" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</header>
-
-			<div role="main" class="main">
-
-				<section class="section custom-circles-container section-angled bg-dark border-0 m-0" style="background-image: url(assets/img/demos/digital-agency-2/bg/bg-1.jpg); background-size: cover; background-position: center;">
-					<span class="custom-circle custom-circle-1 bg-color-light custom-circle-blur appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="100" data-plugin-options="{'forceAnimation': true}"></span>
-					<span class="custom-circle custom-circle-2 bg-color-primary appear-animation" data-appear-animation="zoomIn" data-appear-animation-delay="200" data-plugin-options="{'forceAnimation': true}"></span>
-					<span class="custom-circle custom-circle-3 bg-color-primary appear-animation" data-appear-animation="zoomIn" data-appear-animation-delay="300" data-plugin-options="{'forceAnimation': true}"></span>
-					<span class="custom-circle custom-circle-1 bg-color-light custom-circle-blur appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="400" data-plugin-options="{'forceAnimation': true}"></span>
-					<span class="custom-circle custom-circle-2 bg-color-primary appear-animation" data-appear-animation="zoomIn" data-appear-animation-delay="500" data-plugin-options="{'forceAnimation': true}"></span>
-					<span class="custom-circle custom-circle-3 bg-color-primary appear-animation" data-appear-animation="zoomIn" data-appear-animation-delay="600" data-plugin-options="{'forceAnimation': true}"></span>
-					<div class="section-angled-layer-bottom section-angled-layer-increase-angle bg-light"></div>
-					<div class="section-angled-content h-100">
-						<div class="container pt-md-5 pb-lg-4 mt-5 mb-lg-5">
-							<div class="row pb-lg-5 mt-5 mb-lg-5">
-								<div class="col-lg-7 pt-5 pt-md-0 pb-lg-5 mt-5 mb-md-5">
-									<h2 class="custom-title-with-icon custom-title-with-icon-primary font-weight-normal text-color-default text-5 mb-0 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="600">Welcome to RMC-BTP Official Website</h2>
-									<h1 class="text-color-light font-weight-extra-bold text-10 text-md-12-13 line-height-2 mb-4 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="850">Building Your Dream Home from Scratch.</h1>
-									<a href="#intro" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="btn btn-outline custom-btn-outline btn-primary rounded-0 font-weight-semibold text-color-light bg-color-hover-primary custom-btn-with-arrow text-4 btn-px-4 py-3 mt-2 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1100">Get Started</a>
-								</div>
-							</div>
-							<div class="spacer py-5 mt-lg-5 mb-md-5"></div>
-						</div>
-					</div>
-				</section>
-
-				<section class="custom-cards p-relative mb-5 pb-5 z-index-2">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-4 col-custom-cards">
-								<div class="card border-0 bg-color-dark rounded-0 z-index-1 p-5 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="100">
-									<div class="card-body d-flex flex-column justify-content-center align-items-center p-0 my-3">
-										<img src="assets/img/demos/digital-agency-2/icons/solution.png" alt="Solution" class="mb-5">
-										<h4 class="card-title custom-text-8 font-weight-bold text-color-light text-center mb-3">RMC BTP</h4>
-										<p class="card-text text-center custom-text-4 font-weight-lighter">Our Contractors services to build yout houses and buildings from the ground up</p>
-									    <a href="#intro" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="btn btn-outline custom-btn-outline btn-primary rounded-0 font-weight-semibold text-color-light bg-color-hover-primary custom-btn-with-arrow text-4 btn-px-4 py-3 mt-2 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1100">Start Here</a>
-                                </div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-custom-cards">
-								<div class="card border-0 bg-color-primary rounded-0 z-index-1 p-5 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">
-									<div class="card-body d-flex flex-column justify-content-center align-items-center p-0 my-3">
-										<img src="assets/img/demos/digital-agency-2/icons/feedback.png" alt="Solution" class="mb-5">
-										<h4 class="card-title custom-text-8 font-weight-bold text-color-light text-center mb-3">SIMS QUINCAILLERIE</h4>
-										<p class="card-text text-center custom-text-4 font-weight-lighter text-color-light">Our premium equipment store for all your construction needs. We Provide heavy duty and commonly needed materials and equipments</p>
-									    <a href="#intro" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="btn btn-outline custom-btn-outline btn-secondary rounded-0 font-weight-semibold text-color-light bg-color-hover-secondary custom-btn-with-arrow text-4 btn-px-4 py-3 mt-2 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1100">Start Here</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-custom-cards">
-								<div class="card border-0 bg-color-dark rounded-0 z-index-1 p-5 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="300">
-									<div class="card-body d-flex flex-column justify-content-center align-items-center p-0 my-3">
-										<img src="assets/img/demos/digital-agency-2/icons/feedback.png" alt="Solution" class="mb-5">
-										<h4 class="card-title custom-text-8 font-weight-bold text-color-light text-center mb-3">SIMS DECOR</h4>
-										<p class="card-text text-center custom-text-4 font-weight-lighter">The finish touches your new home or building needs to reflect your dreams</p>
-									    <a href="#intro" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="btn btn-outline custom-btn-outline btn-primary rounded-0 font-weight-semibold text-color-light bg-color-hover-primary custom-btn-with-arrow text-4 btn-px-4 py-3 mt-2 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1100">Start Here</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section class="our-approach py-5 mb-4 mb-xl-5 mt-4 mt-xl-0 p-relative z-index-1" id="intro" style="background: url('assets/img/demos/digital-agency-2/bg/bg-10.png')">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-6 col-xl-4 d-flex flex-column justify-content-center align-items-start">
-								<h4 class="custom-text-10 mb-4 pb-2 font-weight-bold custom-title-with-icon custom-title-with-icon-primary appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="100">What We Do</h4>
-								<p class="custom-font-tertiary custom-text-6 line-height-6 font-weight-medium appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200"><b>RMC-BTP</b> is all about delivering Quality Estate construction. We work with a large team of professionals, experienced and passionate workes
-                                    who know the value you seek in your projects. 
-                                </p>
-								<p class="custom-text-3 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">
-                                    We have organized our ressources to ease up your decision making. Hence, our teams can handle your projects from construction, material and deco. 
-                                </p>
-								<a herf="demo-digital-agency-2-about-us.html" class="btn btn-outline custom-btn-outline btn-light border-0 rounded-0 text-color-primary custom-text-5 font-weight-bold custom-btn-with-arrow bg-transparent p-0 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="600">Find Out More</a>
-							</div>
-							<div class="col-lg-4 py-4 py-lg-0">
-								<div class="approach-img bg-color-dark">
-									<div class="custom-circle custom-circle-1"></div>
-									<div class="custom-circle custom-circle-2 bg-color-dark"></div>
-									<span class="custom-circle custom-circle-our-approach-deco-1 bg-color-tertiary p-absolute d-block appear-animation" data-appear-animation="zoomIn" data-appear-animation-delay="100"></span>
-									<span class="custom-circle custom-circle-our-approach-deco-2 bg-color-tertiary p-absolute d-block appear-animation" data-appear-animation="zoomIn" data-appear-animation-delay="100"></span>
-									<span class="custom-circle custom-circle-our-approach-deco-3 bg-color-tertiary p-absolute d-block appear-animation" data-appear-animation="zoomIn" data-appear-animation-delay="100"></span>
-								</div>
-							</div>
-							<div class="col-lg-6 col-xl-4 d-flex align-items-center mt-4 mt-lg-0">
-								<ul class="custom-list list-unstyled ms-xl-2 ps-xl-1">
-									<li class="font-weight-medium custom-text-4 mb-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">We Design and Develop Real Estate Projects</li>
-									<li class="font-weight-medium custom-text-4 mb-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">Provide Consulting and Contracting Services</li>
-									<li class="font-weight-medium custom-text-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="600">Ensure a transparent Work with <b>long-term Follow-up</b></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section class="our-work overflow-hidden" id="ourWork">
-					<div class="container-fluid">
-						<div class="row bg-color-dark">
-							<div class="col-xl-9 px-0">
-				                <div class="sort-destination w-100" data-sort-id="portfolio">
-									<div class="row w-100 m-0 isotope-item search-engine-optimize social-media-ads">
-										<div class="col-sm-12 custom-our-work overlay overlay-op-9 overlay-show p-0">
-											<a href="{{ route('underconstruction') }}" class="d-block">
-												<img src="assets/img/demos/digital-agency-2/bg/bg-5.jpg" class="w-100">
-												<div class="w-100 custom-our-work-text p-5 d-flex align-items-end p-absolute bottom-0">
-													<div class="text-start p-relative z-index-2 mb-3">
-														<h4 class="text-color-light custom-text-9 font-weight-bold text-decoration-none mb-2">Explore our Recent Constructions</h4>
-														<p class="text-uppercase custom-text-4 text-color-quaternary text-decoration-none mb-3">We build all accross the country, from family homes to 5-stories tal buildings</p>
-														<span class="custom-text-4 font-weight-semibold m-0 p-0 text-color-light custom-btn-with-arrow custom-btn-with-arrow-primary text-decoration-none">View Work</span>
-													</div>
-												</div>
-											</a>
-										</div>
-									</div>
-									<div class="row w-100 m-0 isotope-item content-marketing email-marketing search-engine-optimize">
-										<div class="col-sm-12 custom-our-work overlay overlay-op-9 overlay-show p-0">
-											<a href="{{ route('underconstruction') }}" class="d-block">
-												<img src="assets/img/demos/digital-agency-2/bg/bg-6.jpg" class="w-100">
-												<div class="w-100 custom-our-work-text p-5 d-flex align-items-end p-absolute bottom-0">
-													<div class="text-start p-relative z-index-2 mb-3">
-														<h4 class="text-color-light custom-text-9 font-weight-bold text-decoration-none mb-2">Explore Our Catalogue</h4>
-														<p class="text-uppercase custom-text-4 text-color-quaternary text-decoration-none mb-3">We have a collection of machines and maetrial for sale and for rent. Take a look. </p>
-														<span class="custom-text-4 font-weight-semibold m-0 p-0 text-color-light custom-btn-with-arrow custom-btn-with-arrow-primary text-decoration-none">View Catalogue</span>
-													</div>
-												</div>
-											</a>
-										</div>
-									</div>
-									<div class="row w-100 m-0 isotope-item ui-design web-development b2b-software">
-										<div class="col-sm-12 custom-our-work overlay overlay-op-9 overlay-show p-0">
-											<a href="{{ route('underconstruction') }}" class="d-block">
-												<img src="assets/img/demos/digital-agency-2/bg/bg-7.jpg" class="w-100">
-												<div class="w-100 custom-our-work-text p-5 d-flex align-items-end p-absolute bottom-0">
-													<div class="text-start p-relative z-index-2 mb-3">
-														<h4 class="text-color-light custom-text-9 font-weight-bold text-decoration-none mb-2">Home Design and Furnitures</h4>
-														<p class="text-uppercase custom-text-4 text-color-quaternary text-decoration-none mb-3">Check out what we offer for your futur home deco!</p>
-														<span class="custom-text-4 font-weight-semibold m-0 p-0 text-color-light custom-btn-with-arrow custom-btn-with-arrow-primary text-decoration-none">View Work</span>
-													</div>
-												</div>
-											</a>
-										</div>
-									</div>
-									<div class="row w-100 m-0 isotope-item brand-and-identity content-strategy">
-										<div class="col-sm-12 custom-our-work overlay overlay-op-9 overlay-show p-0">
-											<a href="{{ route('underconstruction') }}" class="d-block">
-												<img src="assets/img/demos/digital-agency-2/bg/bg-8.jpg" class="w-100">
-												<div class="w-100 custom-our-work-text p-5 d-flex align-items-end p-absolute bottom-0">
-													<div class="text-start p-relative z-index-2 mb-3">
-														<h4 class="text-color-light custom-text-9 font-weight-bold text-decoration-none mb-2">Request an Arhitecture Design</h4>
-														<p class="text-uppercase custom-text-4 text-color-quaternary text-decoration-none mb-3">Your dream house is only days away with our prompt and professional deisgning services. Go bold on the results you want. </p>
-														<span class="custom-text-4 font-weight-semibold m-0 p-0 text-color-light custom-btn-with-arrow custom-btn-with-arrow-primary text-decoration-none">Request a Quote</span>
-													</div>
-												</div>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-xl-3 bg-color-dark px-xl-0 sticky-container position-relative" style="background: url('assets/img/demos/digital-agency-2/bg/bg-11.jpg'); background-size: cover;">
-								<div id="sidebar" class="side-menu-our-work sidebar position-relative">
-									<div data-plugin-sticky data-plugin-options="{'minWidth': 991, 'containerSelector': '.sticky-container', 'padding': {'top': 100}}">
-										<div class="py-5 my-2 ps-5 pe-0">
-											
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section class="our-services p-relative py-5 my-5">
-					<span class="custom-circle custom-circle-2 bg-color-quaternary appear-animation" data-appear-animation="zoomIn" data-appear-animation-delay="100"></span>
-					<div class="container">
-						<div class="row justify-content-center">
-							<h4 class="text-color-dark custom-text-10 font-weight-bold text-center custom-title-with-icon-center custom-title-with-icon custom-title-with-icon-primary pb-5 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">We Can Help You With:</h4>
-						</div>
-						<div class="row">
-							<div class="col-md-6 col-lg-4 mb-5 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
-                                <div class="card flip-card flip-card-3d text-center rounded-0">
-                                    <div class="flip-front p-5">
-                                        <div class="flip-content my-4">
-                                            <strong class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block">01</strong>
-                                            <h4 class="font-weight-bold text-color-primary text-4">ARCHITECTURE</h4>
-                                            <p>
-                                                We design highways, bridges, houses, and buildings. 
-                                            </p>	
-                                        </div>
-                                    </div>
-                                    <div class="flip-back d-flex align-items-center p-5" style="background-image: url(https://wallpapercrafter.com/desktop/4950-bridge-dark-night-construction-4k.jpg); background-size: cover; background-position: center;">
-                                        <div class="flip-content my-4">
-									        <a href="#intro" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="btn btn-outline custom-btn-outline btn-primary rounded-0 font-weight-semibold text-color-dark bg-color-hover-primary custom-btn-with-arrow text-4 btn-px-4 py-3 mt-2 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1100">Request a Quote</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
-                                <div class="card flip-card flip-card-3d text-center rounded-0">
-                                    <div class="flip-front p-5">
-                                        <div class="flip-content my-4">
-                                            <strong class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block">02</strong>
-                                            <h4 class="font-weight-bold text-color-primary text-4">CONSTRUCTION</h4>
-                                            <p>
-                                                Our method involves following latest construction standarts.
-                                            </p>	
-                                        </div>
-                                    </div>
-                                    <div class="flip-back d-flex align-items-center p-5" style="background-image: url(https://wallpapercrafter.com/desktop/4950-bridge-dark-night-construction-4k.jpg); background-size: cover; background-position: center;">
-                                        <div class="flip-content my-4">
-									        <a href="#intro" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="btn btn-outline custom-btn-outline btn-primary rounded-0 font-weight-semibold text-color-dark bg-color-hover-primary custom-btn-with-arrow text-4 btn-px-4 py-3 mt-2 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1100">Request a Quote</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
-                                <div class="card flip-card flip-card-3d text-center rounded-0">
-                                    <div class="flip-front p-5">
-                                        <div class="flip-content my-4">
-                                            <strong class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block">03</strong>
-                                            <h4 class="font-weight-bold text-color-primary text-4">MATERIAL AND MACHINES</h4>
-                                            <p>
-                                                Nails, hammers, Ciment, shovels, and all sort of machineries    
-                                            </p>	
-                                        </div>
-                                    </div>
-                                    <div class="flip-back d-flex align-items-center p-5" style="background-image: url(https://wallpapercrafter.com/desktop/4950-bridge-dark-night-construction-4k.jpg); background-size: cover; background-position: center;">
-                                        <div class="flip-content my-4">
-									        <a href="#intro" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="btn btn-outline custom-btn-outline btn-primary rounded-0 font-weight-semibold text-color-dark bg-color-hover-primary custom-btn-with-arrow text-4 btn-px-4 py-3 mt-2 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1100">Request a Quote</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row" style="margin-top: 2rem">
-                            <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
-                                <div class="card flip-card flip-card-3d text-center rounded-0">
-                                    <div class="flip-front p-5">
-                                        <div class="flip-content my-4">
-                                            <strong class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block">04</strong>
-                                            <h4 class="font-weight-bold text-color-primary text-4">HOME RENOVATIONS</h4>
-                                            <p>
-                                                Our qualified technicians are available at all time for your work at home.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="flip-back d-flex align-items-center p-5" style="background-image: url(https://wallpapercrafter.com/desktop/4950-bridge-dark-night-construction-4k.jpg); background-size: cover; background-position: center;">
-                                        <div class="flip-content my-4">
-									        <a href="#intro" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="btn btn-outline custom-btn-outline btn-primary rounded-0 font-weight-semibold text-color-dark bg-color-hover-primary custom-btn-with-arrow text-4 btn-px-4 py-3 mt-2 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1100">Request a Quote</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
-                                <div class="card flip-card flip-card-3d text-center rounded-0">
-                                    <div class="flip-front p-5">
-                                        <div class="flip-content my-4">
-                                            <strong class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block">05</strong>
-                                            <h4 class="font-weight-bold text-color-primary text-4">FURNITURES AND HOME DECO</h4>
-                                            <p>Get inspired and chose how you want your home to be.</p>	
-                                        </div>
-                                    </div>
-                                    <div class="flip-back d-flex align-items-center p-5" style="background-image: url(https://wallpapercrafter.com/desktop/4950-bridge-dark-night-construction-4k.jpg); background-size: cover; background-position: center;">
-                                        <div class="flip-content my-4">
-									        <a href="#intro" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="btn btn-outline custom-btn-outline btn-primary rounded-0 font-weight-semibold text-color-dark bg-color-hover-primary custom-btn-with-arrow text-4 btn-px-4 py-3 mt-2 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1100">Request a Quote</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
-                                <div class="card flip-card flip-card-3d text-center rounded-0">
-                                    <div class="flip-front p-5">
-                                        <div class="flip-content my-4">
-                                            <strong class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block">06</strong>
-                                            <h4 class="font-weight-bold text-color-primary text-4">CONSULTING</h4>
-                                            <p>Need assistance with anything? We can help.</p>	
-                                        </div>
-                                    </div>
-                                    <div class="flip-back d-flex align-items-center p-5" style="background-image: url(https://wallpapercrafter.com/desktop/4950-bridge-dark-night-construction-4k.jpg); background-size: cover; background-position: center;">
-                                        <div class="flip-content my-4">
-									        <a href="#intro" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="btn btn-outline custom-btn-outline btn-primary rounded-0 font-weight-semibold text-color-dark bg-color-hover-primary custom-btn-with-arrow text-4 btn-px-4 py-3 mt-2 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1100">Request a Quote</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>                         
-						</div>
-
-                        <div class="row justify-content-center" style="margin-top: 3rem">
-							<div class="col-xl-9">
-								<p class="custom-text-4 mt-4 mb-0 text-center appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">
-                                    At RMC-BTP we are offering more than just what you asked for. We want to make sure you get the best, including what you didn't know you needed, and at competitive prices. 
-                                </p>
-							</div>
-						</div>
-					</div>
-				</section>
-
-                <section style="margin: 5rem; ">
-                    <div class="row justify-content-center">
-                        <h4 class="text-color-dark custom-text-10 font-weight-bold text-center custom-title-with-icon-center custom-title-with-icon custom-title-with-icon-primary pb-5 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">Rent Your tools now!</h4>
-                    </div>
+	<div class="page-wraper"> 
+       	
+        <!-- HEADER START -->
+        <header class="site-header header-style-1">
+            <div class="top-bar bg-gray">
+                <div class="container">
                     <div class="row">
-						<div class="col-lg-12">
-							<div class="masonry-loader masonry-loader-showing">
-								<div class="row products product-thumb-info-list" data-plugin-masonry data-plugin-options="{'layoutMode': 'fitRows'}">
-									<div class="col-sm-6 col-lg-4">
-										<div class="product mb-0">
-											<div class="product-thumb-info border-0 mb-3">
-												<a href="{{ route('underconstruction') }}">
-													<div class="product-thumb-info-image product-thumb-info-image-effect">
-														<img alt="" class="img-fluid" src="https://mobileimages.lowes.com/productimages/d0a683f0-b29c-400a-9c33-3762f91ee601/16251095.jpg?size=pdhism">
-
-															<img alt="" class="img-fluid" src="https://mobileimages.lowes.com/productimages/d0a683f0-b29c-400a-9c33-3762f91ee601/16251095.jpg?size=pdhism">
-
-													</div>
-												</a>
-											</div>
-											<div class="d-flex justify-content-between">
-												<div style="text-align: center">
-													<h3 class="text-3-5 font-weight-medium font-alternative text-transform-none line-height-3 mb-0"><a href="{{ route('underconstruction') }}" class="text-color-dark text-color-hover-primary">Trackteur</a></h3>
-												</div>
-											</div>
-									        <a href="#intro" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="btn btn-outline custom-btn-outline btn-primary rounded-0 font-weight-semibold text-color-dark bg-color-hover-primary custom-btn-with-arrow text-4 btn-px-4 py-3 mt-2 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1100">Rent Now</a>
-
-										</div>
-									</div>
-                                    <div class="col-sm-6 col-lg-4">
-										<div class="product mb-0">
-											<div class="product-thumb-info border-0 mb-3">
-												<a href="{{ route('underconstruction') }}">
-													<div class="product-thumb-info-image product-thumb-info-image-effect">
-														<img alt="" class="img-fluid" src="https://mobileimages.lowes.com/productimages/d0a683f0-b29c-400a-9c33-3762f91ee601/16251095.jpg?size=pdhism">
-
-															<img alt="" class="img-fluid" src="https://mobileimages.lowes.com/productimages/d0a683f0-b29c-400a-9c33-3762f91ee601/16251095.jpg?size=pdhism">
-
-													</div>
-												</a>
-											</div>
-											<div class="d-flex justify-content-between">
-												<div style="text-align: center">
-													<h3 class="text-3-5 font-weight-medium font-alternative text-transform-none line-height-3 mb-0"><a href="{{ route('underconstruction') }}" class="text-color-dark text-color-hover-primary">Trackteur</a></h3>
-												</div>
-											</div>
-									        <a href="#intro" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="btn btn-outline custom-btn-outline btn-primary rounded-0 font-weight-semibold text-color-dark bg-color-hover-primary custom-btn-with-arrow text-4 btn-px-4 py-3 mt-2 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1100">Rent Now</a>
-
-										</div>
-									</div>
-                                    <div class="col-sm-6 col-lg-4">
-										<div class="product mb-0">
-											<div class="product-thumb-info border-0 mb-3">
-												<a href="{{ route('underconstruction') }}">
-													<div class="product-thumb-info-image product-thumb-info-image-effect">
-														<img alt="" class="img-fluid" src="https://mobileimages.lowes.com/productimages/d0a683f0-b29c-400a-9c33-3762f91ee601/16251095.jpg?size=pdhism">
-
-															<img alt="" class="img-fluid" src="https://mobileimages.lowes.com/productimages/d0a683f0-b29c-400a-9c33-3762f91ee601/16251095.jpg?size=pdhism">
-
-													</div>
-												</a>
-											</div>
-											<div class="d-flex justify-content-between">
-												<div style="text-align: center">
-													<h3 class="text-3-5 font-weight-medium font-alternative text-transform-none line-height-3 mb-0"><a href="{{ route('underconstruction') }}" class="text-color-dark text-color-hover-primary">Trackteur</a></h3>
-												</div>
-											</div>
-									        <a href="#intro" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="btn btn-outline custom-btn-outline btn-primary rounded-0 font-weight-semibold text-color-dark bg-color-hover-primary custom-btn-with-arrow text-4 btn-px-4 py-3 mt-2 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1100">Rent Now</a>
-
-										</div>
-									</div>
+                        <div class="mt-topbar-left clearfix">
+                            <ul class="list-unstyled e-p-bx pull-right">
+                                <li><i class="fa fa-envelope"></i> <a style="color: #000;" href="javascript:location='mailto:\u0063\u006f\u006e\u0074\u0061\u0063\u0074\u0040\u0072\u006d\u0063\u0062\u0074\u0070\u0073\u0061\u0072\u006c\u002e\u0063\u006f\u006d';void 0"><script type="text/javascript">document.write('\u0063\u006f\u006e\u0074\u0061\u0063\u0074\u0040\u0072\u006d\u0063\u0062\u0074\u0070\u0073\u0061\u0072\u006c\u002e\u0063\u006f\u006d')</script></a></li>
+                                <li><i class="fa fa-phone"></i>+237 693 909 159</li>
+                            </ul>
+                        </div>
+                        <div class="mt-topbar-right clearfix">
+                            <div class="appint-btn"><a href="#" class="site-button">Request a Quote</a></div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>          
+            <div class="sticky-header main-bar-wraper">
+                <div class="main-bar bg-white">
+                    <div class="container">
+                        <div class="logo-header">
+                            <div class="logo-header-inner logo-header-one">
+                                <a href="index.html">
+                                    <img src="/assets/images/logo.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                        <!-- NAV Toggle Button -->
+                        <button data-target=".header-nav" data-toggle="collapse" type="button" class="navbar-toggle collapsed">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                            <!-- ETRA Nav -->
+                            <div class="extra-nav">
+                                <div class="extra-cell">											
+                                    <a href="#search">
+                                    	<i class="fa fa-search"></i>
+                                    </a>
                                 </div>
+                                <div class="extra-cell">
+                                    <a href="#" class="contact-slide-show"><i class="fa fa-angle-left arrow-animation"></i></a>
+                                </div>                                
+                            </div>
+                            <!-- ETRA Nav -->
+
+                            <!-- Contact Nav -->                            
+                         	<div class="contact-slide-hide " style="background-image:url(/assets/images/background/bg-5.png)"> 
+                                <div class="contact-nav">
+                                     <a href="javascript:void(0)" class="contact_close">&times;</a>
+                                     <div class="contact-nav-form p-a30">
+                            			<div class="contact-info   m-b30">
+                             
+                                            <div class="mt-icon-box-wraper center p-b30">
+                                                <div class="icon-xs m-b20 scale-in-center"><i class="fa fa-phone"></i></div>
+                                                <div class="icon-content">
+                                                    <h5 class="m-t0 font-weight-500">Phone number</h5>
+                                                    <p>(075) 123-7654</p>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="mt-icon-box-wraper center p-b30">
+                                                <div class="icon-xs m-b20 scale-in-center"><i class="fa fa-envelope"></i></div>
+                                                <div class="icon-content">
+                                                    <h5 class="m-t0 font-weight-500">Email address</h5>
+                                                    <p>7xthemehelp@gmail.com</p>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="mt-icon-box-wraper center p-b30">
+                                                <div class="icon-xs m-b20 scale-in-center"><i class="fa fa-map-marker"></i></div>
+                                                <div class="icon-content">
+                                                    <h5 class="m-t0 font-weight-500">Address info</h5>
+                                                    <p>201 Liverpool Street, Suite 721, London</p>
+                                                </div>
+                                            </div>
+                                        </div>                                          
+                                        <div class="full-social-bg">
+                                              <ul>
+                                                    <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                                                    <li><a href="#" class="google"><i class="fa fa-google"></i></a></li>
+                                                    <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                                                    <li><a href="#" class="tumblr"><i class="fa fa-tumblr"></i></a></li>
+                                                    <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                                                    <li><a href="#" class="youtube"><i class="fa fa-youtube"></i></a></li>
+                                              </ul>
+                                        </div>
+                                        <div class="text-center">
+                                            <h4 class="font-weight-600">&copy;  2019 7xtheme</h4> 
+                                        </div>                                                                    			
+                                     </div>
+                                </div> 
+                            </div>                               
+                            <!-- SITE Search -->
+                            <div id="search"> 
+                                <span class="close"></span>
+                                <form role="search" id="searchform" action="https://7xtheme.com/search" method="get" class="radius-xl">
+                                    <div class="input-group">
+                                        <input value="" name="q" type="search" placeholder="Type to search"/>
+                                        <span class="input-group-btn"><button type="button" class="search-btn"><i class="fa fa-search arrow-animation"></i></button></span>
+                                    </div>   
+                                </form>
+                            </div>                                                                                                          
+                            <!-- MAIN Vav -->
+                            <div class="header-nav navbar-collapse collapse">
+                                <ul class=" nav navbar-nav">
+                                    <li class="active">
+                                        <a href="javascript:;">Home</a>
+                                     <ul class="sub-menu">
+
+                                            <li>
+                                                <a href="index.html">Home-1</a>
+                                            </li>
+                                            <li>
+                                                <a href="index-2.html">Home-2</a>
+                                            </li>
+                                            <li>
+                                                <a href="index-3.html">Home-3 boxed style</a>
+                                            </li> 
+                                            <li>
+                                                <a href="index-4.html">Home-4</a>
+                                            </li>                                          
+                                        </ul>                                                    
+                                    </li>
+
+                                    <li>
+                                        <a href="about-1.html">About us</a>
+                                    </li> 
+                                    <li>
+                                        <a href="services.html">Services</a>
+                                    </li> 
+                                    <li>
+                                        <a href="javascript:;">Pages</a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="javascript:;">Blog</a>
+                                                <ul class="sub-menu has-child">
+                                                    <li><a href="blog-grid.html">Blog Grid</a></li>
+                                                    <li><a href="blog-listing.html">Blog Listing</a></li>
+                                                    <li><a href="blog-masonry.html">Blog Masonry</a></li>
+                                                </ul>
+                                            </li>                                        
+                                            <li>
+                                                <a href="faq.html">FAQ</a>
+                                            </li>
+                                            <li>
+                                                <a href="error-404.html">Error 404</a>
+                                            </li>                                            
+                                            <li>
+                                                <a href="contact-1.html">Contact us</a>
+                                            </li>
+                                        </ul>
+                                    </li>                                                                                                                                               
+                                    <li>
+                                        <a href="javascript:;">Post detail</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="post-image.html">Post Image</a></li>
+                                            <li><a href="post-gallery.html">Post Gallery</a></li>
+                                            <li><a href="post-video.html">Post Video</a></li>
+                                            <li><a href="post-right-sidebar.html">Post Right Sidebar</a></li>                                        
+                                        </ul>                                    
+                                    </li>                                         
+
+                                    <li>
+                                        <a href="javascript:;">Projects</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="project-grid.html">Project Grid</a></li>
+                                            <li><a href="project-masonry.html">Project Masonry</a></li>
+                                            <li><a href="project-carousel.html">Project Carousel</a></li>
+                                            <li><a href="project-classic.html">Project Classic-1</a></li>
+                                            <li><a href="project-classic2.html">Project Classic-2</a></li>
+                                            <li><a href="project-detail.html">Project Detail</a></li>                                        
+                                        </ul>
+                                    </li>
+                                    <li class="submenu-direction">
+                                        <a href="javascript:;">Shortcodes</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="accordian.html">Accordian</a></li>
+                                            <li><a href="button.html">Button</a></li>
+                                            <li><a href="icon_box.html">Icon box style</a></li>
+                                            <li><a href="list_group.html">List group</a></li>
+                                            <li><a href="modal_popup.html">Modal popup</a></li>
+                                            <li><a href="tabs.html">Tabs</a></li>
+                                            <li><a href="table.html">Table</a></li>
+                                            <li><a href="video.html">Video  </a></li>
+                                            <li><a href="icon-font.html">Icon Font </a></li> 
+                                        </ul>                                    
+                                    </li>                                
+                                </ul>
+                            </div>
+                            
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- HEADER END -->
+        
+        <!-- CONTENT START -->
+        <div class="page-content">
+        
+
+            <!-- SLIDER START -->
+            <div id="welcome_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="goodnews-header" data-source="gallery" style="background:#eeeeee;padding:0px;">
+                <div id="welcome" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.3.1">
+                    <ul>	
+                        <!-- SLIDE 1 -->
+                        <li data-index="rs-901" 
+                        data-transition="fade" 
+                        data-slotamount="default" 
+                        data-hideafterloop="0" 
+                        data-hideslideonmobile="off"  
+                        data-easein="default" 
+                        data-easeout="default" 
+                        data-masterspeed="default"  
+                        data-thumb="/assets/images/main-slider/slider1/slide1.jpg"  
+                        data-rotate="0"  
+                        data-fstransition="fade" 
+                        data-fsmasterspeed="300" 
+                        data-fsslotamount="7" 
+                        data-saveperformance="off"  
+                        data-title="" 
+                        data-param1="" 
+                        data-param2="" 
+                        data-param3="" 
+                        data-param4="" 
+                        data-param5="" 
+                        data-param6="" 
+                        data-param7="" 
+                        data-param8="" 
+                        data-param9="" 
+                        data-param10="" 
+                        data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="/assets/images/main-slider/slider1/slide1.jpg"  alt=""  data-lazyload="/assets/images/main-slider/slider1/slide1.jpg" data-bgposition="center center" 
+                            data-bgfit="cover" data-bgparallax="4" class="rev-slidebg" data-no-retina>
+                            <!-- LAYERS -->
+                            <!-- LAYER NR. 1 [ for overlay ] -->
+                            <div class="tp-caption tp-shape tp-shapewrapper " 
+                            id="slide-901-layer-0" 
+                            data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                            data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+                            data-width="full"
+                            data-height="full"
+                            data-whitespace="nowrap"
+                            data-type="shape" 
+                            data-basealign="slide" 
+                            data-responsive_offset="off" 
+                            data-responsive="off"
+                            data-frames='[
+                            {"from":"opacity:0;","speed":1000,"to":"o:1;","delay":0,"ease":"Power4.easeOut"},
+                            {"delay":"wait","speed":1000,"to":"opacity:0;","ease":"Power4.easeOut"}
+                            ]'
+                            data-textAlign="['left','left','left','left']"
+                            data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            
+                            style="z-index: 1;background-color:rgba(255, 255, 255, 0.3);border-color:rgba(0, 0, 0, 0);border-width:0px;"> 
+                            </div>
+                            
+                           
+                           
+                                                        
+                            <!-- LAYER NR. 4 [ for title ] -->
+                            <div class="tp-caption   tp-resizeme" 
+                            id="slide-901-layer-2" 
+                            data-x="['left','left','left','left']" data-hoffset="['50','130','130','130']" 
+                            data-y="['top','top','top','top']" data-voffset="['240','240','180','200']"  
+                            data-fontsize="['72','72','62','52']"
+                            data-lineheight="['82','82','72','62']"
+                            data-width="['700','700','700','90%']"
+                            data-height="['none','none','none','none']"
+                            data-whitespace="['normal','normal','normal','normal']"
+                        
+                            data-type="text" 
+                            data-responsive_offset="on" 
+                           data-frames='[{"delay":"+790","speed":1500,"sfxcolor":"#fff","sfx_effect":"blockfromleft","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['left','left','left','left']"
+                            data-paddingtop="[5,5,5,5]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                        
+                            style="z-index: 13; 
+                            white-space: normal; 
+                            font-weight: 700;
+                            color:#111;
+                            border-width:0px;font-family: 'Poppins', sans-serif; text-transform:uppercase ;">
+                            <div>We Build Your Dream</div>
+                            
+                            </div>
+                        
+                            <!-- LAYER NR. 5 [ for block] -->
+
+							<div class="tp-caption rev-btn  tp-resizeme slider-block" 
+                                id="slide-901-layer-3" 
+                                data-x="['left','left','left','left']" data-hoffset="['0','80','80','60']" 
+                                data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+                                data-width="none"
+                                data-height="none"
+                                data-whitespace="nowrap"                     
+                                data-type="button" 
+                                data-responsive_offset="on" 
+            
+                                data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},
+                                {"delay":"wait","speed":500,"to":"y:[-100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power1.easeIn"}]'
+                                
+                                data-textAlign="['left','left','left','left']"
+                                data-paddingtop="[250,250,250,200]"
+                                data-paddingright="[150,150,150,150]"
+                                data-paddingbottom="[250,250,250,200]"
+                                data-paddingleft="[150,150,150,150]"
+            
+                                style="z-index: 8;"><div class="rs-wave"  data-speed="1" data-angle="0" data-radius="2px"></div></div>   
+
+                            
+                            <!-- LAYER NR. 5 [ for block] -->
+                            <div class="tp-caption   tp-resizeme" 
+                            id="slide-901-layer-4" 
+                            data-x="['left','left','left','left']" data-hoffset="['50','130','130','130']" 
+                            data-y="['top','top','top','top']" data-voffset="['410','410','350','340']" 
+                            data-fontsize="['20','20','38','28']"
+                            data-lineheight="['28','28','48','38']"
+                            data-width="['600','600','700','600']"
+                            data-height="['none','none','none','none']"
+                            data-whitespace="['normal','normal','normal','normal']"
+                        
+                            data-type="text" 
+                            data-responsive_offset="on" 
+                            data-frames='[{"delay":"+790","speed":1500,"sfxcolor":"#fff","sfx_effect":"blockfromleft","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['left','left','left','left']"
+                            data-paddingtop="[5,5,5,5]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                        
+                            style="z-index: 13; 
+                            white-space: normal; 
+                            font-weight: 500;
+                            color:#111;
+                             border-width:0px;font-family: 'Poppins', sans-serif;">
+                            It is a long established fact that a reader will be distracted by the readable content.
+                            
+                            </div>                                                               
+                        
+                            <!-- LAYER NR. 6 [ for see all service botton ] -->
+                            <div class="tp-caption tp-resizeme" 	
+                            id="slide-901-layer-5"						
+                            data-x="['left','left','left','left']" data-hoffset="['50','130','130','130']" 
+    
+                            data-y="['top','top','top','top']" data-voffset="['500','520','540','480']"  
+                            data-lineheight="['none','none','none','none']"
+                            data-width="['300','300','300','300']"
+                            data-height="['none','none','none','none']"
+                            data-whitespace="['normal','normal','normal','normal']"
+                            
+                            data-type="text" 
+                            data-responsive_offset="on"
+                            data-frames='[ 
+                            {"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":2000,"ease":"Power4.easeOut"},
+                            {"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
+                            ]'
+                            data-textAlign="['left','left','left','left']"
+                            data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            
+                            style="z-index:100; text-transform:uppercase;">
+                            <a href="javascript:;" class="site-button-secondry btn-effect">More About</a>
+                            </div>
+     
+                        </li>
+                        
+
+                        <!-- SLIDE 2 -->
+                       <li data-index="rs-902" 
+                        data-transition="fade" 
+                        data-slotamount="default" 
+                        data-hideafterloop="0" 
+                        data-hideslideonmobile="off"  
+                        data-easein="default" 
+                        data-easeout="default" 
+                        data-masterspeed="default"  
+                        data-thumb="/assets/images/main-slider/slider1/slide2.jpg"  
+                        data-rotate="0"  
+                        data-fstransition="fade" 
+                        data-fsmasterspeed="300" 
+                        data-fsslotamount="7" 
+                        data-saveperformance="off"  
+                        data-title="" 
+                        data-param1="" 
+                        data-param2="" 
+                        data-param3="" 
+                        data-param4="" 
+                        data-param5="" 
+                        data-param6="" 
+                        data-param7="" 
+                        data-param8="" 
+                        data-param9="" 
+                        data-param10="" 
+                        data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="/assets/images/main-slider/slider1/slide2.jpg"  alt=""  data-lazyload="/assets/images/main-slider/slider1/slide2.jpg" data-bgposition="center center" 
+                            data-bgfit="cover" data-bgparallax="4" class="rev-slidebg" data-no-retina>
+                            <!-- LAYERS -->
+                            <!-- LAYER NR. 1 [ for overlay ] -->
+                            <div class="tp-caption tp-shape tp-shapewrapper " 
+                            id="slide-902-layer-0" 
+                            data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                            data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+                            data-width="full"
+                            data-height="full"
+                            data-whitespace="nowrap"
+                            data-type="shape" 
+                            data-basealign="slide" 
+                            data-responsive_offset="off" 
+                            data-responsive="off"
+                            data-frames='[
+                            {"from":"opacity:0;","speed":1000,"to":"o:1;","delay":0,"ease":"Power4.easeOut"},
+                            {"delay":"wait","speed":1000,"to":"opacity:0;","ease":"Power4.easeOut"}
+                            ]'
+                            data-textAlign="['left','left','left','left']"
+                            data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            
+                            style="z-index: 1;background-color:rgba(255, 255, 255, 0.3);border-color:rgba(0, 0, 0, 0);border-width:0px;"> 
+                            </div>
+                            
+                           
+                           
+                                                        
+                            <!-- LAYER NR. 4 [ for title ] -->
+                            <div class="tp-caption   tp-resizeme" 
+                            id="slide-902-layer-2" 
+                            data-x="['left','left','left','left']" data-hoffset="['50','130','130','130']" 
+                            data-y="['top','top','top','top']" data-voffset="['240','240','180','200']"  
+                            data-fontsize="['72','72','62','52']"
+                            data-lineheight="['82','82','72','62']"
+                            data-width="['700','700','700','90%']"
+                            data-height="['none','none','none','none']"
+                            data-whitespace="['normal','normal','normal','normal']"
+                        
+                            data-type="text" 
+                            data-responsive_offset="on" 
+                           data-frames='[{"delay":"+790","speed":1500,"sfxcolor":"#fff","sfx_effect":"blockfromleft","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['left','left','left','left']"
+                            data-paddingtop="[5,5,5,5]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                        
+                            style="z-index: 13; 
+                            white-space: normal; 
+                            font-weight: 700;
+                            color:#111;
+                            border-width:0px;font-family: 'Poppins', sans-serif; text-transform:uppercase ;">
+                            <div>From concept to creation.</div>
+                            
+                            </div>
+                        
+                            <!-- LAYER NR. 5 [ for block] -->
+
+							<div class="tp-caption rev-btn  tp-resizeme slider-block" 
+                                id="slide-902-layer-3" 
+                                data-x="['left','left','left','left']" data-hoffset="['0','80','80','60']" 
+                                data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+                                data-width="none"
+                                data-height="none"
+                                data-whitespace="nowrap"                     
+                                data-type="button" 
+                                data-responsive_offset="on" 
+            
+                                data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},
+                                {"delay":"wait","speed":500,"to":"y:[-100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power1.easeIn"}]'
+                                
+                                data-textAlign="['left','left','left','left']"
+                                data-paddingtop="[250,250,250,200]"
+                                data-paddingright="[150,150,150,150]"
+                                data-paddingbottom="[250,250,250,200]"
+                                data-paddingleft="[150,150,150,150]"
+            
+                                style="z-index: 8;"><div class="rs-wave"  data-speed="1" data-angle="0" data-radius="2px"></div></div>   
+
+                            
+                            <!-- LAYER NR. 5 [ for block] -->
+                            <div class="tp-caption   tp-resizeme" 
+                            id="slide-902-layer-4" 
+                            data-x="['left','left','left','left']" data-hoffset="['50','130','130','130']" 
+                            data-y="['top','top','top','top']" data-voffset="['410','410','350','340']"  
+                            data-fontsize="['20','20','38','28']"
+                            data-lineheight="['28','28','48','38']"
+                            data-width="['600','600','700','600']"
+                            data-height="['none','none','none','none']"
+                            data-whitespace="['normal','normal','normal','normal']"
+                        
+                            data-type="text" 
+                            data-responsive_offset="on" 
+                            data-frames='[{"delay":"+790","speed":1500,"sfxcolor":"#fff","sfx_effect":"blockfromleft","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['left','left','left','left']"
+                            data-paddingtop="[5,5,5,5]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                        
+                            style="z-index: 13; 
+                            white-space: normal; 
+                            font-weight: 500;
+                            color:#111;
+                             border-width:0px;font-family: 'Poppins', sans-serif;">
+                            It is a long established fact that a reader will be distracted by the readable content.
+                            
+                            </div>                                                               
+                        
+                            <!-- LAYER NR. 6 [ for see all service botton ] -->
+                            <div class="tp-caption tp-resizeme" 	
+                            id="slide-902-layer-5"						
+                            data-x="['left','left','left','left']" data-hoffset="['50','130','130','130']" 
+    
+                            data-y="['top','top','top','top']" data-voffset="['500','520','540','480']"  
+                            data-lineheight="['none','none','none','none']"
+                            data-width="['300','300','300','300']"
+                            data-height="['none','none','none','none']"
+                            data-whitespace="['normal','normal','normal','normal']"
+                            
+                            data-type="text" 
+                            data-responsive_offset="on"
+                            data-frames='[ 
+                            {"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":2000,"ease":"Power4.easeOut"},
+                            {"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
+                            ]'
+                            data-textAlign="['left','left','left','left']"
+                            data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            
+                            style="z-index:100; text-transform:uppercase;">
+                            <a href="javascript:;" class="site-button-secondry btn-effect">More About</a>
+                            </div>
+     
+                        </li>
+                        
+                        
+                        <!-- SLIDE 3-->
+                        <li data-index="rs-903" 
+                        data-transition="fade" 
+                        data-slotamount="default" 
+                        data-hideafterloop="0" 
+                        data-hideslideonmobile="off"  
+                        data-easein="default" 
+                        data-easeout="default" 
+                        data-masterspeed="default"  
+                        data-thumb="/assets/images/main-slider/slider1/slide3.jpg"  
+                        data-rotate="0"  
+                        data-fstransition="fade" 
+                        data-fsmasterspeed="300" 
+                        data-fsslotamount="7" 
+                        data-saveperformance="off"  
+                        data-title="" 
+                        data-param1="" 
+                        data-param2="" 
+                        data-param3="" 
+                        data-param4="" 
+                        data-param5="" 
+                        data-param6="" 
+                        data-param7="" 
+                        data-param8="" 
+                        data-param9="" 
+                        data-param10="" 
+                        data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="/assets/images/main-slider/slider1/slide3.jpg"  alt=""  data-lazyload="/assets/images/main-slider/slider1/slide3.jpg" data-bgposition="center center" 
+                            data-bgfit="cover" data-bgparallax="4" class="rev-slidebg" data-no-retina>
+                            <!-- LAYERS -->
+                            <!-- LAYER NR. 1 [ for overlay ] -->
+                            <div class="tp-caption tp-shape tp-shapewrapper " 
+                            id="slide-903-layer-0" 
+                            data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                            data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+                            data-width="full"
+                            data-height="full"
+                            data-whitespace="nowrap"
+                            data-type="shape" 
+                            data-basealign="slide" 
+                            data-responsive_offset="off" 
+                            data-responsive="off"
+                            data-frames='[
+                            {"from":"opacity:0;","speed":1000,"to":"o:1;","delay":0,"ease":"Power4.easeOut"},
+                            {"delay":"wait","speed":1000,"to":"opacity:0;","ease":"Power4.easeOut"}
+                            ]'
+                            data-textAlign="['left','left','left','left']"
+                            data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            
+                            style="z-index: 1;background-color:rgba(255, 255, 255, 0.3);border-color:rgba(0, 0, 0, 0);border-width:0px;"> 
+                            </div>
+                            
+                           
+                           
+                                                        
+                            <!-- LAYER NR. 4 [ for title ] -->
+                            <div class="tp-caption   tp-resizeme" 
+                            id="slide-903-layer-2" 
+                            data-x="['left','left','left','left']" data-hoffset="['50','130','130','130']" 
+                            data-y="['top','top','top','top']" data-voffset="['240','240','180','200']"  
+                            data-fontsize="['72','72','62','52']"
+                            data-lineheight="['82','82','72','62']"
+                            data-width="['700','700','700','90%']"
+                            data-height="['none','none','none','none']"
+                            data-whitespace="['normal','normal','normal','normal']"
+                        
+                            data-type="text" 
+                            data-responsive_offset="on" 
+                           data-frames='[{"delay":"+790","speed":1500,"sfxcolor":"#fff","sfx_effect":"blockfromleft","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['left','left','left','left']"
+                            data-paddingtop="[5,5,5,5]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                        
+                            style="z-index: 13; 
+                            white-space: normal; 
+                            font-weight: 700;
+                            color:#111;
+                            border-width:0px;font-family: 'Poppins', sans-serif; text-transform:uppercase ;">
+                            <div>Making dreams come to life</div>
+                            
+                            </div>
+                        
+                            <!-- LAYER NR. 5 [ for block] -->
+
+							<div class="tp-caption rev-btn  tp-resizeme slider-block" 
+                                id="slide-903-layer-3" 
+                                data-x="['left','left','left','left']" data-hoffset="['0','80','80','60']" 
+                                data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+                                data-width="none"
+                                data-height="none"
+                                data-whitespace="nowrap"                     
+                                data-type="button" 
+                                data-responsive_offset="on" 
+            
+                                data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},
+                                {"delay":"wait","speed":500,"to":"y:[-100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power1.easeIn"}]'
+                                
+                                data-textAlign="['left','left','left','left']"
+                                data-paddingtop="[250,250,250,200]"
+                                data-paddingright="[150,150,150,150]"
+                                data-paddingbottom="[250,250,250,200]"
+                                data-paddingleft="[150,150,150,150]"
+            
+                                style="z-index: 8;"><div class="rs-wave"  data-speed="1" data-angle="0" data-radius="2px"></div></div>   
+
+                            
+                            <!-- LAYER NR. 5 [ for block] -->
+                            <div class="tp-caption   tp-resizeme" 
+                            id="slide-903-layer-4" 
+                            data-x="['left','left','left','left']" data-hoffset="['50','130','130','130']" 
+                            data-y="['top','top','top','top']" data-voffset="['410','410','350','340']"  
+                            data-fontsize="['20','20','38','28']"
+                            data-lineheight="['28','28','48','38']"
+                            data-width="['600','600','700','600']"
+                            data-height="['none','none','none','none']"
+                            data-whitespace="['normal','normal','normal','normal']"
+                        
+                            data-type="text" 
+                            data-responsive_offset="on" 
+                            data-frames='[{"delay":"+790","speed":1500,"sfxcolor":"#fff","sfx_effect":"blockfromleft","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['left','left','left','left']"
+                            data-paddingtop="[5,5,5,5]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                        
+                            style="z-index: 13; 
+                            white-space: normal; 
+                            font-weight: 500;
+                            color:#111;
+                             border-width:0px;font-family: 'Poppins', sans-serif;">
+                            It is a long established fact that a reader will be distracted by the readable content.
+                            
+                            </div>                                                               
+                        
+                            <!-- LAYER NR. 6 [ for see all service botton ] -->
+                            <div class="tp-caption tp-resizeme" 	
+                            id="slide-903-layer-5"						
+                            data-x="['left','left','left','left']" data-hoffset="['50','130','130','130']" 
+    
+                            data-y="['top','top','top','top']" data-voffset="['500','520','540','480']"  
+                            data-lineheight="['none','none','none','none']"
+                            data-width="['300','300','300','300']"
+                            data-height="['none','none','none','none']"
+                            data-whitespace="['normal','normal','normal','normal']"
+                            
+                            data-type="text" 
+                            data-responsive_offset="on"
+                            data-frames='[ 
+                            {"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":2000,"ease":"Power4.easeOut"},
+                            {"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
+                            ]'
+                            data-textAlign="['left','left','left','left']"
+                            data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            
+                            style="z-index:100; text-transform:uppercase;">
+                            <a href="javascript:;" class="site-button-secondry btn-effect">More About</a>
+                            </div>
+     
+                        </li>                                                                                             
+
+                         
+                    </ul>
+                    <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	
+                    
+				<div class="multi-line-animation">
+                    <div class="multi-line-one"><div class="animation-block1 bounce-1"></div></div>
+                    <div class="multi-line-two"><div class="animation-block2 bounce-2"></div></div>
+                    <div class="multi-line-three"><div class="animation-block1 bounce-1"></div></div>
+                    <div class="multi-line-four"><div class="animation-block2 bounce-2"></div></div>
+                </div>                     
+                </div>
+                
+
+                 
+            </div>
+            <!-- SLIDER END -->            
+                 
+            <!-- OUR SPECIALLIZATION START -->
+            <div class="section-full mobile-page-padding bg-white  p-t80 p-b30 bg-repeat square_shape1" style="background-image:url(/assets/images/background/bg-5.png);">
+				<div class="container">
+                    <!-- IMAGE CAROUSEL START -->
+                    <div class="section-content">
+                        <div class="row">
+                        	<div class="col-lg-3 col-md-4 col-sm-6 m-b30">
+                            
+                                <div class="image-effect-one hover-shadow">
+                                    <img src="/assets/images/pic1.jpg" alt="" />
+                                    <div class="figcaption">
+                                        <h4>Construction</h4>
+                                        <p>Engineering your dreams with us.</p>
+                                        <a href="#"><i class="link-plus bg-primary"></i></a>
+                                    </div>
+                                    
+                                    
+                                </div>
+                                                            	
+                            </div>
+                        	<div class="col-lg-3 col-md-4  col-sm-6 m-b30">
+                            
+                                <div class="image-effect-one hover-shadow">
+                                    <img src="/assets/images/pic2.jpg" alt="" />
+                                    <div class="figcaption">
+                                        <h4>Architecture</h4>
+                                        <p>Life is Architecture.</p>
+                                        <a href="#"><i class="link-plus bg-primary"></i></a>
+                                    </div>
+                                 
+                                </div>                                                            
+                            
+                            </div>
+                        	<div class="col-lg-3 col-md-4  col-sm-6 m-b30">
+                            
+                                <div class="image-effect-one hover-shadow">
+                                    <img src="/assets/images/pic3.jpg" alt="" />
+                                    <div class="figcaption bg-dark">
+                                        <h4>Renovation</h4>
+                                        <p>Dazzling Design</p>
+                                         <a href="#"><i class="link-plus bg-primary"></i></a>
+                                    </div>
+                                   
+                                </div>
+                                                              
+                            </div>
+                            
+                        	<div class="col-lg-3 col-md-12 col-sm-6 m-b30">
+                            
+                                <div class="mt-box our-speciallization-content">
+                                	<h3 class="m-t0"><span class="font-weight-100">Building</span> <br>It better in concrete.</h3>
+                                    <p>When it comes to your house, don’t mess with the rest, trust the best. Making your vision come true, that is what we do.</p>
+                                    <a class="site-button btn-effect">View All</a>
+                                </div> 
+                                                              
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="hilite-title text-right p-r50 text-uppercase text-pop-up-top">
+                    <strong>Welcome</strong>
+                </div>                
+             </div>   
+            <!-- OUR SPECIALLIZATION END --> 
+
+            <!-- ABOUT COMPANY START -->
+            <div class="section-full mobile-page-padding p-t80 p-b30 bg-dark bg-repeat square_shape2 bg-moving" style="background-image:url(/assets/images/background/bg-6.png)">
+                <div class="container">
+                    <!-- TITLE START -->
+					<div class="section-head">
+						<div class="mt-separator-outer separator-center">
+							<div class="mt-separator">
+								<h2 class="text-white text-uppercase sep-line-one "><span class="font-weight-300 text-primary">About</span> Company</h2>
+							</div>
+						</div>
+					</div>                   
+                    <!-- TITLE END --> 
+
+						<div class="section-content">
+                        	<div class="row">
+                            	<div class="col-md-9 col-sm-12">
+                           			<div class="owl-carousel about-home owl-btn-vertical-center">
+                                        <!-- COLUMNS 1 --> 
+                                        <div class="item ">
+                                            <div class="mt-img-effect zoom-slow">
+                                                <a href="javascript:void(0);"><img src="/assets/images/gallery/pic4.jpg" alt=""></a>
+                                           </div>
+                                        </div>
+                                        <!-- COLUMNS 2 --> 
+                                        <div class="item ">
+                                            <div class="mt-img-effect zoom-slow">
+                                                <a href="javascript:void(0);"><img src="/assets/images/gallery/pic5.jpg" alt=""></a>
+                                           </div>
+                                        </div>
+                                        <!-- COLUMNS 3 --> 
+                                        <div class="item ">
+                                            <div class="mt-img-effect zoom-slow">
+                                                <a href="javascript:void(0);"><img src="/assets/images/gallery/pic6.jpg" alt=""></a>
+                                           </div>
+                                        </div>
+                                        <!-- COLUMNS 4 --> 
+                                        <div class="item ">
+                                            <div class="mt-img-effect zoom-slow">
+                                                <a href="javascript:void(0);"><img src="/assets/images/gallery/pic7.jpg" alt=""></a>
+                                           </div>
+                                        </div>                                                                                                                                                               
+                                   </div>
+                           		</div>
+                                
+                                <div class="col-md-3 col-sm-12">
+                                	<div class="about-home-right bg-white p-a30">
+                                    	<h3 class="m-t0"><span class="font-weight-100">Committed</span> to superior quality and  results.</h3>
+                                        <p><strong>Contrary to popular belief, lorem Ipsum is not 
+                                                simply text. It has roots in a piece of 
+                                                classical Latin literature from 45 BC, making it 
+                                                over 2000 years old.</strong></p>
+                                        <p>There are many variations of passages of lorem  available, but the majority have suffered 
+                                            alteration in some form, by inject humour, or 
+                                            randomised words which don't look even slightly 
+                                            believable. </p>
+                                        <div class="text-right">
+                                            <a href="#" class="site-button-link" data-hover="Read More">Read More <i class="fa fa-angle-right arrow-animation"></i></a>
+                                        </div>                                                    
+                                    </div>
+                                </div>
+                    		</div>
+                       </div>
+                 </div>
+                <div class="hilite-title text-left p-l50 text-uppercase hilite-dark">
+                    <strong>About</strong>
+                </div>                
+            </div>   
+            <!-- ABOUT COMPANY END -->
+            
+            <!-- OUR VALUE START -->
+            <div class="section-full mobile-page-padding p-t80 p-b30 bg-white">
+                <div class="container">
+
+						<div class="section-content">
+                        	<div class="row">
+                            	<div class="col-md-4 col-sm-12">
+                                    <!-- TITLE START -->
+                                    <div class="section-head">
+                                        <div class="mt-separator-outer separator-left">
+                                            <div class="mt-separator">
+                                                <h2 class="text-uppercase sep-line-one "><span class="font-weight-300 text-primary">Our</span> Value</h2>
+                                            </div>
+     										<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.there are many 																				                                                     variations of passages of Ipsum available,</p>                                            
+                                        </div>
+                                    </div>                   
+                                    <!-- TITLE END -->
+                                    <div class="author-info p-t20">
+                                    
+                                        <div class="author-signature">
+                                            <img src="/assets/images/Signature%2bBlack.png" alt="Signature" width="150">
+                                        </div>
+                                        <div class="author-name">
+                                            <h4 class="m-t0">David Houkr</h4>
+                                            <p>Architect & Founder</p>
+                                        </div>
+                                    </div>                                  
+                                    <div class="video-section-full bg-no-repeat bg-cover overlay-wraper" style="background-image:url(/assets/images/video-bg.jpg)">
+                                    	<div class="overlay-main bg-black opacity-07"></div>
+                                        <div class="video-section-inner">
+                                        	<div class="video-section-content">
+                                            <div class="video-section-left">
+                                                 <a href="../../player.vimeo.com/video/347412144a93.html?color=ffffff&amp;title=0&amp;byline=0&amp;portrait=0" class="mfp-video play-now">
+                                                    <i class="icon fa fa-play"></i>
+                                                    <span class="ripple"></span>
+                                                </a>  
+                                            </div>
+                                            <div class="video-section-right">
+                                                <a href="../../player.vimeo.com/video/347412144a93.html?color=ffffff&amp;title=0&amp;byline=0&amp;portrait=0" class="mfp-video font-weight-600 text-uppercase">Video Presentation</a>
+                                            </div>
+                                        </div> 
+                                        </div>  
+                                    </div> 
+                                                                                                			
+                           		</div>
+                                <div class="col-md-3 col-sm-6">
+                                
+                                    <div class="mt-count m-b30 text-white mt-icon-box-wraper center  bg-dark p-a20">
+                                        <div class="counter font-30 font-weight-800 m-b15 text-primary">450</div>
+                                        <h4 class="m-tb0">Active Experts</h4>
+                                    </div> 
+                                    <div class="mt-count m-b30 text-white mt-icon-box-wraper center  bg-dark p-a20">
+                                        <div class="counter font-30 font-weight-800 m-b15  text-primary">670</div>
+                                        <h4 class="m-tb0">Satisfied Clients</h4>
+                                    </div>
+                                    <div class="mt-count m-b30 text-white mt-icon-box-wraper center  bg-dark p-a20">
+                                        <div class="counter font-30 font-weight-800 m-b15 text-primary">1500</div>
+                                        <h4 class="m-tb0">Project Complete</h4>
+                                    </div>                                                                                                       
+                                </div>
+                                <div class="col-md-5 col-sm-6">
+                                    <div class="p-b0">
+                                    	<div class="mt-box">
+                                        	<h3 class="m-t0"><span class="font-weight-100"> We have</span><span class="text-primary"> 15 years</span> experience in construction</h3>
+                                        </div>                                    
+                                        <span class="progressText text-black"><B>Architecher</B></span>
+                                        <div class="progress mt-probar-1  m-b30 m-t10">
+                                            <div class="progress-bar bg-primary " role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" >
+                                                <span  class="popOver" data-toggle="tooltips" data-placement="top" title="85%"></span>
+                                            </div>
+                                        </div>
+                                        
+                                        <span class="progressText text-black"><B>Construction</B></span>
+                                        <div class="progress mt-probar-1 m-b30 m-t10">
+                                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="78" aria-valuemin="10" aria-valuemax="100">
+                                                <span  class="popOver" data-toggle="tooltips" data-placement="top" title="78%"></span>
+                                            </div>
+                                        </div>
+            
+                                        <span class="progressText text-black"><B>Building</B></span>
+                                        <div class="progress mt-probar-1 m-b30 m-t10">
+                                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                                                <span  class="popOver" data-toggle="tooltips" data-placement="top" title="65%"></span>
+                                            </div>
+                                        </div>
+                                        
+                                        <span class="progressText text-black"><B>Interior</B></span>
+                                        <div class="progress mt-probar-1 m-b30 m-t10">
+                                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                                                <span  class="popOver" data-toggle="tooltips" data-placement="top" title="40%"></span>
+                                            </div>
+                                        </div>
+                                        
+                                        <span class="progressText text-black"><B>Commercial</B></span>
+                                        <div class="progress mt-probar-1 m-b30 m-t10">
+                                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                                                <span  class="popOver" data-toggle="tooltips" data-placement="top" title="55%"></span>
+                                            </div>
+                                        </div>                                        
+                                
+                                    </div>  	                                	
+                                </div>
+                                
+                    		</div>
+                       </div>
+                 </div>
+            </div>   
+            <!-- OUR VALUE END -->            
+            
+            <!-- OUR MISSION START -->
+            <div class="section-full mobile-page-padding mission-outer-section  p-t80 p-b30 bg-gray bg-no-repeat bg-right-center" style="background-image:url(/assets/images/mission.png), url(/assets/images/background/bg-4.png); ">
+				<div class="section-content">
+                    <div class="container">
+                        <!-- TITLE START -->
+                        <div class="section-head"> 
+                            <div class="mt-separator-outer separator-center">
+                                <div class="mt-separator">
+                                    <h2 class="text-uppercase sep-line-one "><span class="font-weight-300 text-primary">Our</span> Mission</h2>
+                                </div>
+                            </div>
+                        </div>                  
+                        <!-- TITLE END -->
+                        
+                        <div class="row">
+                        	<div class="col-md-4 col-sm-6">
+                            	<div class="mission-left bg-white m-b30 p-a30 bg-no-repeat bg-bottom-left" style="background-image:url(/assets/images/background/bg-site.png);">
+                                	<h3 class="m-t0"><span class="font-weight-100"> Site Areas</span><br> what we serve</h3>
+                                    <p>lorem Ipsum available, but the majority have suffered alteration in some form, by ious versi ons have evolved over the years, sometimes by accident</p>
+                                    <ul class="list-angle-right anchor-line">
+                                        <li><a href="#">Construction Management</a></li>
+                                        <li><a href="#">Pre Construction Services</a></li>
+                                        <li><a href="#">Contract Administration</a></li>
+                                        <li><a href="#">Implementation</a></li>
+                                        <li><a href="#">Leed consultation</a></li>
+                                    </ul>
+                                    <div class="text-right">
+                                    	<a href="#" class="site-button-link" data-hover="Read More">Read More <i class="fa fa-angle-right arrow-animation"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4 col-sm-6">
+                                <div class="mission-mid bg-no-repeat bg-cover m-b30" style="background-image:url(/assets/images/mission.jpg);"></div>
+                            </div>
+                            
+                            <div class="col-md-4 col-sm-12">
+                                <div class="contact-home1-left bg-dark p-a30 m-b0">
+                                    <h3 class="text-white m-t0"><span class="font-weight-100">Get In</span> Touch</h3>
+                                    <form class="cons-contact-form2 form-transparent" method="post" action="https://7xtheme.com/shapen/form-handler2.php">
+                                      
+                                        <div class="input input-animate">
+                                            <label for="name">Name</label>
+                                            <input type="text" name="username"  id="name" required>
+                                            <span class="spin"></span>
+                                        </div>
+                                        
+                                        <div class="input input-animate">
+                                            <label for="email">Email</label>
+                                            <input type="email" name="email"   id="email" required>
+                                            <span class="spin"></span>
+                                        </div> 
+                                        
+                                        <div class="input input-animate">
+                                            <label for="Phone">Phone</label>
+                                            <input type="text" name="phone"  id="Phone" required>
+                                            <span class="spin"></span>
+                                        </div>   
+                                        
+                                        <div class="input input-animate">
+                                            <label for="message">Textarea</label>
+                                            <textarea name="message"  id="message" required></textarea>
+                                            <span class="spin"></span>
+                                        </div>
+                                        
+                                        <div class="text-center p-t10">
+                                            <button type="submit" class="site-button btn-effect ">
+                                              Submit Now
+                                            </button>
+                                        </div>    
+                                    </form>
+                                </div>
+                            </div>                            
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="hilite-title text-left p-l50 text-uppercase text-pop-up-top">
+                    <strong>Mission</strong>
+                </div>                    
+            </div>   
+            <!-- OUR MISSION  END -->
+            
+            <!-- OUR SERVICES START -->
+            <div class="section-full mobile-page-padding  p-b50  square_shape2">
+				<div class="section-content">
+                    <div class="Service-half-top p-t80  bg-dark bg-moving" style="background-image:url(/assets/images/background/bg-6.png)" >
+                        <div class="container">
+                            <!-- TITLE START -->
+                            <div class="section-head text-white"> 
+                                <div class="mt-separator-outer separator-left">
+                                    <div class="mt-separator">
+                                        <h2 class="text-white text-uppercase sep-line-one "><span class="font-weight-300 text-primary">Our</span> Services</h2>
+                                    </div>
+                                </div>
+                                <h3>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</h3>
+                            </div>                  
+                            <!-- TITLE END -->
+                        </div>
+                    </div>
+                    <div class="services-half-bottom">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-6">
+                                    
+                                    <div class="mt-icon-box-wraper m-b30">
+                                        <div class="relative icon-count-2 bg-gray p-a30 p-tb50">
+                                            <span class="icon-count-number">1</span>
+                                            <div class="icon-md inline-icon m-b15 text-primary scale-in-center">
+                                                <span class="icon-cell"><img src="/assets/images/icon/crane-1.png" alt=""></span>
+                                            </div>
+                                            <div class="icon-content">
+                                                <h4 class="mt-tilte m-b25">Building <br>Construction</h4>
+                                                <p>lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.</p>
+                                                <a href="#" class="site-button-link" data-hover="Read More">Read More <i class="fa fa-angle-right arrow-animation"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>                            	
+                                    
+                                </div>
+                                
+                                <div class="col-md-3 col-sm-6">
+                                    
+                                    <div class="mt-icon-box-wraper m-b30">
+                                        <div class="relative icon-count-2 bg-gray p-a30 p-tb50">
+                                            <span class="icon-count-number">2</span>
+                                            <div class="icon-md inline-icon m-b15 text-primary scale-in-center">
+                                                <span class="icon-cell"><img src="/assets/images/icon/renovation.png" alt=""></span>
+                                            </div>
+                                            <div class="icon-content">
+                                                <h4 class="mt-tilte m-b25">Building <br>Renovation</h4>
+                                                <p>lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.</p>
+                                                <a href="#" class="site-button-link" data-hover="Read More">Read More <i class="fa fa-angle-right arrow-animation"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>                            	
+                                    
+                                </div>
+
+                                <div class="col-md-3 col-sm-6">
+                                    
+                                    <div class="mt-icon-box-wraper m-b30">
+                                        <div class="relative icon-count-2 bg-gray p-a30 p-tb50">
+                                            <span class="icon-count-number">3</span>
+                                            <div class="icon-md inline-icon m-b15 text-primary scale-in-center">
+                                                <span class="icon-cell"><img src="/assets/images/icon/toolbox.png" alt=""></span>
+                                            </div>
+                                            <div class="icon-content">
+                                                <h4 class="mt-tilte m-b25">Building <br>Maintenance</h4>
+                                                <p>lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.</p>
+                                                <a href="#" class="site-button-link" data-hover="Read More">Read More <i class="fa fa-angle-right arrow-animation"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>                            	
+                                    
+                                </div>
+
+                                <div class="col-md-3 col-sm-6">
+                                    
+                                    <div class="mt-icon-box-wraper m-b30">
+                                        <div class="relative icon-count-2 bg-gray p-a30 p-tb50">
+                                            <span class="icon-count-number">4</span>
+                                            <div class="icon-md inline-icon m-b15 text-primary scale-in-center">
+                                                <span class="icon-cell"><img src="/assets/images/icon/compass.png" alt=""></span>
+                                            </div>
+                                            <div class="icon-content">
+                                                <h4 class="mt-tilte m-b25">Architecture<br>Design</h4>
+                                                <p>lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.</p>
+                                                <a href="#" class="site-button-link" data-hover="Read More">Read More <i class="fa fa-angle-right arrow-animation"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>                            	
+                                    
+                                </div>										
+                                                                                         
                             </div>
                         </div>
                     </div>
-                </section>
-
-				<section class="our-insights bg-color-tertiary p-relative py-5">
-					<span class="custom-circle custom-circle-2 bg-color-primary appear-animation" data-appear-animation="zoomIn" data-appear-animation-delay="100"></span>
-					<span class="custom-circle custom-circle-3 bg-color-primary appear-animation" data-appear-animation="zoomIn" data-appear-animation-delay="100"></span>
-					<div class="container py-5">
-						<div class="row">
-							<div class="col">
-								<h4 class="text-color-dark custom-text-10 font-weight-bold text-center custom-title-with-icon-center custom-title-with-icon custom-title-with-icon-primary pb-5 mb-5 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">Our Insights</h4>
+                </div>
+                <div class="hilite-title text-left p-l50 text-uppercase text-pop-up-top">
+                    <strong>Services</strong>
+                </div>                    
+            </div>   
+            <!-- OUR SERVICES  END -->
+            			
+            <!-- CALL US SECTION START -->
+            <div class="section-full mobile-page-padding p-tb80 overlay-wraper bg-cover bg-center" style="background-image:url(/assets/images/background/bg-1.jpg)">
+            	<div class="overlay-main bg-primary opacity-07"></div>
+                <div class="container">
+ 
+						<div class="section-content">
+							<div class="call-us-section text-center">
+								<h4 class="m-b15">Let's work together</h4>
+                                <h2 class="call-us-number m-b15 m-b0">(+291)-456-789-1234</h2>
+                                <h4 class="call-us-address m-t0 m-b20">Street 4 ,45 New york City</h4>
+                                <a href="#" class="site-button-secondry btn-effect bg-dark">Contact Us</a>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col pb-5">
-								<article>
-									<p class="custom-font-tertiary text-uppercase custom-text-2 mb-1 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">FEBRUARY 4, 2022</p>
-									<h4 class="text-color-dark custom-text-8 font-weight-bold mb-3 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400"><a href="{{ route('underconstruction') }}" class="text-color-dark text-color-hover-primary">An Interview With John Paul Doe</a></h4>
-									<p class="custom-text-4 mb-2 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero.</p>
-									<a href="{{ route('underconstruction') }}" class="text-color-primary text-color-hover-secondary custom-text-4 font-weight-bold text-decoration-underline appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="800">Read More...</a>
-								</article>
+                    
+                </div>
+            </div>   
+            <!-- CALL US SECTION END -->
+            
+            <!-- OUR PROJECT START -->
+            <div class="section-full mobile-page-padding p-t80 p-b30 square_shape2" >
+                <div class="container">
+                    <!-- TITLE START -->
+					<div class="section-head">
+						<div class="mt-separator-outer separator-left">
+							<div class="mt-separator">
+								<h2 class="text-uppercase sep-line-one "><span class="font-weight-300 text-primary">Our</span> Project</h2>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col pb-5">
-								<article>
-									<p class="custom-font-tertiary text-uppercase custom-text-2 mb-1 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">FEBRUARY 4, 2022</p>
-									<h4 class="text-color-dark custom-text-8 font-weight-bold mb-3 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400"><a href="{{ route('underconstruction') }}" class="text-color-dark text-color-hover-primary">Building An E-Commerce Site With CMS</a></h4>
-									<p class="custom-text-4 mb-2 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero.</p>
-									<a href="{{ route('underconstruction') }}" class="text-color-primary text-color-hover-secondary custom-text-4 font-weight-bold text-decoration-underline appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="800">Read More...</a>
-								</article>
-							</div>
+					</div>                   
+                    <!-- TITLE END --> 
+
+						<div class="section-content">
+
+                             <div class="portfolio-wrap row mfp-gallery product-stamp clearfix">
+                                <!-- COLUMNS 1 -->
+                                <div class="stamp col-md-3 col-sm-6 m-b30">
+                                    <div class="bg-gray p-a30">
+                                        <div class="filter-wrap">    
+   											<ul class="filter-navigation masonry-filter text-uppercase">
+                                                <li class="active"><a data-filter="*" data-hover="All" href="#">All</a></li>
+                                                <li><a data-filter=".cat-1" data-hover="Commercial" href="javascript:;">Commercial</a></li>
+                                                <li><a data-filter=".cat-4" data-hover="Education" href="javascript:;">Education</a></li>
+                                                <li><a data-filter=".cat-2" data-hover="Hospital" href="javascript:;">Hospital </a></li>
+                                                <li><a data-filter=".cat-3" data-hover="Residentia" href="javascript:;">Residentia</a></li>
+                                                <li><a data-filter=".cat-5" data-hover="Office" href="javascript:;">Office</a></li>
+                                                <li><a data-filter=".cat-6" data-hover="Reconstruction" href="javascript:;" >Reconstruction </a></li>
+                                            </ul>
+                                        </div>                          
+                                    </div>            
+                                </div>
+                                <!-- COLUMNS 2 -->
+                                <div class="masonry-item  cat-2 col-md-3 col-sm-6 m-b30">
+                                    <div class="mt-box   image-hover-block">
+                                        <div class="mt-thum-bx">
+                                            <img src="/assets/images/projects/portrait/pic1.jpg" alt="">
+                                        </div>
+                                        <div class="mt-info  p-t20 text-white">
+                                            <h4 class="mt-tilte m-b10 m-t0">Chair Furniture</h4>
+                                            <p class="m-b0">Muscat, Sultanate of Oman</p>      
+                                        </div>
+                                        <a href="#"></a>                                    
+                                    </div>
+                                </div>
+                                
+                                <!-- COLUMNS 3 -->
+                                <div class="masonry-item  cat-2 col-md-3 col-sm-6 m-b30">
+                                    <div class="mt-box   image-hover-block">
+                                        <div class="mt-thum-bx">
+                                            <img src="/assets/images/projects/portrait/pic2.jpg" alt="">
+                                        </div>
+                                        <div class="mt-info  p-t20 text-white">
+                                            <h4 class="mt-tilte m-b10 m-t0">Furniture</h4>
+                                            <p class="m-b0">North House</p>      
+                                        </div>
+                                        <a href="#"></a>                                 
+                                    </div>
+                                </div>
+                                
+                                <!-- COLUMNS 4 -->
+                                <div class="masonry-item  cat-6 col-md-3 col-sm-6 m-b30">
+                                    <div class="mt-box   image-hover-block">
+                                        <div class="mt-thum-bx">
+                                            <img src="/assets/images/projects/portrait/pic3.jpg" alt="">
+                                        </div>
+                                        <div class="mt-info  p-t20 text-white">
+                                            <h4 class="mt-tilte m-b10 m-t0">Living room</h4>
+                                            <p class="m-b0">Aqaba, Jordan</p>      
+                                        </div> 
+                                        <a href="#"></a>                                
+                                    </div>
+                                </div>
+                                
+                                <!-- COLUMNS 5 -->
+                                <div class="masonry-item  cat-6 col-md-3 col-sm-6 m-b30">
+                                  <div class="mt-box   image-hover-block">
+                                        <div class="mt-thum-bx">
+                                            <img src="/assets/images/projects/portrait/pic4.jpg" alt="">
+                                        </div>
+                                        <div class="mt-info  p-t20 text-white">
+                                            <h4 class="mt-tilte m-b10 m-t0">Dream Workspace</h4>
+                                            <p class="m-b0">Perth, Australia </p>      
+                                        </div> 
+                                        <a href="#"></a>                                
+                                    </div>
+                                </div>
+                                
+                                <!-- COLUMNS 6 -->
+                                <div class="masonry-item  cat-3 col-md-3 col-sm-6 m-b30">
+                                    <div class="mt-box   image-hover-block">
+                                        <div class="mt-thum-bx">
+                                            <img src="/assets/images/projects/portrait/pic5.jpg" alt="">
+                                        </div>
+                                        <div class="mt-info  p-t20 text-white">
+                                            <h4 class="mt-tilte m-b10 m-t0">Decore</h4>
+                                            <p class="m-b0">Aqaba, Jordan</p>      
+                                        </div>
+                                        <a href="#"></a>                                   
+                                    </div>
+                                </div>
+                                
+                                <!-- COLUMNS 7 -->
+                                <div class="masonry-item  cat-3 col-md-3 col-sm-6 m-b30">
+                                    <div class="mt-box   image-hover-block">
+                                        <div class="mt-thum-bx">
+                                            <img src="/assets/images/projects/portrait/pic6.jpg" alt="">
+                                        </div>
+                                        <div class="mt-info  p-t20 text-white">
+                                            <h4 class="mt-tilte m-b10 m-t0">Modern Decoration</h4>
+                                            <p class="m-b0">Muscat, Sultanate of Oman</p>      
+                                        </div>
+                                        <a href="#"></a>                                   
+                                    </div>
+                                </div>
+                                
+                                <!-- COLUMNS 8 -->
+                                <div class="masonry-item  cat-1 col-md-3 col-sm-6 m-b30">
+                                    <div class="mt-box   image-hover-block">
+                                        <div class="mt-thum-bx">
+                                            <img src="/assets/images/projects/portrait/pic7.jpg" alt="">
+                                        </div>
+                                        <div class="mt-info  p-t20 text-white">
+                                            <h4 class="mt-tilte m-b10 m-t0">Bathroom</h4>
+                                            <p class="m-b0">North House</p>      
+                                        </div>
+                                        <a href="#"></a>                                  
+                                    </div>
+                                </div>
+                                
+                                <!-- COLUMNS 11 -->
+                                <div class="masonry-item  cat-6 col-md-6 col-sm-6 m-b30">
+                                    <div class="mt-box   image-hover-block">
+                                        <div class="mt-thum-bx">
+                                            <img src="/assets/images/projects/pic-l-5.jpg" alt="">
+                                        </div>
+                                        <div class="mt-info  p-t20 text-white">
+                                            <h4 class="mt-tilte m-b10 m-t0">Lamp decoration</h4>
+                                            <p class="m-b0">Aqaba, Jordan</p>      
+                                        </div>
+                                        <a href="#"></a>                                  
+                                    </div>
+                                </div> 
+                                                                                
+                                
+                                <!-- COLUMNS 9 -->
+                                <div class="masonry-item  cat-5 col-md-3 col-sm-6 m-b30">
+                                    <div class="mt-box   image-hover-block">
+                                        <div class="mt-thum-bx">
+                                            <img src="/assets/images/projects/pic-1.jpg" alt="">
+                                        </div>
+                                        <div class="mt-info  p-t20 text-white">
+                                            <h4 class="mt-tilte m-b10 m-t0">Building house</h4>
+                                            <p class="m-b0">Ultanate of Oman </p>      
+                                        </div> 
+                                        <a href="#"></a>                                  
+                                    </div>
+                                </div>
+                                
+                                <!-- COLUMNS 10 -->
+                                <div class="masonry-item  cat-4 col-md-3 col-sm-6 m-b30">
+                                    <div class="mt-box   image-hover-block">
+                                        <div class="mt-thum-bx">
+                                            <img src="/assets/images/projects/pic-2.jpg" alt="">
+                                        </div>
+                                        <div class="mt-info  p-t20 text-white">
+                                            <h4 class="mt-tilte m-b10 m-t0">Spa residence</h4>
+                                            <p class="m-b0">Perth, Australia </p>      
+                                        </div>
+                                        <a href="#"></a>                                  
+                                    </div>
+                                </div>
+                                
+                                                             
+                             </div>
+
 						</div>
-						<div class="row">
-							<div class="col pb-5">
-								<article>
-									<p class="custom-font-tertiary text-uppercase custom-text-2 mb-1 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">FEBRUARY 4, 2022</p>
-									<h4 class="text-color-dark custom-text-8 font-weight-bold mb-3 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400"><a href="{{ route('underconstruction') }}" class="text-color-dark text-color-hover-primary">How To Design Mobile Apps For Everyone</a></h4>
-									<p class="custom-text-4 mb-2 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero.</p>
-									<a href="{{ route('underconstruction') }}" class="text-color-primary text-color-hover-secondary custom-text-4 font-weight-bold text-decoration-underline appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="800">Read More...</a>
-								</article>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">		
-								<a herf="demo-digital-agency-2-our-blog.html" class="btn btn-outline custom-btn-outline btn-primary rounded-0 text-color-dark custom-text-4 bg-color-hover-transparent text-color-hover-light font-weight-semibold custom-btn-with-arrow px-4 py-3 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">View More</a>
-							</div>
-						</div>
-					</div>
-				</section>
+                    
+                </div>
+                <div class="hilite-title text-left p-l50 text-uppercase text-pop-up-top">
+                    <strong>Projects</strong>
+                </div>                
+            </div>   
+            <!-- OUR PROJECT END -->
+            
+             <!-- OUR BLOG START -->
+             <div class="section-full mobile-page-padding p-t80 p-b30 square_shape1 bg-parallax bg-cover"  data-stellar-background-ratio="0.5" style="background-image:url(/assets/images/background/bg5.jpg);">
+                        <div class="container">
+        
+                            <!-- TITLE START -->
+                            <div class="section-head ">
+                                <div class="mt-separator-outer separator-center">
+                                    <div class="mt-separator">
+                                        <h2 class="text-white text-uppercase sep-line-one "><span class="font-weight-300 text-primary" >Latest</span> Blog</h2>
+                                    </div>
+                                </div>
+                            </div>                   
+                            <!-- TITLE END --> 
+             
+                            <!-- IMAGE CAROUSEL START -->
+                            <div class="section-content">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="mt-box blog-post latest-blog-3 date-style-1 bg-white m-b30">
+                                            <div class="mt-post-media mt-img-overlay7">
+                                                <a href="javascript:;"><img src="/assets/images/blog/latest-blog/pic1.jpg" alt=""></a>
+                                            </div>
+                                            <div class="mt-post-info p-a30">
+                                                <div class="post-overlay-position">
+                                                    <div class="mt-post-meta ">
+                                                        <ul>
+                                                            <li class="post-date"><strong class="text-primary">14</strong> <span>April 2019</span></li>
+                                                            <li class="post-author">By <a href="javascript:;">Admin</a> </li>
+                                                            <li class="post-comment"><a href="javascript:;">2 comment</a> </li>
+                                                        </ul>
+                                                    </div>                                        
+                                                    <div class="mt-post-title ">
+                                                        <h4 class="post-title m-b0">Commercial design for project</h4>
+                                                    </div>
+                                                    <div class="mt-post-text">
+                                                        <p>Which is the same as saying through shrinking from toil and pain.</p> 
+                                                    </div>
+                                                    <div class="readmore-line">
+                                                        <span><a href="#" class="site-button-link" data-hover="Read More">Read More <i class="fa fa-angle-right arrow-animation"></i></a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="mt-box blog-post latest-blog-3 date-style-1 bg-white m-b30">
+                                            <div class="mt-post-media mt-img-overlay7">
+                                                <a href="javascript:;"><img src="/assets/images/blog/latest-blog/pic2.jpg" alt=""></a>
+                                            </div>                                	
+                                            <div class="mt-post-info p-a30">
+                                                <div class="post-overlay-position">
+                                                    <div class="mt-post-meta ">
+                                                        <ul>
+                                                            <li class="post-date"><strong class="text-primary">16</strong> <span>Feb 2019</span></li>
+                                                            <li class="post-author">By <a href="javascript:;">Admin</a> </li>
+                                                            <li class="post-comment"><a href="javascript:;">2 comment</a> </li>
+                                                        </ul>
+                                                    </div>                                        
+                                                    <div class="mt-post-title ">
+                                                        <h4 class="post-title m-b0">Our interior design prediction</h4>
+                                                    </div>
+                                                    <div class="mt-post-text">
+                                                        <p>Today we can tell you, thanks to your passion, hard work creativity, and expertise.</p> 
+                                                    </div>
+                                                    <div class="readmore-line">
+                                                        
+                                                        <span><a href="#" class="site-button-link" data-hover="Read More">Read More <i class="fa fa-angle-right arrow-animation"></i></a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="col-md-4 col-sm-12">
+                                        <div class="mt-box blog-post latest-blog-3 date-style-1 bg-white m-b30">
+                                            <div class="mt-post-media mt-img-overlay7">
+                                                <a href="javascript:;"><img src="/assets/images/blog/latest-blog/pic3.jpg" alt=""></a>
+                                            </div>
+                                            <div class="mt-post-info p-a30">
+                                                <div class="post-overlay-position">
+                                                    <div class="mt-post-meta ">
+                                                        <ul>
+                                                            <li class="post-date"><strong class="text-primary">18</strong> <span>Jan 2019</span></li>
+                                                            <li class="post-author">By <a href="javascript:;">Admin</a> </li>
+                                                            <li class="post-comment"><a href="javascript:;">2 comment</a> </li>
+                                                        </ul>
+                                                    </div>                                        
+                                                    <div class="mt-post-title ">
+                                                        <h4 class="post-title m-b0">Low cost interior designing ideas</h4>
+                                                    </div>
+                                                    <div class="mt-post-text">
+                                                        <p>Every pleasure is to be welcomed every pain avoided. in certain circumstances obligations.</p> 
+                                                    </div>
+                                                    <div class="readmore-line">
+                                                        <span><a href="#" class="site-button-link" data-hover="Read More">Read More <i class="fa fa-angle-right arrow-animation"></i></a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                                                                                                                                                                         
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hilite-title text-right p-r50 text-uppercase hilite-dark">
+                            <strong>Blog</strong>
+                        </div>                
+                     </div>   
+            <!-- OUR BLOG END -->
+            
+            <!-- TESTIMONIALS SECTION START -->
+            <div class="section-full mobile-page-padding p-t80 p-b50 square_shape2 bg-cover" style="background-image:url(/assets/images/background/bg6.jpg);">
+                <div class="container">
+                    <div class="section-content">
+                        
+                        <!-- TITLE START -->
+                        <div class="section-head">
+                            <div class="mt-separator-outer separator-center">
+                                <div class="mt-separator">
+                                    <h2 class="text-uppercase sep-line-one "><span class="font-weight-300 text-primary">Client</span> Testimonials</h2>
+                                </div>
+                            </div>
+                        </div>                   
+                        <!-- TITLE END --> 
+                        
+                            <!-- TESTIMONIAL START -->   
+                         <div class="owl-carousel testimonial-home">
+                            <div class="item">
+                                <div class="testimonial-2 m-a30 hover-animation-1">
+                                    <div class=" block-shadow bg-white p-a30">
+                                        <div class="testimonial-detail clearfix">
+                                            <div class="testimonial-pic radius shadow scale-in-center"><img src="/assets/images/testimonials/pic1.jpg" width="100" height="100" alt=""></div>
+                                            <h4 class="testimonial-name m-b5">Shelly Johnson -</h4>
+                                            <span class="testimonial-position">Business Person</span>
+                                        </div>                                    
+                                        <div class="testimonial-text">
+                                            <span class="fa fa-quote-right"></span>
+                                            <p> Excellent Customer support!. The template itself is very ext ended. simply dummy text of the printing and industry. the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonial-2 m-a30  hover-animation-1">
+                                    <div class=" block-shadow bg-white p-a30">
+                                        <div class="testimonial-detail clearfix">
+                                            <div class="testimonial-pic radius shadow scale-in-center"><img src="/assets/images/testimonials/pic2.jpg" width="100" height="100" alt=""></div>
+                                            <h4 class="testimonial-name m-b5">Cuthbert Brain -</h4>
+                                            <span class="testimonial-position">Contractor</span>
+                                        </div>                                    
+                                        <div class="testimonial-text">
+                                            <span class="fa fa-quote-right"></span>
+                                            <p>The template itself is very ext ended. excellent customer support! simply dummy text of the printing and industry. the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonial-2 m-a30  hover-animation-1">
+                                    <div class=" block-shadow bg-white p-a30">
+                                        <div class="testimonial-detail clearfix">
+                                            <div class="testimonial-pic radius shadow scale-in-center"><img src="/assets/images/testimonials/pic3.jpg" width="100" height="100" alt=""></div>
+                                            <h4 class="testimonial-name m-b5">Cathrine Wagner -</h4>
+                                            <span class="testimonial-position">Builder</span>
+                                        </div>                                    
+                                        <div class="testimonial-text">
+                                            <span class="fa fa-quote-right"></span>
+                                            <p>The template itself is very ext ended. excellent customer support! simply dummy text of the printing and industry. the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonial-2 m-a30  hover-animation-1">
+                                    <div class=" block-shadow bg-white p-a30">
+                                        <div class="testimonial-detail clearfix">
+                                            <div class="testimonial-pic radius shadow scale-in-center"><img src="/assets/images/testimonials/pic4.jpg" width="100" height="100" alt=""></div>
+                                            <h4 class="testimonial-name m-b5">John Doe -</h4>
+                                            <span class="testimonial-position">Business Person</span>
+                                        </div>                                    
+                                        <div class="testimonial-text">
+                                            <span class="fa fa-quote-right"></span>
+                                            <p> Excellent Customer support!. The template itself is very ext ended. simply dummy text of the printing and industry. the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonial-2 m-a30  hover-animation-1">
+                                    <div class=" block-shadow bg-white p-a30">
+                                        <div class="testimonial-detail clearfix">
+                                            <div class="testimonial-pic radius shadow scale-in-center"><img src="/assets/images/testimonials/pic5.jpg" width="100" height="100" alt=""></div>
+                                            <h4 class="testimonial-name m-b5">Cuthbert Brain -</h4>
+                                            <span class="testimonial-position">Business Person</span>
+                                        </div>                                    
+                                        <div class="testimonial-text">
+                                            <span class="fa fa-quote-right"></span>
+                                            <p>The template itself is very ext ended. excellent customer support!.  simply dummy text of the printing and industry. the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                                                                                                          
+                        </div>
+                        
+                    </div>
+            	</div>  
+                <div class="hilite-title text-left p-l50 text-uppercase text-pop-up-top">
+                    <strong>Clients</strong>
+                </div> 
+            </div> 
+            <!-- TESTIMONIALS SECTION END -->                                    
+        </div>
+        <!-- CONTENT END -->
+        
+        <!-- FOOTER START -->
+        <footer class="site-footer footer-large  footer-dark	footer-wide">
+            <div class="container call-to-action-wrap bg-no-repeat bg-center" style="background-image:url(/assets/images/background/bg-site.png);">
+                <div class="p-a30 bg-primary ">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-8">
+                            <div class="call-to-action-left text-black">
+                                <h4 class="text-uppercase m-b10 m-t0">Subscribe to our newsletter!</h4>
+                                <span>Never Miss Anything From Construx By Signing Up To Our Newsletter.</span>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 col-sm-4">
+                            <div class="call-to-action-right">
+                                <div class="widget_newsletter">
+                                    <div class="newsletter-bx">
+                                        <form role="search" method="post">
+                                            <div class="input-group">
+                                                <input name="news-letter" class="form-control" placeholder="ENTER YOUR EMAIL" type="text">
+                                                <span class="input-group-btn">
+                                                    <button type="submit" class="site-button"><i class="fa fa-paper-plane-o"></i></button>
+                                                </span>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>                                                           
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            </div>            
+            <!-- FOOTER BLOCKES START -->  
+            <div class="footer-top overlay-wraper">
+                <div class="overlay-main"></div>
+                <div class="container">
+                    <div class="row">
+                        <!-- ABOUT COMPANY -->
+                        <div class="col-lg-3 col-md-6 col-sm-6">  
+                            <div class="widget widget_about">
+                                <!--<h4 class="widget-title">About Company</h4>-->
+                                <div class="logo-footer clearfix p-b15">
+                                    <a href="index.html"><img src="/assets/images/logo-dark.png" alt=""></a>
+                                </div>
+								<p class="max-w400">Today we can tell you, thanks to your passion, hard work creativity, and expertise, you delivered us the most beautiful house great looks.</p>                                
+                                
+                                <ul class="social-icons  mt-social-links">
+                                    <li><a href="javascript:void(0);" class="fa fa-google"></a></li>
+                                    <li><a href="javascript:void(0);" class="fa fa-rss"></a></li>
+                                    <li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
+                                    <li><a href="javascript:void(0);" class="fa fa-twitter"></a></li>
+                                    <li><a href="javascript:void(0);" class="fa fa-linkedin"></a></li>
+                                </ul>                                     
+                            </div>
+                        </div> 
+                        
+                        <!-- RESENT POST -->
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="widget widget_address_outer">
+                                <h4 class="widget-title">Contact Us</h4>
+                                <ul class="widget_address">
+                                    <li>34/7 Liverpool Street, Suite 636, London, United Kingdom</li>
+                                    <li>7xthemedemo@gmail.com</li>
+                                    <li>(+298) 012-3456-789</li>
+                                    <li>(+298) 146-6543-480</li>
+                                </ul>
+                           
+                            </div>                                              	
+                        </div>                          
+                        
+                        <!-- USEFUL LINKS -->
+                        <div class="col-lg-3 col-md-6 col-sm-6 footer-col-3">
+                            <div class="widget widget_services inline-links">
+                                <h4 class="widget-title">Useful links</h4>
+                                <ul>
+                                    <li><a href="about-1.html">About</a></li>
+                                    <li><a href="project-grid.html">Projects</a></li>
+                                    <li><a href="blog-grid.html">Blog</a></li>
+                                    <li><a href="contact-1.html">Contact Us</a></li>
+                                </ul>
+                            </div>                           
+                        </div>
+                        
+                        <!-- TAGS -->
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+							<div class="widget recent-posts-entry-date">
+                                <h4 class="widget-title">Resent Post</h4>
+                                <div class="widget-post-bx">
+                                    <div class="bdr-light-blue widget-post clearfix  bdr-b-1 m-b10 p-b10">
+                                        <div class="mt-post-date text-center text-uppercase text-white p-tb5">
+											<strong class="p-date">24</strong>
+                                            <span class="p-month">April</span>
+                                            <span class="p-year">2019</span>
+                                        </div>
+                                        <div class="mt-post-info">
+                                            <div class="mt-post-header">
+                                                <h6 class="post-title"><a href="blog-single.html">On these beams, we’re building dreams.</a></h6>
+                                            </div>
+                                            <div class="mt-post-meta">
+                                                <ul>
+                                                    <li class="post-author"><i class="fa fa-user"></i>By Admin</li>
+                                                    <li class="post-comment"><i class="fa fa-comments"></i> 28</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bdr-light-blue widget-post clearfix  bdr-b-1 m-b10 p-b10">
+                                        <div class="mt-post-date text-center text-uppercase text-white p-tb5">
+                                            <strong class="p-date">30</strong>
+                                            <span class="p-month">May</span>
+                                            <span class="p-year">2019</span>
+                                        </div>
+                                        <div class="mt-post-info">
+                                            <div class="mt-post-header">
+                                                <h6 class="post-title"><a href="blog-single.html">We’ll be a sensation for you next renovation</a></h6>
+                                            </div>
+                                            <div class="mt-post-meta">
+                                                <ul>
+                                                    <li class="post-author"><i class="fa fa-user"></i>By Admin</li>
+                                                    <li class="post-comment"><i class="fa fa-comments"></i> 29</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>                          
+                        </div>
+                        <!-- NEWSLETTER -->
 
-				<section class="get-in-touch bg-color-after-secondary overlay overlay-color-primary overlay-show p-relative overflow-hidden" style="background-image: url('assets/img/demos/digital-agency-2/bg/bg-2.jpg'); background-size: cover; background-position: center;">
-					<span class="custom-circle custom-circle-1 bg-color-light appear-animation" data-appear-animation="zoomIn" data-appear-animation-delay="100"></span>
-					<span class="custom-circle custom-circle-2 bg-color-light appear-animation" data-appear-animation="zoomIn" data-appear-animation-delay="100"></span>
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-8">
-								<p class="mb-2 text-color-tertiary custom-text-7 custom-title-with-icon custom-title-with-icon-light appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">Request a Quote</p>
-								<h4 class="text-color-light font-weight-bold custom-text-10 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">
-									We’re interested in talking<br/>
-									about your Project.
-								</h4>
-							</div>
-							<div class="col-lg-4 d-flex align-items-center justify-content-start justify-content-lg-end mt-5 mt-lg-0">
-								<a herf="#" class="btn btn-outline custom-btn-outline btn-light border-white rounded-0 px-4 py-3 text-color-light text-color-hover-dark bg-color-hover-light custom-text-6 line-height-6 font-weight-semibold custom-btn-with-arrow appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="600">Request a Quote</a>
-							</div>
-						</div>
-					</div>
-				</section>
+                    </div>
+                </div>  
+            </div>
+            <!-- FOOTER COPYRIGHT -->
+            <div class="footer-bottom overlay-wraper">
+                <div class="overlay-main"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="mt-footer-bot-center">
+                            <span class="copyrights-text">© <script>document.write(new Date().getFullYear())</script> RMC BTP SARL . Designed by <a href="https://genzis.net" style="color: #fff">Genzis</a>.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- FOOTER END -->
 
-			</div>
+        <!-- BUTTON TOP START -->
+		<button class="scroltop"><span class="fa fa-angle-up  relative" id="btn-vibrate"></span></button>
+              
+    </div>
 
-			<footer id="footer" class="mt-0 py-5">
-				<div class="container py-5">
-					<div class="row justify-content-between">
-						<div class="col-sm-12 col-lg-6 col-xl-6">
-							<div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="100">
-								<h4 class="custom-font-primary custom-newsletter-title font-weight-bold mb-4 custom-text-7">Join for Company Updates</h4>
-								<div class="alert alert-success d-none" id="newsletterSuccess">
-									<strong>Success!</strong> You've been added to our email list.
-								</div>
-								<div class="alert alert-danger d-none" id="newsletterError"></div>
-								<form id="newsletterForm" action="https://www.okler.net/previews/porto/9.8.0/php/newsletter-subscribe.php" method="POST" class="me-0 mb-3 mb-md-0 opacity-10">
-									<div class="input-group custom-newsletter">
-										<input class="form-control form-control-sm custom-newsletter-input rounded-0 bg-transparent border-0 ps-0 custom-text-2 text-color-light box-shadow-none" placeholder="Your E-mail Address" name="newsletterEmail" id="newsletterEmail" type="email">
-										<button class="btn text-color-light custom-text-4 font-weight-semibold custom-btn-with-arrow custom-btn-with-arrow-light" type="submit">Sign Up</button>
-									</div>
-								</form>
-							</div>
-						</div>
-						<div class="col-sm-12 col-lg-6 col-xl-4 col-info-footer mt-4 mt-sm-5 mt-lg-0">
-							<div class="row">
-								<div class="col-md-6">
-									<span class="d-block text-start text-lg-end text-color-light font-weight-semibold text-5 pb-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">Yaounde</span>
-									<p class="mb-0 text-start text-lg-end text-4 font-weight-medium appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="150">Yaounde</p>
-									<p class="mb-0 text-start text-lg-end text-4 font-weight-medium appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">Yaounde</p>
-									<p class="mb-0 text-start text-lg-end text-4 font-weight-medium appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250"><a href="tel:+23793909159" class="text-color-default">+237 693 909 159</a></p>
-								</div>
-								<div class="col-md-6 mt-3 mt-md-0">
-									<span class="d-block text-start text-lg-end text-color-light font-weight-semibold text-5 pb-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">Yaounde</span>
-									<p class="mb-0 text-start text-lg-end text-4 font-weight-medium appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="150">Yaounde</p>
-									<p class="mb-0 text-start text-lg-end text-4 font-weight-medium appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">Yaounde</p>
-									<p class="mb-0 text-start text-lg-end text-4 font-weight-medium appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250"><a href="tel:+23793909159" class="text-color-default">+237 693 909 159</a></p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row justify-content-between">
-						<div class="col-sm-12 col-lg-7 col-xl-6 d-none d-sm-flex">
-							<div class="nav-footer w-100 pt-5 mt-0 mt-lg-4">
-								<div class="row justify-content-between">
-									<div class="col-auto me-auto">
-										<div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
-											<div class="footer-nav footer-nav-links">
-												<nav>
-													<ul class="nav" id="footerNav">
-														<li>
-															<a class="text-color-hover-primary font-weight-semibold custom-text-2 text-capitalize" href="{{ route('underconstruction') }}" style="color:aliceblue; text-decoration: underline">Our Services</a>
-														</li>
-														<li>
-															<a class="text-color-hover-primary font-weight-semibold custom-text-2 text-capitalize" href="{{ route('underconstruction') }}" style="color:aliceblue; text-decoration: underline">Our Work</a>
-														</li>
-														<li>
-															<a class="text-color-hover-primary font-weight-semibold custom-text-2 text-capitalize" href="{{ route('underconstruction') }}" style="color:aliceblue; text-decoration: underline">Contact Us</a>
-														</li>
-													</ul>
-												</nav>
-											</div>			
-										</div>							
-									</div>
-									<div class="col-auto">
-										<div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="100">
-											<ul class="header-social-icons social-icons social-icons-clean social-icons-icon-light social-icons-big d-none d-lg-block m-0 p-relative bottom-10">
-												<li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" class="text-4" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-												<li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" class="text-4" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-												<li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" class="text-4" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-12 col-lg-5 col-xl-6">
-							<div class="d-flex justify-content-end custom-footer-copywriting pt-5 mt-0 mt-lg-4">
-								<p class="mb-0 text-start text-lg-end d-block w-100 appear-animation" style="color:aliceblue" data-appear-animation="fadeIn" data-appear-animation-delay="300">Delivered by <a href="https://genzis.net" style="color:aliceblue; text-decoration: underline">Genzis</a>. ©  2022.  All Rights Reserved</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</footer>
-		</div>
+<!-- JAVASCRIPT  FILES ========================================= --> 
+<script  src="/assets/js/jquery-1.12.4.min.js"></script><!-- JQUERY.MIN JS -->
+<script  src="/assets/js/bootstrap.min.js"></script><!-- BOOTSTRAP.MIN JS -->
 
-		<!-- Vendor -->
-		<script src="assets/vendor/plugins/js/plugins.min.js"></script>
+<script  src="/assets/js/magnific-popup.min.js"></script><!-- MAGNIFIC-POPUP JS -->
 
-		<!-- Theme Base, Components and Settings -->
-		<script src="assets/js/theme.js"></script>
+<script  src="/assets/js/waypoints.min.js"></script><!-- WAYPOINTS JS -->
+<script  src="/assets/js/counterup.min.js"></script><!-- COUNTERUP JS -->
+<script  src="/assets/js/waypoints-sticky.min.js"></script><!-- COUNTERUP JS -->
 
-		<!-- Current Page Vendor and Views -->
-		<script src="assets/js/views/view.contact.js"></script>
+<script  src="/assets/js/isotope.pkgd.min.js"></script><!-- MASONRY  -->
 
-		<!-- Theme Initialization Files -->
-		<script src="assets/js/theme.init.js"></script>
+<script  src="/assets/js/owl.carousel.min.js"></script><!-- OWL  SLIDER  -->
+<script src="/assets/js/jquery.owl-filter.js"></script>
 
-	</body>
+<script  src="/assets/js/stellar.min.js"></script><!-- PARALLAX BG IMAGE   --> 
 
+
+
+<script  src="/assets/js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
+<script  src="/assets/js/shortcode.js"></script><!-- SHORTCODE FUCTIONS  -->
+<script  src="/assets/js/jquery.bgscroll.js"></script><!-- BACKGROUND SCROLL -->
+<!-- REVOLUTION JS FILES -->
+
+<script  src="/assets/plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
+<script  src="/assets/plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
+
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->	
+<script  src="/assets/plugins/revolution/revolution/js/extensions/revolution-plugin.js"></script>
+
+<!-- REVOLUTION SLIDER SCRIPT FILES -->
+<script  src="/assets/js/rev-script-1.js"></script>
+
+
+
+</body>
+
+
+<!-- Mirrored from 7xtheme.com/shapen/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Aug 2022 01:33:25 GMT -->
 </html>
