@@ -10,13 +10,13 @@
 
 		<title>RMC-BTP | under-construction</title>	
 
-		<meta name="keywords" content="WebSite Template" />
-		<meta name="description" content="Porto - Multipurpose Website Template">
-		<meta name="author" content="okler.net">
+		<meta name="keywords" content="RMC BTP Sarl" />
+		<meta name="description" content="">
+		<meta name="author" content="rmcbtpsarl.com">
 
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
-		<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+		<link rel="shortcut icon" href="assets/img/favicon.jpg" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="assets/image/favicon.jpg">
 
 		<!-- Mobile Metas -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
@@ -29,7 +29,7 @@
     <style>
         body{
             background: #2584bc;
-            background-image: url('assets/img/demos/digital-agency-2/bg/bg-10.png');
+            background-image: url('/assets/images/bg-10.png');
             text-align: center;
             color:aliceblue;
         }
@@ -43,7 +43,7 @@
     </style>
 
 	<body>
-        <img src="assets/img/demos/digital-agency-2/bg/bg-12.png">
+        <img src="/assets/images/coming.png">
         <h1>Building RMC-BTP</h1>
         <p>Get a brand new Website in 4 weeks with <a href="https://genzis.net">Genzis</a></p>
         <p><a href='mail&#116;o&#58;i%6Efo&#64;&#103;%65%6E&#122;is&#46;n%65t'>&#105;nfo&#64;g&#101;nzis&#46;net</a></p>
