@@ -2,15 +2,13 @@
 <html lang="en">
 
 
-<!-- Mirrored from 7xtheme.com/shapen/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Aug 2022 01:31:17 GMT -->
-
 <head>
 
     <!-- META -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="keywords" content="" />
-    <meta name="author" content="" />
+    <meta name="author" content="https//rmcbtpsarl.com" />
     <meta name="robots" content="" />
     <meta name="description" content="" />
 
@@ -19,7 +17,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.jpg" />
 
     <!-- PAGE TITLE HERE -->
-    <title>Shapen Template | Home Page Style 1</title>
+    <title>RMC BTP sarl | Home</title>
 
     <!-- MOBILE SPECIFIC -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -72,10 +70,32 @@
 </head>
 
 <style>
+
+	.mobile-version{
+		display: none;
+	}
 	@media (max-width: 500px){
 		.top-bar{
 			display:none;
 		}
+
+		.mobile-version{
+			display: block;
+		}
+
+		.desktop-version{
+			display: none;
+		}
+
+		.about-us-carousel{
+			display: none;
+		}
+
+		.image-effect-one{
+			height: 350px;
+			overflow: hidden;
+		}
+
 	}
 	
 </style>
@@ -1152,7 +1172,7 @@
             <!-- CALL US SECTION END -->
 
             <!-- OUR PROJECT START -->
-            <div class="section-full mobile-page-padding p-t80 p-b30 square_shape2">
+            <div class="section-full mobile-page-padding p-t80 p-b30 square_shape2 desktop-version">
                 <div class="container">
                     <!-- TITLE START -->
                     <div class="section-head">
@@ -1343,6 +1363,56 @@
                 </div>
             </div>
             <!-- OUR PROJECT END -->
+
+			<!-- OUR PROJECT MOBILE START -->
+            <div class="section-full mobile-page-padding p-t80 p-b30 square_shape2 mobile-version">
+                <div class="container">
+                    <!-- TITLE START -->
+                    <div class="section-head">
+                        <div class="mt-separator-outer separator-left">
+                            <div class="mt-separator">
+                                <h2 class="text-uppercase sep-line-one "><span
+                                        class="font-weight-300 text-primary">Our</span> Project</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- TITLE END -->
+
+                    <div class="section-content">
+
+                        <div class="portfolio-wrap row mfp-gallery product-stamp clearfix">
+                            <!-- COLUMNS 1 -->
+                            <div class="stamp col-md-3 col-sm-6 m-b30">
+                                <div class="bg-gray p-a30">
+                                    <div class="filter-wrap">
+                                        <ul class="filter-navigation masonry-filter text-uppercase">
+                                            <li><a data-filter=".cat-1" data-hover="Album1"
+                                                    href="#">Album1</a></li>
+                                            <li><a data-filter=".cat-4" data-hover="Album2"
+                                                    href="#">Album2</a></li>
+                                            <li><a data-filter=".cat-2" data-hover="Album3"
+                                                    href="#">Album3 </a></li>
+                                            <li><a data-filter=".cat-3" data-hover="Album4"
+                                                    href="#">Album4</a></li>
+                                            <li><a data-filter=".cat-5" data-hover="Album5"
+                                                    href="#">Album5</a></li>
+                                            <li><a data-filter=".cat-6" data-hover="Album6"
+                                                    href="#">Album6 </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="hilite-title text-left p-l50 text-uppercase text-pop-up-top">
+                    <strong>Projects</strong>
+                </div>
+            </div>
+            <!-- OUR PROJECT MOBILE END -->
 
             <!-- OUR BLOG START -->
             <div class="section-full mobile-page-padding p-t80 p-b30 square_shape1 bg-parallax bg-cover"
