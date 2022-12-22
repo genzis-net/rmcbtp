@@ -265,6 +265,14 @@
 										</li>                                       
                                     </ul>
                                 </li>
+								<li>
+									<a href="javascript:;">Catalogues</a>
+									<ul class="sub-menu has-child">
+										<li><a href="#">Interior Designs and Furnitures</a></li>
+										<li><a href="#">Quincailleries</a></li>
+										<li><a href="#">Blue prints</a></li>
+									</ul>
+								</li>
                                 <li>
 									<a href="#">Blog</a>
 								</li>
