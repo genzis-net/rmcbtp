@@ -260,11 +260,9 @@
 									<ul class="sub-menu has-child">
 										<li><a href="{{ route('underconstruction') }}">Interior Designs and Furnitures</a></li>
 										<li><a href="{{ route('underconstruction') }}">Quincailleries</a></li>
+										<li><a href="{{ route('underconstruction') }}">Machineries</a></li>
 										<li><a href="{{ route('underconstruction') }}">Blue prints</a></li>
 									</ul>
-								</li>
-                                <li>
-									<a href="{{ route('underconstruction') }}">Blog</a>
 								</li>
 								<li class="{{Route::currentRouteName() === 'projects' ? 'active' : ''}}">
 									<a href="{{ route('projects') }}">Our Work</a>
