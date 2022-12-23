@@ -119,7 +119,7 @@
                             data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
                             data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                             style="z-index:100; text-transform:uppercase;">
-                            <a href="javascript:;" class="site-button-secondry btn-effect">Talk to an Expert</a>
+                            <a href="{{ route('contact') }}" class="site-button-secondry btn-effect">Talk to an Expert</a>
                         </div>
 
                     </li>
@@ -227,7 +227,7 @@
                             data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
                             data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                             style="z-index:100; text-transform:uppercase;">
-                            <a href="javascript:;" class="site-button-secondry btn-effect">Talk to an Expert</a>
+                            <a href="{{ route('contact') }}" class="site-button-secondry btn-effect">Talk to an Expert</a>
                         </div>
 
                     </li>
@@ -335,7 +335,7 @@
                             data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
                             data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                             style="z-index:100; text-transform:uppercase;">
-                            <a href="javascript:;" class="site-button-secondry btn-effect">Talk to an Expert</a>
+                            <a href="{{ route('contact') }}" class="site-button-secondry btn-effect">Talk to an Expert</a>
                         </div>
 
                     </li>
@@ -419,7 +419,7 @@
                             <div class="mt-box our-speciallization-content">
                                 <h3 class="m-t0"><span class="font-weight-100">Building Your Dream Home from
                                         Scratch.</span></h3>
-                                <a class="site-button btn-effect">Request a Quote</a>
+                                <a class="site-button btn-effect" href="{{ route('contact') }}">Request a Quote</a>
                             </div>
 
                         </div>
@@ -515,7 +515,7 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="mt-icon-box-wraper p-a30 center m-b30 box-shadow bg-white">
                         <div class="mt-icon-box-sm inline-icon text-primary  m-b20 radius bg-primary  scale-in-center bg-moving"
-                            style="background-image:url(images/background/line.png)">
+                            style="">
                             <span class="icon-cell text-secondry"><i class="flaticon-sketch"></i></span>
                         </div>
                         <div class="icon-content">
@@ -527,7 +527,7 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="mt-icon-box-wraper p-a30 center m-b30 box-shadow bg-white">
                         <div class="mt-icon-box-sm inline-icon text-primary  m-b20 radius bg-primary  scale-in-center bg-moving"
-                            style="background-image:url(images/background/line.png)">
+                            style="">
                             <span class="icon-cell text-secondry"><i class="flaticon-builder"></i></span>
                         </div>
                         <div class="icon-content">
@@ -539,7 +539,7 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="mt-icon-box-wraper p-a30 center m-b30 box-shadow bg-white">
                         <div class="mt-icon-box-sm inline-icon text-primary  m-b20 radius bg-primary  scale-in-center bg-moving"
-                            style="background-image:url(images/background/line.png)">
+                            style=")">
                             <span class="icon-cell text-secondry"><i class="flaticon-city"></i></span>
                         </div>
                         <div class="icon-content">
@@ -561,12 +561,12 @@
                             <div class="section-head">
                                 <div class="mt-separator-outer separator-left">
                                     <div class="m-about-years bg-moving"
-                                        style="background-image:url(/assets/images/background/line.png);">
+                                        style="">
                                         <span class="text-primary large-title">Request a Quote</span>
                                     </div>
                                     <p>We’re interested in talking
                                         about your Project.</p>
-                                    <a href="#" class="site-button btn-effect m-b15"><span>Request a
+                                    <a href="{{ route('contact') }}" class="site-button btn-effect m-b15"><span>Request a
                                             Quote</span></a>
                                 </div>
                             </div>
@@ -754,7 +754,7 @@
                                         <div class="icon-content">
                                             <h4 class="mt-tilte m-b25">Architecture</h4>
                                             <p>We design highways, bridges, houses, and building. </p>
-                                            <a href="#" class="site-button-link" data-hover="Read More">Request a
+                                            <a href="{{ route('contact') }}" class="site-button-link" data-hover="Read More">Request a
                                                 Quote <i class="fa fa-angle-right arrow-animation"></i></a>
                                         </div>
                                     </div>
@@ -775,7 +775,7 @@
                                             <h4 class="mt-tilte m-b25">Construction</h4>
                                             <p>Our method involves following latest construction standards.
                                             </p>
-                                            <a href="#" class="site-button-link" data-hover="Read More">Request a
+                                            <a href="{{ route('contact') }}" class="site-button-link" data-hover="Read More">Request a
                                                 Quote <i class="fa fa-angle-right arrow-animation"></i></a>
                                         </div>
                                     </div>

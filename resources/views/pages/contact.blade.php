@@ -27,7 +27,7 @@
                 
                     <div>
                         <ul class="mt-breadcrumb breadcrumb-style-2">
-                            <li><a href="javascript:void(0);">Home</a></li>
+                            <li><a href="{{ route('homepage') }}">Home</a></li>
                             <li>Contact Us</li>
                         </ul>
                     </div>

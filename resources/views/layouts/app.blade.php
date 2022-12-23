@@ -57,14 +57,6 @@
     <!-- REVOLUTION NAVIGATION STYLE -->
     <link rel="stylesheet" type="text/css" href="/assets/plugins/revolution/revolution/css/navigation.css">
 
-    <!-- Google Fonts -->
-    <link
-        href="../../fonts.googleapis.com/cssad13.css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
-        rel="stylesheet">
-    <link
-        href="../../fonts.googleapis.com/cssa3eb.css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
-
 </head>
 
 <style>
@@ -121,7 +113,7 @@
                             </ul>
                         </div>
                         <div class="mt-topbar-right clearfix">
-                            <div class="appint-btn"><a href="{{ route('underconstruction') }}" class="site-button">Request a Quote</a></div>
+                            <div class="appint-btn"><a href="{{ route('contact') }}" class="site-button">Request a Quote</a></div>
                         </div>
                     </div>
                 </div>
