@@ -241,9 +241,10 @@
                                         <li>
                                             <a href="javascript:;">RMC BTP</a>
                                             <ul class="sub-menu has-child">
-                                                <li><a href="{{ route('underconstruction') }}">1</a></li>
-                                                <li><a href="{{ route('underconstruction') }}">2</a></li>
-                                                <li><a href="{{ route('underconstruction') }}">3</a></li>
+                                                <li><a href="{{ route('underconstruction') }}">Consulting</a></li>
+                                                <li><a href="{{ route('underconstruction') }}">Architecture</a></li>
+                                                <li><a href="{{ route('underconstruction') }}">Construction</a></li>
+                                                <li><a href="{{ route('underconstruction') }}">Home Renovation</a></li>
                                             </ul>
                                         </li>
 										<li>
@@ -265,8 +266,8 @@
                                 <li>
 									<a href="{{ route('underconstruction') }}">Blog</a>
 								</li>
-								<li>
-									<a href="{{ route('underconstruction') }}">Our Work</a>
+								<li class="{{Route::currentRouteName() === 'projects' ? 'active' : ''}}">
+									<a href="{{ route('projects') }}">Our Work</a>
 								</li>
 								<li class="{{Route::currentRouteName() === 'contact' ? 'active' : ''}}">
 									<a href="{{ route('contact') }}">Contact us</a>

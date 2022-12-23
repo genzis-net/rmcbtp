@@ -3,7 +3,7 @@
 <title>RMC BTP sarl | About Us</title>
 <meta property="og:image" content="/assets//assets/images/favicon.jpg" />
 <meta property="og:description" content="" />
-<meta property="og:url" content="https://rmcbtpsarl.com" />
+<meta property="og:url" content="https://rmcbtpsarl.com/about-us" />
 <meta property="og:title" content="RMC BTP sarl | About Us" />
 <meta name="keywords" content="">
 @endsection
