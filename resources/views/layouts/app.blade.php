@@ -277,7 +277,7 @@
 									<a href="{{ route('underconstruction') }}">Our Work</a>
 								</li>
 								<li>
-									<a href="{{ route('underconstruction') }}">Contact us</a>
+									<a href="{{ route('contact') }}">Contact us</a>
 								</li>
                             </ul>
                         </div>
@@ -349,13 +349,13 @@
                             <div class="widget widget_services inline-links">
                                 <h4 class="widget-title">Useful links</h4>
                                 <ul>
-                                    <li><a href="about-1.html">About</a></li>
-                                    <li><a href="project-grid.html">Projects</a></li>
-                                    <li><a href="blog-grid.html">Blog</a></li>
-                                    <li><a href="contact-1.html">Contact Us</a></li>
-                                    <li><a href="contact-1.html">Catalogues | Home Deco</a></li>
-                                    <li><a href="contact-1.html">Catalogues | Sims Quincailleries</a></li>
-                                    <li><a href="contact-1.html">Catalogues | Sims House Plans</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Projects</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="{{ route('contact') }}">Contact Us</a></li>
+                                    <li><a href="#">Catalogues | Home Deco</a></li>
+                                    <li><a href="#">Catalogues | Sims Quincailleries</a></li>
+                                    <li><a href="#">Catalogues | Sims House Plans</a></li>
                                 </ul>
                             </div>
                         </div>
