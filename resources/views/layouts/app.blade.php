@@ -139,7 +139,7 @@
                         <!-- ETRA Nav -->
                         <div class="extra-nav">
                             <div class="extra-cell">
-                                <a href="{{ route('underconstruction') }}" class="contact-slide-show">EN/FR</a>
+                                <a href="javascript:;" class="contact-slide-show">EN/FR</a>
                             </div>
                         </div>
                         <!-- ETRA Nav -->
