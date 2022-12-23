@@ -293,25 +293,11 @@
         <a class="nav-link collapsed" data-bs-target="#blog-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-file-richtext"></i><span>Publications</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
-        @if(Route::currentRouteName() == 'manage-articles' || Route::currentRouteName() == 'show-article'|| Route::currentRouteName() == 'manage-refs' || Route::currentRouteName() == 'show-ref'
-        ||Route::currentRouteName() == 'manage-events' || Route::currentRouteName() == 'show-event' ||Route::currentRouteName() == 'manage-testimonies' || Route::currentRouteName() == 'show-testimony'
-        ||Route::currentRouteName() == 'manage-albums' || Route::currentRouteName() == 'show-album')
+        @if(Route::currentRouteName() == 'show-ref' ||Route::currentRouteName() == 'manage-testimonies' || Route::currentRouteName() == 'show-testimony')
         <ul id="blog-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
         @else
         <ul id="blog-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
         @endif
-
-          <li>
-            @if (Route::currentRouteName() == 'manage-articles' || Route::currentRouteName() == 'show-article')
-                <a href="#" class="active">
-                  <i class="bi bi-file-font" style="font-size: 1rem;"></i><span>Blog <i class="bi bi-lock-fill" style="font-size: 1rem;"></i></span>
-                </a>
-                @else
-                <a href="#">
-                  <i class="bi bi-file-font" style="font-size: 1rem;"></i><span>Blog <i class="bi bi-lock-fill" style="font-size: 1rem;"></i></span>
-                </a>
-              @endif
-          </li>
 
           <li>
             @if (Route::currentRouteName() == 'manage-refs' || Route::currentRouteName() == 'show-ref')
@@ -321,30 +307,6 @@
                 @else
                 <a href="{{ route('manage-refs') }}">
                   <i class="bi bi-trophy" style="font-size: 1rem;"></i><span>Realisations</span>
-                </a>
-              @endif
-          </li>
-
-          <li>
-            @if (Route::currentRouteName() == 'manage-albums' || Route::currentRouteName() == 'show-album')
-                <a href="{{ route('manage-albums') }}" class="active">
-                  <i class="bi bi-card-image" style="font-size: 1rem;"></i><span>Galleries</span>
-                </a>
-                @else
-                <a href="{{ route('manage-albums') }}">
-                  <i class="bi bi-card-image" style="font-size: 1rem;"></i><span>Galleries</span>
-                </a>
-              @endif
-          </li>
-
-          <li>
-            @if (Route::currentRouteName() == 'manage-events' || Route::currentRouteName() == 'show-event')
-                <a href="#" class="active">
-                  <i class="bi bi-calendar-check" style="font-size: 1rem;"></i><span>Evenements <i class="bi bi-lock-fill" style="font-size: 1rem;"></i></span>
-                </a>
-                @else
-                <a href="#">
-                  <i class="bi bi-calendar-check" style="font-size: 1rem;"></i><span>Evenements <i class="bi bi-lock-fill" style="font-size: 1rem;"></i></span>
                 </a>
               @endif
           </li>

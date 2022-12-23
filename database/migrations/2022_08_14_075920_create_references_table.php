@@ -18,10 +18,11 @@ class CreateReferencesTable extends Migration
             $table->string('title_fr');
             $table->string('title_en');
             $table->string('client');
-            $table->date('date');
+            $table->integer('year');
             $table->longText('content_fr');
             $table->longText('content_en');
-            $table->string('cover');
+            $table->string('project_type');
+            $table->string('location');
             $table->integer('user_id');
             $table->timestamps();
         });

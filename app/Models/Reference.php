@@ -12,15 +12,21 @@ class Reference extends Model
     protected $fillable = [
         'title_fr',
         'title_en',
-        'date',
+        'year',
         'client',
         'content_fr',
         'content_en',
-        'cover',
+        'location',
+        'client',
+        'project_type',
         'user_id',
     ];
 
     public function users(){
         return $this->belongsTo(User::Class, 'user_id');
+    }
+
+    public function images(){
+        return $this->hasMany('App\Models\Image');
     }
 }

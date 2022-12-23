@@ -9,11 +9,11 @@ class Image extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'album_id',
+        'reference_id',
         'src',
     ];
 
-    public function albums(){
-        return $this->BelongsTo(Album::Class, 'album_id');
+    public function references(){
+        return $this->BelongsTo(Reference::Class, 'reference_id');
     }
 }

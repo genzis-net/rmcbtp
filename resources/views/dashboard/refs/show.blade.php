@@ -2,146 +2,112 @@
 
 @section('content')
 <div class="row">
-    <div class="card col-md-7" style="margin-right: 4rem;">
+    <div class="card col-md-12" style="margin-right: 4rem;">
         <div class="card-body">
-            <h5 class="card-title title">{{ $ref->title_en }} / {{ $ref->title_fr }}</h5>
-    
-                  <!-- Pills Tabs -->
-                  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">EN</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">FR</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Stats & More</button>
-                    </li>
-                  </ul>
-                  <hr/>
-                   
-                  <div class="tab-content pt-2" id="myTabContent">
-                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="home-tab">
-                        <div style="background-image: url('/images/refs/cover/{{ $ref->cover }}'); background-color: grey; height: 200px; width: 100%; background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
-                        <hr>
-                            <div style="display:flex;">
-                                <div style="padding-right: 3rem; text-align: center;"><a href=""><i class="bi bi-eye"></i></a><br>323</div>
-                                <div style="padding-right: 3rem; text-align: center;"><a href=""><i class="bi bi-hand-thumbs-up-fill"></i></a><br>10</div>
-                                <div style="padding-right: 3rem; text-align: center;"><a href=""><i class="bi bi-chat-right-text"></i></a><br>08</div>
-                                <div style="padding-left: 5rem; text-align: center;"><a href=""><i class="bi bi-calendar-date"></i></a><br>{{ $ref->created_at }}</div>
-                            </div>
-                        <hr/>
-                        <div style="margin-right: 2rem;">{!! $ref->content_en !!}</div><hr/>
-                        <div style="margin-right: 2rem;">{!! $ref->references !!}</div>
-                    </div>
-                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="profile-tab">
-                        <div style="background-image: url('/images/refs/cover/{{ $ref->cover }}'); background-color: grey; height: 200px; width: 100%; background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
-                        <hr><div style="margin-right: 2rem;">{!! $ref->content_fr !!}</div><hr/>
-                        <div style="margin-right: 2rem;">{!! $ref->references !!}</div>
-                    </div>
-                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="contact-tab">
-                      <div style="border-bottom:1px solid grey; padding: 1rem;">
-                          <h3>Actions</h3>
-                          <button type="button" value="{{ $ref->id }}" data-bs-toggle="modal" data-bs-target="#myEditModal" class="btn btn-warning edit_ref"><i class="bi bi-pencil-square"></i></button>
-                          <button type="button" data-bs-toggle="modal" data-bs-target="#verticalycentered" value="{{ $ref->id }}" class="btn btn-danger del_ref"><i class="bi bi-trash"></i></button>
-                      </div>
-                      <div class="modal fade" id="verticalycentered" tabindex="-1">
-                        <div class="modal-dialog modal-dialog-centered">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title"style="color: red;"><i class="bi bi-exclamation-diamond"></i> Supprimer l'ref?</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                Toutes les donnees relatives a l'ref seront perdues. Continuer?
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
-                              <a href="{{ route('delete-ref', compact('ref')) }}" class="btn btn-danger">Supprimer</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-    
-                <!--div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                        <div style="background-image: url('/images/refs/cover/{{ $ref->cover }}'); background-color: grey; height: 200px; width: 95%; background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
-                        <hr><div style="margin-right: 2rem;">{!! $ref->content_en !!}</div><hr/>
-                        <div style="margin-right: 2rem;">{!! $ref->references !!}</div>
+            <h2 class="title" style="margin-top: 1.5rem; margin-bottom: 1.5rem; color: blue; ">{{ $ref->title_en }} / {{ $ref->title_fr }} - {{ $ref->year }} - {{ $ref->location }} - {{ $ref->client }} - {{ $ref->project_type }}</h2>
+
+            <!-- Pills Tabs -->
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">EN</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">FR</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Stats & More</button>
+                </li>
+            </ul>
+            <hr />
+
+            <div class="tab-content pt-2" id="myTabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="home-tab">
+                    <div style="background-image: url('/images/achievements/{{ $ref->title_en }}/{{ $ref->images[0]->src }}'); background-color: grey; height: 200px; width: 100%; background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
+                    <hr />
+                    <div style="margin-right: 2rem;">{!! $ref->content_en !!}</div>
+                    <hr />
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div style="background-image: url('/images/achievements/{{ $ref->title_en }}/{{ $ref->images[0]->src }}'); background-color: grey; height: 200px; width: 100%; background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
+                    <hr>
+                    <div style="margin-right: 2rem;">{!! $ref->content_fr !!}</div>
+                    <hr />
+                    <div style="margin-right: 2rem;">{!! $ref->references !!}</div>
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="contact-tab">
+                    <div style="border-bottom:1px solid grey; padding: 1rem;">
+                        <h3>Actions</h3>
+                        <button type="button" value="{{ $ref->id }}" data-bs-toggle="modal" data-bs-target="#myEditModal" class="btn btn-warning edit_ref"><i class="bi bi-pencil-square"></i></button>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#verticalycentered" value="{{ $ref->id }}" class="btn btn-danger del_ref"><i class="bi bi-trash"></i></button>
                     </div>
 
-                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                        Nesciunt totam et. Consequuntur magnam aliquid eos nulla dolor iure eos quia. Accusantium distinctio omnis et atque fugiat. Itaque doloremque aliquid sint quasi quia distinctio similique. Voluptate nihil recusandae mollitia dolores. Ut laboriosam voluptatum dicta.
+                    <div class="row">
+                        <div class="card col-md-12" style="margin-right: 4rem;">
+                            <div class="card-body">
+                                <h5 class="card-title title">{{ $ref->title_en }} ({{ $ref->images->count() }} images)</h5>
+                                <hr />
+
+                                <div class="tab-content pt-2" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="home-tab">
+                                        <div style="margin-right: 2rem;" class="row">
+                                            @foreach ($ref->images as $image)
+                                            <div class="col-md-3">
+                                                <div class="card">
+                                                    <div style="background-image: url('/images/achievements/{{ $ref->title_en }}/{{ $image->src }}'); background-color: grey; height: 200px; width: 100%; background-size: cover; background-repeat: no-repeat; background-position: center;">
+                                                    </div>
+                                                    <div class="card-body" style="text-align: right">
+                                                        <hr>
+                                                        <button type="button" class="btn btn-danger del_ref" data-bs-toggle="modal" data-bs-target="#verticalycentered2" value="{{ $ref->id }}"><i class="bi bi-trash"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            @endforeach
+                                        </div>
+                                        <hr />
+                                    </div>
+                                </div>
+                                <!-- End Vertical Pills Tabs -->
+                            </div>
+                        </div>
                     </div>
-                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                        Saepe animi et soluta ad odit soluta sunt. Nihil quos omnis animi debitis cumque. Accusantium quibusdam perspiciatis qui qui omnis magnam. Officiis accusamus impedit molestias nostrum veniam. Qui amet ipsum iure. Dignissimos fuga tempore dolor.
+                    <div class="modal fade" id="verticalycentered2" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" style="color: red;"><i class="bi bi-exclamation-diamond"></i> Supprimer l'image?</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Toutes les donnees relatives seront perdues. Continuer?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                                    <a href="{{ route('destroy-image', compact('image')) }}" class="btn btn-danger">Supprimer</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div--->
+                    <div class="modal fade" id="verticalycentered" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" style="color: red;"><i class="bi bi-exclamation-diamond"></i> Supprimer l'ref?</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Toutes les donnees relatives a l'ref seront perdues. Continuer?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                                    <a href="{{ route('delete-ref', compact('ref')) }}" class="btn btn-danger">Supprimer</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- End Vertical Pills Tabs -->
         </div>
-    </div>
-
-    <div class="col-md-4">
-        <div class="card">
-            <div class="card-header">STATS</div>
-            <div class="card-body">
-                <h5 class="card-title">Card with header and footer</h5>
-                
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-                </div>
-                <label>Number of reads </label>
-                
-                <div class="progress mt-3">
-                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"> - 50%</div>
-                </div>
-                <label>Number of Likes </label>
-                
-                <div class="progress mt-3">
-                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-                </div>
-                <label>Number of Shares </label>
-                
-                <div class="progress mt-3">
-                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
-                </div>
-                <label>Number of comments </label>
-            </div>
-
-            <div class="card-footer" style="border-top: 5px solid rgba(0,0,0,.100);">
-                Tags
-            </div><hr>
-            
-            <div class="card-body">
-                <span class="badge bg-primary">Primary</span>
-                <span class="badge bg-secondary">Secondary</span>
-                <span class="badge bg-success">Success</span>
-                <span class="badge bg-danger">Danger</span>
-                <span class="badge bg-warning text-dark">Warning</span>
-                <span class="badge bg-info text-dark">Info</span>
-                <span class="badge bg-light text-dark">Light</span>
-                <span class="badge bg-dark">Dark</span>
-            </div>
-
-            <div class="card-footer" style="border-top: 5px solid rgba(0,0,0,.100);">
-                Files
-            </div><hr>
-            <div class="card-body">
-                <table>
-                    <tr>
-                        <td>
-                            <i class="bi bi-file-earmark-pdf-fill" style="color:red; font-size: 3rem;"></i>
-                        </td>
-                        <td>
-                            Name de PDF file
-                        </td>
-                    </tr>
-                </table>
-            </div>
-
-        </div><!-- End Card with header and footer -->
     </div>
 </div>
 
@@ -149,93 +115,139 @@
 
 <!-- edit ref modal -->
 <div class="modal fade" id="myEditModal" tabindex="-1">
-    <div class="modal-dialog modal-xl modal-lg modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">EDIT ref</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="col-lg-12">
+  <div class="modal-dialog modal-xl modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">EDITER REALISATION</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="col-lg-12">
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center; font-size: 2rem;" id="title">EDIT ref</h5>
+              <hr/>
   
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title" style="text-align: center; font-size: 2rem;" id="title">EDIT ref</h5>
-                <hr/>
-    
-                <!-- Register new ref -->
-                <div id="updateform_errList"></div>
-                <div id="update_message"></div>
-    
-                <form class="row g-3" enctype="multipart/form-data" id="refUpdater">
-                  {{ csrf_field() }}
+              <div id="updateform_errList"></div>
+              <div id="update_message"></div>
   
-                  <input type="text" id="edit_ref_id" hidden>
-                  <input type="hidden" name="_method" value="PUT" id="method"/>
-  
-                  <div class="col-md-12">
-                      <div class="form-floating">
-                        <input type="text" class="form-control" id="edit_title_fr" placeholder="Your Name" name="edit_title_fr">
-                        <label for="edit_title_fr">Titre (fr)</label>
-                      </div>
+              <form class="row g-3" enctype="multipart/form-data" id="refUpdater">
+                {{ csrf_field() }}
+
+                <input type="text" id="edit_ref_id" hidden>
+                <input type="hidden" name="_method" value="PUT" id="method"/>
+
+                <div class="col-md-12">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="edit_title_fr" placeholder="Your Name" name="edit_title_fr">
+                      <label for="edit_title_fr">Titre (fr)</label>
                     </div>
-                    <div class="col-md-12">
-                      <div class="form-floating">
-                        <input type="text" class="form-control" id="edit_title_en" placeholder="Your Name"name="edit_title_en" > 
-                        <label for="edit_title_en">Titre (en)</label>                 
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="">
-                        <label for="edit_cover">Image de Couverture</label>
-                        <input type="file" class="form-control" id="edit_cover" accept="image/png, image/gif, image/jpeg, image/jpg" name="edit_cover"/>                 
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="form-floating">
-                        <input type="text" class="form-control" id="floatingEmail" placeholder="Author" value="{{ Auth::User()->name }}" readonly>
-                        <label for="floatingEmail">Author (field is autocompleted)</label>
-                      </div>
-                    </div>
-                    
-                    <div class="col-12">
-                      <div>
-                        <label style="color: red;">Contenu (fr)</label>
-                        <textarea class="form-control" placeholder="Address" id="edit_summary-ckeditor" name="edit_content_fr"></textarea>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div>
-                        <label style="color: red;">Contenu (en)</label>
-                        <textarea class="form-control" placeholder="Address" id="edit_summary-ckeditor2" name="edit_content_en"></textarea>
-                      </div>
-                    </div>
-  
-                  <div style="text-align: right" class="modal-footer">
-                    <button type="submit" class="btn btn-primary update">Update</button>
-                    <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal" id="close_edit">Cancel</button>
                   </div>
-                </form>
-    
-    
-              </div>
+                  <div class="col-md-12">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="edit_title_en" placeholder="Your Name"name="edit_title_en" > 
+                      <label for="edit_title_en">Titre (en)</label>                 
+                    </div>
+                  </div>
+                  
+                  
+                <div class="col-md-4">
+                  <div class="">
+                    <label for="floatingName">Add Images (must be less than 300kb each)</label>
+                    <input type="file" class="form-control" id="floatingName" accept="image/png, image/gif, image/jpeg, image/jpg" multiple="multiple" name="edit_image[]"/>                 
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingEmail" placeholder="Author" value="{{ Auth::User()->name }}" readonly>
+                    <label for="floatingEmail">Author (field is autocompleted)</label>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="edit_client" placeholder="Author" name="edit_client">
+                      <label for="edit_client">Client</label>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-floating">
+                      <select class="form-control" name="edit_project_type" id="edit_selectproject_type">
+                        <option id="Construction">Construction</option>
+                        <option id="Consulting">Consulting</option>
+                        <option id="Interior">Interior</option>
+                        <option id="Renovations">Renovations</option>
+                        <option id="Architecture">Architecture</option>
+                      </select>
+                      <label for="project_type">Type de projet</label>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="edit_location" placeholder="Author" name="edit_location">
+                      <label for="edit_location">Lieu</label>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-floating">
+                    <select class="form-control" name="edit_year" id="edit_selectyear">
+                    <?php 
+                      $i=2015; 
+                      $year = date("Y"); 
+                    ?>
+                    @while($i<=$year)
+                          <option id="{{ $i }}">{{ $i }}</option>
+                          <?php 
+                            $i++; 
+                          ?>
+                    @endwhile
+                    </select>
+                      <label for="edit_date">Realiser le annee:</label>
+                    </div>
+                </div>
+                  
+                  <div class="col-12">
+                    <div>
+                      <label style="color: red;">Contenu (fr)</label>
+                      <textarea class="form-control" placeholder="Address" id="edit_summary-ckeditor" name="edit_content_fr"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div>
+                      <label style="color: red;">Contenu (en)</label>
+                      <textarea class="form-control" placeholder="Address" id="edit_summary-ckeditor2" name="edit_content_en"></textarea>
+                    </div>
+                  </div>
+
+                <div style="text-align: right" class="modal-footer">
+                  <button type="submit" class="btn btn-primary update">Update</button>
+                  <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal" id="close_edit">Cancel</button>
+                </div>
+              </form>
+  
+  
             </div>
-    
           </div>
+  
         </div>
       </div>
     </div>
   </div>
-  <!-- end edit ref modal -->
-  
-  
+</div>
+<!-- end edit ref modal -->
+
+
 @endsection
 
 @section('scripts')
 <script>
-  $(document).ready(function(){
+    $(document).ready(function() {
 
-      //edit ref
+        //edit ref
       //loads the modal with all series's info to edit
       $(document).on('click', '.edit_ref', function(e){
         e.preventDefault();
@@ -265,6 +277,13 @@
               $('#edit_ref_id').val(ref_id);
               $('#edit_title_fr').val(response.ref.title_fr);
               $('#edit_title_en').val(response.ref.title_en);
+              $('#edit_location').val(response.ref.location);
+              yearid = '#'+response.ref.year;
+              //console.log(yearid);
+              $(yearid).attr("selected","selected");
+              project='#'+response.ref.project_type;
+              $(project).attr("selected","selected");
+              $('#edit_client').val(response.ref.client);
               CKEDITOR.instances['edit_summary-ckeditor'].setData(response.ref.content_fr);
               CKEDITOR.instances['edit_summary-ckeditor2'].setData(response.ref.content_en);
             }
@@ -328,11 +347,14 @@
                   $('#success_message').fadeOut('slow');
               },5000);
               $('#the_message').append(response.success);
+
+              fetchrefs();
             }
 
           }
         });
       });
-  });
+    });
+
 </script>
 @endsection

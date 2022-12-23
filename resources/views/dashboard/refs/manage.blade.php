@@ -38,10 +38,9 @@
               <thead>
                 <tr>
                   <th scope="col">#</th>
-                  <th scope="col">Cover</th>
                   <th scope="col">Titre</th>
                   <th scope="col">Client</th>
-                  <th scope="col">Conclue le</th>
+                  <th scope="col">Conclue en</th>
                   <th scope="col">Actions</th>
                 </tr>
               </thead>
@@ -82,10 +81,10 @@
                     <label for="floatingName_en">Titre (en)</label>                 
                   </div>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-4">
                   <div class="">
-                    <label for="floatingName">Image de Couverture</label>
-                    <input type="file" class="form-control" id="floatingName" accept="image/png, image/gif, image/jpeg, image/jpg" name="cover"/>                 
+                    <label for="floatingName">Images (must be less than 300kb each)</label>
+                    <input type="file" class="form-control" id="floatingName" accept="image/png, image/gif, image/jpeg, image/jpg" multiple="multiple" name="image[]"/>                 
                   </div>
                 </div>
                 <div class="col-md-4">
@@ -100,12 +99,45 @@
                       <label for="clients">Client</label>
                     </div>
                 </div>
+
                 <div class="col-md-4">
                     <div class="form-floating">
-                      <input type="date" class="form-control" id="date" placeholder="Author" name="date">
-                      <label for="date">Realiser le:</label>
+                      <select class="form-control" name="project_type" id="project_type">
+                        <option>Construction</option>
+                        <option>Consulting</option>
+                        <option>Interior</option>
+                        <option>Renovtions</option>
+                        <option>Architecture</option>
+                      </select>
+                      <label for="project_type">Type de projet</label>
                     </div>
                 </div>
+
+                <div class="col-md-4">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="location" placeholder="Author" name="location">
+                      <label for="location">Lieu</label>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-floating">
+                    <select class="form-control" name="year" id="selectyear">
+                    <?php 
+                      $i=2015; 
+                      $year = date("Y"); 
+                    ?>
+                    @while($i<=$year)
+                          <option>{{ $i }}</option>
+                          <?php 
+                            $i++; 
+                          ?>
+                    @endwhile
+                    </select>
+                      <label for="date">Realiser le annee:</label>
+                    </div>
+                </div>
+
+                
                 
                 <div class="col-12">
                   <div>
@@ -147,7 +179,6 @@
               <h5 class="card-title" style="text-align: center; font-size: 2rem;" id="title">EDIT ref</h5>
               <hr/>
   
-              <!-- Register new ref -->
               <div id="updateform_errList"></div>
               <div id="update_message"></div>
   
@@ -169,30 +200,65 @@
                       <label for="edit_title_en">Titre (en)</label>                 
                     </div>
                   </div>
-                  <div class="col-md-12">
-                    <div class="">
-                      <label for="edit_cover">Image de Couverture</label>
-                      <input type="file" class="form-control" id="edit_cover" accept="image/png, image/gif, image/jpeg, image/jpg" name="edit_cover"/>                 
-                    </div>
+                  
+                  
+                <div class="col-md-4">
+                  <div class="">
+                    <label for="floatingName">Add Images (must be less than 300kb each)</label>
+                    <input type="file" class="form-control" id="floatingName" accept="image/png, image/gif, image/jpeg, image/jpg" multiple="multiple" name="edit_image[]"/>                 
                   </div>
-                  <div class="col-md-4">
+                </div>
+
+                <div class="col-md-4">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingEmail" placeholder="Author" value="{{ Auth::User()->name }}" readonly>
+                    <label for="floatingEmail">Author (field is autocompleted)</label>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
                     <div class="form-floating">
-                      <input type="text" class="form-control" id="floatingEmail" placeholder="Author" value="{{ Auth::User()->name }}" readonly>
-                      <label for="floatingEmail">Author (field is autocompleted)</label>
+                      <input type="text" class="form-control" id="edit_client" placeholder="Author" name="edit_client">
+                      <label for="edit_client">Client</label>
                     </div>
-                  </div>
-                  <div class="col-md-4">
-                      <div class="form-floating">
-                        <input type="text" class="form-control" id="edit_client" placeholder="Author" name="edit_client">
-                        <label for="edit_client">Client</label>
-                      </div>
-                  </div>
-                  <div class="col-md-4">
-                      <div class="form-floating">
-                        <input type="date" class="form-control" id="edit_date" placeholder="Author" name="edit_date">
-                        <label for="edit_date">Realiser le:</label>
-                      </div>
-                  </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-floating">
+                      <select class="form-control" name="edit_project_type" id="edit_selectproject_type">
+                        <option id="Construction">Construction</option>
+                        <option id="Consulting">Consulting</option>
+                        <option id="Interior">Interior</option>
+                        <option id="Renovations">Renovations</option>
+                        <option id="Architecture">Architecture</option>
+                      </select>
+                      <label for="project_type">Type de projet</label>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="edit_location" placeholder="Author" name="edit_location">
+                      <label for="edit_location">Lieu</label>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-floating">
+                    <select class="form-control" name="edit_year" id="edit_selectyear">
+                    <?php 
+                      $i=2015; 
+                      $year = date("Y"); 
+                    ?>
+                    @while($i<=$year)
+                          <option id="{{ $i }}">{{ $i }}</option>
+                          <?php 
+                            $i++; 
+                          ?>
+                    @endwhile
+                    </select>
+                      <label for="edit_date">Realiser le annee:</label>
+                    </div>
+                </div>
                   
                   <div class="col-12">
                     <div>
@@ -276,10 +342,9 @@
               $('#tbody').append(
                 '<tr>\
                   <th scope="row">'+i+'</th>\
-                  <td><img src="/images/refs/cover/'+item.cover+'" style="width: 100px;"></td>\
                   <td>'+item.title_fr+'</td>\
                   <td>'+item.client+'</td>\
-                  <td>'+item.date+'</td>\
+                  <td>'+item.year+'</td>\
                   <td style="color: aliceblue">\
                     <a href="/show-ref?ref='+item.id+'" value="'+item.id+'" class="btn btn-info show_ref"><i class="bi bi-eye"></i></a>\
                     <button type="button" value="'+item.id+'" data-bs-toggle="modal" data-bs-target="#myEditModal" class="btn btn-warning edit_ref"><i class="bi bi-pencil-square"></i></button>\
@@ -374,7 +439,12 @@
               $('#edit_ref_id').val(ref_id);
               $('#edit_title_fr').val(response.ref.title_fr);
               $('#edit_title_en').val(response.ref.title_en);
-              $('#edit_date').val(response.ref.date);
+              $('#edit_location').val(response.ref.location);
+              yearid = '#'+response.ref.year;
+              //console.log(yearid);
+              $(yearid).attr("selected","selected");
+              project='#'+response.ref.project_type;
+              $(project).attr("selected","selected");
               $('#edit_client').val(response.ref.client);
               CKEDITOR.instances['edit_summary-ckeditor'].setData(response.ref.content_fr);
               CKEDITOR.instances['edit_summary-ckeditor2'].setData(response.ref.content_en);
