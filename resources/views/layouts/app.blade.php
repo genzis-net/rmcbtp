@@ -229,11 +229,11 @@
                         <div class="header-nav navbar-collapse collapse">
                             <ul class=" nav navbar-nav">
                                 <li class="{{Route::currentRouteName() === 'homepage' ? 'active' : ''}}">
-                                    <a href="/">Home</a>
+                                    <a href="{{ route('homepage') }}">Home</a>
                                 </li>
 
-                                <li>
-                                    <a href="{{ route('underconstruction') }}">About us</a>
+                                <li class="{{Route::currentRouteName() === 'about' ? 'active' : ''}}">
+                                    <a href="{{ route('about') }}">About us</a>
                                 </li>
                                 <li>
                                     <a href="javascript:;">Services</a>
