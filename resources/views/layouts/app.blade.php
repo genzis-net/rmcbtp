@@ -7,7 +7,7 @@
     <!-- META -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="author" content="https//rmcbtpsarl.com" />
+    <meta name="author" content="https://rmcbtpsarl.com" />
 
     @yield('headerz')
 
@@ -236,7 +236,7 @@
                         <!-- MAIN Vav -->
                         <div class="header-nav navbar-collapse collapse">
                             <ul class=" nav navbar-nav">
-                                <li class="active">
+                                <li class="{{Route::currentRouteName() === 'homepage' ? 'active' : ''}}">
                                     <a href="/">Home</a>
                                 </li>
 
@@ -276,7 +276,7 @@
 								<li>
 									<a href="{{ route('underconstruction') }}">Our Work</a>
 								</li>
-								<li>
+								<li class="{{Route::currentRouteName() === 'contact' ? 'active' : ''}}">
 									<a href="{{ route('contact') }}">Contact us</a>
 								</li>
                             </ul>
@@ -436,10 +436,10 @@
 
     </div>
 
-    @yield('scripts')
+    
 
     <!-- JAVASCRIPT  FILES ========================================= -->
-    <script src="/assets/js/jquery-1.12.4.min.js"></script><!-- JQUERY.MIN JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="/assets/js/bootstrap.min.js"></script><!-- BOOTSTRAP.MIN JS -->
 
     <script src="/assets/js/magnific-popup.min.js"></script><!-- MAGNIFIC-POPUP JS -->
@@ -471,6 +471,7 @@
     <!-- REVOLUTION SLIDER SCRIPT FILES -->
     <script src="/assets/js/rev-script-1.js"></script>
 
+@yield('scripts')
 
 
 </body>

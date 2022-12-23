@@ -3896,6 +3896,12 @@ ol.list-num-count.list-outline-none>li:before {
 	border-color: #35b494;
 }
 
+.site-button.outline.green:hover {
+	color: #fff;
+}
+
+
+
 
 /* Outline orange */
 
@@ -10419,8 +10425,9 @@ button.scroltop span {
 }
 
 .section-full {
-}
 	position: relative;
+}
+	
 
 
 /*-------------------------------------

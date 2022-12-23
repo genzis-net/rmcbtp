@@ -39,7 +39,7 @@
     <!-- INNER PAGE BANNER END -->
      
     <!-- SECTION CONTENTG START -->
-    <div class="section-full p-tb80 inner-page-padding">
+    <div class="section-full p-tb80 inner-page-padding" style="background:url('/assets/images/bg-11.png')">
         <!-- LOCATION BLOCK-->
         <div class="container">
         
@@ -48,7 +48,8 @@
                 <!-- CONTACT FORM-->
                 <div class="row">
                     <div class="col-md-8 col-sm-6">
-                        <form class="contact-form cons-contact-form" method="post" action="#">
+                        <form class="contact-form cons-contact-form" id="contactFormAdvanced" enctype="multipart/form-data">
+                            @csrf
                             <div class="contact-one m-b30">
                             
                             <!-- TITLE START -->
@@ -62,23 +63,31 @@
                             <!-- TITLE END --> 
                                                                 
                                 <div class="form-group">
-                                    <input name="username" type="text" required class="form-control" placeholder="Name">
+                                    <input name="name" type="text" required class="form-control" placeholder="Name">
                                 </div>
                            
                                 <div class="form-group">
-                                    <input name="email" type="text" class="form-control" placeholder="Email">
+                                    <input name="email" type="email" class="form-control" required placeholder="Email">
                                 </div>
 
                                 <div class="form-group">
                                     <input name="phone" type="text" class="form-control" required placeholder="Phone Number">
                                 </div>
+
+                                <div class="form-group">
+                                    <input name="subject" type="text" class="form-control" required placeholder="Subject Line">
+                                </div>
                            
                                 <div class="form-group">
-                                    <textarea name="message" rows="4" class="form-control " required placeholder="Message"></textarea>
+                                    <textarea name="message" rows="4" class="form-control " id="textareamsg" required placeholder="Message"></textarea>
                                 </div>
-                            
+
+                                <div id="saveform_errList"></div>
+                                <div class="m-b15 site-button outline green text-uppercase m-r15" role="alert" id="success_message" style="display: none;">
+                                        <span id="the_message"></span>
+                                </div>
                                 <div class="text-right">
-                                    <button name="submit" type="submit" value="Submit" class="site-button btn-effect">submit</button>
+                                    <button type="submit" id="contactFormSubmit" value="Submit" class="valid site-button btn-effect">submit</button>
                                 </div>
 
                             </div>
@@ -138,4 +147,57 @@
     
 </div>
 
+@endsection
+
+@section('scripts')
+<script>
+    $(document).ready(function() {       
+
+        //saves new contact message
+        $('#contactFormAdvanced').on('click', '.valid', function(e) {
+            e.preventDefault();
+
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+
+            var data = new FormData(document.getElementById("contactFormAdvanced"));
+            var message = $('#textareamsg').val();
+            data.append('message', message);
+
+            $.ajax({
+                type: "POST",
+                url: "{{ route('store-contact') }}",
+                data: data,
+                dataType: 'JSON',
+                contentType: false,
+                cache: false,
+                async: false,
+                processData: false,
+                success: function(response) {
+                    if (response.status == 400) {
+                        $('#saveform_errList').html("");
+                        $('#saveform_errList').show();
+                        $('#saveform_errList').addClass("alert alert-danger");
+                        $.each(response.errors, function(key, err_values) {
+                            $('#saveform_errList').append('<li>' + err_values +
+                                '</li>');
+                        });
+                    } else {
+                        $('#the_message').html('');
+                        $('#saveform_errList').hide();
+                        $('#success_message').show();
+                        setTimeout(function() {
+                            $('#success_message').fadeOut('slow');
+                        }, 5000);
+                        $('#the_message').append(response.success);
+                        $('#contactFormAdvanced').find('.form-control').val('');
+                    }
+                }
+            });
+        });
+    });
+</script>
 @endsection
