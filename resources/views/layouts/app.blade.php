@@ -242,7 +242,7 @@
                                             <a href="javascript:;">RMC BTP</a>
                                             <ul class="sub-menu has-child">
                                                 <li><a href="{{ route('underconstruction') }}">Consulting</a></li>
-                                                <li><a href="{{ route('underconstruction') }}">Architecture</a></li>
+                                                <li><a href="{{ route('architecture') }}">Architecture</a></li>
                                                 <li><a href="{{ route('underconstruction') }}">Construction</a></li>
                                                 <li><a href="{{ route('underconstruction') }}">Home Renovation</a></li>
                                             </ul>
@@ -357,7 +357,7 @@
                                 <h4 class="widget-title">Useful links</h4>
                                 <ul>
                                     <li><a href="#">Consulting</a></li>
-                                    <li><a href="#">Architecture</a></li>
+                                    <li><a href="{{ route('architecture') }}">Architecture</a></li>
                                     <li><a href="#">Construction</a></li>
                                     <li><a href="#">Home Renovation</a></li>
                                 </ul>
