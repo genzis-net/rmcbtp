@@ -251,7 +251,7 @@
 											<a href="{{ route('underconstruction') }}">SIMS QUINCAILLERIE</a>
 										</li> 
 										<li>
-											<a href="{{ route('underconstruction') }}">SIMS DECOR</a>
+											<a href="{{ route('simsdecor') }}">SIMS DECOR</a>
 										</li>                                       
                                     </ul>
                                 </li>
@@ -343,6 +343,8 @@
                                     <li><a href="{{ route('about') }}">About</a></li>
                                     <li><a href="{{ route('projects') }}">Our Work</a></li>
                                     <li><a href="{{ route('contact') }}">Contact Us</a></li>
+                                    <li><a href="{{ route('simsdecor') }}">SIMS DECOR</a></li>
+                                    <li><a href="{{ route('simsdecor') }}">SIMS QUINCAILLERIE</a></li>
                                     <!--li><a href="#">Catalogues | Home Deco</a></li>
                                     <li><a href="#">Catalogues | Sims Quincailleries</a></li>
                                     <li><a href="#">Catalogues | Sims House Plans</a></li-->
@@ -350,54 +352,17 @@
                             </div>
                         </div>
 
-                        <!-- TAGS -->
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="widget recent-posts-entry-date">
-                                <h4 class="widget-title">Resent Post</h4>
-                                <div class="widget-post-bx">
-                                    <div class="bdr-light-blue widget-post clearfix  bdr-b-1 m-b10 p-b10">
-                                        <div class="mt-post-date text-center text-uppercase text-white p-tb5">
-                                            <strong class="p-date">24</strong>
-                                            <span class="p-month">April</span>
-                                            <span class="p-year">2019</span>
-                                        </div>
-                                        <div class="mt-post-info">
-                                            <div class="mt-post-header">
-                                                <h6 class="post-title"><a href="blog-single.html">On these beams,
-                                                        we’re building dreams.</a></h6>
-                                            </div>
-                                            <div class="mt-post-meta">
-                                                <ul>
-                                                    <li class="post-author"><i class="fa fa-user"></i>By Admin</li>
-                                                    <li class="post-comment"><i class="fa fa-comments"></i> 28</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="bdr-light-blue widget-post clearfix  bdr-b-1 m-b10 p-b10">
-                                        <div class="mt-post-date text-center text-uppercase text-white p-tb5">
-                                            <strong class="p-date">30</strong>
-                                            <span class="p-month">May</span>
-                                            <span class="p-year">2019</span>
-                                        </div>
-                                        <div class="mt-post-info">
-                                            <div class="mt-post-header">
-                                                <h6 class="post-title"><a href="blog-single.html">We’ll be a
-                                                        sensation for you next renovation</a></h6>
-                                            </div>
-                                            <div class="mt-post-meta">
-                                                <ul>
-                                                    <li class="post-author"><i class="fa fa-user"></i>By Admin</li>
-                                                    <li class="post-comment"><i class="fa fa-comments"></i> 29</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 footer-col-3">
+                            <div class="widget widget_services inline-links">
+                                <h4 class="widget-title">Useful links</h4>
+                                <ul>
+                                    <li><a href="#">Consulting</a></li>
+                                    <li><a href="#">Architecture</a></li>
+                                    <li><a href="#">Construction</a></li>
+                                    <li><a href="#">Home Renovation</a></li>
+                                </ul>
                             </div>
                         </div>
-                        <!-- NEWSLETTER -->
 
                     </div>
                 </div>

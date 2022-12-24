@@ -57,6 +57,33 @@ class PagesController extends Controller
         return view('pages.about');
     }
 
+    public function simsdecor(){
+        return view('pages.simsdecor');
+    }
+
+    public function quincaillerie(){
+        return view('pages.quincaillerie');
+        
+    }
+
+    public function architecture(){
+        return view('pages.architecture');
+    }
+
+    public function consulting(){
+        return view('pages.consulting');
+    }
+
+    public function renovation(){
+        return view('pages.renovation');
+    }
+
+    public function construction(){
+        return view('pages.construction');
+    }
+
+
+
     public function projects(){
         $refs=Reference::OrderBy('updated_at', 'DESC')->paginate(12);
         return view('pages.projects', compact('refs'));

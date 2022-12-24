@@ -1,10 +1,10 @@
 @extends('layouts.app')
 @section('headerz')
-<title>RMC BTP sarl | About Us</title>
+<title>{{ $ref->title_en }}</title>
 <meta property="og:image" content="/assets//assets//assets/images/favicon.jpg" />
 <meta property="og:description" content="" />
-<meta property="og:url" content="https://rmcbtpsarl.com/projects" />
-<meta property="og:title" content="RMC BTP sarl | Our Work" />
+<meta property="og:url" content="https://rmcbtpsarl.com/projects/{{ $ref->title_en }}" />
+<meta property="og:title" content="RMC BTP sarl | Our Work | {{ $ref->title_en }}" />
 <meta name="keywords" content="">
 @endsection
 

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('headerz')
-<title>RMC BTP sarl | About Us</title>
+<title>RMC BTP sarl | Our Work</title>
 <meta property="og:image" content="/assets//assets//assets/images/favicon.jpg" />
 <meta property="og:description" content="" />
 <meta property="og:url" content="https://rmcbtpsarl.com/projects" />
@@ -44,11 +44,11 @@
             <div class="filter-wrap p-b30 text-center">
                 <ul class="filter-navigation inline-navigation masonry-filter link-style  text-uppercase">
                     <li class="active"><a data-filter="*" href="#" data-hover="All">All</a></li>
-                    <li><a data-filter=".cat-1" href="#" data-hover="Construction">Construction</a></li>
-                    <li><a data-filter=".cat-2" href="#" data-hover="Renovation">Renovation</a></li>
-                    <li><a data-filter=".cat-3" href="#" data-hover="blue Prints">Blue Prints</a></li>
-                    <li><a data-filter=".cat-4" href="#" data-hover="Interiors">Interiors </a></li>
-                    <li><a data-filter=".cat-5" href="#" data-hover="Consulting">Consulting</a></li>
+                    <li><a data-filter=".Construction" href="#" data-hover="Construction">Construction</a></li>
+                    <li><a data-filter=".Renovation" href="#" data-hover="Renovation">Renovation</a></li>
+                    <li><a data-filter=".Architecture" href="#" data-hover="blue Prints">Blue Prints</a></li>
+                    <li><a data-filter=".Interior" href="#" data-hover="Interiors">Interior</a></li>
+                    <li><a data-filter=".Consulting" href="#" data-hover="Consulting">Consulting</a></li>
                 </ul>
             </div>
             <!-- PAGINATION END -->
@@ -86,7 +86,7 @@
             </style>
             <div class="portfolio-wrap mfp-gallery work-grid row clearfix marged" style="">
                 @foreach($refs as $ref)
-                <div class="masonry-item cat-1  col-lg-4 col-md-4 col-sm-6 m-b30" style="border: 1px solid blue; margin: auto; padding: 2rem;">
+                <div class="masonry-item {{ $ref->project_type }}  col-lg-4 col-md-4 col-sm-6 m-b30" style="border: 1px solid blue; margin: auto; padding: 2rem;">
                     <div class="project-classic" >
                         <div class="mt-box">
                             <div class="theimage" style="background-image:url('/images/achievements/{{ $ref->title_en }}/{{ $ref->images[0]->src }}'); "></div>
