@@ -72,3 +72,4 @@ Route::get('/contact-us', [App\Http\Controllers\frontoffice\PagesController::cla
 Route::post('/store-contact', [App\Http\Controllers\frontoffice\PagesController::class, 'storeContact'])->name('store-contact');
 Route::get('/about-us', [App\Http\Controllers\frontoffice\PagesController::class, 'about'])->name('about');
 Route::get('/projects', [App\Http\Controllers\frontoffice\PagesController::class, 'projects'])->name('projects');
+Route::get('/read-project', [App\Http\Controllers\frontoffice\PagesController::class, 'readproject'])->name('readproject');

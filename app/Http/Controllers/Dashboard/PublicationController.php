@@ -9,7 +9,6 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
 
 use App\Models\Reference;
-use App\Models\Album;
 use App\Models\Image;
 
 class PublicationController extends Controller

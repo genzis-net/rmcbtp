@@ -46,213 +46,63 @@
                     <li class="active"><a data-filter="*" href="#" data-hover="All">All</a></li>
                     <li><a data-filter=".cat-1" href="#" data-hover="Construction">Construction</a></li>
                     <li><a data-filter=".cat-2" href="#" data-hover="Renovation">Renovation</a></li>
-                    <li><a data-filter=".cat-3" href="#" data-hover="Outdoor">Outdoor</a></li>
+                    <li><a data-filter=".cat-3" href="#" data-hover="blue Prints">Blue Prints</a></li>
                     <li><a data-filter=".cat-4" href="#" data-hover="Interiors">Interiors </a></li>
                     <li><a data-filter=".cat-5" href="#" data-hover="Consulting">Consulting</a></li>
                 </ul>
             </div>
             <!-- PAGINATION END -->
             <!-- GALLERY CONTENT START -->
+            <style>
+                .marged{
+                    margin-left: 5rem; margin-right:5rem;
+                }
 
-            <div class="portfolio-wrap mfp-gallery work-grid row clearfix">
-                <!-- COLUMNS 1 -->
-                <div class="masonry-item cat-1  col-lg-3 col-md-4 col-sm-6 m-b30">
-                    <div class="project-classic">
-                        <div class="mt-box ">
-                            <div class="mt-thum-bx  img-center-icon  mt-img-overlay2">
-                                <img src="/assets/images/projects/square/pic4.jpg" alt="">
-                                <div class="overlay-bx">
-                                    <div class="overlay-icon">
-                                        <a href="project-detail.html">
-                                            <i class="fa fa-external-link mt-icon-box-xs "></i>
-                                        </a>
-                                        <a class="mfp-link" href="/assets/images/projects/square/pic4.jpg">
-                                            <i class="fa fa-arrows-alt mt-icon-box-xs"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                .theimage{
+                    width: 100%; 
+                    height: 350px; 
+                    background-size: cover;
+                }
+
+                .trimmed{
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3; /* number of lines to show */
+                            line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                }
+
+                @media (max-width: 500px){
+                    .marged{
+                        margin-left: 0.2rem; margin-right:0.2rem;
+                    }
+                    .theimage{
+                        width: 100%; 
+                        height: 200px; 
+                    }
+
+                }
+            </style>
+            <div class="portfolio-wrap mfp-gallery work-grid row clearfix marged" style="">
+                @foreach($refs as $ref)
+                <div class="masonry-item cat-1  col-lg-4 col-md-4 col-sm-6 m-b30" style="border: 1px solid blue; margin: auto; padding: 2rem;">
+                    <div class="project-classic" >
+                        <div class="mt-box">
+                            <div class="theimage" style="background-image:url('/images/achievements/{{ $ref->title_en }}/{{ $ref->images[0]->src }}'); "></div>
                         </div>
                         <div class="mt-info p-t20">
-                            <h4 class="mt-title m-b20 m-t0" data-hover="Stronger communities">Stronger communities</h4>
-                            <p>This is ipsum dolor sitamet, consectetur adipisi cing elito, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
-                            <a href="#" class="site-button-link" data-hover="Read More">Read More <i class="fa fa-angle-right arrow-animation"></i></a>
+                            <h4 class="mt-title m-b20 m-t0" data-hover="{{ $ref->title_en }}">{{ $ref->title_en }}</h4>
+                            <?php 
+                                $truncated = Str::of($ref->content_en)->limit(200);
+                            ?>
+                            <p class="trimmed">{!! $truncated !!}</p>
+                            <a href="{{ route('readproject', compact('ref')) }}" class="site-button-link" data-hover="Read More">Read More <i class="fa fa-angle-right arrow-animation"></i></a>
                         </div>
                     </div>
                 </div>
-                <!-- COLUMNS 2 -->
-                <div class="masonry-item cat-2 col-lg-3 col-md-4 col-sm-6 m-b30">
-                    <div class="project-classic">
-                        <div class="mt-box ">
-                            <div class="mt-thum-bx img-center-icon  mt-img-overlay2">
-                                <img src="/assets/images/projects/square/pic3.jpg" alt="">
-                                <div class="overlay-bx">
-                                    <div class="overlay-icon">
-                                        <a href="project-detail.html">
-                                            <i class="fa fa-external-link mt-icon-box-xs "></i>
-                                        </a>
-                                        <a class="mfp-link" href="/assets/images/projects/square/pic3.jpg">
-                                            <i class="fa fa-arrows-alt mt-icon-box-xs"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-info p-t20">
-                            <h4 class="mt-title m-b20 m-t0" data-hover="Concept to creation">Concept to creation</h4>
-                            <p>This is ipsum dolor sitamet, consectetur adipisi cing elito, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p> <a href="#" class="site-button-link" data-hover="Read More">Read More <i class="fa fa-angle-right arrow-animation"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- COLUMNS 3 -->
-                <div class="masonry-item cat-3 col-lg-3 col-md-4 col-sm-6 m-b30">
-                    <div class="project-classic">
-                        <div class="mt-box ">
-                            <div class="mt-thum-bx img-center-icon  mt-img-overlay2">
-                                <img src="/assets/images/projects/square/pic6.jpg" alt="">
-                                <div class="overlay-bx">
-                                    <div class="overlay-icon">
-                                        <a href="project-detail.html">
-                                            <i class="fa fa-external-link mt-icon-box-xs "></i>
-                                        </a>
-                                        <a class="mfp-link" href="/assets/images/projects/square/pic6.jpg">
-                                            <i class="fa fa-arrows-alt mt-icon-box-xs"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-info p-t20">
-                            <h4 class="mt-title m-b20 m-t0" data-hover="Safety for life">Safety for life</h4>
-                            <p>This is ipsum dolor sitamet, consectetur adipisi cing elito, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p> <a href="#" class="site-button-link" data-hover="Read More">Read More <i class="fa fa-angle-right arrow-animation"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- COLUMNS 4 -->
-                <div class="masonry-item cat-4 col-lg-3 col-md-4 col-sm-6 m-b30">
-                    <div class="project-classic">
-                        <div class="mt-box ">
-                            <div class="mt-thum-bx img-center-icon  mt-img-overlay2">
-                                <img src="/assets/images/projects/square/pic5.jpg" alt="">
-                                <div class="overlay-bx">
-                                    <div class="overlay-icon">
-                                        <a href="project-detail.html">
-                                            <i class="fa fa-external-link mt-icon-box-xs "></i>
-                                        </a>
-                                        <a class="mfp-link" href="/assets/images/projects/square/pic5.jpg">
-                                            <i class="fa fa-arrows-alt mt-icon-box-xs"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-info p-t20">
-                            <h4 class="mt-title m-b20 m-t0" data-hover="Whatever it takes">Whatever it takes</h4>
-                            <p>This is ipsum dolor sitamet, consectetur adipisi cing elito, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
-                            <a href="#" class="site-button-link" data-hover="Read More">Read More <i class="fa fa-angle-right arrow-animation"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- COLUMNS 5 -->
-                <div class="masonry-item cat-5 col-lg-3 col-md-4 col-sm-6 m-b30">
-                    <div class="project-classic">
-                        <div class="mt-box ">
-                            <div class="mt-thum-bx img-center-icon  mt-img-overlay2">
-                                <img src="/assets/images/projects/square/pic7.jpg" alt="">
-                                <div class="overlay-bx">
-                                    <div class="overlay-icon">
-                                        <a href="project-detail.html">
-                                            <i class="fa fa-external-link mt-icon-box-xs "></i>
-                                        </a>
-                                        <a class="mfp-link" href="/assets/images/projects/square/pic7.jpg">
-                                            <i class="fa fa-arrows-alt mt-icon-box-xs"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-info p-t20">
-                            <h4 class="mt-title m-b20 m-t0" data-hover="We build tomorrow">We build tomorrow</h4>
-                            <p>This is ipsum dolor sitamet, consectetur adipisi cing elito, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
-                            <a href="#" class="site-button-link" data-hover="Read More">Read More <i class="fa fa-angle-right arrow-animation"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- COLUMNS 6 -->
-                <div class="masonry-item cat-4 col-lg-3 col-md-4 col-sm-6 m-b30">
-                    <div class="project-classic">
-                        <div class="mt-box ">
-                            <div class="mt-thum-bx  img-center-icon mt-img-overlay2">
-                                <img src="/assets/images/projects/square/pic8.jpg" alt="">
-                                <div class="overlay-bx">
-                                    <div class="overlay-icon">
-                                        <a href="project-detail.html">
-                                            <i class="fa fa-external-link mt-icon-box-xs "></i>
-                                        </a>
-                                        <a class="mfp-link" href="/assets/images/projects/square/pic8.jpg">
-                                            <i class="fa fa-arrows-alt mt-icon-box-xs"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-info p-t20">
-                            <h4 class="mt-title m-b20 m-t0" data-hover="The key to our success">The key to our success</h4>
-                            <p>This is ipsum dolor sitamet, consectetur adipisi cing elito, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
-                            <a href="#" class="site-button-link" data-hover="Read More">Read More <i class="fa fa-angle-right arrow-animation"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- COLUMNS 7 -->
-                <div class="masonry-item cat-3 col-lg-3 col-md-4 col-sm-6 m-b30">
-                    <div class="project-classic">
-                        <div class="mt-box ">
-                            <div class="mt-thum-bx  img-center-icon mt-img-overlay2">
-                                <img src="/assets/images/projects/square/pic2.jpg" alt="">
-                                <div class="overlay-bx">
-                                    <div class="overlay-icon">
-                                        <a href="project-detail.html">
-                                            <i class="fa fa-external-link mt-icon-box-xs "></i>
-                                        </a>
-                                        <a class="mfp-link" href="/assets/images/projects/square/pic2.jpg">
-                                            <i class="fa fa-arrows-alt mt-icon-box-xs"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-info p-t20">
-                            <h4 class="mt-title m-b20 m-t0" data-hover="Rising above">Rising above</h4>
-                            <p>This is ipsum dolor sitamet, consectetur adipisi cing elito, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
-                            <a href="#" class="site-button-link" data-hover="Read More">Read More <i class="fa fa-angle-right arrow-animation"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- COLUMNS 8 -->
-                <div class="masonry-item cat-2 col-lg-3 col-md-4 col-sm-6 m-b30">
-                    <div class="project-classic">
-                        <div class="mt-box ">
-                            <div class="mt-thum-bx img-center-icon  mt-img-overlay2">
-                                <img src="/assets/images/projects/square/pic9.jpg" alt="">
-                                <div class="overlay-bx">
-                                    <div class="overlay-icon">
-                                        <a href="project-detail.html">
-                                            <i class="fa fa-external-link mt-icon-box-xs "></i>
-                                        </a>
-                                        <a class="mfp-link" href="/assets/images/projects/square/pic9.jpg">
-                                            <i class="fa fa-arrows-alt mt-icon-box-xs"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-info p-t20">
-                            <h4 class="mt-title m-b20 m-t0" data-hover="From concept to creation">From concept to creation</h4>
-                            <p>This is ipsum dolor sitamet, consectetur adipisi cing elito, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
-                            <a href="#" class="site-button-link" data-hover="Read More">Read More <i class="fa fa-angle-right arrow-animation"></i></a>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
+
 
             </div>
             <!-- GALLERY CONTENT END -->
@@ -266,4 +116,4 @@
     </div>
 
 
-@endsection
+    @endsection

@@ -7,6 +7,7 @@ use App\Mail\ContactFormMail;
 use Illuminate\Support\Facades\Validator;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Reference;
 
 class PagesController extends Controller
 {
@@ -57,6 +58,13 @@ class PagesController extends Controller
     }
 
     public function projects(){
-        return view('pages.projects');
+        $refs=Reference::OrderBy('updated_at', 'DESC')->paginate(12);
+        return view('pages.projects', compact('refs'));
+    }
+
+    public function readproject(Reference $project){
+        $ref=Reference::Where('id', $_GET['ref'])->get();
+        $ref=$ref[0];
+        return view('pages.readproject', compact('ref'));
     }
 }

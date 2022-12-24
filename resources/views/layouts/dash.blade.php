@@ -163,137 +163,12 @@
           <span>HOME</span>
         </a>
       </li><!-- End Dashboard Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#shop-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-shop"></i><span>Boutique</span><i class="bi bi-chevron-down ms-auto"></i><i class="bi bi-lock-fill" style="font-size: 1rem;"></i>
-        </a>
-        @if(Route::currentRouteName() == 'manage-products'|| Route::currentRouteName() == 'manage-cats'||Route::currentRouteName() == 'manage-materials'||Route::currentRouteName() == 'manage-orders'
-        || Route::currentRouteName() == 'show-order' || Route::currentRouteName() == 'manage-sales'|| Route::currentRouteName() == 'manage-cancels' || Route::currentRouteName() == 'manage-unpaid')
-        <ul id="shop-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
-        @else
-        <ul id="shop-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-        @endif
-          <li>
-            <a class="nav-link collapsed" data-bs-target="#product-nav" data-bs-toggle="collapse" href="#">
-              <i class="bi bi-box-seam" style="font-size: 1rem;"></i><span>Produits <i class="bi bi-lock-fill" style="font-size: 1rem;"></i></span>
-            </a>
-            @if(Route::currentRouteName() == 'manage-products'||Route::currentRouteName() == 'manage-cats'||Route::currentRouteName() == 'manage-materials')
-            <ul id="product-nav" class="nav-content collapse show" style="margin-left: 2rem; font-style:italic;" data-bs-parent="#shop-nav">
-            @else
-            <ul id="product-nav" class="nav-content collapse" style="margin-left: 2rem; font-style:italic;" data-bs-parent="#shop-nav">
-              @endif
-              <li>
-                @if (Route::currentRouteName() == 'manage-products' ) 
-                  <a href="#" class="active">
-                    <i class="bi bi-file-bar-graph" style="font-size: 1rem;"></i><span>Gestion des produits <i class="bi bi-lock-fill" style="font-size: 1rem;"></i></span>
-                  </a>
-                @else
-                  <a href="#" class="">
-                    <i class="bi bi-file-bar-graph" style="font-size: 1rem;"></i><span>Gestion des produits <i class="bi bi-lock-fill" style="font-size: 1rem;"></i></span>
-                  </a>
-                @endif
-              </li>
-              <li>
-                @if (Route::currentRouteName() == 'manage-cats' )
-                <a href="#" class="active">
-                  <i class="bi bi-box" style="font-size: 1rem;"></i><span>Categorisation <i class="bi bi-lock-fill" style="font-size: 1rem;"></i></span>
-                </a>
-                @else
-                <a href="#">
-                  <i class="bi bi-box" style="font-size: 1rem;"></i><span>Categorisation <i class="bi bi-lock-fill" style="font-size: 1rem;"></i></span>
-                </a>
-                @endif                
-              </li>   
-              <li>
-                @if (Route::currentRouteName() == 'manage-materials')
-                <a href="#" class="active">
-                  <i class="bi bi-minecart-loaded" style="font-size: 1rem;"></i><span>Materiel <i class="bi bi-lock-fill" style="font-size: 1rem;"></i></span>
-                </a>
-                @else
-                <a href="#">
-                  <i class="bi bi-minecart-loaded" style="font-size: 1rem;"></i><span>Materiel <i class="bi bi-lock-fill" style="font-size: 1rem;"></i></span>
-                </a>
-                @endif                
-              </li>              
-            </ul>
-          </li>
-          <li>
-            <a class="nav-link collapsed" data-bs-target="#order-nav" data-bs-toggle="collapse" href="#">
-              <i class="bi bi-bag-check" style="font-size: 1rem;"></i><span>Commades <i class="bi bi-lock-fill" style="font-size: 1rem;"></i></span>
-            </a>
-            @if(Route::currentRouteName() == 'manage-orders' || Route::currentRouteName() == 'show-order' || Route::currentRouteName() == 'manage-sales' 
-            || Route::currentRouteName() == 'manage-cancels' || Route::currentRouteName() == 'manage-unpaid'||Route::currentRouteName() == 'manage-clients')
-            <ul id="order-nav" class="nav-content collapse show" style="margin-left: 2rem; font-style:italic;" data-bs-parent="#shop-nav">
-            @else
-            <ul id="order-nav" class="nav-content collapse " style="margin-left: 2rem; font-style:italic;" data-bs-parent="#shop-nav">
-            @endif
-              <li>
-                @if (Route::currentRouteName() == 'manage-orders' || Route::currentRouteName() == 'show-order') 
-                  <a href="#" class="active">
-                    <i class="bi bi-truck" style="font-size: 1rem;"></i><span>Livraisons <i class="bi bi-lock-fill" style="font-size: 1rem;"></i></span>
-                  </a>
-                @else
-                  <a href="#" class="">
-                    <i class="bi bi-truck" style="font-size: 1rem;"></i><span>Livraisons <i class="bi bi-lock-fill" style="font-size: 1rem;"></i></span>
-                  </a>
-                @endif
-              </li>
-              <li>
-                @if (Route::currentRouteName() == 'manage-unpaid') 
-                  <a href="#" class="active">
-                    <i class="bi bi-truck" style="font-size: 1rem;"></i><span>Impayes <i class="bi bi-lock-fill" style="font-size: 1rem;"></i></span>
-                  </a>
-                @else
-                  <a href="#" class="">
-                    <i class="bi bi-truck" style="font-size: 1rem;"></i><span>Impayes <i class="bi bi-lock-fill" style="font-size: 1rem;"></i></span>
-                  </a>
-                @endif
-              </li>
-              <li>
-                @if (Route::currentRouteName() == 'manage-sales')
-                <a href="#" class="active">
-                  <i class="bi bi-clock" style="font-size: 1rem;"></i><span>Ventes <i class="bi bi-lock-fill" style="font-size: 1rem;"></i></span>
-                </a>
-                @else
-                <a href="#">
-                  <i class="bi bi-clock" style="font-size: 1rem;"></i><span>Ventes <i class="bi bi-lock-fill" style="font-size: 1rem;"></i></span>
-                </a>
-                @endif                
-              </li>
-              <li>
-                @if (Route::currentRouteName() == 'manage-cancels')
-                <a href="#" class="active">
-                  <i class="bi bi-clock" style="font-size: 1rem;"></i><span>Commandes Annulees <i class="bi bi-lock-fill" style="font-size: 1rem;"></i></span>
-                </a>
-                @else
-                <a href="#">
-                  <i class="bi bi-clock" style="font-size: 1rem;"></i><span>Commandes Annulees <i class="bi bi-lock-fill" style="font-size: 1rem;"></i></span>
-                </a>
-                @endif                
-              </li>
-            </ul>
-          </li>
-          <li>
-            @if (Route::currentRouteName() == 'manage-clients')
-                <a href="#" class="active">
-                  <i class="bi bi-people" style="font-size: 1rem;"></i><span>Clientelle <i class="bi bi-lock-fill" style="font-size: 1rem;"></i></span>
-                </a>
-                @else
-                <a href="#">
-                  <i class="bi bi-people" style="font-size: 1rem;"></i><span>Clientelle <i class="bi bi-lock-fill" style="font-size: 1rem;"></i></span>
-                </a>
-              @endif
-          </li>
-        </ul>
-      </li><!-- End shop Nav -->
-
       
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#blog-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-file-richtext"></i><span>Publications</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
-        @if(Route::currentRouteName() == 'show-ref' ||Route::currentRouteName() == 'manage-testimonies' || Route::currentRouteName() == 'show-testimony')
+        @if(Route::currentRouteName() == 'show-ref')
         <ul id="blog-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
         @else
         <ul id="blog-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
@@ -307,18 +182,6 @@
                 @else
                 <a href="{{ route('manage-refs') }}">
                   <i class="bi bi-trophy" style="font-size: 1rem;"></i><span>Realisations</span>
-                </a>
-              @endif
-          </li>
-
-          <li>
-            @if (Route::currentRouteName() == 'manage-testimonies' || Route::currentRouteName() == 'show-testimony')
-                <a href="#" class="active">
-                  <i class="bi bi-hand-thumbs-up" style="font-size: 1rem;"></i><span>Temoignages <i class="bi bi-lock-fill" style="font-size: 1rem;"></i></span>
-                </a>
-                @else
-                <a href="#">
-                  <i class="bi bi-hand-thumbs-up" style="font-size: 1rem;"></i><span>Temoignages <i class="bi bi-lock-fill" style="font-size: 1rem;"></i></span>
                 </a>
               @endif
           </li>
@@ -371,51 +234,6 @@
           </li>
         </ul>
       </li><!-- End Maintenance Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#news-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-envelope"></i><span>Newsletter</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        @if(Route::currentRouteName() == 'newsletter' || Route::currentRouteName() == 'campaigns' || Route::currentRouteName() == 'mailbox')
-        <ul id="news-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
-        @else
-        <ul id="news-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-        @endif
-          <li>
-            @if (Route::currentRouteName() == 'newsletter')
-                <a href="" class="active">
-                  <i class="bi bi-envelope" style="font-size: 1rem;"></i><span>Newsletter <i class="bi bi-lock-fill" style="font-size: 1rem;"></i></span>
-                </a>
-                @else
-                <a href="">
-                  <i class="bi bi-envelope" style="font-size: 1rem;"></i><span>Newsletter <i class="bi bi-lock-fill" style="font-size: 1rem;"></i></span>
-                </a>
-              @endif
-          </li>
-          <li>
-            @if (Route::currentRouteName() == 'campaigns')
-                <a href="" class="active">
-                  <i class="bi bi-megaphone" style="font-size: 1rem;"></i><span>Mes Campagnes <i class="bi bi-lock-fill" style="font-size: 1rem;"></i></span>
-                </a>
-                @else
-                <a href="">
-                  <i class="bi bi-megaphone" style="font-size: 1rem;"></i><span>Mes Campagnes <i class="bi bi-lock-fill" style="font-size: 1rem;"></i></span>
-                </a>
-              @endif
-          </li>
-          <li>
-            @if (Route::currentRouteName() == 'mailbox')
-                <a href="{{ route('mailbox') }}" class="active">
-                  <i class="bi bi-envelope-open" style="font-size: 1rem;"></i><span>Inbox</span>
-                </a>
-                @else
-                <a href="{{ route('mailbox') }}">
-                  <i class="bi bi-envelope-open" style="font-size: 1rem;"></i><span>Inbox</span>
-                </a>
-              @endif
-          </li>
-        </ul>
-      </li><!-- End Newsletter Nav -->
 
     </ul>
 

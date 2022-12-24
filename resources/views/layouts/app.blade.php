@@ -139,7 +139,7 @@
                         <!-- ETRA Nav -->
                         <div class="extra-nav">
                             <div class="extra-cell">
-                                <a href="javascript:;" class="contact-slide-show">EN/FR</a>
+                                <a href="javascript:;" class="contact-slide-show"><img src="/assets/images/lng.png" style="width: 35px"></a>
                             </div>
                         </div>
                         <!-- ETRA Nav -->
@@ -255,7 +255,7 @@
 										</li>                                       
                                     </ul>
                                 </li>
-								<li>
+								<!--li>
 									<a href="javascript:;">Catalogues</a>
 									<ul class="sub-menu has-child">
 										<li><a href="{{ route('underconstruction') }}">Interior Designs and Furnitures</a></li>
@@ -263,7 +263,7 @@
 										<li><a href="{{ route('underconstruction') }}">Machineries</a></li>
 										<li><a href="{{ route('underconstruction') }}">Blue prints</a></li>
 									</ul>
-								</li>
+								</li-->
 								<li class="{{Route::currentRouteName() === 'projects' ? 'active' : ''}}">
 									<a href="{{ route('projects') }}">Our Work</a>
 								</li>
@@ -340,13 +340,12 @@
                             <div class="widget widget_services inline-links">
                                 <h4 class="widget-title">Useful links</h4>
                                 <ul>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Projects</a></li>
-                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="{{ route('about') }}">About</a></li>
+                                    <li><a href="{{ route('projects') }}">Our Work</a></li>
                                     <li><a href="{{ route('contact') }}">Contact Us</a></li>
-                                    <li><a href="#">Catalogues | Home Deco</a></li>
+                                    <!--li><a href="#">Catalogues | Home Deco</a></li>
                                     <li><a href="#">Catalogues | Sims Quincailleries</a></li>
-                                    <li><a href="#">Catalogues | Sims House Plans</a></li>
+                                    <li><a href="#">Catalogues | Sims House Plans</a></li-->
                                 </ul>
                             </div>
                         </div>
