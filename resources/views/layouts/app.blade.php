@@ -109,11 +109,11 @@
                                                 )
                                         </script>
                                     </a></li>
-                                <li><i class="fa fa-phone"></i>+237 693 909 159</li>
+                                <li><i class="fa fa-phone"></i>@lang('category.line')('+237 693 909 159')</li>
                             </ul>
                         </div>
                         <div class="mt-topbar-right clearfix">
-                            <div class="appint-btn"><a href="{{ route('contact', app()->getLocale()) }}" class="site-button">Request a Quote</a></div>
+                            <div class="appint-btn"><a href="{{ route('contact', app()->getLocale()) }}" class="site-button">{{ __('Request a Quote') }}</a></div>
                         </div>
                     </div>
                 </div>
