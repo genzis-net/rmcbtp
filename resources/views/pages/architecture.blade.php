@@ -48,10 +48,26 @@
                         </div>
                     </div>
                 </div>
+
+                <style>
+                    .large-title{
+                        font-size:50px !important;
+                    }
+
+                    @media(max-width:500px){
+                        .large-title{
+                        font-size:30px !important;
+                        }
+                        .large-title-info{
+                            font-size:15px;
+                        }
+                    }
+                </style>
+
                 <!-- TITLE END -->
                 <div class="m-about-containt text-black p-t80">
                     <div class="m-about-years bg-moving" style="background-image:url(images/background/line.png);">
-                        <span class="text-primary large-title" style="font-size: 50px">EXCELLENT SERVICE ... EXCELLENT PRODUCT</span>
+                        <span class="text-primary large-title">EXCELLENT SERVICE ... EXCELLENT PRODUCT</span>
                         <span class="large-title-info">The professionals at RMC-BTP pride themselves on their ability and willingness to listen to the Client.</span>
                     </div>
                     <div class="author-info p-t20">

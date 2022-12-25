@@ -248,7 +248,7 @@
                                             </ul>
                                         </li>
 										<li>
-											<a href="{{ route('underconstruction') }}">SIMS QUINCAILLERIE</a>
+											<a href="{{ route('quincaillerie') }}">SIMS QUINCAILLERIE</a>
 										</li> 
 										<li>
 											<a href="{{ route('simsdecor') }}">SIMS DECOR</a>
@@ -344,7 +344,7 @@
                                     <li><a href="{{ route('projects') }}">Our Work</a></li>
                                     <li><a href="{{ route('contact') }}">Contact Us</a></li>
                                     <li><a href="{{ route('simsdecor') }}">SIMS DECOR</a></li>
-                                    <li><a href="{{ route('simsdecor') }}">SIMS QUINCAILLERIE</a></li>
+                                    <li><a href="{{ route('quincaillerie') }}">SIMS QUINCAILLERIE</a></li>
                                     <!--li><a href="#">Catalogues | Home Deco</a></li>
                                     <li><a href="#">Catalogues | Sims Quincailleries</a></li>
                                     <li><a href="#">Catalogues | Sims House Plans</a></li-->
