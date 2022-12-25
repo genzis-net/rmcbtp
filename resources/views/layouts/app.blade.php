@@ -153,7 +153,7 @@
                                     <div class="contact-info   m-b30">
 										
 										<div class="mt-icon-box-wraper center p-b30">
-                                            <div class="icon-xs m-b20 scale-in-center">Select
+                                            <div class="icon-xs m-b20 scale-in-center">{{ __('Select') }}
                                             </div>
                                             <div class="icon-content">
                                                 <h5 class="m-t0 font-weight-500"><a href="{{ route(\Illuminate\Support\Facades\Route::currentRouteName(), 'fr') }}">Français</a></h5>
@@ -165,7 +165,7 @@
                                             <div class="icon-xs m-b20 scale-in-center"><i class="fa fa-phone"></i>
                                             </div>
                                             <div class="icon-content">
-                                                <h5 class="m-t0 font-weight-500">Phone number</h5>
+                                                <h5 class="m-t0 font-weight-500">{{ __('Phone number') }}</h5>
                                                 <p>+237 693 909 159</p>
                                             </div>
                                         </div>
@@ -174,7 +174,7 @@
                                             <div class="icon-xs m-b20 scale-in-center"><i class="fa fa-envelope"></i>
                                             </div>
                                             <div class="icon-content">
-                                                <h5 class="m-t0 font-weight-500">Email address</h5>
+                                                <h5 class="m-t0 font-weight-500">{{ __('Email address') }}</h5>
                                                 <p><a style="color: #000;"
                                                         href="javascript:location='mailto:\u0063\u006f\u006e\u0074\u0061\u0063\u0074\u0040\u0072\u006d\u0063\u0062\u0074\u0070\u0073\u0061\u0072\u006c\u002e\u0063\u006f\u006d';void 0">
                                                         <script type="text/javascript">
@@ -190,8 +190,8 @@
                                             <div class="icon-xs m-b20 scale-in-center"><i
                                                     class="fa fa-map-marker"></i></div>
                                             <div class="icon-content">
-                                                <h5 class="m-t0 font-weight-500">Address info</h5>
-                                                <p>Yaounde - Cameroon</p>
+                                                <h5 class="m-t0 font-weight-500">{{ __('Address info') }}</h5>
+                                                <p>Yaounde - {{ __('Cameroon') }}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -209,7 +209,7 @@
                                                 document.write(new Date().getFullYear())
                                             </script> RMC BTP SARL .
                                         </h4>
-                                        <h4>Delivered by <a href="https://genzis.net" style="color: #blue">Genzis</a>.
+                                        <h4>{{ __('Delivered by') }} <a href="https://genzis.net" style="color: #blue">Genzis</a>.
                                         </h4>
                                     </div>
                                 </div>
@@ -229,11 +229,11 @@
                         <div class="header-nav navbar-collapse collapse">
                             <ul class=" nav navbar-nav">
                                 <li class="{{Route::currentRouteName() === 'homepage' ? 'active' : ''}}">
-                                    <a href="{{ route('homepage', app()->getLocale()) }}">Home</a>
+                                    <a href="{{ route('homepage', app()->getLocale()) }}">{{ __('Home') }}</a>
                                 </li>
 
                                 <li class="{{Route::currentRouteName() === 'about' ? 'active' : ''}}">
-                                    <a href="{{ route('about', app()->getLocale()) }}">About us</a>
+                                    <a href="{{ route('about', app()->getLocale()) }}">{{ __('About us') }}</a>
                                 </li>
                                 <li class="{{Route::currentRouteName() === 'simsdecor'||Route::currentRouteName() === 'quincaillerie'||Route::currentRouteName() === 'renovation'||Route::currentRouteName() === 'construction'||Route::currentRouteName() === 'architecture'||Route::currentRouteName() === 'consulting' ? 'active' : ''}}">
                                     <a href="javascript:;">Services</a>
@@ -244,7 +244,7 @@
                                                 <li><a href="{{ route('consulting', app()->getLocale()) }}">Consulting</a></li>
                                                 <li><a href="{{ route('architecture', app()->getLocale()) }}">Architecture</a></li>
                                                 <li><a href="{{ route('construction', app()->getLocale()) }}">Construction</a></li>
-                                                <li><a href="{{ route('renovation', app()->getLocale()) }}">Home Renovation</a></li>
+                                                <li><a href="{{ route('renovation', app()->getLocale()) }}">Renovation</a></li>
                                             </ul>
                                         </li>
 										<li>
@@ -265,10 +265,10 @@
 									</ul>
 								</li-->
 								<li class="{{Route::currentRouteName() === 'projects' ? 'active' : ''}}">
-									<a href="{{ route('projects', app()->getLocale()) }}">Our Work</a>
+									<a href="{{ route('projects', app()->getLocale()) }}">{{ __('Our Work') }}</a>
 								</li>
 								<li class="{{Route::currentRouteName() === 'contact' ? 'active' : ''}}">
-									<a href="{{ route('contact', app()->getLocale()) }}">Contact us</a>
+									<a href="{{ route('contact', app()->getLocale()) }}">{{ __('Contact us') }}</a>
 								</li>
                             </ul>
                         </div>
@@ -303,9 +303,7 @@
                                             alt=""></a>
                                 </div>
                                 <p class="max-w400">
-									RMC-BTP is all about delivering Quality Estate construction. 
-									We work with a large team of professionals, experienced and 
-									passionate workes who know the value you seek in your projects.
+									{{ __('RMC-BTP is all about delivering Quality Estate construction. We work with a large team of professionals, experienced and passionate workers who know the value you seek in your projects.') }}
                                 </p>
 
                                 <ul class="social-icons  mt-social-links">
@@ -318,9 +316,9 @@
                         <!-- RESENT POST -->
                         <div class="col-lg-3 col-md-6 col-sm-6">
                             <div class="widget widget_address_outer">
-                                <h4 class="widget-title">Contact Us</h4>
+                                <h4 class="widget-title">{{ __('Contact us') }}</h4>
                                 <ul class="widget_address">
-                                    <li>Yaounde -Cameroon</li>
+                                    <li>Yaoundé - {{ __('Cameroon') }}</li>
                                     <li><a style="color: #fff;"
                                         href="javascript:location='mailto:\u0063\u006f\u006e\u0074\u0061\u0063\u0074\u0040\u0072\u006d\u0063\u0062\u0074\u0070\u0073\u0061\u0072\u006c\u002e\u0063\u006f\u006d';void 0">
                                         <script type="text/javascript">
@@ -338,11 +336,11 @@
                         <!-- USEFUL LINKS -->
                         <div class="col-lg-3 col-md-6 col-sm-6 footer-col-3">
                             <div class="widget widget_services inline-links">
-                                <h4 class="widget-title">Useful links</h4>
+                                <h4 class="widget-title">{{ __('Useful links') }}</h4>
                                 <ul>
-                                    <li><a href="{{ route('about', app()->getLocale()) }}">About</a></li>
-                                    <li><a href="{{ route('projects', app()->getLocale()) }}">Our Work</a></li>
-                                    <li><a href="{{ route('contact', app()->getLocale()) }}">Contact Us</a></li>
+                                    <li><a href="{{ route('about', app()->getLocale()) }}">{{ __('About us') }}</a></li>
+                                    <li><a href="{{ route('projects', app()->getLocale()) }}">{{ __('Our Work') }}</a></li>
+                                    <li><a href="{{ route('contact', app()->getLocale()) }}">{{ __('Contact us') }}</a></li>
                                     <li><a href="{{ route('simsdecor', app()->getLocale()) }}">SIMS DECOR</a></li>
                                     <li><a href="{{ route('quincaillerie', app()->getLocale()) }}">SIMS QUINCAILLERIE</a></li>
                                     <!--li><a href="#">Catalogues | Home Deco</a></li>
@@ -354,7 +352,7 @@
 
                         <div class="col-lg-3 col-md-6 col-sm-6 footer-col-3">
                             <div class="widget widget_services inline-links">
-                                <h4 class="widget-title">Useful links</h4>
+                                <h4 class="widget-title">{{ __('Useful links') }}</h4>
                                 <ul>
                                     <li><a href="{{ route('consulting', app()->getLocale()) }}">Consulting</a></li>
                                     <li><a href="{{ route('architecture', app()->getLocale()) }}">Architecture</a></li>
@@ -376,7 +374,7 @@
                             <span class="copyrights-text">©
                                 <script>
                                     document.write(new Date().getFullYear())
-                                </script> RMC BTP SARL . Designed by <a href="https://genzis.net"
+                                </script> RMC BTP SARL . {{ __('Delivered by') }} <a href="https://genzis.net"
                                     style="color: #fff">Genzis</a>.
                             </span>
                         </div>

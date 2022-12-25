@@ -65,7 +65,7 @@
 						font-weight: 700;
 						color:#111;
 						border-width:0px;font-family: 'Poppins', sans-serif; text-transform:uppercase ;">
-                            <div>We Build Your Dream</div>
+                            <div>{{ __('We Build Your Dream') }}</div>
 
                         </div>
 
@@ -101,7 +101,7 @@
 						font-weight: 500;
 						color:#111;
 						 border-width:0px;font-family: 'Poppins', sans-serif;">
-                            At RMC-BTP we are offering more than just what you asked for at competitive prices.
+                            {{ __('At RMC-BTP we are offering more than just what you asked for at competitive prices.') }}
 
                         </div>
 
@@ -119,7 +119,7 @@
                             data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
                             data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                             style="z-index:100; text-transform:uppercase;">
-                            <a href="{{ route('contact', app()->getLocale()) }}" class="site-button-secondry btn-effect">Talk to an Expert</a>
+                            <a href="{{ route('contact', app()->getLocale()) }}" class="site-button-secondry btn-effect">{{ __('Talk to an Expert') }}</a>
                         </div>
 
                     </li>
@@ -172,7 +172,7 @@
 						font-weight: 700;
 						color:#111;
 						border-width:0px;font-family: 'Poppins', sans-serif; text-transform:uppercase ;">
-                            <div>From concept to creation.</div>
+                            <div>{{ __('From concept to creation.') }}</div>
 
                         </div>
 
@@ -208,8 +208,7 @@
 						font-weight: 500;
 						color:#111;
 						 border-width:0px;font-family: 'Poppins', sans-serif;">
-                            Your dream house is only days away with our prompt and professional deisgning services. Go bold
-                            on the results you want.
+                            {{ __('Your dream house is only days away with our prompt and professional designing services. Go bold on the results you want.') }}
 
                         </div>
 
@@ -227,7 +226,7 @@
                             data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
                             data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                             style="z-index:100; text-transform:uppercase;">
-                            <a href="{{ route('contact', app()->getLocale()) }}" class="site-button-secondry btn-effect">Talk to an Expert</a>
+                            <a href="{{ route('contact', app()->getLocale()) }}" class="site-button-secondry btn-effect">{{ __('Talk to an Expert') }}</a>
                         </div>
 
                     </li>
@@ -280,7 +279,7 @@
 						font-weight: 700;
 						color:#111;
 						border-width:0px;font-family: 'Poppins', sans-serif; text-transform:uppercase ;">
-                            <div>Making dreams come to life</div>
+                            <div>{{ __('Making dreams come to life') }}</div>
 
                         </div>
 
@@ -316,8 +315,7 @@
 						font-weight: 500;
 						color:#111;
 						 border-width:0px;font-family: 'Poppins', sans-serif;">
-                            We have organized our ressources to ease up your decision making. Contact us today to get a
-                            quote.
+                            {{__('We have organized our ressources to ease up your decision making. Contact us today to get a quote.')}}
 
                         </div>
 
@@ -335,7 +333,7 @@
                             data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
                             data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                             style="z-index:100; text-transform:uppercase;">
-                            <a href="{{ route('contact', app()->getLocale()) }}" class="site-button-secondry btn-effect">Talk to an Expert</a>
+                            <a href="{{ route('contact', app()->getLocale()) }}" class="site-button-secondry btn-effect">{{ __('Talk to an Expert') }}</a>
                         </div>
 
                     </li>
@@ -378,7 +376,7 @@
                                 <img src="/assets/images/pic1.jpg" alt="" />
                                 <div class="figcaption">
                                     <h4>RMC BTP</h4>
-                                    <p>Our Contractors services to build yout houses and buildings from the ground up.</p>
+                                    <p>{{ __('Our Contractors services to build your houses and buildings from the ground up.') }}</p>
                                     <a href="{{ route('construction', app()->getLocale()) }}"><i class="link-plus bg-primary"></i></a>
                                 </div>
 
@@ -392,8 +390,7 @@
                                 <img src="/assets/images/pic2.jpg" alt="" />
                                 <div class="figcaption">
                                     <h4>SIMS QUINCAILLERIE</h4>
-                                    <p>Our premium equipment store for all your construction needs. We Provide heavy duty
-                                        and commonly needed materials and equipments.</p>
+                                    <p>{{ __('Our premium equipment store for all your construction needs. We Provide heavy duty and commonly needed materials and equipments.') }}</p>
                                     <a href="{{ route('quincaillerie', app()->getLocale()) }}"><i class="link-plus bg-primary"></i></a>
                                 </div>
 
@@ -406,7 +403,7 @@
                                 <img src="/assets/images/pic3.jpg" alt="" />
                                 <div class="figcaption bg-dark">
                                     <h4>SIMS DECOR</h4>
-                                    <p>The finish touches your new home or building needs to reflect your dreams</p>
+                                    <p>{{ __('The finish touches your new home or building needs to reflect your dreams') }}</p>
                                     <a href="{{ route('simsdecor', app()->getLocale()) }}"><i class="link-plus bg-primary"></i></a>
                                 </div>
 
@@ -417,9 +414,8 @@
                         <div class="col-lg-3 col-md-12 col-sm-6 m-b30">
 
                             <div class="mt-box our-speciallization-content">
-                                <h3 class="m-t0"><span class="font-weight-100">Building Your Dream Home from
-                                        Scratch.</span></h3>
-                                <a class="site-button btn-effect" href="{{ route('contact', app()->getLocale()) }}">Request a Quote</a>
+                                <h3 class="m-t0"><span class="font-weight-100">{{ __('Building Your Dream Home from Scratch.') }}</span></h3>
+                                <a class="site-button btn-effect" href="{{ route('contact', app()->getLocale()) }}">{{ __('Request a Quote') }}</a>
                             </div>
 
                         </div>
@@ -427,7 +423,7 @@
                 </div>
             </div>
             <div class="hilite-title text-right p-r50 text-uppercase text-pop-up-top">
-                <strong>Welcome</strong>
+                <strong>{{ __('Welcome') }}</strong>
             </div>
         </div>
         <!-- OUR SPECIALLIZATION END -->
