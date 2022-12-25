@@ -379,7 +379,7 @@
                                 <div class="figcaption">
                                     <h4>RMC BTP</h4>
                                     <p>Our Contractors services to build yout houses and buildings from the ground up.</p>
-                                    <a href="#"><i class="link-plus bg-primary"></i></a>
+                                    <a href="{{ route('construction') }}"><i class="link-plus bg-primary"></i></a>
                                 </div>
 
 
@@ -394,7 +394,7 @@
                                     <h4>SIMS QUINCAILLERIE</h4>
                                     <p>Our premium equipment store for all your construction needs. We Provide heavy duty
                                         and commonly needed materials and equipments.</p>
-                                    <a href="#"><i class="link-plus bg-primary"></i></a>
+                                    <a href="{{ route('quincaillerie') }}"><i class="link-plus bg-primary"></i></a>
                                 </div>
 
                             </div>
@@ -407,7 +407,7 @@
                                 <div class="figcaption bg-dark">
                                     <h4>SIMS DECOR</h4>
                                     <p>The finish touches your new home or building needs to reflect your dreams</p>
-                                    <a href="#"><i class="link-plus bg-primary"></i></a>
+                                    <a href="{{ route('simsdecor') }}"><i class="link-plus bg-primary"></i></a>
                                 </div>
 
                             </div>
@@ -496,7 +496,7 @@
                                     our teams can handle your projects from construction, material and deco.
                                 </p>
                                 <div class="text-right">
-                                    <a href="#" class="site-button-link" data-hover="Read More">More
+                                    <a href="{{ route('about') }}" class="site-button-link" data-hover="Read More">More
                                         <i class="fa fa-angle-right arrow-animation"></i></a>
                                 </div>
                             </div>
@@ -661,7 +661,7 @@
                                     <li><a href="#">Dschang</a></li>
                                 </ul>
                                 <div class="text-right">
-                                    <a href="#" class="site-button-link" data-hover="Read More">More Achievements
+                                    <a href="{{ route('projects') }}" class="site-button-link" data-hover="Read More">More Achievements
                                         <i class="fa fa-angle-right arrow-animation"></i></a>
                                 </div>
                             </div>
@@ -675,39 +675,40 @@
                         <div class="col-md-4 col-sm-12">
                             <div class="contact-home1-left bg-dark p-a30 m-b0">
                                 <h3 class="text-white m-t0"><span class="font-weight-100">Get In</span> Touch</h3>
-                                <form class="cons-contact-form2 form-transparent" method="post"
-                                    action="https://7xtheme.com/shapen/form-handler2.php">
+                                <form class="contact-form cons-contact-form" id="contactFormAdvanced" enctype="multipart/form-data">
+                            @csrf
+                            <div class="contact-one m-b30">
+                                                                
+                                <div class="form-group">
+                                    <input name="name" type="text" required class="form-control" placeholder="Name">
+                                </div>
+                           
+                                <div class="form-group">
+                                    <input name="email" type="email" class="form-control" required placeholder="Email">
+                                </div>
 
-                                    <div class="input input-animate">
-                                        <label for="name">Name</label>
-                                        <input type="text" name="username" id="name" required>
-                                        <span class="spin"></span>
-                                    </div>
+                                <div class="form-group">
+                                    <input name="phone" type="text" class="form-control" required placeholder="Phone Number">
+                                </div>
 
-                                    <div class="input input-animate">
-                                        <label for="email">Email</label>
-                                        <input type="email" name="email" id="email" required>
-                                        <span class="spin"></span>
-                                    </div>
+                                <div class="form-group">
+                                    <input name="subject" type="text" class="form-control" required placeholder="Subject Line">
+                                </div>
+                           
+                                <div class="form-group">
+                                    <textarea name="message" class="form-control " id="textareamsg" required placeholder="Message"></textarea>
+                                </div>
 
-                                    <div class="input input-animate">
-                                        <label for="Phone">Phone</label>
-                                        <input type="text" name="phone" id="Phone" required>
-                                        <span class="spin"></span>
-                                    </div>
+                                <div id="saveform_errList"></div>
+                                <div class="m-b15 site-button outline green text-uppercase m-r15" role="alert" id="success_message" style="display: none;">
+                                        <span id="the_message"></span>
+                                </div>
+                                <div class="text-right">
+                                    <button type="submit" id="contactFormSubmit" value="Submit" class="valid site-button btn-effect">submit</button>
+                                </div>
 
-                                    <div class="input input-animate">
-                                        <label for="message">Textarea</label>
-                                        <textarea name="message" id="message" required></textarea>
-                                        <span class="spin"></span>
-                                    </div>
-
-                                    <div class="text-center p-t10">
-                                        <button type="submit" class="site-button btn-effect ">
-                                            Submit Now
-                                        </button>
-                                    </div>
-                                </form>
+                            </div>
+                        </form>
                             </div>
                         </div>
 
@@ -754,8 +755,7 @@
                                         <div class="icon-content">
                                             <h4 class="mt-tilte m-b25">Architecture</h4>
                                             <p>We design highways, bridges, houses, and building. </p>
-                                            <a href="{{ route('contact') }}" class="site-button-link" data-hover="Read More">Request a
-                                                Quote <i class="fa fa-angle-right arrow-animation"></i></a>
+                                            <a href="{{ route('architecture') }}" class="site-button-link" data-hover="Read More">More..<i class="fa fa-angle-right arrow-animation"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -775,8 +775,7 @@
                                             <h4 class="mt-tilte m-b25">Construction</h4>
                                             <p>Our method involves following latest construction standards.
                                             </p>
-                                            <a href="{{ route('contact') }}" class="site-button-link" data-hover="Read More">Request a
-                                                Quote <i class="fa fa-angle-right arrow-animation"></i></a>
+                                            <a href="{{ route('construction') }}" class="site-button-link" data-hover="Read More">More... <i class="fa fa-angle-right arrow-animation"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -795,7 +794,7 @@
                                         <div class="icon-content">
                                             <h4 class="mt-tilte m-b25">Material<br>and Machines</h4>
                                             <p>Nails, hammers, ciment, shovels, and all sort of machineries.</p>
-                                            <a href="#" class="site-button-link" data-hover="Read More">Explore
+                                            <a href="{{ route('quincaillerie') }}" class="site-button-link" data-hover="Read More">Explore
                                                 catalog <i class="fa fa-angle-right arrow-animation"></i></a>
                                         </div>
                                     </div>
@@ -816,7 +815,7 @@
                                             <h4 class="mt-tilte m-b25">Home<br>Renovation</h4>
                                             <p>Our qualified technicians are available at all time for your projects at home
                                             </p>
-                                            <a href="#" class="site-button-link" data-hover="Read More">Ask an
+                                            <a href="{{ route('renovation') }}" class="site-button-link" data-hover="Read More">Ask an
                                                 Expert <i class="fa fa-angle-right arrow-animation"></i></a>
                                         </div>
                                     </div>
@@ -836,7 +835,7 @@
                                         <div class="icon-content">
                                             <h4 class="mt-tilte m-b25">Furnitures<br>and Home Deco</h4>
                                             <p>Get Inspired and choose what you want your home to be like. </p>
-                                            <a href="#" class="site-button-link" data-hover="Read More">Explore
+                                            <a href="{{ route('simsdecor') }}" class="site-button-link" data-hover="Read More">Explore
                                                 Catalog <i class="fa fa-angle-right arrow-animation"></i></a>
                                         </div>
                                     </div>
@@ -856,8 +855,7 @@
                                         <div class="icon-content">
                                             <h4 class="mt-tilte m-b25">Consulting</h4>
                                             <p>Need assistance with anything? We can help.</p>
-                                            <a href="#" class="site-button-link" data-hover="Read More">Ask an
-                                                Expert <i class="fa fa-angle-right arrow-animation"></i></a>
+                                            <a href="{{ route('consulting') }}" class="site-button-link" data-hover="Read More">More... <i class="fa fa-angle-right arrow-animation"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -917,164 +915,35 @@
                                     <ul class="filter-navigation masonry-filter text-uppercase">
                                         <li class="active"><a data-filter="*" data-hover="All" href="#">All</a>
                                         </li>
-                                        <li><a data-filter=".cat-1" data-hover="Album1" href="javascript:;">Album1</a>
+                                        <li><a data-filter=".Construction" data-hover="Construction" href="javascript:;">Construction</a>
                                         </li>
-                                        <li><a data-filter=".cat-4" data-hover="Album2" href="javascript:;">Album2</a>
+                                        <li><a data-filter=".Renovation" data-hover="Renovation" href="javascript:;">Renovation</a>
                                         </li>
-                                        <li><a data-filter=".cat-2" data-hover="Album3" href="javascript:;">Album3 </a>
+                                        <li><a data-filter=".Architecture" data-hover="Blue Prints" href="javascript:;">Blue Prints </a>
                                         </li>
-                                        <li><a data-filter=".cat-3" data-hover="Album4" href="javascript:;">Album4</a>
+                                        <li><a data-filter=".Interior" data-hover="Interior" href="javascript:;">Interior</a>
                                         </li>
-                                        <li><a data-filter=".cat-5" data-hover="Album5" href="javascript:;">Album5</a>
-                                        </li>
-                                        <li><a data-filter=".cat-6" data-hover="Album6" href="javascript:;">Album6 </a>
+                                        <li><a data-filter=".Consulting" data-hover="Consulting" href="javascript:;">Consulting</a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
+                        @foreach($refs as $ref)
+                            <div class="masonry-item  {{ $ref->project_type }} col-md-3 col-sm-6 m-b30">
+                            <div class="mt-box   image-hover-block">
+                                <div class="mt-thum-bx">
+                                    <img src="/images/achievements/{{ $ref->title_en }}/{{ $ref->images[0]->src}}" alt="{{ $ref->title_en }}">
+                                </div>
+                                <div class="mt-info  p-t20 text-white">
+                                    <h4 class="mt-tilte m-b10 m-t0">{{ $ref->title_en }}</h4>
+                                </div>
+                                <a href="{{ route('readproject', compact('ref')) }}"></a>
+                            </div>
+                        </div>
+                        @endforeach
                         <!-- COLUMNS 2 -->
-                        <div class="masonry-item  cat-2 col-md-3 col-sm-6 m-b30">
-                            <div class="mt-box   image-hover-block">
-                                <div class="mt-thum-bx">
-                                    <img src="/assets/images/projects/portrait/pic1.jpg" alt="">
-                                </div>
-                                <div class="mt-info  p-t20 text-white">
-                                    <h4 class="mt-tilte m-b10 m-t0">Chair Furniture</h4>
-                                    <p class="m-b0">Muscat, Sultanate of Oman</p>
-                                </div>
-                                <a href="#"></a>
-                            </div>
-                        </div>
-
-                        <!-- COLUMNS 3 -->
-                        <div class="masonry-item  cat-2 col-md-3 col-sm-6 m-b30">
-                            <div class="mt-box   image-hover-block">
-                                <div class="mt-thum-bx">
-                                    <img src="/assets/images/projects/portrait/pic2.jpg" alt="">
-                                </div>
-                                <div class="mt-info  p-t20 text-white">
-                                    <h4 class="mt-tilte m-b10 m-t0">Furniture</h4>
-                                    <p class="m-b0">North House</p>
-                                </div>
-                                <a href="#"></a>
-                            </div>
-                        </div>
-
-                        <!-- COLUMNS 4 -->
-                        <div class="masonry-item  cat-6 col-md-3 col-sm-6 m-b30">
-                            <div class="mt-box   image-hover-block">
-                                <div class="mt-thum-bx">
-                                    <img src="/assets/images/projects/portrait/pic3.jpg" alt="">
-                                </div>
-                                <div class="mt-info  p-t20 text-white">
-                                    <h4 class="mt-tilte m-b10 m-t0">Living room</h4>
-                                    <p class="m-b0">Aqaba, Jordan</p>
-                                </div>
-                                <a href="#"></a>
-                            </div>
-                        </div>
-
-                        <!-- COLUMNS 5 -->
-                        <div class="masonry-item  cat-6 col-md-3 col-sm-6 m-b30">
-                            <div class="mt-box   image-hover-block">
-                                <div class="mt-thum-bx">
-                                    <img src="/assets/images/projects/portrait/pic4.jpg" alt="">
-                                </div>
-                                <div class="mt-info  p-t20 text-white">
-                                    <h4 class="mt-tilte m-b10 m-t0">Dream Workspace</h4>
-                                    <p class="m-b0">Perth, Australia </p>
-                                </div>
-                                <a href="#"></a>
-                            </div>
-                        </div>
-
-                        <!-- COLUMNS 6 -->
-                        <div class="masonry-item  cat-3 col-md-3 col-sm-6 m-b30">
-                            <div class="mt-box   image-hover-block">
-                                <div class="mt-thum-bx">
-                                    <img src="/assets/images/projects/portrait/pic5.jpg" alt="">
-                                </div>
-                                <div class="mt-info  p-t20 text-white">
-                                    <h4 class="mt-tilte m-b10 m-t0">Decore</h4>
-                                    <p class="m-b0">Aqaba, Jordan</p>
-                                </div>
-                                <a href="#"></a>
-                            </div>
-                        </div>
-
-                        <!-- COLUMNS 7 -->
-                        <div class="masonry-item  cat-3 col-md-3 col-sm-6 m-b30">
-                            <div class="mt-box   image-hover-block">
-                                <div class="mt-thum-bx">
-                                    <img src="/assets/images/projects/portrait/pic6.jpg" alt="">
-                                </div>
-                                <div class="mt-info  p-t20 text-white">
-                                    <h4 class="mt-tilte m-b10 m-t0">Modern Decoration</h4>
-                                    <p class="m-b0">Muscat, Sultanate of Oman</p>
-                                </div>
-                                <a href="#"></a>
-                            </div>
-                        </div>
-
-                        <!-- COLUMNS 8 -->
-                        <div class="masonry-item  cat-1 col-md-3 col-sm-6 m-b30">
-                            <div class="mt-box   image-hover-block">
-                                <div class="mt-thum-bx">
-                                    <img src="/assets/images/projects/portrait/pic7.jpg" alt="">
-                                </div>
-                                <div class="mt-info  p-t20 text-white">
-                                    <h4 class="mt-tilte m-b10 m-t0">Bathroom</h4>
-                                    <p class="m-b0">North House</p>
-                                </div>
-                                <a href="#"></a>
-                            </div>
-                        </div>
-
-                        <!-- COLUMNS 11 -->
-                        <div class="masonry-item  cat-6 col-md-6 col-sm-6 m-b30">
-                            <div class="mt-box   image-hover-block">
-                                <div class="mt-thum-bx">
-                                    <img src="/assets/images/projects/pic-l-5.jpg" alt="">
-                                </div>
-                                <div class="mt-info  p-t20 text-white">
-                                    <h4 class="mt-tilte m-b10 m-t0">Lamp decoration</h4>
-                                    <p class="m-b0">Aqaba, Jordan</p>
-                                </div>
-                                <a href="#"></a>
-                            </div>
-                        </div>
-
-
-                        <!-- COLUMNS 9 -->
-                        <div class="masonry-item  cat-5 col-md-3 col-sm-6 m-b30">
-                            <div class="mt-box   image-hover-block">
-                                <div class="mt-thum-bx">
-                                    <img src="/assets/images/projects/pic-1.jpg" alt="">
-                                </div>
-                                <div class="mt-info  p-t20 text-white">
-                                    <h4 class="mt-tilte m-b10 m-t0">Building house</h4>
-                                    <p class="m-b0">Ultanate of Oman </p>
-                                </div>
-                                <a href="#"></a>
-                            </div>
-                        </div>
-
-                        <!-- COLUMNS 10 -->
-                        <div class="masonry-item  cat-4 col-md-3 col-sm-6 m-b30">
-                            <div class="mt-box   image-hover-block">
-                                <div class="mt-thum-bx">
-                                    <img src="/assets/images/projects/pic-2.jpg" alt="">
-                                </div>
-                                <div class="mt-info  p-t20 text-white">
-                                    <h4 class="mt-tilte m-b10 m-t0">Spa residence</h4>
-                                    <p class="m-b0">Perth, Australia </p>
-                                </div>
-                                <a href="#"></a>
-                            </div>
-                        </div>
-
-
+                        
                     </div>
 
                 </div>
@@ -1135,4 +1004,54 @@
 
 
 @section('scripts')
+<script>
+    $(document).ready(function() {       
+
+        //saves new contact message
+        $('#contactFormAdvanced').on('click', '.valid', function(e) {
+            e.preventDefault();
+
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+
+            var data = new FormData(document.getElementById("contactFormAdvanced"));
+            var message = $('#textareamsg').val();
+            data.append('message', message);
+
+            $.ajax({
+                type: "POST",
+                url: "{{ route('store-contact') }}",
+                data: data,
+                dataType: 'JSON',
+                contentType: false,
+                cache: false,
+                async: false,
+                processData: false,
+                success: function(response) {
+                    if (response.status == 400) {
+                        $('#saveform_errList').html("");
+                        $('#saveform_errList').show();
+                        $('#saveform_errList').addClass("alert alert-danger");
+                        $.each(response.errors, function(key, err_values) {
+                            $('#saveform_errList').append('<li>' + err_values +
+                                '</li>');
+                        });
+                    } else {
+                        $('#the_message').html('');
+                        $('#saveform_errList').hide();
+                        $('#success_message').show();
+                        setTimeout(function() {
+                            $('#success_message').fadeOut('slow');
+                        }, 5000);
+                        $('#the_message').append(response.success);
+                        $('#contactFormAdvanced').find('.form-control').val('');
+                    }
+                }
+            });
+        });
+    });
+</script>
 @endsection

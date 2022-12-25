@@ -88,143 +88,52 @@
 
 
 <!-- SECTION CONTENT START -->
-<div class="section-full p-t80 p-b50 bg-parallax bg-cover" data-stellar-background-ratio="0.5" style="background-image:url(/assets/images/background/bg5.jpg); margin-top:-8rem;">
-    <div class="container">
-        <!-- TITLE START -->
-        <div class="section-head">
-            <div class="mt-separator-outer separator-center">
-                <div class="mt-separator text-white">
-                    <h2 class="text-uppercase sep-line-one "><span class="font-weight-300 text-primary">Our</span> Projects</h2>
-                </div>
-            </div>
-        </div>
-        <!-- TITLE END -->
-        <!-- PAGINATION START -->
-        <div class="filter-wrap p-b15 center">
-            <ul class="masonry-filter link-style  text-uppercase white">
-                <li class="active"><a data-filter="*" href="#">All</a></li>
-                <li><a data-filter=".cat-1" href="#">2018</a></li>
-                <li><a data-filter=".cat-2" href="#">2019</a></li>
-                <li><a data-filter=".cat-3" href="#">2020</a></li>
-                <li><a data-filter=".cat-4" href="#">2021 </a></li>
-                <li><a data-filter=".cat-5" href="#">2022</a></li>
-            </ul>
-        </div>
-        <!-- PAGINATION END -->
+<div class="section-full p-t80 p-b50 bg-parallax bg-cover"  data-stellar-background-ratio="0.5" style="background-image:url(/assets/images/background/bg5.jpg);">
+            	<div class="container">
+                    <!-- TITLE START -->
+					<div class="section-head">
+						<div class="mt-separator-outer separator-center">
+							<div class="mt-separator text-white">
+								<h2 class="text-uppercase sep-line-one "><span class="font-weight-300 text-primary">Our</span> Projects</h2>
+							</div>
+						</div>
+					</div>                   
+                    <!-- TITLE END -->                
+                    <!-- PAGINATION START -->
+                    <div class="filter-wrap p-b15 center">
+                        <ul class="masonry-filter link-style  text-uppercase white">
+                                <li class="active"><a data-filter="*" href="#">All</a></li>
+                                @foreach($refs as $ref)
+                                    <li><a data-filter=".{{ ref->year }}" href="#">{{ ref->year }}</a></li>
+                                @endforeach
+                        </ul>
+                    </div>
+                    <!-- PAGINATION END -->
+                    
+                    <!-- GALLERY CONTENT START -->
+                     <div class="portfolio-wrap mfp-gallery work-grid row clearfix">
+                        <!-- COLUMNS 1 -->
+                        @foreach($refs as $ref)
+                            <div class="masonry-item {{ ref->year }}  col-md-3 col-sm-6 m-b30">
+                        	<div class="mt-box   image-hover-block">
+                                <div class="mt-thum-bx">
+                                    <img src="/images/achievements/{{ $ref->title_en }}/{{ $ref->images[0]->src}}" alt="{{ ref->title_en }}">
+                                </div>
+                                <div class="mt-info  p-t20 text-white">
+                                    <h4 class="mt-tilte m-b10 m-t0">{{ $ref->title_en }}</h4>
+                                </div>
+                                <a href="{{ route('readproject', compact('ref')) }}"></a>                                    
+                            </div>
+                        </div>
+                        @endforeach
+                        
+                               
+                     </div>
+                    <!-- GALLERY CONTENT END -->
+            	</div>
 
-        <!-- GALLERY CONTENT START -->
-        <div class="portfolio-wrap mfp-gallery work-grid row clearfix">
-            <!-- COLUMNS 1 -->
-            <div class="masonry-item cat-1  col-md-3 col-sm-6 m-b30">
-                <div class="mt-box   image-hover-block">
-                    <div class="mt-thum-bx">
-                        <img src="/assets/images/services/service-projects/shooping-mall.jpg" alt="">
-                    </div>
-                    <div class="mt-info  p-t20 text-white">
-                        <h4 class="mt-tilte m-b10 m-t0">Shopping Mall</h4>
-                        <p class="m-b0">Muscat, Sultanate of Oman</p>
-                    </div>
-                    <a href="#"></a>
-                </div>
+            
             </div>
-            <!-- COLUMNS 2 -->
-            <div class="masonry-item cat-2 col-md-3 col-sm-6 m-b30">
-                <div class="mt-box   image-hover-block">
-                    <div class="mt-thum-bx">
-                        <img src="/assets/images/services/service-projects/hospital.jpg" alt="">
-                    </div>
-                    <div class="mt-info  p-t20 text-white">
-                        <h4 class="mt-tilte m-b10 m-t0">Hospital Building</h4>
-                        <p class="m-b0">Muscat, Sultanate of Oman</p>
-                    </div>
-                    <a href="#"></a>
-                </div>
-            </div>
-            <!-- COLUMNS 3 -->
-            <div class="masonry-item cat-3 col-md-3 col-sm-6 m-b30">
-                <div class="mt-box   image-hover-block">
-                    <div class="mt-thum-bx">
-                        <img src="/assets/images/services/service-projects/garden-house.jpg" alt="">
-                    </div>
-                    <div class="mt-info  p-t20 text-white">
-                        <h4 class="mt-tilte m-b10 m-t0">Garden House</h4>
-                        <p class="m-b0">Muscat, Sultanate of Oman</p>
-                    </div>
-                    <a href="#"></a>
-                </div>
-            </div>
-            <!-- COLUMNS 4 -->
-            <div class="masonry-item cat-4 col-md-3 col-sm-6 m-b30">
-                <div class="mt-box   image-hover-block">
-                    <div class="mt-thum-bx">
-                        <img src="/assets/images/services/service-projects/villa.jpg" alt="">
-                    </div>
-                    <div class="mt-info  p-t20 text-white">
-                        <h4 class="mt-tilte m-b10 m-t0">Villa</h4>
-                        <p class="m-b0">Muscat, Sultanate of Oman</p>
-                    </div>
-                    <a href="#"></a>
-                </div>
-            </div>
-            <!-- COLUMNS 5 -->
-            <div class="masonry-item cat-5 col-md-3 col-sm-6 m-b30">
-                <div class="mt-box   image-hover-block">
-                    <div class="mt-thum-bx">
-                        <img src="/assets/images/services/service-projects/road-construction.jpg" alt="">
-                    </div>
-                    <div class="mt-info  p-t20 text-white">
-                        <h4 class="mt-tilte m-b10 m-t0">Road Construction</h4>
-                        <p class="m-b0">Muscat, Sultanate of Oman</p>
-                    </div>
-                    <a href="#"></a>
-                </div>
-            </div>
-            <!-- COLUMNS 6 -->
-            <div class="masonry-item cat-4 col-md-3 col-sm-6 m-b30">
-                <div class="mt-box   image-hover-block">
-                    <div class="mt-thum-bx">
-                        <img src="/assets/images/services/service-projects/bridge.jpg" alt="">
-                    </div>
-                    <div class="mt-info  p-t20 text-white">
-                        <h4 class="mt-tilte m-b10 m-t0">Bridge Construction</h4>
-                        <p class="m-b0">Muscat, Sultanate of Oman</p>
-                    </div>
-                    <a href="#"></a>
-                </div>
-            </div>
-            <!-- COLUMNS 7 -->
-            <div class="masonry-item cat-3 col-md-3 col-sm-6 m-b30">
-                <div class="mt-box   image-hover-block">
-                    <div class="mt-thum-bx">
-                        <img src="/assets/images/services/service-projects/building-ren.jpg" alt="">
-                    </div>
-                    <div class="mt-info  p-t20 text-white">
-                        <h4 class="mt-tilte m-b10 m-t0">Building Renovation</h4>
-                        <p class="m-b0">Muscat, Sultanate of Oman</p>
-                    </div>
-                    <a href="#"></a>
-                </div>
-            </div>
-            <!-- COLUMNS 5 -->
-            <div class="masonry-item cat-2 col-md-3 col-sm-6 m-b30">
-                <div class="mt-box   image-hover-block">
-                    <div class="mt-thum-bx">
-                        <img src="/assets/images/services/service-projects/dam-construction.jpg" alt="">
-                    </div>
-                    <div class="mt-info  p-t20 text-white">
-                        <h4 class="mt-tilte m-b10 m-t0">Dam Construction</h4>
-                        <p class="m-b0">Muscat, Sultanate of Oman</p>
-                    </div>
-                    <a href="#"></a>
-                </div>
-            </div>
-
-        </div>
-        <!-- GALLERY CONTENT END -->
-    </div>
-
-
-</div>
 <!-- SECTION CONTENT END  -->
 
 <!-- CALL US SECTION START -->
@@ -258,7 +167,7 @@
                         <div class="figcaption">
                             <h4>RMC BTP</h4>
                             <p>Our Contractors services to build yout houses and buildings from the ground up.</p>
-                            <a href="#"><i class="link-plus bg-primary"></i></a>
+                            <a href="{{ route('construction') }}"><i class="link-plus bg-primary"></i></a>
                         </div>
 
 
@@ -273,7 +182,7 @@
                             <h4>SIMS QUINCAILLERIE</h4>
                             <p>Our premium equipment store for all your construction needs. We Provide heavy duty
                                 and commonly needed materials and equipments.</p>
-                            <a href="#"><i class="link-plus bg-primary"></i></a>
+                            <a href="{{ route('quincaillerie') }}"><i class="link-plus bg-primary"></i></a>
                         </div>
 
                     </div>

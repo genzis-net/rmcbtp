@@ -74,150 +74,155 @@
 
 
     <!-- OUR SERVICES START -->
-    <div class="section-full mobile-page-padding  p-b50  square_shape2">
-        <div class="section-content">
-            <div class="Service-half-top p-t80  bg-dark bg-moving" style="background-image:url(/assets/images/background/bg-6.png)">
-                <div class="container">
-                    <!-- TITLE START -->
-                    <div class="section-head text-white">
-                        <div class="mt-separator-outer separator-left">
-                            <div class="mt-separator">
-                                <h2 class="text-white text-uppercase sep-line-one "><span class="font-weight-300 text-primary">Our</span> Services</h2>
-                            </div>
-                        </div>
-                        <h3>We Can Help You With:</h3>
-                    </div>
-                    <!-- TITLE END -->
-                </div>
-            </div>
-            <div class="services-half-bottom">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-6">
-
-                            <div class="mt-icon-box-wraper m-b30">
-                                <div class="relative icon-count-2 bg-gray p-a30 p-tb50" style="height: 335px;">
-                                    <span class="icon-count-number">1</span>
-                                    <div class="icon-md inline-icon m-b15 text-primary scale-in-center">
-                                        <span class="icon-cell"><img src="/assets/images/icon/compass.png" alt=""></span>
-                                    </div>
-                                    <div class="icon-content">
-                                        <h4 class="mt-tilte m-b25">Architecture</h4>
-                                        <p>We design highways, bridges, houses, and building. </p>
-                                        <a href="{{ route('contact') }}" class="site-button-link" data-hover="Read More">Request a
-                                            Quote <i class="fa fa-angle-right arrow-animation"></i></a>
-                                    </div>
+        <div class="section-full mobile-page-padding  p-b50  square_shape2">
+            <div class="section-content">
+                <div class="Service-half-top p-t80  bg-dark bg-moving"
+                    style="background-image:url(/assets/images/background/bg-6.png)">
+                    <div class="container">
+                        <!-- TITLE START -->
+                        <div class="section-head text-white">
+                            <div class="mt-separator-outer separator-left">
+                                <div class="mt-separator">
+                                    <h2 class="text-white text-uppercase sep-line-one "><span
+                                            class="font-weight-300 text-primary">Our</span> Services</h2>
                                 </div>
                             </div>
-
+                            <h3>We Can Help You With:</h3>
                         </div>
-
-                        <div class="col-md-4 col-sm-6">
-
-                            <div class="mt-icon-box-wraper m-b30">
-                                <div class="relative icon-count-2 bg-gray p-a30 p-tb50" style="    height: 335px;">
-                                    <span class="icon-count-number">2</span>
-                                    <div class="icon-md inline-icon m-b15 text-primary scale-in-center">
-                                        <span class="icon-cell"><img src="/assets/images/icon/crane-1.png" alt=""></span>
-                                    </div>
-                                    <div class="icon-content">
-                                        <h4 class="mt-tilte m-b25">Construction</h4>
-                                        <p>Our method involves following latest construction standards.
-                                        </p>
-                                        <a href="{{ route('contact') }}" class="site-button-link" data-hover="Read More">Request a
-                                            Quote <i class="fa fa-angle-right arrow-animation"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="col-md-4 col-sm-6">
-
-                            <div class="mt-icon-box-wraper m-b30">
-                                <div class="relative icon-count-2 bg-gray p-a30 p-tb50" style="    height: 335px;">
-                                    <span class="icon-count-number">3</span>
-                                    <div class="icon-md inline-icon m-b15 text-primary scale-in-center">
-                                        <span class="icon-cell"><img src="/assets/images/icon/toolbox.png" alt=""></span>
-                                    </div>
-                                    <div class="icon-content">
-                                        <h4 class="mt-tilte m-b25">Material<br>and Machines</h4>
-                                        <p>Nails, hammers, ciment, shovels, and all sort of machineries.</p>
-                                        <a href="#" class="site-button-link" data-hover="Read More">Explore
-                                            catalog <i class="fa fa-angle-right arrow-animation"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="col-md-4 col-sm-6">
-
-                            <div class="mt-icon-box-wraper m-b30">
-                                <div class="relative icon-count-2 bg-gray p-a30 p-tb50" style="    height: 335px;">
-                                    <span class="icon-count-number">4</span>
-                                    <div class="icon-md inline-icon m-b15 text-primary scale-in-center">
-                                        <span class="icon-cell"><img src="/assets/images/icon/dump-truck.png" alt=""></span>
-                                    </div>
-                                    <div class="icon-content">
-                                        <h4 class="mt-tilte m-b25">Home<br>Renovation</h4>
-                                        <p>Our qualified technicians are available at all time for your projects at home
-                                        </p>
-                                        <a href="#" class="site-button-link" data-hover="Read More">Ask an
-                                            Expert <i class="fa fa-angle-right arrow-animation"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="col-md-4 col-sm-6">
-
-                            <div class="mt-icon-box-wraper m-b30">
-                                <div class="relative icon-count-2 bg-gray p-a30 p-tb50" style="    height: 335px;">
-                                    <span class="icon-count-number">5</span>
-                                    <div class="icon-md inline-icon m-b15 text-primary scale-in-center">
-                                        <span class="icon-cell"><img src="/assets/images/icon/architecture.png" alt=""></span>
-                                    </div>
-                                    <div class="icon-content">
-                                        <h4 class="mt-tilte m-b25">Furnitures<br>and Home Deco</h4>
-                                        <p>Get Inspired and choose what you want your home to be like. </p>
-                                        <a href="#" class="site-button-link" data-hover="Read More">Explore
-                                            Catalog <i class="fa fa-angle-right arrow-animation"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="col-md-4 col-sm-6">
-
-                            <div class="mt-icon-box-wraper m-b30">
-                                <div class="relative icon-count-2 bg-gray p-a30 p-tb50" style="    height: 335px;">
-                                    <span class="icon-count-number">6</span>
-                                    <div class="icon-md inline-icon m-b15 text-primary scale-in-center">
-                                        <span class="icon-cell"><img src="/assets/images/icon/idea.png" alt=""></span>
-                                    </div>
-                                    <div class="icon-content">
-                                        <h4 class="mt-tilte m-b25">Consulting</h4>
-                                        <p>Need assistance with anything? We can help.</p>
-                                        <a href="#" class="site-button-link" data-hover="Read More">Ask an
-                                            Expert <i class="fa fa-angle-right arrow-animation"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
+                        <!-- TITLE END -->
                     </div>
                 </div>
+                <div class="services-half-bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6">
+
+                                <div class="mt-icon-box-wraper m-b30">
+                                    <div class="relative icon-count-2 bg-gray p-a30 p-tb50" style="height: 335px;">
+                                        <span class="icon-count-number">1</span>
+                                        <div class="icon-md inline-icon m-b15 text-primary scale-in-center">
+                                            <span class="icon-cell"><img src="/assets/images/icon/compass.png"
+                                                    alt=""></span>
+                                        </div>
+                                        <div class="icon-content">
+                                            <h4 class="mt-tilte m-b25">Architecture</h4>
+                                            <p>We design highways, bridges, houses, and building. </p>
+                                            <a href="{{ route('architecture') }}" class="site-button-link" data-hover="Read More">More..<i class="fa fa-angle-right arrow-animation"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4 col-sm-6">
+
+                                <div class="mt-icon-box-wraper m-b30">
+                                    <div class="relative icon-count-2 bg-gray p-a30 p-tb50" style="    height: 335px;">
+                                        <span class="icon-count-number">2</span>
+                                        <div class="icon-md inline-icon m-b15 text-primary scale-in-center">
+                                            <span class="icon-cell"><img src="/assets/images/icon/crane-1.png"
+                                                    alt=""></span>
+                                        </div>
+                                        <div class="icon-content">
+                                            <h4 class="mt-tilte m-b25">Construction</h4>
+                                            <p>Our method involves following latest construction standards.
+                                            </p>
+                                            <a href="{{ route('construction') }}" class="site-button-link" data-hover="Read More">More... <i class="fa fa-angle-right arrow-animation"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4 col-sm-6">
+
+                                <div class="mt-icon-box-wraper m-b30">
+                                    <div class="relative icon-count-2 bg-gray p-a30 p-tb50" style="    height: 335px;">
+                                        <span class="icon-count-number">3</span>
+                                        <div class="icon-md inline-icon m-b15 text-primary scale-in-center">
+                                            <span class="icon-cell"><img src="/assets/images/icon/toolbox.png"
+                                                    alt=""></span>
+                                        </div>
+                                        <div class="icon-content">
+                                            <h4 class="mt-tilte m-b25">Material<br>and Machines</h4>
+                                            <p>Nails, hammers, ciment, shovels, and all sort of machineries.</p>
+                                            <a href="{{ route('quincaillerie') }}" class="site-button-link" data-hover="Read More">Explore
+                                                catalog <i class="fa fa-angle-right arrow-animation"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4 col-sm-6">
+
+                                <div class="mt-icon-box-wraper m-b30">
+                                    <div class="relative icon-count-2 bg-gray p-a30 p-tb50" style="    height: 335px;">
+                                        <span class="icon-count-number">4</span>
+                                        <div class="icon-md inline-icon m-b15 text-primary scale-in-center">
+                                            <span class="icon-cell"><img src="/assets/images/icon/dump-truck.png"
+                                                    alt=""></span>
+                                        </div>
+                                        <div class="icon-content">
+                                            <h4 class="mt-tilte m-b25">Home<br>Renovation</h4>
+                                            <p>Our qualified technicians are available at all time for your projects at home
+                                            </p>
+                                            <a href="{{ route('renovation') }}" class="site-button-link" data-hover="Read More">Ask an
+                                                Expert <i class="fa fa-angle-right arrow-animation"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4 col-sm-6">
+
+                                <div class="mt-icon-box-wraper m-b30">
+                                    <div class="relative icon-count-2 bg-gray p-a30 p-tb50" style="    height: 335px;">
+                                        <span class="icon-count-number">5</span>
+                                        <div class="icon-md inline-icon m-b15 text-primary scale-in-center">
+                                            <span class="icon-cell"><img src="/assets/images/icon/architecture.png"
+                                                    alt=""></span>
+                                        </div>
+                                        <div class="icon-content">
+                                            <h4 class="mt-tilte m-b25">Furnitures<br>and Home Deco</h4>
+                                            <p>Get Inspired and choose what you want your home to be like. </p>
+                                            <a href="{{ route('simsdecor') }}" class="site-button-link" data-hover="Read More">Explore
+                                                Catalog <i class="fa fa-angle-right arrow-animation"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4 col-sm-6">
+
+                                <div class="mt-icon-box-wraper m-b30">
+                                    <div class="relative icon-count-2 bg-gray p-a30 p-tb50" style="    height: 335px;">
+                                        <span class="icon-count-number">6</span>
+                                        <div class="icon-md inline-icon m-b15 text-primary scale-in-center">
+                                            <span class="icon-cell"><img src="/assets/images/icon/idea.png"
+                                                    alt=""></span>
+                                        </div>
+                                        <div class="icon-content">
+                                            <h4 class="mt-tilte m-b25">Consulting</h4>
+                                            <p>Need assistance with anything? We can help.</p>
+                                            <a href="{{ route('consulting') }}" class="site-button-link" data-hover="Read More">More... <i class="fa fa-angle-right arrow-animation"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hilite-title text-left p-l50 text-uppercase text-pop-up-top">
+                <strong>Services</strong>
             </div>
         </div>
-        <div class="hilite-title text-left p-l50 text-uppercase text-pop-up-top">
-            <strong>Services</strong>
-        </div>
-    </div>
-    <!-- OUR SERVICES  END -->
+        <!-- OUR SERVICES  END -->
 
    
     <!-- SECTION CONTENT START -->
@@ -236,11 +241,11 @@
             <div class="filter-wrap p-b15 center">
                 <ul class="masonry-filter link-style  text-uppercase white">
                     <li class="active"><a data-filter="*" href="#">All</a></li>
-                    <li><a data-filter=".cat-1" href="#">Construction</a></li>
-                    <li><a data-filter=".cat-2" href="#">Renovation</a></li>
-                    <li><a data-filter=".cat-3" href="#">Outdoor</a></li>
-                    <li><a data-filter=".cat-4" href="#">Interiors </a></li>
-                    <li><a data-filter=".cat-5" href="#">Consulting</a></li>
+                    <li><a data-filter=".Construction" href="#">Construction</a></li>
+                    <li><a data-filter=".Renovation" href="#">Renovation</a></li>
+                    <li><a data-filter=".Architecture" href="#">Architecture</a></li>
+                    <li><a data-filter=".Interior" href="#">Interiors </a></li>
+                    <li><a data-filter=".Consulting" href="#">Consulting</a></li>
                 </ul>
             </div>
             <!-- PAGINATION END -->
@@ -248,110 +253,20 @@
             <!-- GALLERY CONTENT START -->
             <div class="portfolio-wrap mfp-gallery work-grid row clearfix">
                 <!-- COLUMNS 1 -->
-                <div class="masonry-item cat-1  col-md-3 col-sm-6 m-b30">
+                @foreach($refs as $ref)
+                    <div class="masonry-item {{ $ref->project_type }}  col-md-3 col-sm-6 m-b30">
                     <div class="mt-box   image-hover-block">
                         <div class="mt-thum-bx">
-                            <img src="/assets/images/services/service-projects/shooping-mall.jpg" alt="">
+                            <img src="/images/achievements/{{ $ref->title_en }}/{{ $ref->images[0]->src}}" alt="{{ $ref->title_en }}">
                         </div>
                         <div class="mt-info  p-t20 text-white">
-                            <h4 class="mt-tilte m-b10 m-t0">Shopping Mall</h4>
-                            <p class="m-b0">Muscat, Sultanate of Oman</p>
+                            <h4 class="mt-tilte m-b10 m-t0">{{ $ref->title_en }}</h4>
                         </div>
-                        <a href="#"></a>
+                        <a href="{{ route('readproject', compact('ref')) }}"></a>
                     </div>
                 </div>
-                <!-- COLUMNS 2 -->
-                <div class="masonry-item cat-2 col-md-3 col-sm-6 m-b30">
-                    <div class="mt-box   image-hover-block">
-                        <div class="mt-thum-bx">
-                            <img src="/assets/images/services/service-projects/hospital.jpg" alt="">
-                        </div>
-                        <div class="mt-info  p-t20 text-white">
-                            <h4 class="mt-tilte m-b10 m-t0">Hospital Building</h4>
-                            <p class="m-b0">Muscat, Sultanate of Oman</p>
-                        </div>
-                        <a href="#"></a>
-                    </div>
-                </div>
-                <!-- COLUMNS 3 -->
-                <div class="masonry-item cat-3 col-md-3 col-sm-6 m-b30">
-                    <div class="mt-box   image-hover-block">
-                        <div class="mt-thum-bx">
-                            <img src="/assets/images/services/service-projects/garden-house.jpg" alt="">
-                        </div>
-                        <div class="mt-info  p-t20 text-white">
-                            <h4 class="mt-tilte m-b10 m-t0">Garden House</h4>
-                            <p class="m-b0">Muscat, Sultanate of Oman</p>
-                        </div>
-                        <a href="#"></a>
-                    </div>
-                </div>
-                <!-- COLUMNS 4 -->
-                <div class="masonry-item cat-4 col-md-3 col-sm-6 m-b30">
-                    <div class="mt-box   image-hover-block">
-                        <div class="mt-thum-bx">
-                            <img src="/assets/images/services/service-projects/villa.jpg" alt="">
-                        </div>
-                        <div class="mt-info  p-t20 text-white">
-                            <h4 class="mt-tilte m-b10 m-t0">Villa</h4>
-                            <p class="m-b0">Muscat, Sultanate of Oman</p>
-                        </div>
-                        <a href="#"></a>
-                    </div>
-                </div>
-                <!-- COLUMNS 5 -->
-                <div class="masonry-item cat-5 col-md-3 col-sm-6 m-b30">
-                    <div class="mt-box   image-hover-block">
-                        <div class="mt-thum-bx">
-                            <img src="/assets/images/services/service-projects/road-construction.jpg" alt="">
-                        </div>
-                        <div class="mt-info  p-t20 text-white">
-                            <h4 class="mt-tilte m-b10 m-t0">Road Construction</h4>
-                            <p class="m-b0">Muscat, Sultanate of Oman</p>
-                        </div>
-                        <a href="#"></a>
-                    </div>
-                </div>
-                <!-- COLUMNS 6 -->
-                <div class="masonry-item cat-4 col-md-3 col-sm-6 m-b30">
-                    <div class="mt-box   image-hover-block">
-                        <div class="mt-thum-bx">
-                            <img src="/assets/images/services/service-projects/bridge.jpg" alt="">
-                        </div>
-                        <div class="mt-info  p-t20 text-white">
-                            <h4 class="mt-tilte m-b10 m-t0">Bridge Construction</h4>
-                            <p class="m-b0">Muscat, Sultanate of Oman</p>
-                        </div>
-                        <a href="#"></a>
-                    </div>
-                </div>
-                <!-- COLUMNS 7 -->
-                <div class="masonry-item cat-3 col-md-3 col-sm-6 m-b30">
-                    <div class="mt-box   image-hover-block">
-                        <div class="mt-thum-bx">
-                            <img src="/assets/images/services/service-projects/building-ren.jpg" alt="">
-                        </div>
-                        <div class="mt-info  p-t20 text-white">
-                            <h4 class="mt-tilte m-b10 m-t0">Building Renovation</h4>
-                            <p class="m-b0">Muscat, Sultanate of Oman</p>
-                        </div>
-                        <a href="#"></a>
-                    </div>
-                </div>
-                <!-- COLUMNS 5 -->
-                <div class="masonry-item cat-2 col-md-3 col-sm-6 m-b30">
-                    <div class="mt-box   image-hover-block">
-                        <div class="mt-thum-bx">
-                            <img src="/assets/images/services/service-projects/dam-construction.jpg" alt="">
-                        </div>
-                        <div class="mt-info  p-t20 text-white">
-                            <h4 class="mt-tilte m-b10 m-t0">Dam Construction</h4>
-                            <p class="m-b0">Muscat, Sultanate of Oman</p>
-                        </div>
-                        <a href="#"></a>
-                    </div>
-                </div>
-
+                @endforeach
+                
             </div>
             <!-- GALLERY CONTENT END -->
         </div>

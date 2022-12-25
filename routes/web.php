@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Reference;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,7 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $refs=Reference::OrderBy('updated_at', 'DESC')->paginate(10);
+    return view('welcome', compact('refs'));
 })->name('homepage');
 
 Route::get('/under-construction', function () {

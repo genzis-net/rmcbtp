@@ -54,7 +54,8 @@ class PagesController extends Controller
     }
 
     public function about(){
-        return view('pages.about');
+        $refs=Reference::OrderBy('updated_at', 'DESC')->paginate(12);
+        return view('pages.about', compact('refs'));
     }
 
     public function simsdecor(){
@@ -75,11 +76,13 @@ class PagesController extends Controller
     }
 
     public function renovation(){
-        return view('pages.renovation');
+        $refs=Reference::Where('project_type', 'Renovation')->OrderBy('updated_at', 'DESC')->paginate(8);
+        return view('pages.renovation', compact('refs'));
     }
 
     public function construction(){
-        return view('pages.construction');
+        $refs=Reference::Where('project_type', 'Construction')->OrderBy('updated_at', 'DESC')->paginate(8);
+        return view('pages.construction', compact('refs'));
     }
 
 

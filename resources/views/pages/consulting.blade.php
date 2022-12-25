@@ -199,7 +199,7 @@ We offer a wide range of consulting expertise that can begin resolving project p
                         <div class="figcaption">
                             <h4>RMC BTP</h4>
                             <p>Our Contractors services to build yout houses and buildings from the ground up.</p>
-                            <a href="#"><i class="link-plus bg-primary"></i></a>
+                            <a href="{{ route('construction') }}"><i class="link-plus bg-primary"></i></a>
                         </div>
 
 
@@ -214,7 +214,7 @@ We offer a wide range of consulting expertise that can begin resolving project p
                             <h4>SIMS QUINCAILLERIE</h4>
                             <p>Our premium equipment store for all your construction needs. We Provide heavy duty
                                 and commonly needed materials and equipments.</p>
-                            <a href="#"><i class="link-plus bg-primary"></i></a>
+                            <a href="{{ route('quincaillerie') }}"><i class="link-plus bg-primary"></i></a>
                         </div>
 
                     </div>
