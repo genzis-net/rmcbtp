@@ -3,7 +3,7 @@
 @section('headerz')
 	<title>RMC BTP sarl | Home</title>
     <meta property="og:image" content="/assets/images/favicon.jpg" />
-    <meta property="og:description" content="" />
+    <meta property="og:description" content="{{ __('RMC BTP is a contractor business located in Yaounde cameroon. our mission to provide quality real estate construction. We work with a great team of professionals, experienced and passionate workers who know the value you are looking for in your projects.') }}" />
     <meta property="og:url"content="https://rmcbtpsarl.com" />
     <meta property="og:title" content="RMC BTP sarl | Home" />
     <meta name="keywords" content="">
@@ -437,7 +437,7 @@
                     <div class="mt-separator-outer separator-center">
                         <div class="mt-separator">
                             <h2 class="text-white text-uppercase sep-line-one "><span
-                                    class="font-weight-300 text-primary">What</span> We Do</h2>
+                                    class="font-weight-300 text-primary">{{ __('What') }}</span> {{__('We Do')}}</h2>
                         </div>
                     </div>
                 </div>
@@ -480,19 +480,15 @@
 
                         <div class="col-md-3 col-sm-12">
                             <div class="about-home-right bg-white p-a30">
-                                <h3 class="m-t0"><span class="font-weight-100">Committed</span> to superior
-                                    quality and results.</h3>
+                                <h3 class="m-t0"><span class="font-weight-100">{{ __('Committed') }}</span> {{ __('to superior quality and results.') }}</h3>
                                 <p><strong>
-                                        RMC-BTP is all about delivering Quality Estate construction. We work
-                                        with a large team of professionals, experienced and passionate workes who
-                                        know the value you seek in your projects.
+                                        {{ __('RMC-BTP is all about delivering Quality Estate construction. We work with a large team of professionals, experienced and passionate workers who know the value you seek in your projects.') }}
                                     </strong></p>
                                 <p>
-                                    We have organized our ressources to ease up your decision making. Hence,
-                                    our teams can handle your projects from construction, material and deco.
+                                    {{ __('We have organized our ressources to ease up your decision making. Hence, our teams can handle your projects from construction, material and deco.') }}
                                 </p>
                                 <div class="text-right">
-                                    <a href="{{ route('about', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">More
+                                    <a href="{{ route('about', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">{{ __('More') }}
                                         <i class="fa fa-angle-right arrow-animation"></i></a>
                                 </div>
                             </div>
@@ -501,7 +497,7 @@
                 </div>
             </div>
             <div class="hilite-title text-left p-l50 text-uppercase hilite-dark">
-                <strong>About</strong>
+                <strong>{{ __('About us') }}</strong>
             </div>
         </div>
         <!-- ABOUT COMPANY END -->
@@ -515,8 +511,7 @@
                             <span class="icon-cell text-secondry"><i class="flaticon-sketch"></i></span>
                         </div>
                         <div class="icon-content">
-                            <h4 class="mt-tilte text-uppercase font-weight-600 m-b20">We Design and Develop Real Estate
-                                Projects</h4>
+                            <h4 class="mt-tilte text-uppercase font-weight-600 m-b20">{{ __('We Design and Develop Real Estate Projects') }}</h4>
                         </div>
                     </div>
                 </div>
@@ -527,8 +522,7 @@
                             <span class="icon-cell text-secondry"><i class="flaticon-builder"></i></span>
                         </div>
                         <div class="icon-content">
-                            <h4 class="mt-tilte text-uppercase font-weight-600 m-b20">Provide Consulting and Contracting
-                                Services</h4>
+                            <h4 class="mt-tilte text-uppercase font-weight-600 m-b20">{{ __('Provide Consulting and Contracting Services') }}</h4>
                         </div>
                     </div>
                 </div>
@@ -539,8 +533,7 @@
                             <span class="icon-cell text-secondry"><i class="flaticon-city"></i></span>
                         </div>
                         <div class="icon-content">
-                            <h4 class="mt-tilte text-uppercase font-weight-600 m-b20">Ensure a transparent Work with
-                                long-term Follow-up</h4>
+                            <h4 class="mt-tilte text-uppercase font-weight-600 m-b20">{{ __('Ensure a transparent Work with long-term Follow-up') }}</h4>
                         </div>
                     </div>
                 </div>
@@ -558,12 +551,10 @@
                                 <div class="mt-separator-outer separator-left">
                                     <div class="m-about-years bg-moving"
                                         style="">
-                                        <span class="text-primary large-title">Request a Quote</span>
+                                        <span class="text-primary large-title">{{__("Request a Quote")}}</span>
                                     </div>
-                                    <p>We’re interested in talking
-                                        about your Project.</p>
-                                    <a href="{{ route('contact', app()->getLocale()) }}" class="site-button btn-effect m-b15"><span>Request a
-                                            Quote</span></a>
+                                    <p>{{ __('We’re interested in talking about your Project.') }}</p>
+                                    <a href="{{ route('contact', app()->getLocale()) }}" class="site-button btn-effect m-b15"><span>{{__("Request a Quote")}}</span></a>
                                 </div>
                             </div>
                             <div class="video-section-full bg-no-repeat bg-cover overlay-wraper"
@@ -580,15 +571,15 @@
 
                             <div class="mt-count m-b30 text-white mt-icon-box-wraper center  bg-dark p-a20">
                                 <div class="counter font-30 font-weight-800 m-b15 text-primary">15</div>
-                                <h4 class="m-tb0">Active Experts</h4>
+                                <h4 class="m-tb0">{{ __('Active Experts') }}</h4>
                             </div>
                             <div class="mt-count m-b30 text-white mt-icon-box-wraper center  bg-dark p-a20">
                                 <div class="counter font-30 font-weight-800 m-b15  text-primary">20</div>
-                                <h4 class="m-tb0">Satisfied Clients</h4>
+                                <h4 class="m-tb0">{{ __('Satisfied Clients') }}</h4>
                             </div>
                             <div class="mt-count m-b30 text-white mt-icon-box-wraper center  bg-dark p-a20">
                                 <div class="counter font-30 font-weight-800 m-b15 text-primary">35</div>
-                                <h4 class="m-tb0">Project Complete</h4>
+                                <h4 class="m-tb0">{{ __('Project Completed') }}</h4>
                             </div>
                         </div>
                         <div class="col-md-5 col-sm-6">
@@ -635,7 +626,7 @@
                         <div class="mt-separator-outer separator-center">
                             <div class="mt-separator">
                                 <h2 class="text-uppercase sep-line-one "><span
-                                        class="font-weight-300 text-primary">Contact</span> US Today</h2>
+                                        class="font-weight-300 text-primary">{{ __('Contact') }}</span> {{ __('us Today') }}</h2>
                             </div>
                         </div>
                     </div>
@@ -645,10 +636,8 @@
                         <div class="col-md-4 col-sm-6">
                             <div class="mission-left bg-white m-b30 p-a30 bg-no-repeat bg-bottom-left"
                                 style="background-image:url(/assets/images/background/bg-site.png);">
-                                <h3 class="m-t0"><span class="font-weight-100"> Site Areas</span><br> what we
-                                    serve</h3>
-                                <p>Wherever your project my be, we will make it there and make it happen. Here are some
-                                    communities we have been to so far:</p>
+                                <h3 class="m-t0"><span class="font-weight-100"> {{ __('Site Areas we have served') }}</span><br></h3>
+                                <p>{{__('Wherever your project my be, we will make it there and make it happen. Here are some communities we have been to so far:')}}</p>
                                 <ul class="list-angle-right anchor-line">
                                     <li><a href="#">Douala</a></li>
                                     <li><a href="#">Yaoude</a></li>
@@ -657,8 +646,7 @@
                                     <li><a href="#">Dschang</a></li>
                                 </ul>
                                 <div class="text-right">
-                                    <a href="{{ route('projects', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">More Achievements
-                                        <i class="fa fa-angle-right arrow-animation"></i></a>
+                                    <a href="{{ route('projects', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">{{ __('More') }}<i class="fa fa-angle-right arrow-animation"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -670,25 +658,25 @@
 
                         <div class="col-md-4 col-sm-12">
                             <div class="contact-home1-left bg-dark p-a30 m-b0">
-                                <h3 class="text-white m-t0"><span class="font-weight-100">Get In</span> Touch</h3>
+                                <h3 class="text-white m-t0"><span class="font-weight-100">{{ __('Get In') }}</span> {{ __('Touch') }}</h3>
                                 <form class="contact-form cons-contact-form" id="contactFormAdvanced" enctype="multipart/form-data">
                             @csrf
                             <div class="contact-one m-b30">
                                                                 
                                 <div class="form-group">
-                                    <input name="name" type="text" required class="form-control" placeholder="Name">
+                                    <input name="name" type="text" required class="form-control" placeholder="{{ __('Name') }}">
                                 </div>
                            
                                 <div class="form-group">
-                                    <input name="email" type="email" class="form-control" required placeholder="Email">
+                                    <input name="email" type="email" class="form-control" required placeholder="{{ __('Email') }}">
                                 </div>
 
                                 <div class="form-group">
-                                    <input name="phone" type="text" class="form-control" required placeholder="Phone Number">
+                                    <input name="phone" type="text" class="form-control" required placeholder="{{ __('Phone number') }}">
                                 </div>
 
                                 <div class="form-group">
-                                    <input name="subject" type="text" class="form-control" required placeholder="Subject Line">
+                                    <input name="subject" type="text" class="form-control" required placeholder="{{ __('Subject Line') }}">
                                 </div>
                            
                                 <div class="form-group">
@@ -700,7 +688,7 @@
                                         <span id="the_message"></span>
                                 </div>
                                 <div class="text-right">
-                                    <button type="submit" id="contactFormSubmit" value="Submit" class="valid site-button btn-effect">submit</button>
+                                    <button type="submit" id="contactFormSubmit" value="Submit" class="valid site-button btn-effect">{{ __('Submit') }}</button>
                                 </div>
 
                             </div>
@@ -728,10 +716,10 @@
                             <div class="mt-separator-outer separator-left">
                                 <div class="mt-separator">
                                     <h2 class="text-white text-uppercase sep-line-one "><span
-                                            class="font-weight-300 text-primary">Our</span> Services</h2>
+                                            class="font-weight-300 text-primary">{{__('Our')}}</span> Services</h2>
                                 </div>
                             </div>
-                            <h3>We Can Help You With:</h3>
+                            <h3>{{__('We Can Help You With:')}}</h3>
                         </div>
                         <!-- TITLE END -->
                     </div>
@@ -750,8 +738,8 @@
                                         </div>
                                         <div class="icon-content">
                                             <h4 class="mt-tilte m-b25">Architecture</h4>
-                                            <p>We design highways, bridges, houses, and building. </p>
-                                            <a href="{{ route('architecture', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">More..<i class="fa fa-angle-right arrow-animation"></i></a>
+                                            <p>{{ __('We design highways, bridges, houses, and building.') }} </p>
+                                            <a href="{{ route('architecture', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">{{ __('More') }}...<i class="fa fa-angle-right arrow-animation"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -769,9 +757,9 @@
                                         </div>
                                         <div class="icon-content">
                                             <h4 class="mt-tilte m-b25">Construction</h4>
-                                            <p>Our method involves following latest construction standards.
+                                            <p>{{ __('Our method involves following latest construction standards.') }}
                                             </p>
-                                            <a href="{{ route('construction', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">More... <i class="fa fa-angle-right arrow-animation"></i></a>
+                                            <a href="{{ route('construction', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">{{ __('More') }}... <i class="fa fa-angle-right arrow-animation"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -788,10 +776,9 @@
                                                     alt=""></span>
                                         </div>
                                         <div class="icon-content">
-                                            <h4 class="mt-tilte m-b25">Material<br>and Machines</h4>
-                                            <p>Nails, hammers, ciment, shovels, and all sort of machineries.</p>
-                                            <a href="{{ route('quincaillerie', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">Explore
-                                                catalog <i class="fa fa-angle-right arrow-animation"></i></a>
+                                            <h4 class="mt-tilte m-b25">{{ __('Material') }}<br>{{ __('and Machines') }}</h4>
+                                            <p>{{ __('Nails, hammers, ciment, shovels, and all sort of machineries.') }}</p>
+                                            <a href="{{ route('quincaillerie', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">{{ __('Explore catalog') }} <i class="fa fa-angle-right arrow-animation"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -808,11 +795,10 @@
                                                     alt=""></span>
                                         </div>
                                         <div class="icon-content">
-                                            <h4 class="mt-tilte m-b25">Home<br>Renovation</h4>
-                                            <p>Our qualified technicians are available at all time for your projects at home
+                                            <h4 class="mt-tilte m-b25">Renovation</h4>
+                                            <p>{{ __('Our qualified technicians are available at all time for your projects at home') }}
                                             </p>
-                                            <a href="{{ route('renovation', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">Ask an
-                                                Expert <i class="fa fa-angle-right arrow-animation"></i></a>
+                                            <a href="{{ route('renovation', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">{{ __('Talk to an Expert') }} <i class="fa fa-angle-right arrow-animation"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -829,10 +815,9 @@
                                                     alt=""></span>
                                         </div>
                                         <div class="icon-content">
-                                            <h4 class="mt-tilte m-b25">Furnitures<br>and Home Deco</h4>
-                                            <p>Get Inspired and choose what you want your home to be like. </p>
-                                            <a href="{{ route('simsdecor', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">Explore
-                                                Catalog <i class="fa fa-angle-right arrow-animation"></i></a>
+                                            <h4 class="mt-tilte m-b25">{{ __('Furnitures and Home Deco') }}</h4>
+                                            <p>{{ __('Get Inspired and choose what you want your home to be like.') }} </p>
+                                            <a href="{{ route('simsdecor', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">{{ __('Explore catalog') }}<i class="fa fa-angle-right arrow-animation"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -850,8 +835,8 @@
                                         </div>
                                         <div class="icon-content">
                                             <h4 class="mt-tilte m-b25">Consulting</h4>
-                                            <p>Need assistance with anything? We can help.</p>
-                                            <a href="{{ route('consulting', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">More... <i class="fa fa-angle-right arrow-animation"></i></a>
+                                            <p>{{ __('Need assistance with anything? We can help.')}}</p>
+                                            <a href="{{ route('consulting', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">{{ __('More') }}... <i class="fa fa-angle-right arrow-animation"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -876,10 +861,10 @@
 
                 <div class="section-content" style="color:#fff !important;">
                     <div class="call-us-section text-center">
-                        <h4 class="m-b15" style="color:#fff !important;"><b>Let's work together</b></h4>
+                        <h4 class="m-b15" style="color:#fff !important;"><b>{{__('Let\'s work together')}}</b></h4>
                         <h2 class="call-us-number m-b15 m-b0" style="color:#fff !important;">+237 693 909 159</h2>
-                        <h4 class="call-us-address m-t0 m-b20" style="color:#fff !important;">Cameroon & beyond</h4>
-                        <a href="#" class="site-button-secondry btn-effect bg-dark">Contact Us</a>
+                        <h4 class="call-us-address m-t0 m-b20" style="color:#fff !important;">{{__('Cameroon')}} & {{ __('beyond') }}</h4>
+                        <a href="#" class="site-button-secondry btn-effect bg-dark">{{ __('Contact us') }}</a>
                     </div>
                 </div>
 
@@ -894,8 +879,7 @@
                 <div class="section-head">
                     <div class="mt-separator-outer separator-left">
                         <div class="mt-separator">
-                            <h2 class="text-uppercase sep-line-one "><span class="font-weight-300 text-primary">Our</span>
-                                Project</h2>
+                            <h2 class="text-uppercase sep-line-one "><span class="font-weight-300 text-primary">{{ __('Our') }}</span> {{ __('Projects') }}</h2>
                         </div>
                     </div>
                 </div>
@@ -915,7 +899,7 @@
                                         </li>
                                         <li><a data-filter=".Renovation" data-hover="Renovation" href="javascript:;">Renovation</a>
                                         </li>
-                                        <li><a data-filter=".Architecture" data-hover="Blue Prints" href="javascript:;">Blue Prints </a>
+                                        <li><a data-filter=".Architecture" data-hover="Architecture" href="javascript:;">Architecture</a>
                                         </li>
                                         <li><a data-filter=".Interior" data-hover="Interior" href="javascript:;">Interior</a>
                                         </li>
@@ -932,7 +916,7 @@
                                     <img src="/images/achievements/{{ $ref->title_en }}/{{ $ref->images[0]->src}}" alt="{{ $ref->title_en }}">
                                 </div>
                                 <div class="mt-info  p-t20 text-white">
-                                    <h4 class="mt-tilte m-b10 m-t0">{{ $ref->title_en }}</h4>
+                                    <h4 class="mt-tilte m-b10 m-t0">{{ $ref->{'title_'.app()->getLocale()} }}</h4>
                                 </div>
                                 <a href="{{ route('readproject', app()->getLocale()) }}?ref={{ $ref->id }}"></a>
                             </div>
@@ -946,7 +930,7 @@
 
             </div>
             <div class="hilite-title text-left p-l50 text-uppercase text-pop-up-top">
-                <strong>Projects</strong>
+                <strong>{{ __('Projects') }}</strong>
             </div>
         </div>
         <!-- OUR PROJECT END -->
