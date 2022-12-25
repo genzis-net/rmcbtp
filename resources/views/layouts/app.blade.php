@@ -113,7 +113,7 @@
                             </ul>
                         </div>
                         <div class="mt-topbar-right clearfix">
-                            <div class="appint-btn"><a href="{{ route('contact') }}" class="site-button">Request a Quote</a></div>
+                            <div class="appint-btn"><a href="{{ route('contact', app()->getLocale()) }}" class="site-button">Request a Quote</a></div>
                         </div>
                     </div>
                 </div>
@@ -156,8 +156,8 @@
                                             <div class="icon-xs m-b20 scale-in-center">Select
                                             </div>
                                             <div class="icon-content">
-                                                <h5 class="m-t0 font-weight-500">Français</h5>
-                                                <h5 class="m-t0 font-weight-500">English</h5>
+                                                <h5 class="m-t0 font-weight-500"><a href="{{ route(\Illuminate\Support\Facades\Route::currentRouteName(), 'fr') }}">Français</a></h5>
+                                                <h5 class="m-t0 font-weight-500"><a href="{{ route(\Illuminate\Support\Facades\Route::currentRouteName(), 'en') }}">English</a></h5>
                                             </div>
                                         </div>
                                         
@@ -229,46 +229,46 @@
                         <div class="header-nav navbar-collapse collapse">
                             <ul class=" nav navbar-nav">
                                 <li class="{{Route::currentRouteName() === 'homepage' ? 'active' : ''}}">
-                                    <a href="{{ route('homepage') }}">Home</a>
+                                    <a href="{{ route('homepage', app()->getLocale()) }}">Home</a>
                                 </li>
 
                                 <li class="{{Route::currentRouteName() === 'about' ? 'active' : ''}}">
-                                    <a href="{{ route('about') }}">About us</a>
+                                    <a href="{{ route('about', app()->getLocale()) }}">About us</a>
                                 </li>
-                                <li>
+                                <li class="{{Route::currentRouteName() === 'simsdecor'||Route::currentRouteName() === 'quincaillerie'||Route::currentRouteName() === 'renovation'||Route::currentRouteName() === 'construction'||Route::currentRouteName() === 'architecture'||Route::currentRouteName() === 'consulting' ? 'active' : ''}}">
                                     <a href="javascript:;">Services</a>
                                     <ul class="sub-menu">
                                         <li>
                                             <a href="javascript:;">RMC BTP</a>
                                             <ul class="sub-menu has-child">
-                                                <li><a href="{{ route('consulting') }}">Consulting</a></li>
-                                                <li><a href="{{ route('architecture') }}">Architecture</a></li>
-                                                <li><a href="{{ route('construction') }}">Construction</a></li>
-                                                <li><a href="{{ route('renovation') }}">Home Renovation</a></li>
+                                                <li><a href="{{ route('consulting', app()->getLocale()) }}">Consulting</a></li>
+                                                <li><a href="{{ route('architecture', app()->getLocale()) }}">Architecture</a></li>
+                                                <li><a href="{{ route('construction', app()->getLocale()) }}">Construction</a></li>
+                                                <li><a href="{{ route('renovation', app()->getLocale()) }}">Home Renovation</a></li>
                                             </ul>
                                         </li>
 										<li>
-											<a href="{{ route('quincaillerie') }}">SIMS QUINCAILLERIE</a>
+											<a href="{{ route('quincaillerie', app()->getLocale()) }}">SIMS QUINCAILLERIE</a>
 										</li> 
 										<li>
-											<a href="{{ route('simsdecor') }}">SIMS DECOR</a>
+											<a href="{{ route('simsdecor', app()->getLocale()) }}">SIMS DECOR</a>
 										</li>                                       
                                     </ul>
                                 </li>
 								<!--li>
 									<a href="javascript:;">Catalogues</a>
 									<ul class="sub-menu has-child">
-										<li><a href="{{ route('underconstruction') }}">Interior Designs and Furnitures</a></li>
-										<li><a href="{{ route('underconstruction') }}">Quincailleries</a></li>
-										<li><a href="{{ route('underconstruction') }}">Machineries</a></li>
-										<li><a href="{{ route('underconstruction') }}">Blue prints</a></li>
+										<li><a href="{{ route('underconstruction', app()->getLocale()) }}">Interior Designs and Furnitures</a></li>
+										<li><a href="{{ route('underconstruction', app()->getLocale()) }}">Quincailleries</a></li>
+										<li><a href="{{ route('underconstruction', app()->getLocale()) }}">Machineries</a></li>
+										<li><a href="{{ route('underconstruction', app()->getLocale()) }}">Blue prints</a></li>
 									</ul>
 								</li-->
 								<li class="{{Route::currentRouteName() === 'projects' ? 'active' : ''}}">
-									<a href="{{ route('projects') }}">Our Work</a>
+									<a href="{{ route('projects', app()->getLocale()) }}">Our Work</a>
 								</li>
 								<li class="{{Route::currentRouteName() === 'contact' ? 'active' : ''}}">
-									<a href="{{ route('contact') }}">Contact us</a>
+									<a href="{{ route('contact', app()->getLocale()) }}">Contact us</a>
 								</li>
                             </ul>
                         </div>
@@ -340,11 +340,11 @@
                             <div class="widget widget_services inline-links">
                                 <h4 class="widget-title">Useful links</h4>
                                 <ul>
-                                    <li><a href="{{ route('about') }}">About</a></li>
-                                    <li><a href="{{ route('projects') }}">Our Work</a></li>
-                                    <li><a href="{{ route('contact') }}">Contact Us</a></li>
-                                    <li><a href="{{ route('simsdecor') }}">SIMS DECOR</a></li>
-                                    <li><a href="{{ route('quincaillerie') }}">SIMS QUINCAILLERIE</a></li>
+                                    <li><a href="{{ route('about', app()->getLocale()) }}">About</a></li>
+                                    <li><a href="{{ route('projects', app()->getLocale()) }}">Our Work</a></li>
+                                    <li><a href="{{ route('contact', app()->getLocale()) }}">Contact Us</a></li>
+                                    <li><a href="{{ route('simsdecor', app()->getLocale()) }}">SIMS DECOR</a></li>
+                                    <li><a href="{{ route('quincaillerie', app()->getLocale()) }}">SIMS QUINCAILLERIE</a></li>
                                     <!--li><a href="#">Catalogues | Home Deco</a></li>
                                     <li><a href="#">Catalogues | Sims Quincailleries</a></li>
                                     <li><a href="#">Catalogues | Sims House Plans</a></li-->
@@ -356,10 +356,10 @@
                             <div class="widget widget_services inline-links">
                                 <h4 class="widget-title">Useful links</h4>
                                 <ul>
-                                    <li><a href="{{ route('consulting') }}">Consulting</a></li>
-                                    <li><a href="{{ route('architecture') }}">Architecture</a></li>
-                                    <li><a href="{{ route('construction') }}">Construction</a></li>
-                                    <li><a href="{{ route('renovation') }}">Home Renovation</a></li>
+                                    <li><a href="{{ route('consulting', app()->getLocale()) }}">Consulting</a></li>
+                                    <li><a href="{{ route('architecture', app()->getLocale()) }}">Architecture</a></li>
+                                    <li><a href="{{ route('construction', app()->getLocale()) }}">Construction</a></li>
+                                    <li><a href="{{ route('renovation', app()->getLocale()) }}">Home Renovation</a></li>
                                 </ul>
                             </div>
                         </div>

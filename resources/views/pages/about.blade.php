@@ -25,7 +25,7 @@
 
                 <div>
                     <ul class="mt-breadcrumb breadcrumb-style-2">
-                        <li><a href="{{ route('homepage') }}">Home</a></li>
+                        <li><a href="{{ route('homepage', app()->getLocale()) }}">Home</a></li>
                         <li>About</li>
                     </ul>
                 </div>
@@ -59,7 +59,7 @@
                                         <h4>+237 693 909 159</h4>
                                     </div>
                                     <div class="call-estimate bg-dark">
-                                        <a href="{{ route('contact') }}" class="site-button-secondry btn-effect">Discuss with an Engineer</a>
+                                        <a href="{{ route('contact', app()->getLocale()) }}" class="site-button-secondry btn-effect">Discuss with an Engineer</a>
                                     </div>
                                 </div>
 
@@ -107,7 +107,7 @@
                                         <div class="icon-content">
                                             <h4 class="mt-tilte m-b25">Architecture</h4>
                                             <p>We design highways, bridges, houses, and building. </p>
-                                            <a href="{{ route('architecture') }}" class="site-button-link" data-hover="Read More">More..<i class="fa fa-angle-right arrow-animation"></i></a>
+                                            <a href="{{ route('architecture', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">More..<i class="fa fa-angle-right arrow-animation"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -127,7 +127,7 @@
                                             <h4 class="mt-tilte m-b25">Construction</h4>
                                             <p>Our method involves following latest construction standards.
                                             </p>
-                                            <a href="{{ route('construction') }}" class="site-button-link" data-hover="Read More">More... <i class="fa fa-angle-right arrow-animation"></i></a>
+                                            <a href="{{ route('construction', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">More... <i class="fa fa-angle-right arrow-animation"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -146,7 +146,7 @@
                                         <div class="icon-content">
                                             <h4 class="mt-tilte m-b25">Material<br>and Machines</h4>
                                             <p>Nails, hammers, ciment, shovels, and all sort of machineries.</p>
-                                            <a href="{{ route('quincaillerie') }}" class="site-button-link" data-hover="Read More">Explore
+                                            <a href="{{ route('quincaillerie', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">Explore
                                                 catalog <i class="fa fa-angle-right arrow-animation"></i></a>
                                         </div>
                                     </div>
@@ -167,7 +167,7 @@
                                             <h4 class="mt-tilte m-b25">Home<br>Renovation</h4>
                                             <p>Our qualified technicians are available at all time for your projects at home
                                             </p>
-                                            <a href="{{ route('renovation') }}" class="site-button-link" data-hover="Read More">Ask an
+                                            <a href="{{ route('renovation', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">Ask an
                                                 Expert <i class="fa fa-angle-right arrow-animation"></i></a>
                                         </div>
                                     </div>
@@ -187,7 +187,7 @@
                                         <div class="icon-content">
                                             <h4 class="mt-tilte m-b25">Furnitures<br>and Home Deco</h4>
                                             <p>Get Inspired and choose what you want your home to be like. </p>
-                                            <a href="{{ route('simsdecor') }}" class="site-button-link" data-hover="Read More">Explore
+                                            <a href="{{ route('simsdecor', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">Explore
                                                 Catalog <i class="fa fa-angle-right arrow-animation"></i></a>
                                         </div>
                                     </div>
@@ -207,7 +207,7 @@
                                         <div class="icon-content">
                                             <h4 class="mt-tilte m-b25">Consulting</h4>
                                             <p>Need assistance with anything? We can help.</p>
-                                            <a href="{{ route('consulting') }}" class="site-button-link" data-hover="Read More">More... <i class="fa fa-angle-right arrow-animation"></i></a>
+                                            <a href="{{ route('consulting', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">More... <i class="fa fa-angle-right arrow-animation"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -262,7 +262,7 @@
                         <div class="mt-info  p-t20 text-white">
                             <h4 class="mt-tilte m-b10 m-t0">{{ $ref->title_en }}</h4>
                         </div>
-                        <a href="{{ route('readproject', compact('ref')) }}"></a>
+                        <a href="{{ route('readproject', app()->getLocale()) }}?ref={{ $ref->id }}"></a>
                     </div>
                 </div>
                 @endforeach
@@ -290,7 +290,7 @@
                                 </div>
                                 <p>We’re interested in talking
                                     about your Project.</p>
-                                <a href="{{ route('contact') }}" class="site-button btn-effect m-b15"><span>Request a
+                                <a href="{{ route('contact', app()->getLocale()) }}" class="site-button btn-effect m-b15"><span>Request a
                                         Quote</span></a>
                             </div>
                         </div>

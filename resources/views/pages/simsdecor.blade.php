@@ -24,7 +24,7 @@
 
             <div>
                 <ul class="mt-breadcrumb breadcrumb-style-2">
-                    <li><a href="{{ route('homepage') }}">Home</a></li>
+                    <li><a href="{{ route('homepage', app()->getLocale()) }}">Home</a></li>
                     <li>SIMS DECOR</li>
                 </ul>
             </div>
@@ -88,7 +88,7 @@
                         <p>We deisign and build or install your kitchen project, bedroom, living room, outdoor components and more!</p>
                         <div class="author-info p-t20">
 
-                            <a href="{{ route('contact') }}" class="site-button btn-effect m-b15"><span>Request A Design</span></a>
+                            <a href="{{ route('contact', app()->getLocale()) }}" class="site-button btn-effect m-b15"><span>Request A Design</span></a>
 
                         </div>
 
@@ -181,7 +181,7 @@
                 <h4 class="m-b15" style="color:#fff !important;"><b>Let's work together</b></h4>
                 <h2 class="call-us-number m-b15 m-b0" style="color:#fff !important;">+237 693 909 159</h2>
                 <h4 class="call-us-address m-t0 m-b20" style="color:#fff !important;">Cameroon & beyond</h4>
-                <a href="{{ route('contact') }}" class="site-button-secondry btn-effect bg-dark">Contact Us</a>
+                <a href="{{ route('contact', app()->getLocale()) }}" class="site-button-secondry btn-effect bg-dark">Contact Us</a>
             </div>
         </div>
 
@@ -202,7 +202,7 @@
                         <div class="figcaption">
                             <h4>RMC BTP</h4>
                             <p>Our Contractors services to build yout houses and buildings from the ground up.</p>
-                            <a href="{{ route('construction') }}"><i class="link-plus bg-primary"></i></a>
+                            <a href="{{ route('construction', app()->getLocale()) }}"><i class="link-plus bg-primary"></i></a>
                         </div>
 
 
@@ -217,7 +217,7 @@
                             <h4>SIMS QUINCAILLERIE</h4>
                             <p>Our premium equipment store for all your construction needs. We Provide heavy duty
                                 and commonly needed materials and equipments.</p>
-                            <a href="{{ route('quincaillerie') }}"><i class="link-plus bg-primary"></i></a>
+                            <a href="{{ route('quincaillerie', app()->getLocale()) }}"><i class="link-plus bg-primary"></i></a>
                         </div>
 
                     </div>
@@ -230,7 +230,7 @@
                         <div class="figcaption bg-dark">
                             <h4>SIMS DECOR</h4>
                             <p>The finish touches your new home or building needs to reflect your dreams</p>
-                            <a href="{{ route('simsdecor') }}"><i class="link-plus bg-primary"></i></a>
+                            <a href="{{ route('simsdecor', app()->getLocale()) }}"><i class="link-plus bg-primary"></i></a>
                         </div>
 
                     </div>
@@ -242,7 +242,7 @@
                     <div class="mt-box our-speciallization-content">
                         <h3 class="m-t0"><span class="font-weight-100">Building Your Dream Home from
                                 Scratch.</span></h3>
-                        <a class="site-button btn-effect" href="{{ route('contact') }}">Request a Quote</a>
+                        <a class="site-button btn-effect" href="{{ route('contact', app()->getLocale()) }}">Request a Quote</a>
                     </div>
 
                 </div>

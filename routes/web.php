@@ -14,10 +14,7 @@ use App\Models\Reference;
 |
 */
 
-Route::get('/', function () {
-    $refs=Reference::OrderBy('updated_at', 'DESC')->paginate(10);
-    return view('welcome', compact('refs'));
-})->name('homepage');
+
 
 Route::get('/under-construction', function () {
     return view('pages.underconstruction');
@@ -64,21 +61,31 @@ Route::get('/under-construction', function () {
 
 
 
+Route::post('/store-contact', [App\Http\Controllers\frontoffice\PagesController::class, 'storeContact'])->name('store-contact');
 
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 //Auth::routes();
 Auth::routes(['register' => false]);
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/contact-us', [App\Http\Controllers\frontoffice\PagesController::class, 'contact'])->name('contact');
-Route::get('/sims-decor', [App\Http\Controllers\frontoffice\PagesController::class, 'simsdecor'])->name('simsdecor');
-Route::get('/sims-quincaillerie', [App\Http\Controllers\frontoffice\PagesController::class, 'quincaillerie'])->name('quincaillerie');
-Route::get('/services/architecture', [App\Http\Controllers\frontoffice\PagesController::class, 'architecture'])->name('architecture');
-Route::get('/services/consulting', [App\Http\Controllers\frontoffice\PagesController::class, 'consulting'])->name('consulting');
-Route::get('/services/construction', [App\Http\Controllers\frontoffice\PagesController::class, 'construction'])->name('construction');
-Route::get('/services/renovation', [App\Http\Controllers\frontoffice\PagesController::class, 'renovation'])->name('renovation');
-Route::post('/store-contact', [App\Http\Controllers\frontoffice\PagesController::class, 'storeContact'])->name('store-contact');
-Route::get('/about-us', [App\Http\Controllers\frontoffice\PagesController::class, 'about'])->name('about');
-Route::get('/projects', [App\Http\Controllers\frontoffice\PagesController::class, 'projects'])->name('projects');
-Route::get('/read-project', [App\Http\Controllers\frontoffice\PagesController::class, 'readproject'])->name('readproject');
+Route::redirect('/', '/fr');
+
+Route::group(['prefix' => '{language}'], function () {
+    Route::get('/', function () {
+        $refs=Reference::OrderBy('updated_at', 'DESC')->paginate(10);
+        return view('welcome', compact('refs'));
+    })->name('homepage');
+    Route::get('/contact-us', [App\Http\Controllers\frontoffice\PagesController::class, 'contact'])->name('contact');
+    Route::get('/sims-decor', [App\Http\Controllers\frontoffice\PagesController::class, 'simsdecor'])->name('simsdecor');
+    Route::get('/sims-quincaillerie', [App\Http\Controllers\frontoffice\PagesController::class, 'quincaillerie'])->name('quincaillerie');
+    Route::get('/services/architecture', [App\Http\Controllers\frontoffice\PagesController::class, 'architecture'])->name('architecture');
+    Route::get('/services/consulting', [App\Http\Controllers\frontoffice\PagesController::class, 'consulting'])->name('consulting');
+    Route::get('/services/construction', [App\Http\Controllers\frontoffice\PagesController::class, 'construction'])->name('construction');
+    Route::get('/services/renovation', [App\Http\Controllers\frontoffice\PagesController::class, 'renovation'])->name('renovation');
+    Route::get('/about-us', [App\Http\Controllers\frontoffice\PagesController::class, 'about'])->name('about');
+    Route::get('/projects', [App\Http\Controllers\frontoffice\PagesController::class, 'projects'])->name('projects');
+    Route::get('/read-project', [App\Http\Controllers\frontoffice\PagesController::class, 'readproject'])->name('readproject');
+});
+
+//Route::redirect('/{{ $lang }}/read-project?ref={{$i}}', '//{{ $lang }}/read-project/{{$ref->title_en}}');

@@ -38,8 +38,8 @@
 
                 <div>
                     <ul class="mt-breadcrumb breadcrumb-style-2">
-                        <li><a href="{{ route('homepage') }}">Home</a></li>
-                        <li><a href="{{ route('projects') }}">Our Work</a></li>
+                        <li><a href="{{ route('homepage', app()->getLocale()) }}">Home</a></li>
+                        <li><a href="{{ route('projects', app()->getLocale()) }}">Our Work</a></li>
                         <li>{{ $ref->title_en }}</li>
                     </ul>
                 </div>

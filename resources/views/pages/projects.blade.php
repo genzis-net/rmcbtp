@@ -25,7 +25,7 @@
 
                 <div>
                     <ul class="mt-breadcrumb breadcrumb-style-2">
-                        <li><a href="{{ route('homepage') }}">Home</a></li>
+                        <li><a href="{{ route('homepage', app()->getLocale()) }}">Home</a></li>
                         <li>Projects</li>
                     </ul>
                 </div>
@@ -97,7 +97,7 @@
                                 $truncated = Str::of($ref->content_en)->limit(200);
                             ?>
                             <p class="trimmed">{!! $truncated !!}</p>
-                            <a href="{{ route('readproject', compact('ref')) }}" class="site-button-link" data-hover="Read More">Read More <i class="fa fa-angle-right arrow-animation"></i></a>
+                            <a href="{{ route('readproject', app()->getLocale()) }}?ref={{ $ref->id }}" class="site-button-link" data-hover="Read More">Read More <i class="fa fa-angle-right arrow-animation"></i></a>
                         </div>
                     </div>
                 </div>

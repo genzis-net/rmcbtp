@@ -119,7 +119,7 @@
                             data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
                             data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                             style="z-index:100; text-transform:uppercase;">
-                            <a href="{{ route('contact') }}" class="site-button-secondry btn-effect">Talk to an Expert</a>
+                            <a href="{{ route('contact', app()->getLocale()) }}" class="site-button-secondry btn-effect">Talk to an Expert</a>
                         </div>
 
                     </li>
@@ -227,7 +227,7 @@
                             data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
                             data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                             style="z-index:100; text-transform:uppercase;">
-                            <a href="{{ route('contact') }}" class="site-button-secondry btn-effect">Talk to an Expert</a>
+                            <a href="{{ route('contact', app()->getLocale()) }}" class="site-button-secondry btn-effect">Talk to an Expert</a>
                         </div>
 
                     </li>
@@ -335,7 +335,7 @@
                             data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
                             data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                             style="z-index:100; text-transform:uppercase;">
-                            <a href="{{ route('contact') }}" class="site-button-secondry btn-effect">Talk to an Expert</a>
+                            <a href="{{ route('contact', app()->getLocale()) }}" class="site-button-secondry btn-effect">Talk to an Expert</a>
                         </div>
 
                     </li>
@@ -379,7 +379,7 @@
                                 <div class="figcaption">
                                     <h4>RMC BTP</h4>
                                     <p>Our Contractors services to build yout houses and buildings from the ground up.</p>
-                                    <a href="{{ route('construction') }}"><i class="link-plus bg-primary"></i></a>
+                                    <a href="{{ route('construction', app()->getLocale()) }}"><i class="link-plus bg-primary"></i></a>
                                 </div>
 
 
@@ -394,7 +394,7 @@
                                     <h4>SIMS QUINCAILLERIE</h4>
                                     <p>Our premium equipment store for all your construction needs. We Provide heavy duty
                                         and commonly needed materials and equipments.</p>
-                                    <a href="{{ route('quincaillerie') }}"><i class="link-plus bg-primary"></i></a>
+                                    <a href="{{ route('quincaillerie', app()->getLocale()) }}"><i class="link-plus bg-primary"></i></a>
                                 </div>
 
                             </div>
@@ -407,7 +407,7 @@
                                 <div class="figcaption bg-dark">
                                     <h4>SIMS DECOR</h4>
                                     <p>The finish touches your new home or building needs to reflect your dreams</p>
-                                    <a href="{{ route('simsdecor') }}"><i class="link-plus bg-primary"></i></a>
+                                    <a href="{{ route('simsdecor', app()->getLocale()) }}"><i class="link-plus bg-primary"></i></a>
                                 </div>
 
                             </div>
@@ -419,7 +419,7 @@
                             <div class="mt-box our-speciallization-content">
                                 <h3 class="m-t0"><span class="font-weight-100">Building Your Dream Home from
                                         Scratch.</span></h3>
-                                <a class="site-button btn-effect" href="{{ route('contact') }}">Request a Quote</a>
+                                <a class="site-button btn-effect" href="{{ route('contact', app()->getLocale()) }}">Request a Quote</a>
                             </div>
 
                         </div>
@@ -496,7 +496,7 @@
                                     our teams can handle your projects from construction, material and deco.
                                 </p>
                                 <div class="text-right">
-                                    <a href="{{ route('about') }}" class="site-button-link" data-hover="Read More">More
+                                    <a href="{{ route('about', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">More
                                         <i class="fa fa-angle-right arrow-animation"></i></a>
                                 </div>
                             </div>
@@ -566,7 +566,7 @@
                                     </div>
                                     <p>We’re interested in talking
                                         about your Project.</p>
-                                    <a href="{{ route('contact') }}" class="site-button btn-effect m-b15"><span>Request a
+                                    <a href="{{ route('contact', app()->getLocale()) }}" class="site-button btn-effect m-b15"><span>Request a
                                             Quote</span></a>
                                 </div>
                             </div>
@@ -661,7 +661,7 @@
                                     <li><a href="#">Dschang</a></li>
                                 </ul>
                                 <div class="text-right">
-                                    <a href="{{ route('projects') }}" class="site-button-link" data-hover="Read More">More Achievements
+                                    <a href="{{ route('projects', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">More Achievements
                                         <i class="fa fa-angle-right arrow-animation"></i></a>
                                 </div>
                             </div>
@@ -755,7 +755,7 @@
                                         <div class="icon-content">
                                             <h4 class="mt-tilte m-b25">Architecture</h4>
                                             <p>We design highways, bridges, houses, and building. </p>
-                                            <a href="{{ route('architecture') }}" class="site-button-link" data-hover="Read More">More..<i class="fa fa-angle-right arrow-animation"></i></a>
+                                            <a href="{{ route('architecture', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">More..<i class="fa fa-angle-right arrow-animation"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -775,7 +775,7 @@
                                             <h4 class="mt-tilte m-b25">Construction</h4>
                                             <p>Our method involves following latest construction standards.
                                             </p>
-                                            <a href="{{ route('construction') }}" class="site-button-link" data-hover="Read More">More... <i class="fa fa-angle-right arrow-animation"></i></a>
+                                            <a href="{{ route('construction', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">More... <i class="fa fa-angle-right arrow-animation"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -794,7 +794,7 @@
                                         <div class="icon-content">
                                             <h4 class="mt-tilte m-b25">Material<br>and Machines</h4>
                                             <p>Nails, hammers, ciment, shovels, and all sort of machineries.</p>
-                                            <a href="{{ route('quincaillerie') }}" class="site-button-link" data-hover="Read More">Explore
+                                            <a href="{{ route('quincaillerie', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">Explore
                                                 catalog <i class="fa fa-angle-right arrow-animation"></i></a>
                                         </div>
                                     </div>
@@ -815,7 +815,7 @@
                                             <h4 class="mt-tilte m-b25">Home<br>Renovation</h4>
                                             <p>Our qualified technicians are available at all time for your projects at home
                                             </p>
-                                            <a href="{{ route('renovation') }}" class="site-button-link" data-hover="Read More">Ask an
+                                            <a href="{{ route('renovation', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">Ask an
                                                 Expert <i class="fa fa-angle-right arrow-animation"></i></a>
                                         </div>
                                     </div>
@@ -835,7 +835,7 @@
                                         <div class="icon-content">
                                             <h4 class="mt-tilte m-b25">Furnitures<br>and Home Deco</h4>
                                             <p>Get Inspired and choose what you want your home to be like. </p>
-                                            <a href="{{ route('simsdecor') }}" class="site-button-link" data-hover="Read More">Explore
+                                            <a href="{{ route('simsdecor', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">Explore
                                                 Catalog <i class="fa fa-angle-right arrow-animation"></i></a>
                                         </div>
                                     </div>
@@ -855,7 +855,7 @@
                                         <div class="icon-content">
                                             <h4 class="mt-tilte m-b25">Consulting</h4>
                                             <p>Need assistance with anything? We can help.</p>
-                                            <a href="{{ route('consulting') }}" class="site-button-link" data-hover="Read More">More... <i class="fa fa-angle-right arrow-animation"></i></a>
+                                            <a href="{{ route('consulting', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">More... <i class="fa fa-angle-right arrow-animation"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -938,7 +938,7 @@
                                 <div class="mt-info  p-t20 text-white">
                                     <h4 class="mt-tilte m-b10 m-t0">{{ $ref->title_en }}</h4>
                                 </div>
-                                <a href="{{ route('readproject', compact('ref')) }}"></a>
+                                <a href="{{ route('readproject', app()->getLocale()) }}?ref={{ $ref->id }}"></a>
                             </div>
                         </div>
                         @endforeach
