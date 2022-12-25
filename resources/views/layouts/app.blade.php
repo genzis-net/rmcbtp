@@ -243,8 +243,8 @@
                                             <ul class="sub-menu has-child">
                                                 <li><a href="{{ route('consulting') }}">Consulting</a></li>
                                                 <li><a href="{{ route('architecture') }}">Architecture</a></li>
-                                                <li><a href="{{ route('underconstruction') }}">Construction</a></li>
-                                                <li><a href="{{ route('underconstruction') }}">Home Renovation</a></li>
+                                                <li><a href="{{ route('construction') }}">Construction</a></li>
+                                                <li><a href="{{ route('renovation') }}">Home Renovation</a></li>
                                             </ul>
                                         </li>
 										<li>
@@ -358,8 +358,8 @@
                                 <ul>
                                     <li><a href="{{ route('consulting') }}">Consulting</a></li>
                                     <li><a href="{{ route('architecture') }}">Architecture</a></li>
-                                    <li><a href="#">Construction</a></li>
-                                    <li><a href="#">Home Renovation</a></li>
+                                    <li><a href="{{ route('construction') }}">Construction</a></li>
+                                    <li><a href="{{ route('renovation') }}">Home Renovation</a></li>
                                 </ul>
                             </div>
                         </div>

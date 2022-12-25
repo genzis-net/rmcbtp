@@ -119,8 +119,7 @@ We offer a wide range of consulting expertise that can begin resolving project p
                                     <h4 class="mt-tilte m-b25">Topography</h4>
                                     <p>Our method involves following latest construction standards.
                                     </p>
-                                    <a href="{{ route('contact') }}" class="site-button-link" data-hover="Read More">Request a
-                                        Quote <i class="fa fa-angle-right arrow-animation"></i></a>
+                                    <a href="{{ route('contact') }}" class="site-button-link" data-hover="Read More">Talk to an Expert <i class="fa fa-angle-right arrow-animation"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -138,8 +137,7 @@ We offer a wide range of consulting expertise that can begin resolving project p
                                 <div class="icon-content">
                                     <h4 class="mt-tilte m-b25">Construction Oversight</h4>
                                     <p>Ensure that their project is being managed and constructed as planned.</p>
-                                    <a href="#" class="site-button-link" data-hover="Read More">Explore
-                                        catalog <i class="fa fa-angle-right arrow-animation"></i></a>
+                                    <a href="#" class="site-button-link" data-hover="Read More">Talk to an Expert <i class="fa fa-angle-right arrow-animation"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -157,7 +155,7 @@ We offer a wide range of consulting expertise that can begin resolving project p
                                 <div class="icon-content">
                                     <h4 class="mt-tilte m-b25">Risk Assessment</h4>
                                     <p>Risk transfer planning, to make an impact on the project's completion</p>
-                                    <a href="#" class="site-button-link" data-hover="Read More">Ask an
+                                    <a href="#" class="site-button-link" data-hover="Read More">Talk to an
                                         Expert <i class="fa fa-angle-right arrow-animation"></i></a>
                                 </div>
                             </div>
