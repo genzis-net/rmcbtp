@@ -72,6 +72,7 @@ Route::get('/contact-us', [App\Http\Controllers\frontoffice\PagesController::cla
 Route::get('/sims-decor', [App\Http\Controllers\frontoffice\PagesController::class, 'simsdecor'])->name('simsdecor');
 Route::get('/sims-quincaillerie', [App\Http\Controllers\frontoffice\PagesController::class, 'quincaillerie'])->name('quincaillerie');
 Route::get('/services/architecture', [App\Http\Controllers\frontoffice\PagesController::class, 'architecture'])->name('architecture');
+Route::get('/services/consulting', [App\Http\Controllers\frontoffice\PagesController::class, 'consulting'])->name('consulting');
 Route::post('/store-contact', [App\Http\Controllers\frontoffice\PagesController::class, 'storeContact'])->name('store-contact');
 Route::get('/about-us', [App\Http\Controllers\frontoffice\PagesController::class, 'about'])->name('about');
 Route::get('/projects', [App\Http\Controllers\frontoffice\PagesController::class, 'projects'])->name('projects');

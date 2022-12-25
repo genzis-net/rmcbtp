@@ -241,7 +241,7 @@
                                         <li>
                                             <a href="javascript:;">RMC BTP</a>
                                             <ul class="sub-menu has-child">
-                                                <li><a href="{{ route('underconstruction') }}">Consulting</a></li>
+                                                <li><a href="{{ route('consulting') }}">Consulting</a></li>
                                                 <li><a href="{{ route('architecture') }}">Architecture</a></li>
                                                 <li><a href="{{ route('underconstruction') }}">Construction</a></li>
                                                 <li><a href="{{ route('underconstruction') }}">Home Renovation</a></li>
@@ -356,7 +356,7 @@
                             <div class="widget widget_services inline-links">
                                 <h4 class="widget-title">Useful links</h4>
                                 <ul>
-                                    <li><a href="#">Consulting</a></li>
+                                    <li><a href="{{ route('consulting') }}">Consulting</a></li>
                                     <li><a href="{{ route('architecture') }}">Architecture</a></li>
                                     <li><a href="#">Construction</a></li>
                                     <li><a href="#">Home Renovation</a></li>
