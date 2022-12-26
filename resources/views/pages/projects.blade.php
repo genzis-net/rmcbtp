@@ -1,11 +1,11 @@
 @extends('layouts.app')
 @section('headerz')
-<title>RMC BTP sarl | Our Work</title>
-<meta property="og:image" content="/assets//assets//assets/images/favicon.jpg" />
-<meta property="og:description" content="" />
-<meta property="og:url" content="https://rmcbtpsarl.com/projects" />
-<meta property="og:title" content="RMC BTP sarl | Our Work" />
-<meta name="keywords" content="">
+    <title>RMC-BTP | {{ __('Our work') }}</title>
+    <meta name="description" content="{{ __('Explore our contractors\' work in different cities of Cameroon.') }}" />
+    <meta property="og:image" content="/assets/images/banner/10.jpg" />
+    <meta property="og:description" content="{{ __('Explore our contractors\' work in different cities of Cameroon.') }}" />
+    <meta property="og:url" content="{{ url()->current() }}" />
+    <meta property="og:title" content="RMC-BTP | {{ __('Our work') }}" />
 @endsection
 
 @section('content')
@@ -18,15 +18,15 @@
             <div class="mt-bnr-inr-entry">
                 <div class="banner-title-outer">
                     <div class="banner-title-name">
-                        <h2 class="m-b0">CREATING QUALITY URBAN LIFESTYLES, BUILDING STRONGER COMMUNITIES.</h2>
+                        <h2 class="m-b0">{{ __('CREATING QUALITY URBAN LIFESTYLES, BUILDING STRONGER COMMUNITIES.') }}</h2>
                     </div>
                 </div>
                 <!-- BREADCRUMB ROW -->
 
                 <div>
                     <ul class="mt-breadcrumb breadcrumb-style-2">
-                        <li><a href="{{ route('homepage', app()->getLocale()) }}">Home</a></li>
-                        <li>Projects</li>
+                        <li><a href="{{ route('homepage', app()->getLocale()) }}">{{ __('Home') }}</a></li>
+                        <li>{{ __('Projects') }}</li>
                     </ul>
                 </div>
 
@@ -46,7 +46,7 @@
                     <li class="active"><a data-filter="*" href="#" data-hover="All">All</a></li>
                     <li><a data-filter=".Construction" href="#" data-hover="Construction">Construction</a></li>
                     <li><a data-filter=".Renovation" href="#" data-hover="Renovation">Renovation</a></li>
-                    <li><a data-filter=".Architecture" href="#" data-hover="blue Prints">Blue Prints</a></li>
+                    <li><a data-filter=".Architecture" href="#" data-hover="Architecture">Architecture</a></li>
                     <li><a data-filter=".Interior" href="#" data-hover="Interiors">Interior</a></li>
                     <li><a data-filter=".Consulting" href="#" data-hover="Consulting">Consulting</a></li>
                 </ul>
@@ -92,12 +92,12 @@
                             <div class="theimage" style="background-image:url('/images/achievements/{{ $ref->title_en }}/{{ $ref->images[0]->src }}'); "></div>
                         </div>
                         <div class="mt-info p-t20">
-                            <h4 class="mt-title m-b20 m-t0" data-hover="{{ $ref->title_en }}">{{ $ref->title_en }}</h4>
+                            <h4 class="mt-title m-b20 m-t0" data-hover="{{ $ref->{'title_'.app()->getLocale()} }}">{{ $ref->{'title_'.app()->getLocale()} }}</h4>
                             <?php 
-                                $truncated = Str::of($ref->content_en)->limit(200);
+                                $truncated = Str::of($ref->{'content_'.app()->getLocale()})->limit(200);
                             ?>
                             <p class="trimmed">{!! $truncated !!}</p>
-                            <a href="{{ route('readproject', app()->getLocale()) }}?ref={{ $ref->id }}" class="site-button-link" data-hover="Read More">Read More <i class="fa fa-angle-right arrow-animation"></i></a>
+                            <a href="{{ route('readproject', app()->getLocale()) }}?ref={{ $ref->id }}" class="site-button-link" data-hover="Read More">{{ __('More') }} <i class="fa fa-angle-right arrow-animation"></i></a>
                         </div>
                     </div>
                 </div>
@@ -108,7 +108,7 @@
             <!-- GALLERY CONTENT END -->
 
             <div class="m-t50 text-center">
-                <a href="#" class="site-button btn-effect">Load More</a>
+                <a href="#" class="site-button btn-effect">{{ $refs->links() }}</a>
             </div>
         </div>
         <!-- GALLERY CONTENT END -->

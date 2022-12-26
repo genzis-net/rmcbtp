@@ -175,10 +175,10 @@ We offer a wide range of consulting expertise that can begin resolving project p
 
         <div class="section-content" style="color:#fff !important;">
             <div class="call-us-section text-center">
-                <h4 class="m-b15" style="color:#fff !important;"><b>Let's work together</b></h4>
+                <h4 class="m-b15" style="color:#fff !important;"><b>{{ __('Let\'s work together') }}</b></h4>
                 <h2 class="call-us-number m-b15 m-b0" style="color:#fff !important;">+237 693 909 159</h2>
-                <h4 class="call-us-address m-t0 m-b20" style="color:#fff !important;">Cameroon & beyond</h4>
-                <a href="{{ route('contact', app()->getLocale()) }}" class="site-button-secondry btn-effect bg-dark">Contact Us</a>
+                <h4 class="call-us-address m-t0 m-b20" style="color:#fff !important;">{{ __('Cameroon') }} & {{ __('beyond') }}</h4>
+                <a href="{{ route('contact', app()->getLocale()) }}" class="site-button-secondry btn-effect bg-dark">{{ __('Contact us') }}</a>
             </div>
         </div>
 
@@ -195,10 +195,10 @@ We offer a wide range of consulting expertise that can begin resolving project p
                 <div class="col-lg-3 col-md-4 col-sm-6 m-b30">
 
                     <div class="image-effect-one hover-shadow">
-                        <img src="/assets/images/pic1.jpg" alt="" />
+                        <img src="/assets/images/pic1.jpg" alt="rmc btp logo" />
                         <div class="figcaption">
                             <h4>RMC BTP</h4>
-                            <p>Our Contractors services to build yout houses and buildings from the ground up.</p>
+                            <p>{{ __('Our Contractors services to build your houses and buildings from the ground up.') }}</p>
                             <a href="{{ route('construction', app()->getLocale()) }}"><i class="link-plus bg-primary"></i></a>
                         </div>
 
@@ -209,11 +209,10 @@ We offer a wide range of consulting expertise that can begin resolving project p
                 <div class="col-lg-3 col-md-4  col-sm-6 m-b30">
 
                     <div class="image-effect-one hover-shadow">
-                        <img src="/assets/images/pic2.jpg" alt="" />
+                        <img src="/assets/images/pic2.jpg" alt="sims quincaillerie logo" />
                         <div class="figcaption">
                             <h4>SIMS QUINCAILLERIE</h4>
-                            <p>Our premium equipment store for all your construction needs. We Provide heavy duty
-                                and commonly needed materials and equipments.</p>
+                            <p>{{__('Our premium equipment store for all your construction needs. We Provide heavy duty and commonly needed materials and equipments.')}}</p>
                             <a href="{{ route('quincaillerie', app()->getLocale()) }}"><i class="link-plus bg-primary"></i></a>
                         </div>
 
@@ -223,10 +222,10 @@ We offer a wide range of consulting expertise that can begin resolving project p
                 <div class="col-lg-3 col-md-4  col-sm-6 m-b30">
 
                     <div class="image-effect-one hover-shadow">
-                        <img src="/assets/images/pic3.jpg" alt="" />
+                        <img src="/assets/images/pic3.jpg" alt="sims decor logo" />
                         <div class="figcaption bg-dark">
                             <h4>SIMS DECOR</h4>
-                            <p>The finish touches your new home or building needs to reflect your dreams</p>
+                            <p>{{ __('The finish touches your new home or building needs to reflect your dreams') }}</p>
                             <a href="{{ route('simsdecor', app()->getLocale()) }}"><i class="link-plus bg-primary"></i></a>
                         </div>
 
@@ -237,9 +236,8 @@ We offer a wide range of consulting expertise that can begin resolving project p
                 <div class="col-lg-3 col-md-12 col-sm-6 m-b30">
 
                     <div class="mt-box our-speciallization-content">
-                        <h3 class="m-t0"><span class="font-weight-100">Building Your Dream Home from
-                                Scratch.</span></h3>
-                        <a class="site-button btn-effect" href="{{ route('contact', app()->getLocale()) }}">Request a Quote</a>
+                        <h3 class="m-t0"><span class="font-weight-100">{{__('Building Your Dream Home from Scratch.')}}</span></h3>
+                        <a class="site-button btn-effect" href="{{ route('contact', app()->getLocale()) }}">{{ __('Request a Quote') }}</a>
                     </div>
 
                 </div>

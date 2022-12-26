@@ -1,11 +1,14 @@
 @extends('layouts.app')
 @section('headerz')
-<title>{{ $ref->title_en }}</title>
-<meta property="og:image" content="/assets//assets//assets/images/favicon.jpg" />
-<meta property="og:description" content="" />
+<?php 
+    $truncated = Str::of($ref->{'content_'.app()->getLocale()})->limit(200);
+?>
+<title>{{ $ref->{'title_'.app()->getLocale()} }}</title>
+<meta property="og:image" content="/images/achievements/{{ $ref->title_en }}/{{ $ref->images[0]->src}}" />
+<meta property="og:description" content="{{ $truncated }}" />
 <meta property="og:url" content="https://rmcbtpsarl.com/projects/{{ $ref->title_en }}" />
-<meta property="og:title" content="RMC BTP sarl | Our Work | {{ $ref->title_en }}" />
-<meta name="keywords" content="">
+<meta property="og:title" content="{{ $ref->{'title_'.app()->getLocale()} }}" />
+<meta name="keywords" content="{{ $truncated }}">
 @endsection
 
 @section('content')
@@ -31,15 +34,15 @@
             <div class="mt-bnr-inr-entry">
                 <div class="banner-title-outer">
                     <div class="banner-title-name">
-                        <h2 class="m-b0">{{ $ref->title_en }}</h2>
+                        <h2 class="m-b0">{{ $ref->{'title_'.app()->getLocale()} }}</h2>
                     </div>
                 </div>
                 <!-- BREADCRUMB ROW -->
 
                 <div>
                     <ul class="mt-breadcrumb breadcrumb-style-2">
-                        <li><a href="{{ route('homepage', app()->getLocale()) }}">Home</a></li>
-                        <li><a href="{{ route('projects', app()->getLocale()) }}">Our Work</a></li>
+                        <li><a href="{{ route('homepage', app()->getLocale()) }}">{{ __('Home') }}</a></li>
+                        <li><a href="{{ route('projects', app()->getLocale()) }}">{{ __('Our Work') }}</a></li>
                         <li>{{ $ref->title_en }}</li>
                     </ul>
                 </div>
@@ -73,19 +76,19 @@
 
                 <div class="mt-post-meta ">
                     <ul>
-                        <li class="post-date"><strong>Year: </strong> <span>{{ $ref->year }}</span> </li>
-                        <li class="post-author"><strong>Location: </strong> <span>{{ $ref->location }}</span> </li>
+                        <li class="post-date"><strong>{{ __('Year') }}: </strong> <span>{{ $ref->year }}</span> </li>
+                        <li class="post-author"><strong>{{ __('Location') }}: </strong> <span>{{ $ref->location }}</span> </li>
                         <li class="post-author"><strong>Client: </strong> <span>{{ $ref->client }}</span> </li>
-                        <li class="post-author"><strong>Project Type: </strong> <span>{{ $ref->project_type }}</span> </li>
+                        <li class="post-author"><strong>Service: </strong> <span>{{ $ref->project_type }}</span> </li>
                     </ul>
                 </div>
 
                 <div class="mt-post-title ">
-                    <h2 class="post-title"><a href="javascript:void(0);" class="font-weight-600">{{ $ref->title_en }}</a></h2>
+                    <h2 class="post-title"><a href="javascript:void(0);" class="font-weight-600">{{ $ref->{'title_'.app()->getLocale()} }}</a></h2>
                 </div>
 
                 <div class="mt-post-text">
-                    {!! $ref->content_en !!}
+                    {!! $ref->{'content_'.app()->getLocale()} !!}
                 </div>
             </div>
         </div>

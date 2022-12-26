@@ -1,11 +1,11 @@
 @extends('layouts.app')
 @section('headerz')
-<title>{{ __('About us') }} | {{ __('Meet your construction Experts') }}</title>
-<meta name="description" content="{{ __('RMC-BTP is all about delivering Quality Estate construction for Cameroonians. We design, build, renovate, and develop your dream house. Learns more about us here.') }}" />
-<meta property="og:image" content="/assets/images/banner/1.jpg" />
-<meta property="og:description" content="{{ __('RMC-BTP is all about delivering Quality Estate construction for Cameroonians. We design, build, renovate, and develop your dream house. Learns more about us here.') }}" />
-<meta property="og:url" content="{{ url()->current() }}" />
-<meta property="og:title" content="{{ __('About us') }} | {{ __('Meet your construction Experts') }}" />
+    <title>{{ __('About us') }} | {{ __('Meet your construction Experts') }}</title>
+    <meta name="description" content="{{ __('RMC-BTP is all about delivering Quality Estate construction for Cameroonians. We design, build, renovate, and develop your dream house. Learns more about us here.') }}" />
+    <meta property="og:image" content="/assets/images/banner/1.jpg" />
+    <meta property="og:description" content="{{ __('RMC-BTP is all about delivering Quality Estate construction for Cameroonians. We design, build, renovate, and develop your dream house. Learns more about us here.') }}" />
+    <meta property="og:url" content="{{ url()->current() }}" />
+    <meta property="og:title" content="{{ __('About us') }} | {{ __('Meet your construction Experts') }}" />
 @endsection
 
 @section('content')
@@ -53,7 +53,7 @@
                             <div class="service-about-right m-b30">
                                 <h3 class="m-t0">{{ __('In our work we have pride, quality is what we provide.') }}</h3>
                                 <p>
-                                        {{ __('RMC-BTP is all about delivering Quality Estate construction. We work with a large team of professionals, experienced and passionate workers who know the value you seek in your projects.') }}
+                                    {{ __('RMC-BTP is all about delivering Quality Estate construction. We work with a large team of professionals, experienced and passionate workers who know the value you seek in your projects.') }}
                                 </p>
                                 <div class="call-for-quote-outer">
                                     <div class="call-quote">
@@ -76,156 +76,148 @@
 
 
     <!-- OUR SERVICES START -->
-        <div class="section-full mobile-page-padding  p-b50  square_shape2">
-            <div class="section-content">
-                <div class="Service-half-top p-t80  bg-dark bg-moving"
-                    style="background-image:url(/assets/images/background/bg-6.png)">
-                    <div class="container">
-                        <!-- TITLE START -->
-                        <div class="section-head text-white">
-                            <div class="mt-separator-outer separator-left">
-                                <div class="mt-separator">
-                                    <h2 class="text-white text-uppercase sep-line-one "><span
-                                            class="font-weight-300 text-primary">{{__('Our')}}</span> Services</h2>
-                                </div>
+    <div class="section-full mobile-page-padding  p-b50  square_shape2">
+        <div class="section-content">
+            <div class="Service-half-top p-t80  bg-dark bg-moving" style="background-image:url(/assets/images/background/bg-6.png)">
+                <div class="container">
+                    <!-- TITLE START -->
+                    <div class="section-head text-white">
+                        <div class="mt-separator-outer separator-left">
+                            <div class="mt-separator">
+                                <h2 class="text-white text-uppercase sep-line-one "><span class="font-weight-300 text-primary">{{__('Our')}}</span> Services</h2>
                             </div>
-                            <h3>{{__('We Can Help You With:')}}</h3>
                         </div>
-                        <!-- TITLE END -->
+                        <h3>{{__('We Can Help You With:')}}</h3>
                     </div>
-                </div>
-                <div class="services-half-bottom">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-4 col-sm-6">
-
-                                <div class="mt-icon-box-wraper m-b30">
-                                    <div class="relative icon-count-2 bg-gray p-a30 p-tb50" style="height: 335px;">
-                                        <span class="icon-count-number">1</span>
-                                        <div class="icon-md inline-icon m-b15 text-primary scale-in-center">
-                                            <span class="icon-cell"><img src="/assets/images/icon/compass.png"
-                                                    alt=""></span>
-                                        </div>
-                                        <div class="icon-content">
-                                            <h4 class="mt-tilte m-b25">Architecture</h4>
-                                            <p>{{ __('We design highways, bridges, houses, and building.') }} </p>
-                                            <a href="{{ route('architecture', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">{{ __('More') }}...<i class="fa fa-angle-right arrow-animation"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="col-md-4 col-sm-6">
-
-                                <div class="mt-icon-box-wraper m-b30">
-                                    <div class="relative icon-count-2 bg-gray p-a30 p-tb50" style="    height: 335px;">
-                                        <span class="icon-count-number">2</span>
-                                        <div class="icon-md inline-icon m-b15 text-primary scale-in-center">
-                                            <span class="icon-cell"><img src="/assets/images/icon/crane-1.png"
-                                                    alt=""></span>
-                                        </div>
-                                        <div class="icon-content">
-                                            <h4 class="mt-tilte m-b25">Construction</h4>
-                                            <p>{{ __('Our method involves following latest construction standards.') }}
-                                            </p>
-                                            <a href="{{ route('construction', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">{{ __('More') }}... <i class="fa fa-angle-right arrow-animation"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="col-md-4 col-sm-6">
-
-                                <div class="mt-icon-box-wraper m-b30">
-                                    <div class="relative icon-count-2 bg-gray p-a30 p-tb50" style="    height: 335px;">
-                                        <span class="icon-count-number">3</span>
-                                        <div class="icon-md inline-icon m-b15 text-primary scale-in-center">
-                                            <span class="icon-cell"><img src="/assets/images/icon/toolbox.png"
-                                                    alt=""></span>
-                                        </div>
-                                        <div class="icon-content">
-                                            <h4 class="mt-tilte m-b25">{{ __('Material') }}<br>{{ __('and Machines') }}</h4>
-                                            <p>{{ __('Nails, hammers, ciment, shovels, and all sort of machineries.') }}</p>
-                                            <a href="{{ route('quincaillerie', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">{{ __('Explore catalog') }} <i class="fa fa-angle-right arrow-animation"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="col-md-4 col-sm-6">
-
-                                <div class="mt-icon-box-wraper m-b30">
-                                    <div class="relative icon-count-2 bg-gray p-a30 p-tb50" style="    height: 335px;">
-                                        <span class="icon-count-number">4</span>
-                                        <div class="icon-md inline-icon m-b15 text-primary scale-in-center">
-                                            <span class="icon-cell"><img src="/assets/images/icon/dump-truck.png"
-                                                    alt=""></span>
-                                        </div>
-                                        <div class="icon-content">
-                                            <h4 class="mt-tilte m-b25">Renovation</h4>
-                                            <p>{{ __('Our qualified technicians are available at all time for your projects at home') }}
-                                            </p>
-                                            <a href="{{ route('renovation', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">{{ __('Talk to an Expert') }} <i class="fa fa-angle-right arrow-animation"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="col-md-4 col-sm-6">
-
-                                <div class="mt-icon-box-wraper m-b30">
-                                    <div class="relative icon-count-2 bg-gray p-a30 p-tb50" style="    height: 335px;">
-                                        <span class="icon-count-number">5</span>
-                                        <div class="icon-md inline-icon m-b15 text-primary scale-in-center">
-                                            <span class="icon-cell"><img src="/assets/images/icon/architecture.png"
-                                                    alt=""></span>
-                                        </div>
-                                        <div class="icon-content">
-                                            <h4 class="mt-tilte m-b25">{{ __('Furnitures and Home Deco') }}</h4>
-                                            <p>{{ __('Get Inspired and choose what you want your home to be like.') }} </p>
-                                            <a href="{{ route('simsdecor', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">{{ __('Explore catalog') }}<i class="fa fa-angle-right arrow-animation"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="col-md-4 col-sm-6">
-
-                                <div class="mt-icon-box-wraper m-b30">
-                                    <div class="relative icon-count-2 bg-gray p-a30 p-tb50" style="    height: 335px;">
-                                        <span class="icon-count-number">6</span>
-                                        <div class="icon-md inline-icon m-b15 text-primary scale-in-center">
-                                            <span class="icon-cell"><img src="/assets/images/icon/idea.png"
-                                                    alt=""></span>
-                                        </div>
-                                        <div class="icon-content">
-                                            <h4 class="mt-tilte m-b25">Consulting</h4>
-                                            <p>{{ __('Need assistance with anything? We can help.')}}</p>
-                                            <a href="{{ route('consulting', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">{{ __('More') }}... <i class="fa fa-angle-right arrow-animation"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
+                    <!-- TITLE END -->
                 </div>
             </div>
-            <div class="hilite-title text-left p-l50 text-uppercase text-pop-up-top">
-                <strong>Services</strong>
+            <div class="services-half-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+
+                            <div class="mt-icon-box-wraper m-b30">
+                                <div class="relative icon-count-2 bg-gray p-a30 p-tb50" style="height: 335px;">
+                                    <span class="icon-count-number">1</span>
+                                    <div class="icon-md inline-icon m-b15 text-primary scale-in-center">
+                                        <span class="icon-cell"><img src="/assets/images/icon/compass.png" alt=""></span>
+                                    </div>
+                                    <div class="icon-content">
+                                        <h4 class="mt-tilte m-b25">Architecture</h4>
+                                        <p>{{ __('We design highways, bridges, houses, and building.') }} </p>
+                                        <a href="{{ route('architecture', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">{{ __('More') }}...<i class="fa fa-angle-right arrow-animation"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+
+                            <div class="mt-icon-box-wraper m-b30">
+                                <div class="relative icon-count-2 bg-gray p-a30 p-tb50" style="    height: 335px;">
+                                    <span class="icon-count-number">2</span>
+                                    <div class="icon-md inline-icon m-b15 text-primary scale-in-center">
+                                        <span class="icon-cell"><img src="/assets/images/icon/crane-1.png" alt=""></span>
+                                    </div>
+                                    <div class="icon-content">
+                                        <h4 class="mt-tilte m-b25">Construction</h4>
+                                        <p>{{ __('Our method involves following latest construction standards.') }}
+                                        </p>
+                                        <a href="{{ route('construction', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">{{ __('More') }}... <i class="fa fa-angle-right arrow-animation"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+
+                            <div class="mt-icon-box-wraper m-b30">
+                                <div class="relative icon-count-2 bg-gray p-a30 p-tb50" style="    height: 335px;">
+                                    <span class="icon-count-number">3</span>
+                                    <div class="icon-md inline-icon m-b15 text-primary scale-in-center">
+                                        <span class="icon-cell"><img src="/assets/images/icon/toolbox.png" alt=""></span>
+                                    </div>
+                                    <div class="icon-content">
+                                        <h4 class="mt-tilte m-b25">{{ __('Material') }}<br>{{ __('and Machines') }}</h4>
+                                        <p>{{ __('Nails, hammers, ciment, shovels, and all sort of machineries.') }}</p>
+                                        <a href="{{ route('quincaillerie', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">{{ __('Explore catalog') }} <i class="fa fa-angle-right arrow-animation"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+
+                            <div class="mt-icon-box-wraper m-b30">
+                                <div class="relative icon-count-2 bg-gray p-a30 p-tb50" style="    height: 335px;">
+                                    <span class="icon-count-number">4</span>
+                                    <div class="icon-md inline-icon m-b15 text-primary scale-in-center">
+                                        <span class="icon-cell"><img src="/assets/images/icon/dump-truck.png" alt=""></span>
+                                    </div>
+                                    <div class="icon-content">
+                                        <h4 class="mt-tilte m-b25">Renovation</h4>
+                                        <p>{{ __('Our qualified technicians are available at all time for your projects at home') }}
+                                        </p>
+                                        <a href="{{ route('renovation', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">{{ __('Talk to an Expert') }} <i class="fa fa-angle-right arrow-animation"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+
+                            <div class="mt-icon-box-wraper m-b30">
+                                <div class="relative icon-count-2 bg-gray p-a30 p-tb50" style="    height: 335px;">
+                                    <span class="icon-count-number">5</span>
+                                    <div class="icon-md inline-icon m-b15 text-primary scale-in-center">
+                                        <span class="icon-cell"><img src="/assets/images/icon/architecture.png" alt=""></span>
+                                    </div>
+                                    <div class="icon-content">
+                                        <h4 class="mt-tilte m-b25">{{ __('Furnitures and Home Deco') }}</h4>
+                                        <p>{{ __('Get Inspired and choose what you want your home to be like.') }} </p>
+                                        <a href="{{ route('simsdecor', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">{{ __('Explore catalog') }}<i class="fa fa-angle-right arrow-animation"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+
+                            <div class="mt-icon-box-wraper m-b30">
+                                <div class="relative icon-count-2 bg-gray p-a30 p-tb50" style="    height: 335px;">
+                                    <span class="icon-count-number">6</span>
+                                    <div class="icon-md inline-icon m-b15 text-primary scale-in-center">
+                                        <span class="icon-cell"><img src="/assets/images/icon/idea.png" alt=""></span>
+                                    </div>
+                                    <div class="icon-content">
+                                        <h4 class="mt-tilte m-b25">Consulting</h4>
+                                        <p>{{ __('Need assistance with anything? We can help.')}}</p>
+                                        <a href="{{ route('consulting', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">{{ __('More') }}... <i class="fa fa-angle-right arrow-animation"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- OUR SERVICES  END -->
+        <div class="hilite-title text-left p-l50 text-uppercase text-pop-up-top">
+            <strong>Services</strong>
+        </div>
+    </div>
+    <!-- OUR SERVICES  END -->
 
 
     <!-- SECTION CONTENT START -->
-    
+
     <div class="section-full p-t80 p-b50 bg-parallax bg-cover" data-stellar-background-ratio="0.5" style="background-image:url(/assets/images/background/bg5.jpg);">
         <div class="container">
             <!-- TITLE START -->
