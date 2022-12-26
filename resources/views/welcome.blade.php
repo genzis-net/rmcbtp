@@ -6,7 +6,7 @@
     <meta property="og:image" content="/assets/images/favicon.jpg" />
     <meta property="og:description" content="{{ __('Get a qualified contractor team who knows the value you are looking for in your projects. our mission is to provide quality real estate construction in Cameroon.') }}" />
     <meta property="og:url"content="https://rmcbtpsarl.com" />
-    <meta property="og:title" content="RMC BTP sarl | {{ __('Home') }}" />
+    <meta property="og:title" content="RMC BTP sarl | {{ __('Professional Contractor in Cameroon') }}" />
 @endsection
 
 @section('content')
