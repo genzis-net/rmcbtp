@@ -11469,10 +11469,19 @@ font-size:68px;
 
 .work-carousel .mt-info{
 	margin: 20px;
+	width: 100%;
+    text-align: center;
+    height: 160px;
 	background-color: #fff;
 	position: relative;
 	top: -50px;
 	margin-bottom:-50px;
+}
+
+.work-carousel .mt-info .site-button{
+	position: absolute;
+    bottom: 6px;
+    right: 33%;
 }
 
 /*====Similar Projects pages ====*/

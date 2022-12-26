@@ -198,7 +198,7 @@
                 <div class="col-lg-3 col-md-4 col-sm-6 m-b30">
 
                     <div class="image-effect-one hover-shadow">
-                        <img src="/assets/images/pic1.jpg" alt="" />
+                        <img src="/assets/images/pic1.jpg" alt="rmc btp logo" />
                         <div class="figcaption">
                             <h4>RMC BTP</h4>
                             <p>{{ __('Our Contractors services to build your houses and buildings from the ground up.') }}</p>
@@ -212,7 +212,7 @@
                 <div class="col-lg-3 col-md-4  col-sm-6 m-b30">
 
                     <div class="image-effect-one hover-shadow">
-                        <img src="/assets/images/pic2.jpg" alt="" />
+                        <img src="/assets/images/pic2.jpg" alt="sims quincaillerie logo" />
                         <div class="figcaption">
                             <h4>SIMS QUINCAILLERIE</h4>
                             <p>{{__('Our premium equipment store for all your construction needs. We Provide heavy duty and commonly needed materials and equipments.')}}</p>
@@ -225,7 +225,7 @@
                 <div class="col-lg-3 col-md-4  col-sm-6 m-b30">
 
                     <div class="image-effect-one hover-shadow">
-                        <img src="/assets/images/pic3.jpg" alt="" />
+                        <img src="/assets/images/pic3.jpg" alt="sims decor logo" />
                         <div class="figcaption bg-dark">
                             <h4>SIMS DECOR</h4>
                             <p>{{ __('The finish touches your new home or building needs to reflect your dreams') }}</p>
