@@ -8,7 +8,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="https://rmcbtpsarl.com" />
-
+    <meta name="google-site-verification" content="0wojRVejhyyL9C2bml6hyXCHsBBmyt8nK9-xQoG6iXw" />
+    
     @yield('headerz')
 
     <!-- FAVICONS ICON -->
