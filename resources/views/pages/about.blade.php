@@ -1,11 +1,11 @@
 @extends('layouts.app')
 @section('headerz')
 <title>{{ __('About us') }} | {{ __('Meet your construction Experts') }}</title>
-    <meta name="description" content="{{ __('RMC-BTP is all about delivering Quality Estate construction for Cameroonians. We design, build, renovate, and develop your dream house. Learns more about us here.') }}"/>
-    <meta property="og:image" content="/assets/images/banner/1.jpg" />
-    <meta property="og:description" content="{{ __('RMC-BTP is all about delivering Quality Estate construction for Cameroonians. We design, build, renovate, and develop your dream house. Learns more about us here.') }}" />
-    <meta property="og:url"content="https://rmcbtpsarl.com/about-us" />
-    <meta property="og:title" content="{{ __('About us') }} | {{ __('Meet your construction Experts') }}" />
+<meta name="description" content="{{ __('RMC-BTP is all about delivering Quality Estate construction for Cameroonians. We design, build, renovate, and develop your dream house. Learns more about us here.') }}" />
+<meta property="og:image" content="/assets/images/banner/1.jpg" />
+<meta property="og:description" content="{{ __('RMC-BTP is all about delivering Quality Estate construction for Cameroonians. We design, build, renovate, and develop your dream house. Learns more about us here.') }}" />
+<meta property="og:url" content="https://rmcbtpsarl.com/about-us" />
+<meta property="og:title" content="{{ __('About us') }} | {{ __('Meet your construction Experts') }}" />
 @endsection
 
 @section('content')
@@ -18,15 +18,15 @@
             <div class="mt-bnr-inr-entry">
                 <div class="banner-title-outer">
                     <div class="banner-title-name">
-                        <h2 class="m-b0">Diversified services. Unvarying quality.</h2>
+                        <h2 class="m-b0">{{ __('Diversified services. Unvarying quality.') }}</h2>
                     </div>
                 </div>
                 <!-- BREADCRUMB ROW -->
 
                 <div>
                     <ul class="mt-breadcrumb breadcrumb-style-2">
-                        <li><a href="{{ route('homepage', app()->getLocale()) }}">Home</a></li>
-                        <li>About</li>
+                        <li><a href="{{ route('homepage', app()->getLocale()) }}">{{ __('Home') }}</a></li>
+                        <li>{{ __('About us') }}</li>
                     </ul>
                 </div>
 
@@ -45,21 +45,23 @@
                         <div class="col-md-5 col-sm-12">
                             <div class="service-about-left">
                                 <div class="mt-media">
-                                    <img src="/assets/images/s-1.png" alt="">
+                                    <img src="/assets/images/s-1.png" alt="rmc btp construction engineer">
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-7 col-sm-12">
                             <div class="service-about-right m-b30">
-                                <h3 class="m-t0">In our work we have pride, quality is what we provide.</h3>
-                                <p>RMC-BTP is all about delivering Quality Estate construction. We work with a large team of professionals, experienced and passionate workes who know the value you seek in your projects. We have organized our ressources to ease up your decision making. Hence, our teams can handle your projects from construction, material and deco.</p>
+                                <h3 class="m-t0">{{ __('In our work we have pride, quality is what we provide.') }}</h3>
+                                <p>
+                                        {{ __('RMC-BTP is all about delivering Quality Estate construction. We work with a large team of professionals, experienced and passionate workers who know the value you seek in your projects.') }}
+                                </p>
                                 <div class="call-for-quote-outer">
                                     <div class="call-quote">
-                                        <span>Call For a Quote:</span>
+                                        <span>{{ __('Request a Quote') }}</span>
                                         <h4>+237 693 909 159</h4>
                                     </div>
                                     <div class="call-estimate bg-dark">
-                                        <a href="{{ route('contact', app()->getLocale()) }}" class="site-button-secondry btn-effect">Discuss with an Engineer</a>
+                                        <a href="{{ route('contact', app()->getLocale()) }}" class="site-button-secondry btn-effect">{{ __('Discuss with an Engineer') }}</a>
                                     </div>
                                 </div>
 
@@ -84,10 +86,10 @@
                             <div class="mt-separator-outer separator-left">
                                 <div class="mt-separator">
                                     <h2 class="text-white text-uppercase sep-line-one "><span
-                                            class="font-weight-300 text-primary">Our</span> Services</h2>
+                                            class="font-weight-300 text-primary">{{__('Our')}}</span> Services</h2>
                                 </div>
                             </div>
-                            <h3>We Can Help You With:</h3>
+                            <h3>{{__('We Can Help You With:')}}</h3>
                         </div>
                         <!-- TITLE END -->
                     </div>
@@ -106,8 +108,8 @@
                                         </div>
                                         <div class="icon-content">
                                             <h4 class="mt-tilte m-b25">Architecture</h4>
-                                            <p>We design highways, bridges, houses, and building. </p>
-                                            <a href="{{ route('architecture', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">More..<i class="fa fa-angle-right arrow-animation"></i></a>
+                                            <p>{{ __('We design highways, bridges, houses, and building.') }} </p>
+                                            <a href="{{ route('architecture', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">{{ __('More') }}...<i class="fa fa-angle-right arrow-animation"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -125,9 +127,9 @@
                                         </div>
                                         <div class="icon-content">
                                             <h4 class="mt-tilte m-b25">Construction</h4>
-                                            <p>Our method involves following latest construction standards.
+                                            <p>{{ __('Our method involves following latest construction standards.') }}
                                             </p>
-                                            <a href="{{ route('construction', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">More... <i class="fa fa-angle-right arrow-animation"></i></a>
+                                            <a href="{{ route('construction', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">{{ __('More') }}... <i class="fa fa-angle-right arrow-animation"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -144,10 +146,9 @@
                                                     alt=""></span>
                                         </div>
                                         <div class="icon-content">
-                                            <h4 class="mt-tilte m-b25">Material<br>and Machines</h4>
-                                            <p>Nails, hammers, ciment, shovels, and all sort of machineries.</p>
-                                            <a href="{{ route('quincaillerie', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">Explore
-                                                catalog <i class="fa fa-angle-right arrow-animation"></i></a>
+                                            <h4 class="mt-tilte m-b25">{{ __('Material') }}<br>{{ __('and Machines') }}</h4>
+                                            <p>{{ __('Nails, hammers, ciment, shovels, and all sort of machineries.') }}</p>
+                                            <a href="{{ route('quincaillerie', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">{{ __('Explore catalog') }} <i class="fa fa-angle-right arrow-animation"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -164,11 +165,10 @@
                                                     alt=""></span>
                                         </div>
                                         <div class="icon-content">
-                                            <h4 class="mt-tilte m-b25">Home<br>Renovation</h4>
-                                            <p>Our qualified technicians are available at all time for your projects at home
+                                            <h4 class="mt-tilte m-b25">Renovation</h4>
+                                            <p>{{ __('Our qualified technicians are available at all time for your projects at home') }}
                                             </p>
-                                            <a href="{{ route('renovation', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">Ask an
-                                                Expert <i class="fa fa-angle-right arrow-animation"></i></a>
+                                            <a href="{{ route('renovation', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">{{ __('Talk to an Expert') }} <i class="fa fa-angle-right arrow-animation"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -185,10 +185,9 @@
                                                     alt=""></span>
                                         </div>
                                         <div class="icon-content">
-                                            <h4 class="mt-tilte m-b25">Furnitures<br>and Home Deco</h4>
-                                            <p>Get Inspired and choose what you want your home to be like. </p>
-                                            <a href="{{ route('simsdecor', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">Explore
-                                                Catalog <i class="fa fa-angle-right arrow-animation"></i></a>
+                                            <h4 class="mt-tilte m-b25">{{ __('Furnitures and Home Deco') }}</h4>
+                                            <p>{{ __('Get Inspired and choose what you want your home to be like.') }} </p>
+                                            <a href="{{ route('simsdecor', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">{{ __('Explore catalog') }}<i class="fa fa-angle-right arrow-animation"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -206,8 +205,8 @@
                                         </div>
                                         <div class="icon-content">
                                             <h4 class="mt-tilte m-b25">Consulting</h4>
-                                            <p>Need assistance with anything? We can help.</p>
-                                            <a href="{{ route('consulting', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">More... <i class="fa fa-angle-right arrow-animation"></i></a>
+                                            <p>{{ __('Need assistance with anything? We can help.')}}</p>
+                                            <a href="{{ route('consulting', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">{{ __('More') }}... <i class="fa fa-angle-right arrow-animation"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -224,15 +223,16 @@
         </div>
         <!-- OUR SERVICES  END -->
 
-   
+
     <!-- SECTION CONTENT START -->
+    
     <div class="section-full p-t80 p-b50 bg-parallax bg-cover" data-stellar-background-ratio="0.5" style="background-image:url(/assets/images/background/bg5.jpg);">
         <div class="container">
             <!-- TITLE START -->
             <div class="section-head">
                 <div class="mt-separator-outer separator-center">
                     <div class="mt-separator text-white">
-                        <h2 class="text-uppercase sep-line-one "><span class="font-weight-300 text-primary">Our</span> Project</h2>
+                        <h2 class="text-uppercase sep-line-one "><span class="font-weight-300 text-primary">{{ __('Our') }}</span> {{ __('Projects') }}</h2>
                     </div>
                 </div>
             </div>
@@ -254,7 +254,7 @@
             <div class="portfolio-wrap mfp-gallery work-grid row clearfix">
                 <!-- COLUMNS 1 -->
                 @foreach($refs as $ref)
-                    <div class="masonry-item {{ $ref->project_type }}  col-md-3 col-sm-6 m-b30">
+                <div class="masonry-item {{ $ref->project_type }}  col-md-3 col-sm-6 m-b30">
                     <div class="mt-box   image-hover-block">
                         <div class="mt-thum-bx">
                             <img src="/images/achievements/{{ $ref->title_en }}/{{ $ref->images[0]->src}}" alt="{{ $ref->title_en }}">
@@ -266,7 +266,7 @@
                     </div>
                 </div>
                 @endforeach
-                
+
             </div>
             <!-- GALLERY CONTENT END -->
         </div>
@@ -275,7 +275,7 @@
     </div>
     <!-- SECTION CONTENT END  -->
 
-     <!-- OUR VALUE START -->
+    <!-- OUR VALUE START -->
     <div class="section-full mobile-page-padding p-t80 p-b30 bg-white">
         <div class="container">
 
@@ -286,12 +286,10 @@
                         <div class="section-head">
                             <div class="mt-separator-outer separator-left">
                                 <div class="m-about-years bg-moving" style="">
-                                    <span class="text-primary large-title">Request a Quote</span>
+                                    <span class="text-primary large-title">{{__("Request a Quote")}}</span>
                                 </div>
-                                <p>We’re interested in talking
-                                    about your Project.</p>
-                                <a href="{{ route('contact', app()->getLocale()) }}" class="site-button btn-effect m-b15"><span>Request a
-                                        Quote</span></a>
+                                <p>{{ __('We’re interested in talking about your Project.') }}</p>
+                                <a href="{{ route('contact', app()->getLocale()) }}" class="site-button btn-effect m-b15"><span>{{__("Request a Quote")}}</span></a>
                             </div>
                         </div>
                         <div class="video-section-full bg-no-repeat bg-cover overlay-wraper" style="background-image:url(/assets/images/video-bg.jpg)">
@@ -304,15 +302,15 @@
 
                         <div class="mt-count m-b30 text-white mt-icon-box-wraper center  bg-dark p-a20">
                             <div class="counter font-30 font-weight-800 m-b15 text-primary">15</div>
-                            <h4 class="m-tb0">Active Experts</h4>
+                            <h4 class="m-tb0">{{ __('Active Experts') }}</h4>
                         </div>
                         <div class="mt-count m-b30 text-white mt-icon-box-wraper center  bg-dark p-a20">
                             <div class="counter font-30 font-weight-800 m-b15  text-primary">20</div>
-                            <h4 class="m-tb0">Satisfied Clients</h4>
+                            <h4 class="m-tb0">{{ __('Satisfied Clients') }}</h4>
                         </div>
                         <div class="mt-count m-b30 text-white mt-icon-box-wraper center  bg-dark p-a20">
                             <div class="counter font-30 font-weight-800 m-b15 text-primary">35</div>
-                            <h4 class="m-tb0">Project Complete</h4>
+                            <h4 class="m-tb0">{{ __('Project Completed') }}</h4>
                         </div>
                     </div>
                     <div class="col-md-5 col-sm-6">
@@ -321,19 +319,19 @@
                                 <!-- COLUMNS 1 -->
                                 <div class="item">
                                     <div class="ow-img">
-                                        <a href="javascript:void(0);"><img src="/assets/images/gallery/portrait/pic1.jpg" alt=""></a>
+                                        <a href="javascript:void(0);"><img src="/assets/images/gallery/portrait/pic1.jpg" alt="sims decor project"></a>
                                     </div>
                                 </div>
                                 <!-- COLUMNS 2 -->
                                 <div class="item">
                                     <div class="ow-img">
-                                        <a href="javascript:void(0);"><img src="/assets/images/gallery/portrait/pic2.jpg" alt=""></a>
+                                        <a href="javascript:void(0);"><img src="/assets/images/gallery/portrait/pic2.jpg" alt="rmc btp construction project"></a>
                                     </div>
                                 </div>
                                 <!-- COLUMNS 3 -->
                                 <div class="item">
                                     <div class="owl-img">
-                                        <a href="javascript:void(0);"><img src="/assets/images/gallery/portrait/pic3.jpg" alt=""></a>
+                                        <a href="javascript:void(0);"><img src="/assets/images/gallery/portrait/pic3.jpg" alt="sims decor kitchen project"></a>
                                     </div>
                                 </div>
                             </div>

@@ -974,7 +974,7 @@
 
             </div>
             <div class="hilite-title text-left p-l50 text-uppercase text-pop-up-top">
-                <strong>Projects</strong>
+                <strong>{{ __('Projects') }}</strong>
             </div>
         </div>
         <!-- OUR PROJECT MOBILE END -->

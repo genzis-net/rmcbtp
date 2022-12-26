@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="https://rmcbtpsarl.com" />
     <meta name="google-site-verification" content="0wojRVejhyyL9C2bml6hyXCHsBBmyt8nK9-xQoG6iXw" />
-    
+
     @yield('headerz')
 
     <!-- FAVICONS ICON -->
@@ -110,7 +110,7 @@
                                                 )
                                         </script>
                                     </a></li>
-                                <li><i class="fa fa-phone"></i>@lang('category.line')('+237 693 909 159')</li>
+                                <li><i class="fa fa-phone"></i>+237 693 909 159</li>
                             </ul>
                         </div>
                         <div class="mt-topbar-right clearfix">
