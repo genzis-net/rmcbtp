@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
 @section('headerz')
-	<title>RMC BTP sarl | Home</title>
+	<title>RMC BTP sarl | {{ __('Professional Contractor in Cameroon') }}</title>
+    <meta name="description" content="{{ __('Get a qualified contractor team who knows the value you are looking for in your projects. our mission is to provide quality real estate construction in Cameroon.') }}"/>
     <meta property="og:image" content="/assets/images/favicon.jpg" />
-    <meta property="og:description" content="{{ __('RMC BTP is a contractor business located in Yaounde cameroon. our mission to provide quality real estate construction. We work with a great team of professionals, experienced and passionate workers who know the value you are looking for in your projects.') }}" />
+    <meta property="og:description" content="{{ __('Get a qualified contractor team who knows the value you are looking for in your projects. our mission is to provide quality real estate construction in Cameroon.') }}" />
     <meta property="og:url"content="https://rmcbtpsarl.com" />
-    <meta property="og:title" content="RMC BTP sarl | Home" />
-    <meta name="keywords" content="">
+    <meta property="og:title" content="RMC BTP sarl | {{ __('Home') }}" />
 @endsection
 
 @section('content')
@@ -27,7 +27,7 @@
                         data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6=""
                         data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                         <!-- MAIN IMAGE -->
-                        <img src="/assets/images/main-slider/slider1/slide1.jpg" alt=""
+                        <img src="/assets/images/main-slider/slider1/slide1.jpg" alt="Rmc btp - slider image 1"
                             data-lazyload="/assets/images/main-slider/slider1/slide1.jpg" data-bgposition="center center"
                             data-bgfit="cover" data-bgparallax="4" class="rev-slidebg" data-no-retina>
                         <!-- LAYERS -->
@@ -134,7 +134,7 @@
                         data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
                         data-param10="" data-description="">
                         <!-- MAIN IMAGE -->
-                        <img src="/assets/images/main-slider/slider1/slide2.jpg" alt=""
+                        <img src="/assets/images/main-slider/slider1/slide2.jpg" alt="rmc btp"
                             data-lazyload="/assets/images/main-slider/slider1/slide2.jpg" data-bgposition="center center"
                             data-bgfit="cover" data-bgparallax="4" class="rev-slidebg" data-no-retina>
                         <!-- LAYERS -->
@@ -241,7 +241,7 @@
                         data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
                         data-param10="" data-description="">
                         <!-- MAIN IMAGE -->
-                        <img src="/assets/images/main-slider/slider1/slide3.jpg" alt=""
+                        <img src="/assets/images/main-slider/slider1/slide3.jpg" alt="rmc btp"
                             data-lazyload="/assets/images/main-slider/slider1/slide3.jpg" data-bgposition="center center"
                             data-bgfit="cover" data-bgparallax="4" class="rev-slidebg" data-no-retina>
                         <!-- LAYERS -->
@@ -373,7 +373,7 @@
                         <div class="col-lg-3 col-md-4 col-sm-6 m-b30">
 
                             <div class="image-effect-one hover-shadow">
-                                <img src="/assets/images/pic1.jpg" alt="" />
+                                <img src="/assets/images/pic1.jpg" alt="rmc btp services" />
                                 <div class="figcaption">
                                     <h4>RMC BTP</h4>
                                     <p>{{ __('Our Contractors services to build your houses and buildings from the ground up.') }}</p>
@@ -387,7 +387,7 @@
                         <div class="col-lg-3 col-md-4  col-sm-6 m-b30">
 
                             <div class="image-effect-one hover-shadow">
-                                <img src="/assets/images/pic2.jpg" alt="" />
+                                <img src="/assets/images/pic2.jpg" alt="sims quincaillerie service" />
                                 <div class="figcaption">
                                     <h4>SIMS QUINCAILLERIE</h4>
                                     <p>{{ __('Our premium equipment store for all your construction needs. We Provide heavy duty and commonly needed materials and equipments.') }}</p>
@@ -400,7 +400,7 @@
                         <div class="col-lg-3 col-md-4  col-sm-6 m-b30">
 
                             <div class="image-effect-one hover-shadow">
-                                <img src="/assets/images/pic3.jpg" alt="" />
+                                <img src="/assets/images/pic3.jpg" alt="sims decor service" />
                                 <div class="figcaption bg-dark">
                                     <h4>SIMS DECOR</h4>
                                     <p>{{ __('The finish touches your new home or building needs to reflect your dreams') }}</p>
@@ -451,28 +451,28 @@
                                 <div class="item ">
                                     <div class="mt-img-effect zoom-slow">
                                         <a href="javascript:void(0);"><img src="/assets/images/gallery/pic4.jpg"
-                                                alt=""></a>
+                                                alt="rmc btp construction site in cameroon"></a>
                                     </div>
                                 </div>
                                 <!-- COLUMNS 2 -->
                                 <div class="item ">
                                     <div class="mt-img-effect zoom-slow">
                                         <a href="javascript:void(0);"><img src="/assets/images/gallery/pic5.jpg"
-                                                alt=""></a>
+                                                alt="rmc btp construction site in cameroon"></a>
                                     </div>
                                 </div>
                                 <!-- COLUMNS 3 -->
                                 <div class="item ">
                                     <div class="mt-img-effect zoom-slow">
                                         <a href="javascript:void(0);"><img src="/assets/images/gallery/pic6.jpg"
-                                                alt=""></a>
+                                                alt="rmc btp construction site in cameroon"></a>
                                     </div>
                                 </div>
                                 <!-- COLUMNS 4 -->
                                 <div class="item ">
                                     <div class="mt-img-effect zoom-slow">
                                         <a href="javascript:void(0);"><img src="/assets/images/gallery/pic7.jpg"
-                                                alt=""></a>
+                                                alt="rmc btp construction site in cameroon"></a>
                                     </div>
                                 </div>
                             </div>
@@ -589,21 +589,21 @@
                                     <div class="item">
                                         <div class="ow-img">
                                             <a href="javascript:void(0);"><img
-                                                    src="/assets/images/gallery/portrait/pic1.jpg" alt=""></a>
+                                                    src="/assets/images/gallery/portrait/pic1.jpg" alt="sims decor project"></a>
                                         </div>
                                     </div>
                                     <!-- COLUMNS 2 -->
                                     <div class="item">
                                         <div class="ow-img">
                                             <a href="javascript:void(0);"><img
-                                                    src="/assets/images/gallery/portrait/pic2.jpg" alt=""></a>
+                                                    src="/assets/images/gallery/portrait/pic2.jpg" alt="rmc btp construction project"></a>
                                         </div>
                                     </div>
                                     <!-- COLUMNS 3 -->
                                     <div class="item">
                                         <div class="owl-img">
                                             <a href="javascript:void(0);"><img
-                                                    src="/assets/images/gallery/portrait/pic3.jpg" alt=""></a>
+                                                    src="/assets/images/gallery/portrait/pic3.jpg" alt="sims decor kitchen project"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -913,7 +913,7 @@
                             <div class="masonry-item  {{ $ref->project_type }} col-md-3 col-sm-6 m-b30">
                             <div class="mt-box   image-hover-block">
                                 <div class="mt-thum-bx">
-                                    <img src="/images/achievements/{{ $ref->title_en }}/{{ $ref->images[0]->src}}" alt="{{ $ref->title_en }}">
+                                    <img src="/images/achievements/{{ $ref->title_en }}/{{ $ref->images[0]->src}}" alt="{{ $ref->title_en }}" alt="{{ $ref->title_en }}">
                                 </div>
                                 <div class="mt-info  p-t20 text-white">
                                     <h4 class="mt-tilte m-b10 m-t0">{{ $ref->{'title_'.app()->getLocale()} }}</h4>
