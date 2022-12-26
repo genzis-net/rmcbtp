@@ -1,9 +1,9 @@
 @extends('layouts.app')
 @section('headerz')
 <title>{{ __('About us') }} | {{ __('Meet your construction Experts') }}</title>
-    <meta name="description" content="{{ __('RMC-BTP is all about delivering Quality Estate construction for Cameroonians. Learns more about us here.') }}"/>
+    <meta name="description" content="{{ __('RMC-BTP is all about delivering Quality Estate construction for Cameroonians. We design, build, renovate, and develop your dream house. Learns more about us here.') }}"/>
     <meta property="og:image" content="/assets/images/banner/1.jpg" />
-    <meta property="og:description" content="{{ __('RMC-BTP is all about delivering Quality Estate construction for Cameroonians. Learns more about us here.') }}" />
+    <meta property="og:description" content="{{ __('RMC-BTP is all about delivering Quality Estate construction for Cameroonians. We design, build, renovate, and develop your dream house. Learns more about us here.') }}" />
     <meta property="og:url"content="https://rmcbtpsarl.com/about-us" />
     <meta property="og:title" content="{{ __('About us') }} | {{ __('Meet your construction Experts') }}" />
 @endsection
