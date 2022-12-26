@@ -4,7 +4,7 @@
     <meta name="description" content="{{ __('Shop All Your Home Improvement Needs: small machines, Bath, Kitchen, Tools, Hardware, Storage, Patio, Garden, Lighting, Fans, Electrical, Plumbing, Paint, Flooring, Decor, and More!') }}"/>
     <meta property="og:image" content="/assets/images/banner/13.jpg" />
     <meta property="og:description" content="{{ __('Shop All Your Home Improvement Needs: small machines, Bath, Kitchen, Tools, Hardware, Storage, Patio, Garden, Lighting, Fans, Electrical, Plumbing, Paint, Flooring, Decor, and More!') }}" />
-    <meta property="og:url"content="{ url()->current() }}" />
+    <meta property="og:url"content="{{ url()->current() }}" />
     <meta property="og:title" content="SIMS QUINCAILLERIE | {{ __('Shop All Your Home Improvement Needs') }}" />
 @endsection
 

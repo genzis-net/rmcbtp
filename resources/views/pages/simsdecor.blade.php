@@ -4,7 +4,7 @@
     <meta name="description" content="{{ __('We design, build or install your kitchen project, bedroom, living room, outdoor components and more!') }}"/>
     <meta property="og:image" content="/assets/images/banner/11.jpg" />
     <meta property="og:description" content="{{ __('We design, build or install your kitchen project, bedroom, living room, outdoor components and more!') }}" />
-    <meta property="og:url"content="{ url()->current() }}" />
+    <meta property="og:url"content="{{  url()->current()  }}" />
     <meta property="og:title" content="SIMS DECOR | {{ __('Home Decor & Furniture Store') }}" />
 @endsection
 
