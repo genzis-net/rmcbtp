@@ -1,11 +1,11 @@
 @extends('layouts.app')
 @section('headerz')
-<title>RMC BTP sarl | Architecture</title>
-<meta property="og:image" content="/assets//assets//assets/images/favicon.jpg" />
-<meta property="og:description" content="" />
-<meta property="og:url" content="https://rmcbtpsarl.com/services/architecture" />
-<meta property="og:title" content="RMC BTP sarl | Architecture" />
-<meta name="keywords" content="">
+	<title>Architecture service | {{ __('Building Cameroon one design at the time') }}</title>
+    <meta name="description" content="{{ __('RMC-BTP has the Architectural And Design Expertise You Can Trust. We are a global design, architecture, engineering and planning firm in Cameroon.') }}"/>
+    <meta property="og:image" content="/assets/images/banner/12.jpg" />
+    <meta property="og:description" content="{{ __('RMC-BTP has the Architectural And Design Expertise You Can Trust. We are a global design, architecture, engineering and planning firm in Cameroon.') }}" />
+    <meta property="og:url"content="{{  url()->current()  }}" />
+    <meta property="og:title" content="Architecture service | {{ __('Building Cameroon one design at the time') }}" />
 @endsection
 
 @section('content')
@@ -17,15 +17,17 @@
         <div class="mt-bnr-inr-entry">
             <div class="banner-title-outer">
                 <div class="banner-title-name">
-                    <h2 class="m-b0">The Power to Prioritize, from Concept to Completion</h2>
+                    <h2 class="m-b0">{{ __('The Power to Prioritize, from Concept to Completion') }}</h2>
                 </div>
             </div>
             <!-- BREADCRUMB ROW -->
 
             <div>
                 <ul class="mt-breadcrumb breadcrumb-style-2">
-                    <li><a href="{{ route('homepage', app()->getLocale()) }}">Home</a></li>
-                    <li>RMC-BTP - Architecture</li>
+                    <li><a href="{{ route('homepage', app()->getLocale()) }}">{{ __('Home') }}</a></li>
+                    <li>Services</li>
+                    <li>RMC-BTP</li>
+                    <li>Architecture</li>
                 </ul>
             </div>
 
@@ -67,12 +69,12 @@
                 <!-- TITLE END -->
                 <div class="m-about-containt text-black p-t80">
                     <div class="m-about-years bg-moving" style="background-image:url(images/background/line.png);">
-                        <span class="text-primary large-title">EXCELLENT SERVICE ... EXCELLENT PRODUCT</span>
-                        <span class="large-title-info">The professionals at RMC-BTP pride themselves on their ability and willingness to listen to the Client.</span>
+                        <span class="text-primary large-title">{{ __('EXCELLENT SERVICE ... EXCELLENT PRODUCT') }}</span>
+                        <span class="large-title-info">{{ __('The professionals at RMC-BTP pride themselves on their ability and willingness to listen to the Client.') }}</span>
                     </div>
                     <div class="author-info p-t20">
 
-                        <a href="{{ route('contact', app()->getLocale()) }}" class="site-button btn-effect m-b15"><span>Request A Design</span></a>
+                        <a href="{{ route('contact', app()->getLocale()) }}" class="site-button btn-effect m-b15"><span>{{ __('Request A Design') }}</span></a>
 
                     </div>
                 </div>
@@ -141,7 +143,7 @@
 
 
 
-    <div class="container">
+    <div class="container" style="margin-top: 10rem;">
         <div class="section-content ">
             <div class="row">
                 <div class="col-md-4 col-sm-6 m-b30">
@@ -150,11 +152,11 @@
                             <span class="icon-cell text-secondry"><i class="fa fa-trophy"></i></span>
                         </div>
                         <div class="icon-content">
-                            <h4 class="mt-tilte">Architectural Design</h4>
-                            <span>Concept Development</span><br>
-                            <span>Prototype Design</span><br>
+                            <h4 class="mt-tilte">{{ __('Architectural Design') }}</h4>
+                            <span>{{ __('Concept Development') }}</span><br>
+                            <span>{{ __('Prototype Design') }}</span><br>
                             <span>Conversion/Renovation</span><br>
-                            <span>Remodel</span>
+                            <span>Remodeling</span>
                         </div>
                     </div>
                 </div>
@@ -165,11 +167,10 @@
                             <span class="icon-cell text-secondry"><i class="fa fa-trophy"></i></span>
                         </div>
                         <div class="icon-content">
-                            <h4 class="mt-tilte">Site Evaluation</h4>
-                            <span>Due Diligence</span><br>
-                            <span>Feasibility Site Planning</span><br>
-                            <span>Site Investigation</span><br>
-                            <span>Site Investigation</span>
+                            <h4 class="mt-tilte">{{ __('Site Evaluation') }}</h4>
+                            <span>{{ __('Due Diligence') }}</span><br>
+                            <span>{{ __('Feasibility Site Planning') }}</span><br>
+                            <span>{{ __('Site Investigation') }}</span><br><br>
                         </div>
                     </div>
                 </div>
@@ -180,11 +181,11 @@
                             <span class="icon-cell text-secondry"><i class="fa fa-trophy"></i></span>
                         </div>
                         <div class="icon-content">
-                            <h4 class="mt-tilte">Construction Documents</h4>
-                            <span>Architectural and Interior Design</span><br>
-                            <span>Civil/MEP/Structural Engineering</span><br>
-                            <span>Landscape Architecture</span><br>
-                            <span>3D Visualization</span><br>
+                            <h4 class="mt-tilte">{{ __('Construction Documents') }}</h4>
+                            <span>{{ __('Architectural and Interior Design') }}</span><br>
+                            <span>{{ __('Civil/MEP/Structural Engineering') }}</span><br>
+                            <span>{{ __('Landscape Architecture') }}</span><br>
+                            <span>{{ __('3D Visualization') }}</span><br>
                         </div>
                     </div>
                 </div>
