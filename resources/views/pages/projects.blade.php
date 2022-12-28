@@ -43,7 +43,7 @@
             <!-- PAGINATION START -->
             <div class="filter-wrap p-b30 text-center">
                 <ul class="filter-navigation inline-navigation masonry-filter link-style  text-uppercase">
-                    <li class="active"><a data-filter="*" href="#" data-hover="All">All</a></li>
+                    <li class="active"><a data-filter="*" href="#" data-hover="All">{{ __('All') }}</a></li>
                     <li><a data-filter=".Construction" href="#" data-hover="Construction">Construction</a></li>
                     <li><a data-filter=".Renovation" href="#" data-hover="Renovation">Renovation</a></li>
                     <li><a data-filter=".Architecture" href="#" data-hover="Architecture">Architecture</a></li>

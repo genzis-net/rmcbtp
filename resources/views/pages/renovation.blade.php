@@ -1,11 +1,11 @@
 @extends('layouts.app')
 @section('headerz')
-<title>RMC BTP sarl | Renovation Service</title>
-<meta property="og:image" content="/assets/images/favicon.jpg" />
-<meta property="og:description" content="" />
-<meta property="og:url" content="https://rmcbtpsarl.com/services/renovation" />
-<meta property="og:title" content="RMC BTP sarl | Renovation Service" />
-<meta name="keywords" content="">
+	<title>Renovation service | {{ __('Building Cameroon one design at the time') }}</title>
+    <meta name="description" content="{{ __('RMC-BTP has the Architectural And Design Expertise You Can Trust. We are a global design, architecture, engineering and planning firm in Cameroon.') }}"/>
+    <meta property="og:image" content="/assets/images/banner/16.jpg" />
+    <meta property="og:description" content="{{ __('RMC-BTP has the Architectural And Design Expertise You Can Trust. We are a global design, architecture, engineering and planning firm in Cameroon.') }}" />
+    <meta property="og:url"content="{{  url()->current()  }}" />
+    <meta property="og:title" content="Renovation service | {{ __('Building Cameroon one design at the time') }}" />
 @endsection
 
 @section('content')
@@ -17,15 +17,16 @@
         <div class="mt-bnr-inr-entry">
             <div class="banner-title-outer">
                 <div class="banner-title-name">
-                    <h2 class="m-b0">If Your Home Has Been Damaged ... Call us</h2>
+                    <h2 class="m-b0">{{ __('If Your Home Has Been Damaged ... Call us') }}</h2>
                 </div>
             </div>
             <!-- BREADCRUMB ROW -->
 
             <div>
                 <ul class="mt-breadcrumb breadcrumb-style-2">
-                    <li><a href="{{ route('homepage', app()->getLocale()) }}">Home</a></li>
+                    <li><a href="{{ route('homepage', app()->getLocale()) }}">{{ __('Home') }}</a></li>
                     <li>Services</li>
+                    <li>RMC-BTP</li>
                     <li>Renovation</li>
                 </ul>
             </div>
@@ -62,15 +63,15 @@
                             </div>
                             <div class="col-md-7 col-sm-12">
                                 <div class="service-about-right m-b30">
-                                    <h3 class="m-t0">Our Work goes beyong repairing...</h3>
-                                    <p>From minor improvements to complete home renovations, our skilled team of fifth-generation carpenters at Barton Construction is your trusted source for the highest quality home remodeling and renovation services in Caneroon. Serving all regions, we are a highly experienced residential remodeling and construction contractor specializing in a wide range of custom home improvement solutions, including bathroom and kitchen remodeling, basement finishing, whole-home renovations, and exterior property additions.</p>
+                                    <h3 class="m-t0">{{ __('Our Work goes beyond repairing...') }}</h3>
+                                    <p>{{ __('From minor improvements to complete home renovations, our skilled team of Construction is your trusted source for the highest quality home remodeling and renovation services in Cameroon. Serving all regions, we are a highly experienced residential remodeling and construction contractor specializing in a wide range of custom home improvement solutions, including bathroom and kitchen remodeling, basement finishing, whole-home renovations, and exterior property additions.') }}</p>
                                     <div class="call-for-quote-outer">
                                         <div class="call-quote">
-                                            <span>Call For a Quote:</span>
+                                            <span>{{ __('Request a Quote') }}</span>
                                             <h4>+237 693 909 159</h4>
                                         </div>
                                         <div class="call-estimate bg-dark">
-                                            <a href="{{ route('contact', app()->getLocale()) }}" class="site-button-secondry btn-effect">Discuss with an Engineer</a>
+                                            <a href="{{ route('contact', app()->getLocale()) }}" class="site-button-secondry btn-effect">{{ __('Discuss with an Engineer') }}</a>
                                         </div>
                                     </div>
 
@@ -94,7 +95,7 @@
 					<div class="section-head">
 						<div class="mt-separator-outer separator-center">
 							<div class="mt-separator text-white">
-								<h2 class="text-uppercase sep-line-one "><span class="font-weight-300 text-primary">Our</span> Projects</h2>
+								<h2 class="text-uppercase sep-line-one "><span class="font-weight-300 text-primary">{{ __('Our') }}</span> {{ __('Projects') }}</h2>
 							</div>
 						</div>
 					</div>                   
@@ -102,7 +103,7 @@
                     <!-- PAGINATION START -->
                     <div class="filter-wrap p-b15 center">
                         <ul class="masonry-filter link-style  text-uppercase white">
-                                <li class="active"><a data-filter="*" href="#">All</a></li>
+                                <li class="active"><a data-filter="*" href="#">{{ __('All') }}</a></li>
                                 @foreach($refs as $ref)
                                     <li><a data-filter=".{{ ref->year }}" href="#">{{ ref->year }}</a></li>
                                 @endforeach
@@ -120,7 +121,7 @@
                                     <img src="/images/achievements/{{ $ref->title_en }}/{{ $ref->images[0]->src}}" alt="{{ ref->title_en }}">
                                 </div>
                                 <div class="mt-info  p-t20 text-white">
-                                    <h4 class="mt-tilte m-b10 m-t0">{{ $ref->title_en }}</h4>
+                                    <h4 class="mt-tilte m-b10 m-t0">{{ $ref->{'title_'.app()->getLocale()} }}</h4>
                                 </div>
                                 <a href="{{ route('readproject', app()->getLocale()) }}?ref={{ $ref->id }}"></a>                                    
                             </div>

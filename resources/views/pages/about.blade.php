@@ -232,7 +232,7 @@
             <!-- PAGINATION START -->
             <div class="filter-wrap p-b15 center">
                 <ul class="masonry-filter link-style  text-uppercase white">
-                    <li class="active"><a data-filter="*" href="#">All</a></li>
+                    <li class="active"><a data-filter="*" href="#">{{ __('All') }}</a></li>
                     <li><a data-filter=".Construction" href="#">Construction</a></li>
                     <li><a data-filter=".Renovation" href="#">Renovation</a></li>
                     <li><a data-filter=".Architecture" href="#">Architecture</a></li>

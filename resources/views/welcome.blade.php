@@ -702,7 +702,7 @@
                         <div class="bg-gray p-a30">
                             <div class="filter-wrap">
                                 <ul class="filter-navigation masonry-filter text-uppercase">
-                                    <li class="active"><a data-filter="*" data-hover="All" href="#">All</a>
+                                    <li class="active"><a data-filter="*" data-hover="All" href="#">{{ __('All') }}</a>
                                     </li>
                                     <li><a data-filter=".Construction" data-hover="Construction" href="javascript:;">Construction</a>
                                     </li>

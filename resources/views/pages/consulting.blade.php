@@ -1,11 +1,11 @@
 @extends('layouts.app')
 @section('headerz')
-<title>RMC BTP sarl | Consulting Service</title>
-<meta property="og:image" content="/assets//assets//assets/images/favicon.jpg" />
-<meta property="og:description" content="" />
-<meta property="og:url" content="https://rmcbtpsarl.com/services/consulting" />
-<meta property="og:title" content="RMC BTP sarl | Consulting Service" />
-<meta name="keywords" content="">
+    <title>Consulting service | {{ __('Building Cameroon one design at the time') }}</title>
+    <meta name="description" content="{{ __('RMC-BTP has the Architectural And Design Expertise You Can Trust. We are a global design, architecture, engineering and planning firm in Cameroon.') }}"/>
+    <meta property="og:image" content="/assets/images/banner/14.jpg" />
+    <meta property="og:description" content="{{ __('RMC-BTP has the Architectural And Design Expertise You Can Trust. We are a global design, architecture, engineering and planning firm in Cameroon.') }}" />
+    <meta property="og:url"content="{{  url()->current()  }}" />
+    <meta property="og:title" content="Consulting service | {{ __('Building Cameroon one design at the time') }}" />
 @endsection
 
 @section('content')
@@ -17,15 +17,16 @@
         <div class="mt-bnr-inr-entry">
             <div class="banner-title-outer">
                 <div class="banner-title-name">
-                    <h2 class="m-b0">Powerful Alone, Better Together.</h2>
+                    <h2 class="m-b0">{{ __('Powerful Alone, Better Together.') }}</h2>
                 </div>
             </div>
             <!-- BREADCRUMB ROW -->
 
             <div>
                 <ul class="mt-breadcrumb breadcrumb-style-2">
-                    <li><a href="{{ route('homepage', app()->getLocale()) }}">Home</a></li>
+                    <li><a href="{{ route('homepage', app()->getLocale()) }}">{{ __('Home') }}</a></li>
                     <li>Services</li>
+                    <li>RMC-BTP</li>
                     <li>Consulting</li>
                 </ul>
             </div>
@@ -56,22 +57,21 @@
                             <div class="col-md-5 col-sm-12">
                                 <div class="service-about-left">
                                     <div class="mt-media">
-                                        <img src="/assets/images/s-2.png" alt="">
+                                        <img src="/assets/images/s-2.png" alt="RMC BTP Consulting service">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-7 col-sm-12">
                                 <div class="service-about-right m-b30">
-                                    <h3 class="m-t0">OUR SUCCESS IS A PROVEN FACT</h3>
-                                    <p>Any company’s level of expertise, trustworthiness or popularity can be easily checked when it comes to proven cases.
-We offer a wide range of consulting expertise that can begin resolving project problems immediately and put it in the best position for an expedited recovery.</p>
+                                    <h3 class="m-t0">{{ __('OUR SUCCESS IS A PROVEN FACT') }}</h3>
+                                    <p>{{ __('Any company\'s level of expertise, trustworthiness or popularity can be easily checked when it comes to proven cases. We offer a wide range of consulting expertise that can begin resolving project problems immediately and put it in the best position for an expedited recovery.') }}</p>
                                     <div class="call-for-quote-outer">
                                         <div class="call-quote">
-                                            <span>Call For a Quote:</span>
+                                            <span>{{ __('Request a Quote') }}</span>
                                             <h4>+237 693 909 159</h4>
                                         </div>
                                         <div class="call-estimate bg-dark">
-                                            <a href="{{ route('contact', app()->getLocale()) }}" class="site-button-secondry btn-effect">Discuss with an Engineer</a>
+                                            <a href="{{ route('contact', app()->getLocale()) }}" class="site-button-secondry btn-effect">{{ __('Discuss with an Engineer') }}</a>
                                         </div>
                                     </div>
 
@@ -97,10 +97,10 @@ We offer a wide range of consulting expertise that can begin resolving project p
                 <div class="section-head text-white">
                     <div class="mt-separator-outer separator-left">
                         <div class="mt-separator">
-                            <h2 class="text-white text-uppercase sep-line-one "><span class="font-weight-300 text-primary">Our</span> Expertise</h2>
+                            <h2 class="text-white text-uppercase sep-line-one "><span class="font-weight-300 text-primary">{{ __('Our') }}</span> {{ __('Expertise') }}</h2>
                         </div>
                     </div>
-                    <h3>We Can Help You With:</h3>
+                    <h3>{{ __('We Can Help You With:') }}</h3>
                 </div>
                 <!-- TITLE END -->
             </div>
@@ -113,13 +113,13 @@ We offer a wide range of consulting expertise that can begin resolving project p
                             <div class="relative icon-count-2 bg-gray p-a30 p-tb50" style="    height: 335px;">
                                 <span class="icon-count-number">1</span>
                                 <div class="icon-md inline-icon m-b15 text-primary scale-in-center">
-                                    <span class="icon-cell"><img src="/assets/images/icon/crane-1.png" alt=""></span>
+                                    <span class="icon-cell"><img src="/assets/images/icon/crane-1.png" alt="RMC BTP Consulting service"></span>
                                 </div>
                                 <div class="icon-content">
-                                    <h4 class="mt-tilte m-b25">Topography</h4>
-                                    <p>Our method involves following latest construction standards.
+                                    <h4 class="mt-tilte m-b25">{{ __('Topography') }}</h4>
+                                    <p>{{ __('Our method involves following latest construction standards.') }}
                                     </p>
-                                    <a href="{{ route('contact', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">Talk to an Expert <i class="fa fa-angle-right arrow-animation"></i></a>
+                                    <a href="{{ route('contact', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">{{ __('Talk to an Expert') }} <i class="fa fa-angle-right arrow-animation"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -132,12 +132,12 @@ We offer a wide range of consulting expertise that can begin resolving project p
                             <div class="relative icon-count-2 bg-gray p-a30 p-tb50" style="    height: 335px;">
                                 <span class="icon-count-number">2</span>
                                 <div class="icon-md inline-icon m-b15 text-primary scale-in-center">
-                                    <span class="icon-cell"><img src="/assets/images/icon/toolbox.png" alt=""></span>
+                                    <span class="icon-cell"><img src="/assets/images/icon/toolbox.png" alt="RMC BTP Consulting service"></span>
                                 </div>
                                 <div class="icon-content">
-                                    <h4 class="mt-tilte m-b25">Construction Oversight</h4>
-                                    <p>Ensure that their project is being managed and constructed as planned.</p>
-                                    <a href="#" class="site-button-link" data-hover="Read More">Talk to an Expert <i class="fa fa-angle-right arrow-animation"></i></a>
+                                    <h4 class="mt-tilte m-b25">{{ __('Construction Oversight') }}</h4>
+                                    <p>{{ __('Ensure that their project is being managed and constructed as planned') }}.</p>
+                                    <a href="#" class="site-button-link" data-hover="Read More">{{ __('Talk to an Expert') }} <i class="fa fa-angle-right arrow-animation"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -153,10 +153,9 @@ We offer a wide range of consulting expertise that can begin resolving project p
                                     <span class="icon-cell"><img src="/assets/images/icon/dump-truck.png" alt=""></span>
                                 </div>
                                 <div class="icon-content">
-                                    <h4 class="mt-tilte m-b25">Risk Assessment</h4>
-                                    <p>Risk transfer planning, to make an impact on the project's completion</p>
-                                    <a href="#" class="site-button-link" data-hover="Read More">Talk to an
-                                        Expert <i class="fa fa-angle-right arrow-animation"></i></a>
+                                    <h4 class="mt-tilte m-b25">{{ __('Risk Assessment') }}</h4>
+                                    <p>{{ __('Risk transfer planning, to make an impact on the project\'s completion') }}</p>
+                                    <a href="#" class="site-button-link" data-hover="Read More">{{ __('Talk to an Expert') }} <i class="fa fa-angle-right arrow-animation"></i></a>
                                 </div>
                             </div>
                         </div>
