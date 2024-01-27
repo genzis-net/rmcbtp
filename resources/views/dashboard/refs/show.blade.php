@@ -1,6 +1,13 @@
 @extends('layouts.dash')
 
 @section('content')
+
+<div class="alert alert-success alert-dismissible fade show the-message" role="alert" id="success_message">
+  <i class="bi bi-check-circle me-1"></i>
+    <span id="the_message"></span>
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
 <div class="row">
     <div class="card col-md-12" style="margin-right: 4rem;">
         <div class="card-body">
@@ -38,7 +45,6 @@
                     <div style="border-bottom:1px solid grey; padding: 1rem;">
                         <h3>Actions</h3>
                         <button type="button" value="{{ $ref->id }}" data-bs-toggle="modal" data-bs-target="#myEditModal" class="btn btn-warning edit_ref"><i class="bi bi-pencil-square"></i></button>
-                        <button type="button" data-bs-toggle="modal" data-bs-target="#verticalycentered" value="{{ $ref->id }}" class="btn btn-danger del_ref"><i class="bi bi-trash"></i></button>
                     </div>
 
                     <div class="row">
@@ -57,7 +63,7 @@
                                                     </div>
                                                     <div class="card-body" style="text-align: right">
                                                         <hr>
-                                                        <button type="button" class="btn btn-danger del_ref" data-bs-toggle="modal" data-bs-target="#verticalycentered2" value="{{ $ref->id }}"><i class="bi bi-trash"></i></button>
+                                                        <button type="button" class="btn btn-danger del_img" data-bs-toggle="modal" data-bs-target="#verticalycentered2" value="{{ $image->id }}"><i class="bi bi-trash"></i></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -78,28 +84,12 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    Toutes les donnees relatives seront perdues. Continuer?
+                                    Continuer?
                                 </div>
+                                <input type="text" id="del_img_id" hidden>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
-                                    <a href="{{ route('destroy-image', compact('image')) }}" class="btn btn-danger">Supprimer</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal fade" id="verticalycentered" tabindex="-1">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" style="color: red;"><i class="bi bi-exclamation-diamond"></i> Supprimer l'ref?</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    Toutes les donnees relatives a l'ref seront perdues. Continuer?
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
-                                    <a href="{{ route('delete-ref', compact('ref')) }}" class="btn btn-danger">Supprimer</a>
+                                    <button type="button" class="btn btn-danger proceed">Supprimer</a>
                                 </div>
                             </div>
                         </div>
@@ -135,7 +125,7 @@
               <form class="row g-3" enctype="multipart/form-data" id="refUpdater">
                 {{ csrf_field() }}
 
-                <input type="text" id="edit_ref_id" hidden>
+                <input type="text" id="edit_img_id" hidden>
                 <input type="hidden" name="_method" value="PUT" id="method"/>
 
                 <div class="col-md-12">
@@ -252,7 +242,7 @@
       $(document).on('click', '.edit_ref', function(e){
         e.preventDefault();
         $('.update').text('update');
-        var ref_id = $(this).val();
+        var img_id = $(this).val();
         $('#myEditModal').show('');
         $(document).on('click', '#close_edit', function(e){
           e.preventDefault();
@@ -264,7 +254,7 @@
 
         $.ajax({
           type : "GET", 
-          url : "{{ route('edit-ref') }}?ref="+ref_id, 
+          url : "{{ route('edit-ref') }}?ref="+img_id, 
           dataType : "JSON", 
           success:function(response){
             //console.log(reponse);
@@ -274,7 +264,7 @@
               $('#success_message').text(response.message);
             }else{
               $('.update').text('update');
-              $('#edit_ref_id').val(ref_id);
+              $('#edit_img_id').val(img_id);
               $('#edit_title_fr').val(response.ref.title_fr);
               $('#edit_title_en').val(response.ref.title_en);
               $('#edit_location').val(response.ref.location);
@@ -295,7 +285,7 @@
       //update ref
       $('#refUpdater').on('click', '.update', function(e){
         e.preventDefault();
-        var ref_id = $('#edit_ref_id').val();
+        var img_id = $('#edit_img_id').val();
 
         $.ajaxSetup({
             headers: {
@@ -313,7 +303,7 @@
     
         $.ajax({
           type : "POST", 
-          url : "{{ route('update-ref') }}?ref="+ref_id,
+          url : "{{ route('update-ref') }}?ref="+img_id,
           data: data,
           dataType:'JSON',
           contentType: false,
@@ -353,6 +343,50 @@
 
           }
         });
+      });
+
+      //delete image
+      $(document).on('click', '.del_img', function(e){
+        //e.preventDefault();
+        var img_id = $(this).val();
+        $('#del_img_id').val(img_id);
+        
+        $('#verticalycentered2').on('click', '.proceed', function(e){
+          e.preventDefault();
+
+          var img_id = $('#del_img_id').val();
+          console.log(img_id);
+
+          $.ajax({
+            type : "GET", 
+            url : "{{ route('destroy-image')}}?image="+img_id, 
+            dataType : "JSON", 
+            success:function(response){
+              //console.log(response);
+              if(response.status == 404){
+                $('#success_message').html("");
+                $('#success_message').addClass('alert alert-danger');
+                $('#success_message').text(response.message);
+              }else{
+                $('#del_img_id').val(img_id);
+                $('#verticalycentered2').modal('hide');
+
+                $('#the_message').html('');
+                $('#success_message').show();
+                setTimeout(function(){
+                    $('#success_message').fadeOut('slow');
+                },5000);
+                $('#the_message').append(response.message);
+                
+              }
+            }
+          });
+
+        });
+      });
+
+      $(document).ajaxStop(function(){
+        window.location.reload();
       });
     });
 

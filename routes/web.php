@@ -1,6 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Dashboard\SimsDecorController;
+use App\Http\Controllers\Dashboard\ArchitectureController;
+use App\Http\Controllers\Dashboard\QuincaillerieController;
+use App\Http\Controllers\Dashboard\QuincaillerieCategoriesController;
+use App\Http\Controllers\Dashboard\QuincaillerieRentalController;
 use App\Models\Reference;
 
 /*
@@ -15,7 +20,7 @@ use App\Models\Reference;
 */
 
 
-$localizator = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+//$localizator = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
   
 Route::get('/under-construction', function () {
     return view('pages.underconstruction');
@@ -40,10 +45,18 @@ Route::get('/under-construction', function () {
 
         /* END PUBLICATIONS CONTROLLER ROUTES */
 
+        Route::get('/fetch-archi', [App\Http\Controllers\Dashboard\ArchitectureController::class, 'fetch'])->name('fetch-archi')->middleware('auth');
+
+        Route::resource('architecture', ArchitectureController::class)->middleware('auth');
+        Route::resource('simsDecor', SimsDecorController::class)->middleware('auth');
+        Route::resource('quincaillerie', QuincaillerieController::class)->middleware('auth');
+        Route::resource('categories', QuincaillerieCategoriesController::class)->middleware('auth');
+        Route::resource('rental', QuincaillerieRentalController::class)->middleware('auth');
+
         /* EMAIL AND COMMUNICATION */
         
-            Route::get('/mailbox', [App\Http\Controllers\ContactController::class, 'mailbox'])->name('mailbox')->middleware('auth');
-            Route::get('/mail-details', [App\Http\Controllers\ContactController::class, 'mailDetails'])->name('mailbox-details')->middleware('auth');
+            //Route::get('/mailbox', [App\Http\Controllers\ContactController::class, 'mailbox'])->name('mailbox')->middleware('auth');
+            //Route::get('/mail-details', [App\Http\Controllers\ContactController::class, 'mailDetails'])->name('mailbox-details')->middleware('auth');
 
         /* EMAIL AND COMMUNICATION */
 

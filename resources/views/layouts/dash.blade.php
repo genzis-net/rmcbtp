@@ -14,24 +14,24 @@
 
 
   <!-- Favicons -->
-  <link href="dash/img/favicon.png" rel="icon">
-  <link href="dash/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="/dash/img/favicon.png" rel="icon">
+  <link href="/dash/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="dash/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="dash/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="dash/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="dash/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="dash/vendor/quill/quill.snow.css" rel="stylesheet">
-  <link href="dash/vendor/quill/quill.bubble.css" rel="stylesheet">
-  <link href="dash/vendor/simple-datatables/style.css" rel="stylesheet">
+  <link href="/dash/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/dash/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/dash/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/dash/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/dash/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="/dash/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="/dash/vendor/simple-datatables/style.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="dash/css/style.css" rel="stylesheet">
+  <link href="/dash/css/style.css" rel="stylesheet">
 
 </head>
 
@@ -42,7 +42,7 @@
 
     <div class="d-flex align-items-center justify-content-between">
       <a href="/home" class="logo d-flex align-items-center">
-        <img src="dash/img/logo.png" alt="">
+        <img src="/dash/img/logo.png" alt="">
         <span class="d-none d-lg-block">GENZIS-ADMIN</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
@@ -94,7 +94,7 @@
         <li class="nav-item dropdown pe-3">
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <img src="dash/img/logo.png" alt="Profile" class="rounded-circle">
+            <img src="/dash/img/logo.png" alt="Profile" class="rounded-circle">
             <span class="d-none d-md-block dropdown-toggle ps-2">{{ Auth::user()->name }}</span>
           </a><!-- End Profile Iamge Icon -->
 
@@ -168,7 +168,7 @@
         <a class="nav-link collapsed" data-bs-target="#blog-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-file-richtext"></i><span>Publications</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
-        @if(Route::currentRouteName() == 'show-ref')
+        @if(Route::currentRouteName() == 'rental.create' || Route::currentRouteName() == 'rental.show' || Route::currentRouteName() == 'simsDecor.create' || Route::currentRouteName() == 'simsDecor.show' || Route::currentRouteName() == 'architecture.create' || Route::currentRouteName() == 'architecture.show' || Route::currentRouteName() == 'quincaillerie.create' || Route::currentRouteName() == 'quincaillerie.show' || Route::currentRouteName() == 'manage-refs' || Route::currentRouteName() == 'show-ref')
         <ul id="blog-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
         @else
         <ul id="blog-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
@@ -182,6 +182,54 @@
                 @else
                 <a href="{{ route('manage-refs') }}">
                   <i class="bi bi-trophy" style="font-size: 1rem;"></i><span>Realisations</span>
+                </a>
+              @endif
+          </li>
+
+          <li>
+            @if (Route::currentRouteName() == 'architecture.create' || Route::currentRouteName() == 'architecture.show')
+                <a href="{{ route('architecture.create') }}" class="active">
+                  <i class="bi bi-trophy" style="font-size: 1rem;"></i><span>Architecture</span>
+                </a>
+                @else
+                <a href="{{ route('architecture.create') }}">
+                  <i class="bi bi-trophy" style="font-size: 1rem;"></i><span>Architecture</span>
+                </a>
+              @endif
+          </li>
+
+          <li>
+            @if (Route::currentRouteName() == 'simsDecor.create' || Route::currentRouteName() == 'simsDecor.show')
+                <a href="{{ route('simsDecor.create') }}" class="active">
+                  <i class="bi bi-trophy" style="font-size: 1rem;"></i><span>Sims Decor</span>
+                </a>
+                @else
+                <a href="{{ route('simsDecor.create') }}">
+                  <i class="bi bi-trophy" style="font-size: 1rem;"></i><span>Sims Decor</span>
+                </a>
+              @endif
+          </li>
+
+          <li>
+            @if (Route::currentRouteName() == 'quincaillerie.create' || Route::currentRouteName() == 'quincaillerie.show')
+                <a href="{{ route('quincaillerie.create') }}" class="active">
+                  <i class="bi bi-trophy" style="font-size: 1rem;"></i><span>Quincaillerie</span>
+                </a>
+                @else
+                <a href="{{ route('quincaillerie.create') }}">
+                  <i class="bi bi-trophy" style="font-size: 1rem;"></i><span>Quincaillerie</span>
+                </a>
+              @endif
+          </li>
+
+          <li>
+            @if (Route::currentRouteName() == 'rental.create' || Route::currentRouteName() == 'rental.show')
+                <a href="{{ route('rental.create') }}" class="active">
+                  <i class="bi bi-trophy" style="font-size: 1rem;"></i><span>Rentals</span>
+                </a>
+                @else
+                <a href="{{ route('rental.create') }}">
+                  <i class="bi bi-trophy" style="font-size: 1rem;"></i><span>Rentals</span>
                 </a>
               @endif
           </li>
@@ -262,19 +310,19 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="dash/vendor/bootstrap/js/bootstrap.bundle.js"></script>
-  <script src="dash/vendor/php-email-form/validate.js"></script>
-  <script src="dash/vendor/quill/quill.min.js"></script>
-  <script src="dash/vendor/tinymce/tinymce.min.js"></script>
-  <script src="dash/vendor/simple-datatables/simple-datatables.js"></script>
-  <script src="dash/vendor/chart.js/chart.min.js"></script>
-  <script src="dash/vendor/apexcharts/apexcharts.min.js"></script>
-  <script src="dash/vendor/echarts/echarts.min.js"></script>
+  <script src="/dash/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="/dash/vendor/php-email-form/validate.js"></script>
+  <script src="/dash/vendor/quill/quill.min.js"></script>
+  <script src="/dash/vendor/tinymce/tinymce.min.js"></script>
+  <script src="/dash/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="/dash/vendor/chart.js/chart.min.js"></script>
+  <script src="/dash/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="/dash/vendor/echarts/echarts.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 
   <!-- Template Main JS File -->
-  <script src="dash/js/main.js"></script>
+  <script src="/dash/js/main.js"></script>
 
   <script src="{{ asset('/ckeditor/ckeditor.js') }}"></script>
 

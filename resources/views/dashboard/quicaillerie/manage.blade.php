@@ -1,0 +1,605 @@
+@extends('layouts.dash')
+
+@section('page-head')
+<div class="pagetitle">
+  <h1>Dashboard</h1>
+  <nav>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/home">Home</a></li>
+      <li class="breadcrumb-item active">Quincaillerie Products Management</li>
+    </ol>
+  </nav>
+</div><!-- End Page Title -->
+@endsection
+
+
+@section('content')
+
+<div class="alert alert-success alert-dismissible fade show the-message" role="alert" id="success_message">
+  <i class="bi bi-check-circle me-1"></i>
+    <span id="the_message"></span>
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+
+<section class="section">
+    <div class="row">
+      <div class="col-lg-12">
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center; font-size: 2rem;">PUBLICATIONS - REALISATIONS</h5>
+            <p></p>
+            <hr/>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ExtralargeModal">Nouvel Realisation</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ExtralargeModal2">Categories</button>
+            <hr/>
+            <!-- Table with stripped rows -->
+            <table class="table datatable">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Titre</th>
+                  <th scope="col">Client</th>
+                  <th scope="col">Conclue en</th>
+                  <th scope="col">Actions</th>
+                </tr>
+              </thead>
+              <tbody id="tbody">
+                 
+              </tbody>
+            </table>
+            <!-- End Table with stripped rows -->
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+</section>
+
+<!-- create Modal -->
+  <div class="modal fade" id="ExtralargeModal" tabindex="-1">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Nouvelle Realisation</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div id="saveform_errList"></div>
+              <form class="row g-3" enctype="multipart/form-data"id="quincaillerieHandler">
+                {{ csrf_field() }}
+                <div class="col-md-12">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingName_fr" placeholder="Your Name" name="title_fr">
+                    <label for="floatingName_fr">Titre (fr)</label>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingName_en" placeholder="Your Name"name="title_en" > 
+                    <label for="floatingName_en">Titre (en)</label>                 
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="">
+                    <label for="floatingName">Images (must be less than 300kb each)</label>
+                    <input type="file" class="form-control" id="floatingName" accept="image/png, image/gif, image/jpeg, image/jpg" multiple="multiple" name="image[]"/>                 
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingEmail" placeholder="Author" value="{{ Auth::User()->name }}" readonly>
+                    <label for="floatingEmail">Author (field is autocompleted)</label>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="client" placeholder="Author" name="client">
+                      <label for="clients">Client</label>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-floating">
+                      <select class="form-control" name="project_type" id="project_type">
+                        <option>Construction</option>
+                        <option>Consulting</option>
+                        <option>Interior</option>
+                        <option>Renovtions</option>
+                        <option>Architecture</option>
+                      </select>
+                      <label for="project_type">Type de projet</label>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="location" placeholder="Author" name="location">
+                      <label for="location">Lieu</label>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-floating">
+                    <select class="form-control" name="year" id="selectyear">
+                    <?php 
+                      $i=2015; 
+                      $year = date("Y"); 
+                    ?>
+                    @while($i<=$year)
+                          <option>{{ $i }}</option>
+                          <?php 
+                            $i++; 
+                          ?>
+                    @endwhile
+                    </select>
+                      <label for="date">Realiser le annee:</label>
+                    </div>
+                </div>
+
+                
+                
+                <div class="col-12">
+                  <div>
+                    <label style="color: red;">Contenu (fr)</label>
+                    <textarea class="form-control" placeholder="Address" id="summary-ckeditor" name="content_fr"></textarea>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div>
+                    <label style="color: red;">Contenu (en)</label>
+                    <textarea class="form-control" placeholder="Address" id="summary-ckeditor2" name="content_en"></textarea>
+                  </div>
+                </div>
+                
+                <div style="text-align: right" class="modal-footer">
+                  <button type="submit" class="btn btn-primary valid">Publier</button>
+                  <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                </div>
+              </form>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- end create modal -->
+
+<!-- categories Modal -->
+  <div class="modal fade" id="ExtralargeModal2" tabindex="-1">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Categories</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body row">
+            <div id="saveform_errList"></div>
+            <div class="col-md-4">
+                <P>categories</p>
+                <ul id="listcat">
+                </ul>
+            </div>
+            <div class="col-md-8">
+              <form class="row g-3" enctype="multipart/form-data"id="catHandler">
+                {{ csrf_field() }}
+                <div class="col-md-12">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingName_fr" placeholder="Your Name" name="title_fr">
+                    <label for="floatingName_fr">Nom (fr)</label>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingName_en" placeholder="Your Name"name="title_en" > 
+                    <label for="floatingName_en">Nom (en)</label>                 
+                  </div>
+                </div>
+                
+                <div style="text-align: right" class="modal-footer">
+                  <button type="submit" class="btn btn-primary valid">Publier</button>
+                  <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                </div>
+              </form>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- end create modal -->
+
+<!-- edit ref modal -->
+<div class="modal fade" id="myEditModal" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">EDITER REALISATION</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="col-lg-12">
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center; font-size: 2rem;" id="title">EDIT ref</h5>
+              <hr/>
+  
+              <div id="updateform_errList"></div>
+              <div id="update_message"></div>
+  
+              <form class="row g-3" enctype="multipart/form-data" id="refUpdater">
+                {{ csrf_field() }}
+
+                <input type="text" id="edit_ref_id" hidden>
+                <input type="hidden" name="_method" value="PUT" id="method"/>
+
+                <div class="col-md-12">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="edit_title_fr" placeholder="Your Name" name="edit_title_fr">
+                      <label for="edit_title_fr">Titre (fr)</label>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="edit_title_en" placeholder="Your Name"name="edit_title_en" > 
+                      <label for="edit_title_en">Titre (en)</label>                 
+                    </div>
+                  </div>
+                  
+                  
+                <div class="col-md-4">
+                  <div class="">
+                    <label for="floatingName">Add Images (must be less than 300kb each)</label>
+                    <input type="file" class="form-control" id="floatingName" accept="image/png, image/gif, image/jpeg, image/jpg" multiple="multiple" name="edit_image[]"/>                 
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingEmail" placeholder="Author" value="{{ Auth::User()->name }}" readonly>
+                    <label for="floatingEmail">Author (field is autocompleted)</label>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="edit_client" placeholder="Author" name="edit_client">
+                      <label for="edit_client">Client</label>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-floating">
+                      <select class="form-control" name="edit_project_type" id="edit_selectproject_type">
+                        <option id="Construction">Construction</option>
+                        <option id="Consulting">Consulting</option>
+                        <option id="Interior">Interior</option>
+                        <option id="Renovations">Renovations</option>
+                        <option id="Architecture">Architecture</option>
+                      </select>
+                      <label for="project_type">Type de projet</label>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="edit_location" placeholder="Author" name="edit_location">
+                      <label for="edit_location">Lieu</label>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-floating">
+                    <select class="form-control" name="edit_year" id="edit_selectyear">
+                    <?php 
+                      $i=2015; 
+                      $year = date("Y"); 
+                    ?>
+                    @while($i<=$year)
+                          <option id="{{ $i }}">{{ $i }}</option>
+                          <?php 
+                            $i++; 
+                          ?>
+                    @endwhile
+                    </select>
+                      <label for="edit_date">Realiser le annee:</label>
+                    </div>
+                </div>
+                  
+                  <div class="col-12">
+                    <div>
+                      <label style="color: red;">Contenu (fr)</label>
+                      <textarea class="form-control" placeholder="Address" id="edit_summary-ckeditor" name="edit_content_fr"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div>
+                      <label style="color: red;">Contenu (en)</label>
+                      <textarea class="form-control" placeholder="Address" id="edit_summary-ckeditor2" name="edit_content_en"></textarea>
+                    </div>
+                  </div>
+
+                <div style="text-align: right" class="modal-footer">
+                  <button type="submit" class="btn btn-primary update">Update</button>
+                  <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal" id="close_edit">Cancel</button>
+                </div>
+              </form>
+  
+  
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end edit ref modal -->
+
+
+<!-- delete modal -->
+<div class="modal fade" id="verticalycentered" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"style="color: red;"><i class="bi bi-exclamation-diamond"></i> Supprimer l'enregistrement?</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Toutes les donnees relatives a l'enregistrement seront perdues. Continuer?
+      </div>
+
+      <input type="text" id="del_ref_id" hidden>
+
+      <div class="modal-footer">
+        <button type="button" id="cancel_del" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+        <button type="button" class="btn btn-danger proceed">Supprimer</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end delete modal -->
+
+
+@endsection
+
+@section('scripts')
+<script>
+  $(document).ready(function(){
+    $('#success_message').hide();
+
+
+      fetchProducts();
+      //fetch all achievements in database and displays in table body
+      function fetchProducts(){
+        $.ajax({
+          type : "GET", 
+          url : "{{ route('quincaillerie.index') }}", 
+          dataType : "JSON", 
+          "dataSrc": "tableData",
+          contentType: false,
+          cache: false,
+          processData: false,
+          success:function(response){
+            console.log(response);
+            $('#tbody').html("");
+            let i = 1;
+            $.each(response.refs, function(key, item){         
+              $('#tbody').append(
+                '<tr>\
+                  <th scope="row">'+i+'</th>\
+                  <td>'+item.name+'</td>\
+                  <td>'+item.client+'</td>\
+                  <td>'+item.year+'</td>\
+                  <td style="color: aliceblue">\
+                    <a href="/show-ref?ref='+item.id+'" value="'+item.id+'" class="btn btn-info show_ref"><i class="bi bi-eye"></i></a>\
+                    <button type="button" value="'+item.id+'" data-bs-toggle="modal" data-bs-target="#myEditModal" class="btn btn-warning edit_ref"><i class="bi bi-pencil-square"></i></button>\
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#verticalycentered" value="'+item.id+'" class="btn btn-danger del_ref"><i class="bi bi-trash"></i></button>\
+                  </td>\
+                </tr>'           
+              );
+              i++;
+            });
+          }
+        });
+      }
+
+
+      //saves new ref
+      $('#quincaillerieHandler').on('click', '.valid', function(e){
+        e.preventDefault();
+
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+
+        var data = new FormData(document.getElementById("quincaillerieHandler"));
+        var textarea1 = CKEDITOR.instances['summary-ckeditor'].getData();
+        var textarea2 = CKEDITOR.instances['summary-ckeditor2'].getData();
+        data.append('content_fr', textarea1);
+        data.append('content_en', textarea2);
+        $.ajax({
+          type:"POST", 
+          url:"{{ route('quincaillerie.store') }}", 
+          data: data,
+          dataType:'JSON',
+          contentType: false,
+          cache: false,
+          processData: false,
+          success: function(response){
+            //console.log(response);
+            if(response.status == 400){
+              $('#saveform_errList').html("");
+              $('#saveform_errList').addClass("alert alert-danger");
+              $.each(response.errors, function(key, err_values){
+                $('#saveform_errList').append('<li>'+err_values+'</li>');
+              });
+            }else{
+              $('#the_message').html('');
+              $('#saveform_errList').html('');
+              $('#success_message').show();
+              setTimeout(function(){
+                  $('#success_message').fadeOut('slow');
+              },5000);
+              $('#the_message').append(response.success);
+              $('#ExtralargeModal').modal('hide');
+              $('#quincaillerieHandler').find('input').val('');
+              CKEDITOR.instances['summary-ckeditor'].setData('');
+              CKEDITOR.instances['summary-ckeditor2'].setData('');
+              fetchProducts();
+            }
+          }
+        });
+      });
+      
+
+      //edit ref
+      //loads the modal with all series's info to edit
+      $(document).on('click', '.edit_ref', function(e){
+        e.preventDefault();
+        $('.update').text('update');
+        var ref_id = $(this).val();
+        $('#myEditModal').show('');
+        $(document).on('click', '#close_edit', function(e){
+          e.preventDefault();
+          $('.update').text('update');
+          $('#myEditModal').find('input').val('');
+          $('#myEditModal').find('textarea').val('');
+          $('#myEditModal').hide('');
+        });
+
+        $.ajax({
+          type : "GET", 
+          url : "{{ route('edit-ref') }}?ref="+ref_id, 
+          dataType : "JSON", 
+          success:function(response){
+            //console.log(reponse);
+            if(response.status == 404){
+              $('#success_message').html("");
+              $('#success_message').addClass('alert alert-danger');
+              $('#success_message').text(response.message);
+            }else{
+              $('.update').text('update');
+              $('#edit_ref_id').val(ref_id);
+              $('#edit_title_fr').val(response.ref.title_fr);
+              $('#edit_title_en').val(response.ref.title_en);
+              $('#edit_location').val(response.ref.location);
+              yearid = '#'+response.ref.year;
+              //console.log(yearid);
+              $(yearid).attr("selected","selected");
+              project='#'+response.ref.project_type;
+              $(project).attr("selected","selected");
+              $('#edit_client').val(response.ref.client);
+              CKEDITOR.instances['edit_summary-ckeditor'].setData(response.ref.content_fr);
+              CKEDITOR.instances['edit_summary-ckeditor2'].setData(response.ref.content_en);
+            }
+          }
+        });
+      });
+
+
+      //update ref
+      $('#refUpdater').on('click', '.update', function(e){
+        e.preventDefault();
+        var ref_id = $('#edit_ref_id').val();
+
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+        
+        var data = new FormData(document.getElementById("refUpdater"));
+        var textarea1 = CKEDITOR.instances['edit_summary-ckeditor'].getData();
+        var textarea2 = CKEDITOR.instances['edit_summary-ckeditor2'].getData();
+        data.append('edit_content_fr', textarea1);
+        data.append('edit_content_en', textarea2);
+        var method = $('#method').val();
+        data.append('_method', method);   
+    
+        $.ajax({
+          type : "POST", 
+          url : "{{ route('update-ref') }}?ref="+ref_id,
+          data: data,
+          dataType:'JSON',
+          contentType: false,
+          cache: false,
+          processData: false,
+          success:function(response){
+              if(response.status == 400){
+              $('#updateform_errList').html("");
+              $('#updateform_errList').addClass("alert alert-danger");
+              $.each(response.errors, function(key, err_values){
+                $('#updateform_errList').append('<li>'+err_values+'</li>');
+              });
+            }else if(response.status == 404){
+              $('#updateform_errList').html('');
+              $('.update').text('update');
+            }else{
+              $('.update').text('updating');
+              $('#updateform_errList').html('');
+              $('#myEditModal').modal('hide');
+              $('#edit_title_en').val('');
+              $('#edit_title_fr').val('');
+              $('#edit_cover').val('');
+              CKEDITOR.instances['edit_summary-ckeditor'].setData('');
+              CKEDITOR.instances['edit_summary-ckeditor2'].setData('');
+              
+              //display success messages
+              $('#the_message').html('');
+              $('#success_message').hide();
+              $('#success_message').show();
+              setTimeout(function(){
+                  $('#success_message').fadeOut('slow');
+              },5000);
+              $('#the_message').append(response.success);
+
+              fetchProducts();
+            }
+
+          }
+        });
+      });
+
+      //delete ref
+      $(document).on('click', '.del_ref', function(e){
+        //e.preventDefault();
+        var ref_id = $(this).val();
+        $('#del_ref_id').val(ref_id);
+
+        $('#verticalycentered').on('click', '.proceed', function(e){
+          e.preventDefault();
+
+          var ref_id = $('#del_ref_id').val();
+          console.log(ref_id);
+
+          $.ajax({
+            type : "GET", 
+            url : "{{ route('delete-ref') }}?ref="+ref_id, 
+            dataType : "JSON", 
+            success:function(response){
+              //console.log(response);
+              if(response.status == 404){
+                $('#success_message').html("");
+                $('#success_message').addClass('alert alert-danger');
+                $('#success_message').text(response.message);
+              }else{
+                $('#del_ref_id').val(ref_id);
+                $('#verticalycentered').modal('hide');
+
+                $('#the_message').html('');
+                $('#success_message').show();
+                setTimeout(function(){
+                    $('#success_message').fadeOut('slow');
+                },5000);
+                $('#the_message').append(response.message);
+                fetchProducts();
+              }
+            }
+          });
+
+        });
+      }); 
+  });
+</script>
+@endsection

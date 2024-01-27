@@ -321,8 +321,6 @@
 <script>
   $(document).ready(function(){
     $('#success_message').hide();
-
-
       fetchrefs();
       //fetch all achievements in database and displays in table body
       function fetchrefs(){

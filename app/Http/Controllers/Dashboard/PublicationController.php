@@ -216,10 +216,14 @@ class PublicationController extends Controller
 
       public function destroyImage(Image $test)
         {
+            //return 1;
             $image = Image::where('id', $_GET['image'])->firstorfail();
             if($image){
                 $image->delete();
-                return back();
+                return response()->json([
+                    'status'=>200,
+                    'message'=>'deleted successfully, reload page.',
+                ]);
             }else{
                 return response()->json([
                     'status'=> 404, 

@@ -13,6 +13,8 @@ class CreateReferencesTable extends Migration
      */
     public function up()
     {
+
+        //Refers to past work
         Schema::create('references', function (Blueprint $table) {
             $table->id();
             $table->string('title_fr');
