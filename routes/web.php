@@ -21,7 +21,7 @@ use App\Models\Reference;
 
 
 //$localizator = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
-  
+
 Route::get('/under-construction', function () {
     return view('pages.underconstruction');
 })->name('underconstruction');
@@ -42,6 +42,17 @@ Route::get('/under-construction', function () {
                 Route::get('/destroy-ref', [App\Http\Controllers\Dashboard\PublicationController::class, 'destroyRef'])->name('delete-ref')->middleware('auth');
                 Route::get('/edit-ref', [App\Http\Controllers\Dashboard\PublicationController::class, 'editRef'])->name('edit-ref')->middleware('auth');
 
+                /* ARTICLES START */
+                Route::get('/manage-articles', [App\Http\Controllers\PubController::class, 'manageArticles'])->name('manage-articles')->middleware('auth');
+                Route::get('/fetch-articles', [App\Http\Controllers\PubController::class, 'fetchArticles'])->name('fetch-articles')->middleware('auth');
+                Route::post('/save-article', [App\Http\Controllers\PubController::class, 'saveArticle'])->name('save-article')->middleware('auth');
+                Route::get('/edit-article', [App\Http\Controllers\PubController::class, 'editArticle'])->name('edit-article')->middleware('auth');
+                Route::get('/destroy-article', [App\Http\Controllers\PubController::class, 'destroyArticle'])->name('destroy-article')->middleware('auth');
+                Route::get('/delete-article', [App\Http\Controllers\PubController::class, 'delArticle'])->name('delete-article')->middleware('auth');
+                Route::get('/show-article', [App\Http\Controllers\PubController::class, 'showArticle'])->name('show-article')->middleware('auth');
+                Route::put('/update-article', [App\Http\Controllers\PubController::class, 'updateArticle'])->name('update-article')->middleware('auth');
+                /* ARTICLES END */
+
 
         /* END PUBLICATIONS CONTROLLER ROUTES */
 
@@ -54,7 +65,7 @@ Route::get('/under-construction', function () {
         Route::resource('rental', QuincaillerieRentalController::class)->middleware('auth');
 
         /* EMAIL AND COMMUNICATION */
-        
+
             //Route::get('/mailbox', [App\Http\Controllers\ContactController::class, 'mailbox'])->name('mailbox')->middleware('auth');
             //Route::get('/mail-details', [App\Http\Controllers\ContactController::class, 'mailDetails'])->name('mailbox-details')->middleware('auth');
 
