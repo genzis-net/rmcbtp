@@ -192,6 +192,32 @@
                 </li>
 
                 <li>
+                    <a href="{{ route('refs.index', app()->getLocale()) }}" class="{{ Route::currentRouteName() == 'manage-refs' || Route::currentRouteName() == 'show-ref' ? 'active' : ''}}">
+                        <i class="bi bi-trophy" style="font-size: 1rem;"></i><span>Projects</span>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="{{ route('manage-testimonies', app()->getLocale()) }}" class="{{Route::currentRouteName() == 'manage-testimonies' || Route::currentRouteName() == 'show-testimony' ? 'active' : ''}}">
+                        <i class="bi bi-hand-thumbs-up" style="font-size: 1rem;"></i><span>Temoignages</span>
+                    </a>
+
+                </li>
+
+                <li>
+                    <a href="{{ route('manage-albums', app()->getLocale()) }}" class="{{ Route::currentRouteName() == 'manage-albums' || Route::currentRouteName() == 'show-album' ? 'active' : ''}}">
+                        <i class="bi bi-card-image" style="font-size: 1rem;"></i><span>Galleries</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{{ route('faqs.index', app()->getLocale()) }}" class="{{ str_contains(Route::currentRouteName(), "faqs" ) ? 'active' : ''}}">
+                        <i class="bi bi-question-circle" style="font-size: 1rem;"></i><span>FAQ</span>
+                    </a>
+                </li>
+
+                <li>
                     @if (Route::currentRouteName() == 'architecture.create' || Route::currentRouteName() == 'architecture.show')
                         <a href="{{ route('architecture.create') }}" class="active">
                             <i class="bi bi-trophy" style="font-size: 1rem;"></i><span>Architecture</span>
