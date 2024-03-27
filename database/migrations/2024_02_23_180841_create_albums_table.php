@@ -16,6 +16,7 @@ class CreateAlbumsTable extends Migration
         Schema::create('albums', function (Blueprint $table) {
             $table->id();
             $table->string('name', 100);
+            $table->string('slug', 100)->nullable()->unique();
             $table->timestamp("deleted_at")->default(null)->nullable();
             $table->timestamps();
         });

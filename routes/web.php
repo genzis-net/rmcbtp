@@ -84,8 +84,14 @@ Route::resource('products', ProductController::class);
 /** HEROS */
 Route::resource('heros', HerosectionController::class);
 
-/** ACHIEVEMNTS */
+/** REF */
 Route::resource('refs', \App\Http\Controllers\AchievementController::class);
+
+/** ACHIEVEMNTS */
+Route::resource('achievements', \App\Http\Controllers\AchievementController::class);
+
+/** PROJECTS */
+Route::resource('projects', \App\Http\Controllers\AchievementController::class);
 
 Route::get('/manage-albums', [App\Http\Controllers\PubController::class, 'manageAlbums'])->name('manage-albums')->middleware('auth');
 Route::get('/fetch-albums', [App\Http\Controllers\PubController::class, 'fetchAlbums'])->name('fetch-albums')->middleware('auth');

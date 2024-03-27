@@ -16,7 +16,7 @@ class AchievementController extends Controller
     public function index()
     {
         $data['achievements'] = Achievement::orderBy('id', 'desc')->get();
-        return view('dashboard.refs.show-refs', $data);
+        return view('dashboard.achievements.show', $data);
     }
 
     /**
@@ -60,7 +60,7 @@ class AchievementController extends Controller
     public function edit($lang, $ref)
     {
         $data['achievement'] = Achievement::find($ref);
-        return view('dashboard.refs.edit-ref', $data);
+        return view('dashboard.achievements.edit-ref', $data);
     }
 
     /**

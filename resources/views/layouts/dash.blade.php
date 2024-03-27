@@ -170,7 +170,7 @@
                 <i class="bi bi-file-richtext"></i><span>Publications</span><i class="bi bi-chevron-down ms-auto"></i>
             </a>
             <ul id="blog-nav" class="nav-content collapse
-                {{ (Route::currentRouteName() == 'rental.create' || Route::currentRouteName() == 'rental.show' || Route::currentRouteName() == 'simsDecor.create' || Route::currentRouteName() == 'simsDecor.show' || Route::currentRouteName() == 'architecture.create' || Route::currentRouteName() == 'architecture.show' || Route::currentRouteName() == 'quincaillerie.create' || Route::currentRouteName() == 'quincaillerie.show' || Route::currentRouteName() == 'manage-refs' || Route::currentRouteName() == 'show-ref' || str_contains(Route::currentRouteName(), 'article')) ? 'show' : '' }}"
+                {{ (Route::currentRouteName() == 'rental.create' || Route::currentRouteName() == 'rental.show' || Route::currentRouteName() == 'simsDecor.create' || Route::currentRouteName() == 'simsDecor.show' || Route::currentRouteName() == 'architecture.create' || Route::currentRouteName() == 'architecture.show' || Route::currentRouteName() == 'quincaillerie.create' || Route::currentRouteName() == 'quincaillerie.show' || Route::currentRouteName() == 'manage-refs' || Route::currentRouteName() == 'show-ref' || str_contains(Route::currentRouteName(), 'article') || str_contains(Route::currentRouteName(), 'albums') || str_contains(Route::currentRouteName(), 'testimonies') || str_contains(Route::currentRouteName(), 'projects')) ? 'show' : '' }}"
                 data-bs-parent="#sidebar-nav">
                 <li>
                     @if (Route::currentRouteName() == 'manage-refs' || Route::currentRouteName() == 'show-ref')
@@ -192,8 +192,8 @@
                 </li>
 
                 <li>
-                    <a href="{{ route('refs.index', app()->getLocale()) }}" class="{{ Route::currentRouteName() == 'manage-refs' || Route::currentRouteName() == 'show-ref' ? 'active' : ''}}">
-                        <i class="bi bi-trophy" style="font-size: 1rem;"></i><span>Projects</span>
+                    <a href="{{ route('projects.index', app()->getLocale()) }}" class="{{ str_contains(Route::currentRouteName(), 'projects') ? 'active' : ''}}">
+                        <i class="bi bi-trophy" style="font-size: 1rem;"></i><span>Projects </span>
                     </a>
                 </li>
 
