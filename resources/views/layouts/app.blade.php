@@ -110,7 +110,7 @@
                                                 )
                                         </script>
                                     </a></li>
-                                <li><i class="fa fa-phone"></i>+237 693 909 159</li>
+                                <li><i class="fa fa-phone"></i>+237 6 51 62 28 06</li>
                             </ul>
                         </div>
                         <div class="mt-topbar-right clearfix">
@@ -328,7 +328,7 @@
                                                 )
                                         </script>
                                     </a></li>
-                                    <li>+237 693 909 159</li>
+                                    <li>+237 6 51 62 28 06</li>
                                 </ul>
 
                             </div>

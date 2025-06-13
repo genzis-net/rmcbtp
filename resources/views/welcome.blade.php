@@ -671,7 +671,7 @@
             <div class="section-content" style="color:#fff !important;">
                 <div class="call-us-section text-center">
                     <h4 class="m-b15" style="color:#fff !important;"><b>{{__('Let\'s work together')}}</b></h4>
-                    <h2 class="call-us-number m-b15 m-b0" style="color:#fff !important;">+237 693 909 159</h2>
+                    <h2 class="call-us-number m-b15 m-b0" style="color:#fff !important;">+237 6 51 62 28 06</h2>
                     <h4 class="call-us-address m-t0 m-b20" style="color:#fff !important;">{{__('Cameroon')}} & {{ __('beyond') }}</h4>
                     <a href="#" class="site-button-secondry btn-effect bg-dark">{{ __('Contact us') }}</a>
                 </div>
