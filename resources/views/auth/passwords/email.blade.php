@@ -1,47 +1,41 @@
-@extends('layouts.app')
+@extends('layouts.auth')
+
+@section('title', __('Reset Password'))
+@section('brand_heading', __('Reset your password'))
+@section('brand_copy', __('Enter your email and we will send you a reset link.'))
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Reset Password') }}</div>
+@php $locale = app()->getLocale(); @endphp
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+<div class="genzis-kicker">{{ __('Account') }}</div>
+<h2>{{ __('Reset Password') }}</h2>
+<p class="login-form__lead">
+    <a href="{{ route('login', $locale) }}">{{ __('Back to sign in') }}</a>
+</p>
 
-                    <form method="POST" action="{{ route('password.email') }}">
-                        @csrf
-
-                        <div class="row mb-3">
-                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Send Password Reset Link') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+@if (session('status'))
+    <div class="login-alert" role="alert" style="background:#ecfdf5;color:#065f46;border-color:#a7f3d0">
+        {{ session('status') }}
     </div>
-</div>
+@endif
+
+@if ($errors->any())
+    <div class="login-alert" role="alert">{{ $errors->first() }}</div>
+@endif
+
+<form class="login-form__stack" method="POST" action="{{ route('password.email', $locale) }}">
+    @csrf
+
+    <div class="genzis-field">
+        <label for="email">{{ __('Email Address') }}</label>
+        <input id="email" type="email" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+        @error('email')
+            <div class="error">{{ $message }}</div>
+        @enderror
+    </div>
+
+    <button type="submit" class="genzis-btn genzis-btn--primary genzis-btn--lg">
+        {{ __('Send Password Reset Link') }}
+    </button>
+</form>
 @endsection

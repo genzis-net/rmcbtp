@@ -72,12 +72,28 @@
                                         <input name="phone" type="text" class="form-control" required placeholder="{{ __('Phone number') }}">
                                     </div>
 
+                                    @php
+                                        $quoteProduct = request('product');
+                                        $quoteRef = request('ref');
+                                        $quoteCatalog = request('catalog');
+                                        $quoteSubject = $quoteProduct
+                                            ? __('Quote request') . ': ' . $quoteProduct
+                                            : old('subject');
+                                        $quoteMessage = $quoteProduct
+                                            ? trim(
+                                                __('I would like a quote for the following product:') . "\n" .
+                                                ($quoteCatalog ? $quoteCatalog . ' — ' : '') . $quoteProduct .
+                                                ($quoteRef ? "\n" . __('Reference') . ': ' . $quoteRef : '')
+                                            )
+                                            : old('message');
+                                    @endphp
+
                                     <div class="form-group">
-                                        <input name="subject" type="text" class="form-control" required placeholder="{{ __('Subject Line') }}">
+                                        <input name="subject" type="text" class="form-control" required placeholder="{{ __('Subject Line') }}" value="{{ $quoteSubject }}">
                                     </div>
 
                                     <div class="form-group">
-                                        <textarea name="message" class="form-control " id="textareamsg" required placeholder="Message"></textarea>
+                                        <textarea name="message" class="form-control " id="textareamsg" required placeholder="Message">{{ $quoteMessage }}</textarea>
                                     </div>
 
                                     <div id="saveform_errList"></div>
@@ -107,7 +123,7 @@
                                     <div class="icon-xs"><i class="fa fa-phone"></i></div>
                                     <div class="icon-content">
                                         <h5 class="m-t0 font-weight-500">{{ __('Phone number') }}</h5>
-                                        <p>+237 693 909 159</p>
+                                        <p>@contactPhone</p>
                                     </div>
                                 </div>
                                 
@@ -115,14 +131,7 @@
                                     <div class="icon-xs"><i class="fa fa-envelope"></i></div>
                                     <div class="icon-content">
                                         <h5 class="m-t0 font-weight-500">{{ __('Email address') }}</h5>
-                                        <p><a style="color: #fff;"
-                                            href="javascript:location='mailto:\u0063\u006f\u006e\u0074\u0061\u0063\u0074\u0040\u0072\u006d\u0063\u0062\u0074\u0070\u0073\u0061\u0072\u006c\u002e\u0063\u006f\u006d';void 0">
-                                            <script type="text/javascript">
-                                                document.write(
-                                                    '\u0063\u006f\u006e\u0074\u0061\u0063\u0074\u0040\u0072\u006d\u0063\u0062\u0074\u0070\u0073\u0061\u0072\u006c\u002e\u0063\u006f\u006d'
-                                                    )
-                                            </script>
-                                        </a></p>
+                                        <p style="color:#fff">@contactEmail</p>
                                     </div>
                                 </div>
                                 
@@ -130,7 +139,7 @@
                                     <div class="icon-xs"><i class="fa fa-map-marker"></i></div>
                                     <div class="icon-content">
                                         <h5 class="m-t0 font-weight-500">{{ __('Address info') }}</h5>
-                                        <p>Yaoundé - {{ __('Cameroon') }}</p>
+                                        <p>@contactAddress</p>
                                     </div>
                                 </div>
                             </div>

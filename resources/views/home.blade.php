@@ -5,7 +5,7 @@
     <h1>Dashboard</h1>
     <nav>
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/home">Home</a> - Dashboard overview for pro versions</li>
+        <li class="breadcrumb-item"><a href="{{ route('home', ['language' => app()->getLocale()]) }}">Home</a> - Dashboard overview for pro versions</li>
       </ol>
     </nav>
   </div><!-- End Page Title -->
@@ -15,7 +15,7 @@
 <section class="section">
     <div class="row">
         <div class="col-lg-4">
-            <img src="dash/img/logo.png" alt="" style="width: 350px; margin:auto; margin-bottom: 3rem;">
+            <img src="{{ asset('dash/img/logo.png') }}" alt="" style="width: 350px; margin:auto; margin-bottom: 3rem;">
         </div>
         <!-- right side columns -->
         <div class="col-lg-8">

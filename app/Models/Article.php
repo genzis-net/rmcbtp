@@ -11,6 +11,7 @@ class Article extends Model
     use HasFactory;
     use SoftDeletes;
     protected $fillable = [
+        'slug',
         'title_fr',
         'title_en',
         'content_fr',
@@ -19,10 +20,10 @@ class Article extends Model
         'document',
         'status',
         'user_id',
-        'deleted_at',
     ];
 
-    public function users(){
-        return $this->belongsTo(User::Class, 'user_id');
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'user_id');
     }
 }

@@ -15,10 +15,18 @@ class Material extends Model
         'name_en',
         'name_fr',
         'src',
-        'deleted_at',
     ];
 
     public function products(){
-        return $this->hasMany(Product::Class);
+        return $this->hasMany(Product::class);
+    }
+
+    public function localizedName(?string $locale = null): string
+    {
+        $locale = $locale ?: app()->getLocale();
+
+        return $locale === 'fr'
+            ? ($this->name_fr ?: $this->name_en)
+            : ($this->name_en ?: $this->name_fr);
     }
 }

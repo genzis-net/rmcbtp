@@ -5,7 +5,7 @@
     <h1>Dashboard</h1>
     <nav>
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/home">Home</a></li>
+            <li class="breadcrumb-item"><a href="{{ route('home', ['language' => app()->getLocale()]) }}">Home</a></li>
             <li class="breadcrumb-item active">References Management</li>
         </ol>
     </nav>
@@ -234,7 +234,7 @@
         function fetchrefs() {
             $.ajax({
                 type: "GET"
-                , url: "{{ route('fetch-archi') }}"
+                , url: "{{ route('fetch-archi', app()->getLocale()) }}"
                 , dataType: "JSON"
                 , "dataSrc": "tableData"
                 , contentType: false
@@ -280,7 +280,7 @@
             data.append('content_en', textarea2);
             $.ajax({
                 type: "POST"
-                , url: "{{ route('architecture.store') }}"
+                , url: "{{ route('architecture.store', app()->getLocale()) }}"
                 , data: data
                 , dataType: 'JSON'
                 , contentType: false
@@ -330,7 +330,7 @@
 
             $.ajax({
                 type: "GET"
-                , url: "{{ route('edit-ref') }}?ref=" + ref_id
+                , url: "{{ route('edit-ref', app()->getLocale()) }}?ref=" + ref_id
                 , dataType: "JSON"
                 , success: function(response) {
                     //console.log(reponse);
@@ -379,7 +379,7 @@
 
             $.ajax({
                 type: "POST"
-                , url: "{{ route('update-ref') }}?ref=" + ref_id
+                , url: "{{ route('update-ref', app()->getLocale()) }}?ref=" + ref_id
                 , data: data
                 , dataType: 'JSON'
                 , contentType: false
@@ -435,7 +435,7 @@
 
                 $.ajax({
                     type: "GET"
-                    , url: "{{ route('delete-ref') }}?ref=" + ref_id
+                    , url: "{{ route('delete-ref', app()->getLocale()) }}?ref=" + ref_id
                     , dataType: "JSON"
                     , success: function(response) {
                         //console.log(response);

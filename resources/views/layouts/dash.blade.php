@@ -42,7 +42,7 @@
 <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-        <a href="/home" class="logo d-flex align-items-center">
+        <a href="{{ route('home', ['language' => app()->getLocale()]) }}" class="logo d-flex align-items-center">
             <img src="/dash/img/logo.png" alt="">
             <span class="d-none d-lg-block">GENZIS-ADMIN</span>
         </a>
@@ -139,7 +139,7 @@
                     </li>
 
                     <li>
-                        <a class="dropdown-item d-flex align-items-center" href="{{ route('logout') }}">
+                        <a class="dropdown-item d-flex align-items-center" href="{{ route('logout', ['language' => app()->getLocale()]) }}">
                             <i class="bi bi-box-arrow-right"></i>
                             <span>Sign Out</span>
                         </a>
@@ -159,7 +159,7 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
         <li class="nav-item">
-            <a class="nav-link " href="/home">
+            <a class="nav-link " href="{{ route('home', ['language' => app()->getLocale()]) }}">
                 <i class="bi bi-grid"></i>
                 <span>HOME</span>
             </a>
@@ -170,60 +170,75 @@
                 <i class="bi bi-file-richtext"></i><span>Publications</span><i class="bi bi-chevron-down ms-auto"></i>
             </a>
             <ul id="blog-nav" class="nav-content collapse
-                {{ (Route::currentRouteName() == 'rental.create' || Route::currentRouteName() == 'rental.show' || Route::currentRouteName() == 'simsDecor.create' || Route::currentRouteName() == 'simsDecor.show' || Route::currentRouteName() == 'architecture.create' || Route::currentRouteName() == 'architecture.show' || Route::currentRouteName() == 'quincaillerie.create' || Route::currentRouteName() == 'quincaillerie.show' || Route::currentRouteName() == 'manage-refs' || Route::currentRouteName() == 'show-ref' || str_contains(Route::currentRouteName(), 'article') || str_contains(Route::currentRouteName(), 'albums') || str_contains(Route::currentRouteName(), 'testimonies') || str_contains(Route::currentRouteName(), 'projects')) ? 'show' : '' }}"
+                {{ (Route::currentRouteName() == 'rental.create' || Route::currentRouteName() == 'rental.show' || Route::currentRouteName() == 'simsDecor.create' || Route::currentRouteName() == 'simsDecor.show' || Route::currentRouteName() == 'architecture.create' || Route::currentRouteName() == 'architecture.show' || Route::currentRouteName() == 'quincaillerie.create' || Route::currentRouteName() == 'quincaillerie.show' || str_contains(Route::currentRouteName(), 'admin.blog-posts') || str_contains(Route::currentRouteName(), 'admin.testimonials') || str_contains(Route::currentRouteName(), 'admin.galleries') || str_contains(Route::currentRouteName(), 'admin.products') || str_contains(Route::currentRouteName(), 'faqs')) ? 'show' : '' }}"
                 data-bs-parent="#sidebar-nav">
                 <li>
-                    @if (Route::currentRouteName() == 'manage-refs' || Route::currentRouteName() == 'show-ref')
-                        <a href="{{ route('manage-refs') }}" class="active">
-                            <i class="bi bi-trophy" style="font-size: 1rem;"></i><span>Realisations</span>
+                    @if (Route::currentRouteName() == 'admin.blog-posts.index' || Route::currentRouteName() == 'admin.blog-posts.show')
+                        <a href="{{ route('admin.blog-posts.index', ['language' => app()->getLocale()]) }}" class="active">
+                            <i class="bi bi-file-font" style="font-size: 1rem;"></i><span>Blog Posts</span>
                         </a>
                     @else
-                        <a href="{{ route('manage-refs') }}">
-                            <i class="bi bi-trophy" style="font-size: 1rem;"></i><span>Realisations</span>
+                        <a href="{{ route('admin.blog-posts.index', ['language' => app()->getLocale()]) }}">
+                            <i class="bi bi-file-font" style="font-size: 1rem;"></i><span>Blog Posts</span>
                         </a>
                     @endif
                 </li>
 
                 <li>
-                    <a href="{{ route('manage-articles', app()->getLocale()) }}"
-                       class="{{ Route::currentRouteName() == 'manage-articles' || Route::currentRouteName() == 'show-article' ? 'active' : ''}}">
-                        <i class="bi bi-file-font" style="font-size: 1rem;"></i><span>Blog</span>
-                    </a>
+                    @if (Route::currentRouteName() == 'admin.testimonials.index' || Route::currentRouteName() == 'admin.testimonials.show')
+                        <a href="{{ route('admin.testimonials.index', ['language' => app()->getLocale()]) }}" class="active">
+                            <i class="bi bi-hand-thumbs-up" style="font-size: 1rem;"></i><span>Testimonials</span>
+                        </a>
+                    @else
+                        <a href="{{ route('admin.testimonials.index', ['language' => app()->getLocale()]) }}">
+                            <i class="bi bi-hand-thumbs-up" style="font-size: 1rem;"></i><span>Testimonials</span>
+                        </a>
+                    @endif
                 </li>
 
                 <li>
-                    <a href="{{ route('projects.index', app()->getLocale()) }}" class="{{ str_contains(Route::currentRouteName(), 'projects') ? 'active' : ''}}">
-                        <i class="bi bi-trophy" style="font-size: 1rem;"></i><span>Projects </span>
-                    </a>
-                </li>
-
-
-                <li>
-                    <a href="{{ route('manage-testimonies', app()->getLocale()) }}" class="{{Route::currentRouteName() == 'manage-testimonies' || Route::currentRouteName() == 'show-testimony' ? 'active' : ''}}">
-                        <i class="bi bi-hand-thumbs-up" style="font-size: 1rem;"></i><span>Temoignages</span>
-                    </a>
-
-                </li>
-
-                <li>
-                    <a href="{{ route('manage-albums', app()->getLocale()) }}" class="{{ Route::currentRouteName() == 'manage-albums' || Route::currentRouteName() == 'show-album' ? 'active' : ''}}">
-                        <i class="bi bi-card-image" style="font-size: 1rem;"></i><span>Galleries</span>
-                    </a>
+                    @if (Route::currentRouteName() == 'admin.galleries.index' || Route::currentRouteName() == 'admin.galleries.show')
+                        <a href="{{ route('admin.galleries.index', ['language' => app()->getLocale()]) }}" class="active">
+                            <i class="bi bi-card-image" style="font-size: 1rem;"></i><span>Galleries</span>
+                        </a>
+                    @else
+                        <a href="{{ route('admin.galleries.index', ['language' => app()->getLocale()]) }}">
+                            <i class="bi bi-card-image" style="font-size: 1rem;"></i><span>Galleries</span>
+                        </a>
+                    @endif
                 </li>
 
                 <li>
-                    <a href="{{ route('faqs.index', app()->getLocale()) }}" class="{{ str_contains(Route::currentRouteName(), "faqs" ) ? 'active' : ''}}">
-                        <i class="bi bi-question-circle" style="font-size: 1rem;"></i><span>FAQ</span>
-                    </a>
+                    @if (Route::currentRouteName() == 'admin.products.index' || Route::currentRouteName() == 'admin.products.show')
+                        <a href="{{ route('admin.products.index', ['language' => app()->getLocale()]) }}" class="active">
+                            <i class="bi bi-box" style="font-size: 1rem;"></i><span>Products</span>
+                        </a>
+                    @else
+                        <a href="{{ route('admin.products.index', ['language' => app()->getLocale()]) }}">
+                            <i class="bi bi-box" style="font-size: 1rem;"></i><span>Products</span>
+                        </a>
+                    @endif
+                </li>
+
+                <li>
+                    @if (Route::currentRouteName() == 'faqs.index')
+                        <a href="{{ route('faqs.index', app()->getLocale()) }}" class="active">
+                            <i class="bi bi-question-circle" style="font-size: 1rem;"></i><span>FAQ</span>
+                        </a>
+                    @else
+                        <a href="{{ route('faqs.index', app()->getLocale()) }}">
+                            <i class="bi bi-question-circle" style="font-size: 1rem;"></i><span>FAQ</span>
+                        </a>
+                    @endif
                 </li>
 
                 <li>
                     @if (Route::currentRouteName() == 'architecture.create' || Route::currentRouteName() == 'architecture.show')
-                        <a href="{{ route('architecture.create') }}" class="active">
+                        <a href="{{ route('architecture.create', app()->getLocale()) }}" class="active">
                             <i class="bi bi-trophy" style="font-size: 1rem;"></i><span>Architecture</span>
                         </a>
                     @else
-                        <a href="{{ route('architecture.create') }}">
+                        <a href="{{ route('architecture.create', app()->getLocale()) }}">
                             <i class="bi bi-trophy" style="font-size: 1rem;"></i><span>Architecture</span>
                         </a>
                     @endif
@@ -231,11 +246,11 @@
 
                 <li>
                     @if (Route::currentRouteName() == 'simsDecor.create' || Route::currentRouteName() == 'simsDecor.show')
-                        <a href="{{ route('simsDecor.create') }}" class="active">
+                        <a href="{{ route('simsDecor.create', app()->getLocale()) }}" class="active">
                             <i class="bi bi-trophy" style="font-size: 1rem;"></i><span>Sims Decor</span>
                         </a>
                     @else
-                        <a href="{{ route('simsDecor.create') }}">
+                        <a href="{{ route('simsDecor.create', app()->getLocale()) }}">
                             <i class="bi bi-trophy" style="font-size: 1rem;"></i><span>Sims Decor</span>
                         </a>
                     @endif
@@ -243,11 +258,11 @@
 
                 <li>
                     @if (Route::currentRouteName() == 'quincaillerie.create' || Route::currentRouteName() == 'quincaillerie.show')
-                        <a href="{{ route('quincaillerie.create') }}" class="active">
+                        <a href="{{ route('quincaillerie.create', app()->getLocale()) }}" class="active">
                             <i class="bi bi-trophy" style="font-size: 1rem;"></i><span>Quincaillerie</span>
                         </a>
                     @else
-                        <a href="{{ route('quincaillerie.create') }}">
+                        <a href="{{ route('quincaillerie.create', app()->getLocale()) }}">
                             <i class="bi bi-trophy" style="font-size: 1rem;"></i><span>Quincaillerie</span>
                         </a>
                     @endif
@@ -255,11 +270,11 @@
 
                 <li>
                     @if (Route::currentRouteName() == 'rental.create' || Route::currentRouteName() == 'rental.show')
-                        <a href="{{ route('rental.create') }}" class="active">
+                        <a href="{{ route('rental.create', app()->getLocale()) }}" class="active">
                             <i class="bi bi-trophy" style="font-size: 1rem;"></i><span>Rentals</span>
                         </a>
                     @else
-                        <a href="{{ route('rental.create') }}">
+                        <a href="{{ route('rental.create', app()->getLocale()) }}">
                             <i class="bi bi-trophy" style="font-size: 1rem;"></i><span>Rentals</span>
                         </a>
                     @endif

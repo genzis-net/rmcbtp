@@ -143,7 +143,7 @@
                                     <div class="icon-content">
                                         <h4 class="mt-tilte m-b25">{{ __('Material') }}<br>{{ __('and Machines') }}</h4>
                                         <p>{{ __('Nails, hammers, ciment, shovels, and all sort of machineries.') }}</p>
-                                        <a href="{{ route('quincaillerie', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">{{ __('Explore catalog') }} <i class="fa fa-angle-right arrow-animation"></i></a>
+                                        <a href="{{ route('catalog.index', ['language' => app()->getLocale(), 'catalog' => 'quincaillerie']) }}" class="site-button-link" data-hover="Read More">{{ __('Explore catalog') }} <i class="fa fa-angle-right arrow-animation"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -180,7 +180,7 @@
                                     <div class="icon-content">
                                         <h4 class="mt-tilte m-b25">{{ __('Furnitures and Home Deco') }}</h4>
                                         <p>{{ __('Get Inspired and choose what you want your home to be like.') }} </p>
-                                        <a href="{{ route('simsdecor', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">{{ __('Explore catalog') }}<i class="fa fa-angle-right arrow-animation"></i></a>
+                                        <a href="{{ route('catalog.index', ['language' => app()->getLocale(), 'catalog' => 'sims-decor']) }}" class="site-button-link" data-hover="Read More">{{ __('Explore catalog') }}<i class="fa fa-angle-right arrow-animation"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -246,15 +246,16 @@
             <div class="portfolio-wrap mfp-gallery work-grid row clearfix">
                 <!-- COLUMNS 1 -->
                 @foreach($refs as $ref)
+                @php $cover = $ref->images->first(); @endphp
                 <div class="masonry-item {{ $ref->project_type }}  col-md-3 col-sm-6 m-b30">
                     <div class="mt-box   image-hover-block">
                         <div class="mt-thum-bx">
-                            <img src="/images/achievements/{{ $ref->title_en }}/{{ $ref->images[0]->src}}" alt="{{ $ref->title_en }}">
+                            <img src="{{ $cover ? '/images/achievements/'.$ref->title_en.'/'.$cover->src : '/assets/images/gallery/pic4.jpg' }}" alt="{{ $ref->title_en }}">
                         </div>
                         <div class="mt-info  p-t20 text-white">
                             <h4 class="mt-tilte m-b10 m-t0">{{ $ref->title_en }}</h4>
                         </div>
-                        <a href="{{ route('readproject', app()->getLocale()) }}?ref={{ $ref->id }}"></a>
+                        <a href="{{ route('readproject', ['language' => app()->getLocale(), 'project' => $ref->id]) }}"></a>
                     </div>
                 </div>
                 @endforeach

@@ -8,12 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class ArchitectureImages extends Model
 {
     use HasFactory;
-    protected $fillable=[
-        'src', 
+
+    protected $fillable = [
+        'src',
         'architecture_id',
     ];
 
-    public function architectures(){
-        return $this->BelongsTo(Architecture::Class, 'architechture_id');
+    public function architecture()
+    {
+        return $this->belongsTo(Architecture::class, 'architecture_id');
     }
 }

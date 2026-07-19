@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\frontoffice;
+namespace App\Http\Controllers\Frontoffice;
 use App\Models\ContactEmail;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ContactFormMail;
-use Illuminate\Support\Facades\Validator;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Product;
 use App\Models\Reference;
 
 class PagesController extends Controller
@@ -16,41 +16,23 @@ class PagesController extends Controller
         return view('pages.contact');
     }
 
-    public function storeContact(Request $request){
-        $validator = Validator::make($request->all(),[
-            'name'=>'required|max:191', 
-            'email'=>'required|max:191', 
-            'phone'=>'required|max:191', 
-            'subject'=>'required|max:191', 
-            'message'=>'required', 
+    public function storeContact(Request $request)
+    {
+        $data = $request->validate([
+            'name' => 'required|string|max:191',
+            'email' => 'required|email:rfc,dns|max:191',
+            'phone' => 'required|string|max:191',
+            'subject' => 'required|string|max:191',
+            'message' => 'required|string|max:5000',
         ]);
 
-        if($validator->fails()){
-            return response()->json([
-                'status'=>400, 
-                'errors'=>$validator->messages(),
-            ]);
-        }else{
-            $data = request()->validate([
-                'name'=>'required|max:191', 
-                'email'=>'required|max:191', 
-                'phone'=>'required|max:191', 
-                'subject'=>'required|max:191', 
-                'message'=>'required', 
-            ]);
+        ContactEmail::create($data);
 
-        $newEmail = new ContactEmail;
-        $newEmail->name = $request->input('name');
-        $newEmail->email = $request->input('email');
-        $newEmail->phone = $request->input('phone');
-        $newEmail->subject = $request->input('subject');
-        $newEmail->message = $request->input('message');
-        $newEmail->save();
+        Mail::to(config('contact.email'))->send(new ContactFormMail($data));
 
-        Mail::to('contact@rmcbtpsarl.com')->send(new ContactFormMail($data));
-        //\App::setLocale('fr');
-        return response()->json(["success"=>"Thanks for your interest. You should receive an answer shortly"]);
-        }
+        return response()->json([
+            'success' => __('Thanks for your interest. You should receive an answer shortly'),
+        ], 200);
     }
 
     public function about(){
@@ -59,12 +41,59 @@ class PagesController extends Controller
     }
 
     public function simsdecor(){
-        return view('pages.simsdecor');
+        $featured = Product::active()
+            ->catalog(Product::CATALOG_SIMS_DECOR)
+            ->featured()
+            ->with(['images' => fn ($q) => $q->orderBy('id')])
+            ->latest()
+            ->take(8)
+            ->get();
+
+        $products = Product::active()
+            ->catalog(Product::CATALOG_SIMS_DECOR)
+            ->with(['images' => fn ($q) => $q->orderBy('id')])
+            ->orderByDesc('is_featured')
+            ->latest()
+            ->take(12)
+            ->get();
+
+        if ($featured->isEmpty()) {
+            $featured = $products->take(8);
+        }
+
+        return view('pages.simsdecor', [
+            'featured' => $featured,
+            'products' => $products,
+            'catalog' => Product::CATALOG_SIMS_DECOR,
+        ]);
     }
 
     public function quincaillerie(){
-        return view('pages.quincaillerie');
-        
+        $featured = Product::active()
+            ->catalog(Product::CATALOG_QUINCAILLERIE)
+            ->featured()
+            ->with(['images' => fn ($q) => $q->orderBy('id')])
+            ->latest()
+            ->take(8)
+            ->get();
+
+        $products = Product::active()
+            ->catalog(Product::CATALOG_QUINCAILLERIE)
+            ->with(['images' => fn ($q) => $q->orderBy('id')])
+            ->orderByDesc('is_featured')
+            ->latest()
+            ->take(12)
+            ->get();
+
+        if ($featured->isEmpty()) {
+            $featured = $products->take(8);
+        }
+
+        return view('pages.quincaillerie', [
+            'featured' => $featured,
+            'products' => $products,
+            'catalog' => Product::CATALOG_QUINCAILLERIE,
+        ]);
     }
 
     public function architecture(){
@@ -92,9 +121,18 @@ class PagesController extends Controller
         return view('pages.projects', compact('refs'));
     }
 
-    public function readproject(Reference $project){
-        $ref=Reference::Where('id', $_GET['ref'])->get();
-        $ref=$ref[0];
-        return view('pages.readproject', compact('ref'));
+    public function readproject(Reference $project)
+    {
+        $project->load('images');
+
+        return view('pages.readproject', ['ref' => $project]);
+    }
+
+    public function newsletter(){
+        return view('emails.newsletter.list-campaigns');
+    }
+
+    public function viewCampaign(){
+        return view('emails.newsletter.view-campaign');
     }
 }

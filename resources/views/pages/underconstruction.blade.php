@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html class="light" data-style-switcher-options="{'changeLogo': false, 'backgroundColor': 'light', 'borderRadius': 0, 'colorPrimary': '#e41645', 'colorSecondary': '#292929', 'colorTertiary': '#e0e1e5', 'colorQuaternary': '#777777'}">
 	
@@ -15,8 +13,8 @@
 		<meta name="author" content="rmcbtpsarl.com">
 
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="assets/img/favicon.jpg" type="image/x-icon" />
-		<link rel="apple-touch-icon" href="assets/image/favicon.jpg">
+		<link rel="shortcut icon" href="{{ asset('assets/img/favicon.jpg') }}" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="{{ asset('assets/image/favicon.jpg') }}">
 
 		<!-- Mobile Metas -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">

@@ -9,6 +9,11 @@
 <meta property="og:title" content="RMC BTP sarl | {{ __('Professional Contractor in Cameroon') }}" />
 @endsection
 
+@push('styles')
+<link rel="stylesheet" type="text/css" href="{{ asset('assets/plugins/revolution/revolution/css/settings.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('assets/plugins/revolution/revolution/css/navigation.css') }}">
+@endpush
+
 @section('content')
 <!-- CONTENT START -->
 <div class="page-content">
@@ -382,7 +387,7 @@
                                 <div class="m-about-years bg-moving" style="">
                                     <span class="text-primary large-title">{{__("Request a Quote")}}</span>
                                 </div>
-                                <p>{{ __('We’re interested in talking about your Project.') }}</p>
+                                <p>{{ __("We're interested in talking about your Project.") }}</p>
                                 <a href="{{ route('contact', app()->getLocale()) }}" class="site-button btn-effect m-b15"><span>{{__("Request a Quote")}}</span></a>
                             </div>
                         </div>
@@ -465,7 +470,7 @@
                                 <li><a href="#">Dschang</a></li>
                             </ul>
                             <div class="text-right">
-                                <a href="{{ route('projects', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">{{ __('More') }}<i class="fa fa-angle-right arrow-animation"></i></a>
+                                <a href="{{ route('projects.index', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">{{ __('More') }}<i class="fa fa-angle-right arrow-animation"></i></a>
                             </div>
                         </div>
                     </div>
@@ -591,7 +596,7 @@
                                     <div class="icon-content">
                                         <h4 class="mt-tilte m-b25">{{ __('Material') }}<br>{{ __('and Machines') }}</h4>
                                         <p>{{ __('Nails, hammers, ciment, shovels, and all sort of machineries.') }}</p>
-                                        <a href="{{ route('quincaillerie', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">{{ __('Explore catalog') }} <i class="fa fa-angle-right arrow-animation"></i></a>
+                                        <a href="{{ route('catalog.index', ['language' => app()->getLocale(), 'catalog' => 'quincaillerie']) }}" class="site-button-link" data-hover="Read More">{{ __('Explore catalog') }} <i class="fa fa-angle-right arrow-animation"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -628,7 +633,7 @@
                                     <div class="icon-content">
                                         <h4 class="mt-tilte m-b25">{{ __('Furnitures and Home Deco') }}</h4>
                                         <p>{{ __('Get Inspired and choose what you want your home to be like.') }} </p>
-                                        <a href="{{ route('simsdecor', app()->getLocale()) }}" class="site-button-link" data-hover="Read More">{{ __('Explore catalog') }}<i class="fa fa-angle-right arrow-animation"></i></a>
+                                        <a href="{{ route('catalog.index', ['language' => app()->getLocale(), 'catalog' => 'sims-decor']) }}" class="site-button-link" data-hover="Read More">{{ __('Explore catalog') }}<i class="fa fa-angle-right arrow-animation"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -671,7 +676,7 @@
             <div class="section-content" style="color:#fff !important;">
                 <div class="call-us-section text-center">
                     <h4 class="m-b15" style="color:#fff !important;"><b>{{__('Let\'s work together')}}</b></h4>
-                    <h2 class="call-us-number m-b15 m-b0" style="color:#fff !important;">+237 6 51 62 28 06</h2>
+                    <h2 class="call-us-number m-b15 m-b0" style="color:#fff !important;">+237 6 51 62 28 06</h2>
                     <h4 class="call-us-address m-t0 m-b20" style="color:#fff !important;">{{__('Cameroon')}} & {{ __('beyond') }}</h4>
                     <a href="#" class="site-button-secondry btn-effect bg-dark">{{ __('Contact us') }}</a>
                 </div>
@@ -719,15 +724,16 @@
                         </div>
                     </div>
                     @foreach($refs as $ref)
+                    @php $cover = $ref->images->first(); @endphp
                     <div class="masonry-item  {{ $ref->project_type }} col-md-3 col-sm-6 m-b30">
                         <div class="mt-box   image-hover-block">
                             <div class="mt-thum-bx">
-                                <img src="/images/achievements/{{ $ref->title_en }}/{{ $ref->images[0]->src}}" alt="{{ $ref->title_en }}" alt="{{ $ref->title_en }}">
+                                <img src="{{ $cover ? '/images/achievements/'.$ref->title_en.'/'.$cover->src : '/assets/images/gallery/pic4.jpg' }}" alt="{{ $ref->title_en }}">
                             </div>
                             <div class="mt-info  p-t20 text-white">
                                 <h4 class="mt-tilte m-b10 m-t0">{{ $ref->{'title_'.app()->getLocale()} }}</h4>
                             </div>
-                            <a href="{{ route('readproject', app()->getLocale()) }}?ref={{ $ref->id }}"></a>
+                            <a href="{{ route('readproject', ['language' => app()->getLocale(), 'project' => $ref->id]) }}"></a>
                         </div>
                     </div>
                     @endforeach
@@ -793,6 +799,10 @@
 
 
 @section('scripts')
+<script src="{{ asset('assets/plugins/revolution/revolution/js/jquery.themepunch.tools.min.js') }}"></script>
+<script src="{{ asset('assets/plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js') }}"></script>
+<script src="{{ asset('assets/plugins/revolution/revolution/js/extensions/revolution-plugin.js') }}"></script>
+<script src="{{ asset('assets/js/rev-script-1.js') }}"></script>
 <script>
     $(document).ready(function() {
 
@@ -820,7 +830,7 @@
                 , async: false
                 , processData: false
                 , success: function(response) {
-                    if (response.status == 400) {
+                    if (response.errors) {
                         $('#saveform_errList').html("");
                         $('#saveform_errList').show();
                         $('#saveform_errList').addClass("alert alert-danger");
@@ -837,6 +847,16 @@
                         }, 5000);
                         $('#the_message').append(response.success);
                         $('#contactFormAdvanced').find('.form-control').val('');
+                    }
+                },
+                error: function(xhr) {
+                    if (xhr.status === 422 && xhr.responseJSON && xhr.responseJSON.errors) {
+                        $('#saveform_errList').html("");
+                        $('#saveform_errList').show();
+                        $('#saveform_errList').addClass("alert alert-danger");
+                        $.each(xhr.responseJSON.errors, function(key, err_values) {
+                            $('#saveform_errList').append('<li>' + err_values + '</li>');
+                        });
                     }
                 }
             });

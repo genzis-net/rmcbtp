@@ -2,23 +2,24 @@
 
 namespace Database\Seeders;
 
+use App\Models\User;
 use Illuminate\Database\Seeder;
-use DB;
 use Illuminate\Support\Facades\Hash;
 
 class DatabaseSeeder extends Seeder
 {
-    /**
-     * Seed the application's database.
-     *
-     * @return void
-     */
-    public function run()
+    public function run(): void
     {
-        DB::table('users')->insert([
-            'name' => 'Admin',
-            'email' =>'contact@rmcbtpsarl.com',
-            'password' => Hash::make('rmc.btp@2022'),
-        ]);
+        $email = env('ADMIN_EMAIL', 'admin@example.com');
+        $password = env('ADMIN_PASSWORD', 'password');
+
+        User::updateOrCreate(
+            ['email' => $email],
+            [
+                'name' => env('ADMIN_NAME', 'Admin'),
+                'password' => Hash::make($password),
+                'is_admin' => true,
+            ]
+        );
     }
 }

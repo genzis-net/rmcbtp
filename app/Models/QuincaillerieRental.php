@@ -3,24 +3,26 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Spatie\Translatable\HasTranslations;
 use Illuminate\Database\Eloquent\Model;
+use Spatie\Translatable\HasTranslations;
 
 class QuincaillerieRental extends Model
 {
     use HasFactory, HasTranslations;
-    protected $fillable =[
+
+    protected $fillable = [
         'name',
-        'description', 
-        'price', 
+        'description',
+        'price',
     ];
 
     public $translatable = [
         'name',
-        'description'
+        'description',
     ];
 
-    public function quicaillerieRentalImages(){
-        return $this->HasMany(QuicaillerieRentalImage::Class);
+    public function images()
+    {
+        return $this->hasMany(QuincaillerieRentalImage::class, 'quincaillerieRental_id');
     }
 }

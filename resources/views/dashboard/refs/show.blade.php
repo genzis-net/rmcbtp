@@ -254,7 +254,7 @@
 
         $.ajax({
           type : "GET", 
-          url : "{{ route('edit-ref') }}?ref="+img_id, 
+          url : "{{ route('edit-ref', app()->getLocale()) }}?ref="+img_id, 
           dataType : "JSON", 
           success:function(response){
             //console.log(reponse);
@@ -303,7 +303,7 @@
     
         $.ajax({
           type : "POST", 
-          url : "{{ route('update-ref') }}?ref="+img_id,
+          url : "{{ route('update-ref', app()->getLocale()) }}?ref="+img_id,
           data: data,
           dataType:'JSON',
           contentType: false,
@@ -359,7 +359,7 @@
 
           $.ajax({
             type : "GET", 
-            url : "{{ route('destroy-image')}}?image="+img_id, 
+            url : "{{ route('destroy-image', app()->getLocale())}}?image="+img_id, 
             dataType : "JSON", 
             success:function(response){
               //console.log(response);

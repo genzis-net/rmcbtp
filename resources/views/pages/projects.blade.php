@@ -86,10 +86,11 @@
             </style>
             <div class="portfolio-wrap mfp-gallery work-grid row clearfix marged" style="">
                 @foreach($refs as $ref)
+                @php $cover = $ref->images->first(); @endphp
                 <div class="masonry-item {{ $ref->project_type }}  col-lg-4 col-md-4 col-sm-6 m-b30" style="border: 1px solid blue; margin: auto; padding: 2rem;">
                     <div class="project-classic" >
                         <div class="mt-box">
-                            <div class="theimage" style="background-image:url('/images/achievements/{{ $ref->title_en }}/{{ $ref->images[0]->src }}'); "></div>
+                            <div class="theimage" style="background-image:url('{{ $cover ? '/images/achievements/'.$ref->title_en.'/'.$cover->src : '/assets/images/gallery/pic4.jpg' }}'); "></div>
                         </div>
                         <div class="mt-info p-t20">
                             <h4 class="mt-title m-b20 m-t0" data-hover="{{ $ref->{'title_'.app()->getLocale()} }}">{{ $ref->{'title_'.app()->getLocale()} }}</h4>
@@ -97,7 +98,7 @@
                                 $truncated = Str::of($ref->{'content_'.app()->getLocale()})->limit(200);
                             ?>
                             <p class="trimmed">{!! $truncated !!}</p>
-                            <a href="{{ route('readproject', app()->getLocale()) }}?ref={{ $ref->id }}" class="site-button-link" data-hover="Read More">{{ __('More') }} <i class="fa fa-angle-right arrow-animation"></i></a>
+                            <a href="{{ route('readproject', ['language' => app()->getLocale(), 'project' => $ref->id]) }}" class="site-button-link" data-hover="Read More">{{ __('More') }} <i class="fa fa-angle-right arrow-animation"></i></a>
                         </div>
                     </div>
                 </div>

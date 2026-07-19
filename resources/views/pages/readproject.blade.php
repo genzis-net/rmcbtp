@@ -2,9 +2,11 @@
 @section('headerz')
 <?php 
     $truncated = Str::of($ref->{'content_'.app()->getLocale()})->limit(200);
+    $cover = $ref->images->first();
+    $coverUrl = $cover ? '/images/achievements/'.$ref->title_en.'/'.$cover->src : '/assets/images/gallery/pic4.jpg';
 ?>
 <title>{{ $ref->{'title_'.app()->getLocale()} }}</title>
-<meta property="og:image" content="/images/achievements/{{ $ref->title_en }}/{{ $ref->images[0]->src}}" />
+<meta property="og:image" content="{{ $coverUrl }}" />
 <meta property="og:description" content="{{ $truncated }}" />
 <meta property="og:url" content="https://rmcbtpsarl.com/projects/{{ $ref->title_en }}" />
 <meta property="og:title" content="{{ $ref->{'title_'.app()->getLocale()} }}" />
@@ -28,7 +30,7 @@
                 }
             </style>
     <!-- INNER PAGE BANNER -->
-    <div class="mt-bnr-inr overlay-wraper bg-parallax bg-top-center" data-stellar-background-ratio="0.5" style="background-image:url('/images/achievements/{{ $ref->title_en }}/{{ $ref->images[0]->src }}'); ">
+    <div class="mt-bnr-inr overlay-wraper bg-parallax bg-top-center" data-stellar-background-ratio="0.5" style="background-image:url('{{ $coverUrl }}'); ">
         <div class="overlay-main bg-black opacity-07"></div>
         <div class="container">
             <div class="mt-bnr-inr-entry">
@@ -42,7 +44,7 @@
                 <div>
                     <ul class="mt-breadcrumb breadcrumb-style-2">
                         <li><a href="{{ route('homepage', app()->getLocale()) }}">{{ __('Home') }}</a></li>
-                        <li><a href="{{ route('projects', app()->getLocale()) }}">{{ __('Our Work') }}</a></li>
+                        <li><a href="{{ route('projects.index', app()->getLocale()) }}">{{ __('Our Work') }}</a></li>
                         <li>{{ $ref->title_en }}</li>
                     </ul>
                 </div>

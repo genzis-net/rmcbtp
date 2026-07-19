@@ -8,12 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class QuincaillerieRentalImage extends Model
 {
     use HasFactory;
-    protected $fillable =[
+
+    protected $fillable = [
         'quincaillerieRental_id',
-        'src', 
+        'src',
     ];
 
-    public function quicailleries(){
-        return $this->BelongsTo(Quincaillerie::Class, 'quincaillerieRental_id');
+    public function rental()
+    {
+        return $this->belongsTo(QuincaillerieRental::class, 'quincaillerieRental_id');
     }
 }

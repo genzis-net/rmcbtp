@@ -1,127 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.auth')
 
-<head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+@section('title', __('Sign in'))
 
-    <title>Pages / Login - NiceAdmin Bootstrap Template</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+@section('content')
+@php $locale = app()->getLocale(); @endphp
 
-    <!-- Favicons -->
-    <link href="dash/img/favicon.png" rel="icon">
-    <link href="dash/img/apple-touch-icon.png" rel="apple-touch-icon">
+<div class="genzis-kicker">{{ __('Welcome back') }}</div>
+<h2>{{ __('Sign in to your account') }}</h2>
+<p class="login-form__lead">
+    {{ __('Need the public site?') }}
+    <a href="{{ route('homepage', $locale) }}">{{ __('Visit RMC BTP') }}</a>
+</p>
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.gstatic.com" rel="preconnect">
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-        rel="stylesheet">
+@if ($errors->any())
+    <div class="login-alert" role="alert">
+        {{ $errors->first() }}
+    </div>
+@endif
 
-    <!-- Vendor CSS Files -->
-    <link href="dash/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="dash/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="dash/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="dash/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="dash/vendor/quill/quill.snow.css" rel="stylesheet">
-    <link href="dash/vendor/quill/quill.bubble.css" rel="stylesheet">
-    <link href="dash/vendor/simple-datatables/style.css" rel="stylesheet">
+<form class="login-form__stack" method="POST" action="{{ route('login', ['language' => $locale]) }}">
+    @csrf
 
-    <!-- Template Main CSS File -->
-    <link href="dash/css/style.css" rel="stylesheet">
+    <div class="genzis-field">
+        <label for="email">{{ __('Email Address') }}</label>
+        <input
+            id="email"
+            type="email"
+            name="email"
+            value="{{ old('email') }}"
+            placeholder="you@company.com"
+            autocomplete="username"
+            required
+            autofocus
+            class="{{ $errors->has('email') ? 'is-invalid' : '' }}"
+        >
+        @error('email')
+            <div class="error">{{ $message }}</div>
+        @enderror
+    </div>
 
-    <!-- =======================================================
-  * Template Name: NiceAdmin - v2.1.0
-  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
+    <div class="genzis-field login-password-wrap">
+        <label for="password">{{ __('Password') }}</label>
+        <input
+            id="password"
+            type="password"
+            name="password"
+            placeholder="{{ __('Enter your password') }}"
+            autocomplete="current-password"
+            required
+            class="{{ $errors->has('password') ? 'is-invalid' : '' }}"
+        >
+        <button type="button" class="login-password-toggle" id="toggle-password" aria-label="{{ __('Toggle password') }}">
+            <img src="https://unpkg.com/lucide-static@0.454.0/icons/eye.svg" width="18" height="18" alt="" id="toggle-password-icon">
+        </button>
+        @error('password')
+            <div class="error">{{ $message }}</div>
+        @enderror
+    </div>
 
-<body>
+    <div class="login-row">
+        <label class="login-remember">
+            <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}>
+            {{ __('Remember Me') }}
+        </label>
+        @if (Route::has('password.request'))
+            <a href="{{ route('password.request', ['language' => $locale]) }}" style="font-size:14px">{{ __('Forgot Your Password?') }}</a>
+        @endif
+    </div>
 
-    <main>
-        <div class="container">
+    <button type="submit" class="genzis-btn genzis-btn--primary genzis-btn--lg">
+        {{ __('Sign in') }}
+        <img class="genzis-icon genzis-icon--white" src="https://unpkg.com/lucide-static@0.454.0/icons/arrow-right.svg" width="18" height="18" alt="">
+    </button>
+</form>
+@endsection
 
-            <section
-                class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
-
-                            <div class="d-flex justify-content-center py-4">
-                                <a href="index.html" class="logo d-flex align-items-center w-auto">
-                                    <img src="dash/img/logo.png" alt="">
-                                    <span class="d-none d-lg-block">RMC BTP</span>
-                                </a>
-                            </div><!-- End Logo -->
-
-                            <div class="card mb-3">
-
-                                <div class="card-body">
-
-                                    <div class="pt-4 pb-2">
-                                        <h5 class="card-title text-center pb-0 fs-4">Login to Your Account</h5>
-                                        <p class="text-center small">Enter your username & password to login</p>
-                                    </div>
-
-                                    <form class="row g-3 needs-validation" novalidate action="{{ route('login') }}" method="POST">
-                                        @csrf
-                                        <div class="col-12">
-                                            <label for="yourUsername" class="form-label">Username</label>
-                                            <div class="input-group has-validation">
-                                                <span class="input-group-text" id="inputGroupPrepend">@</span>
-                                                <input type="text" name="email" class="form-control"
-                                                    id="yourUsername" required>
-                                                <div class="invalid-feedback">Please enter your username.</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12">
-                                            <label for="yourPassword" class="form-label">Password</label>
-                                            <input type="password" name="password" class="form-control"
-                                                id="yourPassword" required>
-                                            <div class="invalid-feedback">Please enter your password!</div>
-                                        </div>
-                                        
-                                        <div class="col-12">
-                                            <button class="btn btn-primary w-100" type="submit">Login</button>
-                                        </div>
-                                    </form>
-
-                                </div>
-                            </div>
-
-                            <div class="credits">
-                                Delivered by <a href="https://genzis.net/">Genzis</a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-
-        </div>
-    </main><!-- End #main -->
-
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
-
-    <!-- Vendor JS Files -->
-    <script src="dash/vendor/bootstrap/js/bootstrap.bundle.js"></script>
-    <script src="dash/vendor/php-email-form/validate.js"></script>
-    <script src="dash/vendor/quill/quill.min.js"></script>
-    <script src="dash/vendor/tinymce/tinymce.min.js"></script>
-    <script src="dash/vendor/simple-datatables/simple-datatables.js"></script>
-    <script src="dash/vendor/chart.js/chart.min.js"></script>
-    <script src="dash/vendor/apexcharts/apexcharts.min.js"></script>
-    <script src="dash/vendor/echarts/echarts.min.js"></script>
-
-    <!-- Template Main JS File -->
-    <script src="dash/js/main.js"></script>
-
-</body>
-
-</html>
+@push('scripts')
+<script>
+    (function () {
+        var btn = document.getElementById('toggle-password');
+        var input = document.getElementById('password');
+        var icon = document.getElementById('toggle-password-icon');
+        if (!btn || !input || !icon) return;
+        btn.addEventListener('click', function () {
+            var show = input.type === 'password';
+            input.type = show ? 'text' : 'password';
+            icon.src = show
+                ? 'https://unpkg.com/lucide-static@0.454.0/icons/eye-off.svg'
+                : 'https://unpkg.com/lucide-static@0.454.0/icons/eye.svg';
+        });
+    })();
+</script>
+@endpush

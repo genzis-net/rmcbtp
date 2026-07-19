@@ -115,15 +115,16 @@
                      <div class="portfolio-wrap mfp-gallery work-grid row clearfix">
                         <!-- COLUMNS 1 -->
                         @foreach($refs as $ref)
-                            <div class="masonry-item {{ ref->year }}  col-md-3 col-sm-6 m-b30">
+                            @php $cover = $ref->images->first(); @endphp
+                            <div class="masonry-item {{ $ref->year }}  col-md-3 col-sm-6 m-b30">
                         	<div class="mt-box   image-hover-block">
                                 <div class="mt-thum-bx">
-                                    <img src="/images/achievements/{{ $ref->title_en }}/{{ $ref->images[0]->src}}" alt="{{ ref->title_en }}">
+                                    <img src="{{ $cover ? '/images/achievements/'.$ref->title_en.'/'.$cover->src : '/assets/images/gallery/pic4.jpg' }}" alt="{{ $ref->title_en }}">
                                 </div>
                                 <div class="mt-info  p-t20 text-white">
                                     <h4 class="mt-tilte m-b10 m-t0">{{ $ref->{'title_'.app()->getLocale()} }}</h4>
                                 </div>
-                                <a href="{{ route('readproject', app()->getLocale()) }}?ref={{ $ref->id }}"></a>                                    
+                                <a href="{{ route('readproject', ['language' => app()->getLocale(), 'project' => $ref->id]) }}"></a>                                    
                             </div>
                         </div>
                         @endforeach

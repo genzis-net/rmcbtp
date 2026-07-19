@@ -5,7 +5,7 @@
         <h1>Dashboard</h1>
         <nav>
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="/home">Home</a></li>
+                <li class="breadcrumb-item"><a href="{{ route('home', ['language' => app()->getLocale()]) }}">Home</a></li>
                 <li class="breadcrumb-item active">Blog</li>
             </ol>
         </nav>

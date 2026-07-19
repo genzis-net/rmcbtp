@@ -1,0 +1,262 @@
+/* RMC BTP — header/footer chrome refinements (additive; keeps theme look) */
+
+.mobile-version {
+    display: none;
+}
+
+.site-chrome-header .sticky-header.is-fixed .main-bar,
+.site-chrome-header .main-bar {
+    transition: box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.site-chrome-header .sticky-header.is-fixed .main-bar {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.site-chrome-header .nav.navbar-nav > li > a {
+    transition: color 0.2s ease;
+}
+
+.site-chrome-header .appint-btn .site-button {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.site-chrome-header .appint-btn .site-button:hover {
+    transform: translateY(-1px);
+}
+
+@media (max-width: 500px) {
+    .mobile-version {
+        display: block;
+    }
+
+    .desktop-version {
+        display: none;
+    }
+
+    .about-us-carousel {
+        display: none;
+    }
+
+    .image-effect-one {
+        height: 350px;
+        overflow: hidden;
+    }
+}
+
+/* ---- Top bar ---- */
+.site-chrome-header .site-chrome-topbar {
+    padding: 0;
+}
+
+.site-chrome-header .site-chrome-topbar-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    min-height: 44px;
+    margin: 0;
+}
+
+.site-chrome-header .mt-topbar-left,
+.site-chrome-header .mt-topbar-right {
+    float: none;
+    padding: 6px 0;
+}
+
+.site-chrome-header .site-chrome-contact-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px 18px;
+}
+
+.site-chrome-header .site-chrome-contact-list li {
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    font-size: 13px;
+}
+
+.site-chrome-header .site-chrome-contact-list a {
+    color: #222;
+    text-decoration: none;
+}
+
+.site-chrome-header .site-chrome-contact-list a:hover {
+    color: #57aff3;
+}
+
+.site-chrome-topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-left: auto;
+}
+
+.site-chrome-header .appint-btn {
+    margin: 0;
+}
+
+.site-chrome-header .appint-btn .site-button {
+    padding: 8px 16px;
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+/* Language toggle */
+.site-chrome-lang {
+    display: inline-flex;
+    align-items: center;
+    gap: 0;
+    padding: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+}
+
+.site-chrome-lang-link {
+    color: #666;
+    text-decoration: none;
+    padding: 4px 8px;
+    line-height: 1;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.site-chrome-lang-link:hover {
+    color: #111;
+}
+
+.site-chrome-lang-link.is-active {
+    color: #fff;
+    background: #57aff3;
+}
+
+.site-chrome-lang-sep {
+    display: none;
+}
+
+/* Keep top bar useful on phones instead of hiding it */
+@media (max-width: 767px) {
+    .site-chrome-header .site-chrome-topbar-row {
+        min-height: 0;
+        padding: 8px 0;
+    }
+
+    .site-chrome-header .site-chrome-contact-email {
+        display: none;
+    }
+
+    .site-chrome-header .site-chrome-contact-list li {
+        font-size: 12px;
+    }
+
+    .site-chrome-topbar-right {
+        gap: 10px;
+    }
+
+    .site-chrome-header .appint-btn .site-button {
+        padding: 7px 12px;
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-chrome-header .site-chrome-topbar-row {
+        flex-wrap: nowrap;
+        gap: 8px;
+    }
+
+    .site-chrome-header .mt-topbar-left {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+
+    .site-chrome-topbar-right {
+        flex: 0 0 auto;
+        margin-left: 0;
+    }
+}
+
+/* ---- Footer quote strip ---- */
+.site-chrome-footer .site-chrome-quote-strip {
+    position: relative;
+    z-index: 1;
+    margin-top: -40px;
+    margin-bottom: 0;
+    padding: 28px 30px;
+    background-color: #fff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.site-chrome-quote-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px 32px;
+    flex-wrap: wrap;
+}
+
+.site-chrome-quote-title {
+    margin: 0 0 6px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #111;
+    text-transform: uppercase;
+}
+
+.site-chrome-quote-text {
+    margin: 0;
+    max-width: 640px;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.55;
+}
+
+.site-chrome-quote-action .site-button {
+    white-space: nowrap;
+}
+
+.site-chrome-footer-contact a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.site-chrome-footer-contact a:hover {
+    color: #57aff3;
+}
+
+.site-chrome-footer .copyrights-text a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.site-chrome-footer .copyrights-text a:hover {
+    color: #57aff3;
+}
+
+@media (max-width: 767px) {
+    .site-chrome-footer .site-chrome-quote-strip {
+        margin-top: -20px;
+        padding: 22px 18px;
+    }
+
+    .site-chrome-quote-title {
+        font-size: 18px;
+    }
+
+    .site-chrome-quote-action {
+        width: 100%;
+    }
+
+    .site-chrome-quote-action .site-button {
+        display: inline-block;
+    }
+}
