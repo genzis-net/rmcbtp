@@ -13,7 +13,27 @@ return new class extends Migration
             return;
         }
 
-        // Null out orphan foreign keys before adding constraints.
+        // Align FK column types with Laravel $table->id() (BIGINT UNSIGNED).
+        // Legacy columns were INT/TEXT and cause errno 150 otherwise.
+        if (Schema::hasTable('subcats') && Schema::hasColumn('subcats', 'cat_id')) {
+            DB::statement("UPDATE subcats SET cat_id = NULL WHERE cat_id IS NOT NULL AND cat_id NOT REGEXP '^[0-9]+$'");
+            DB::statement('ALTER TABLE subcats MODIFY cat_id BIGINT UNSIGNED NULL');
+        }
+
+        if (Schema::hasTable('products')) {
+            if (Schema::hasColumn('products', 'subcat_id')) {
+                DB::statement('ALTER TABLE products MODIFY subcat_id BIGINT UNSIGNED NULL');
+            }
+            if (Schema::hasColumn('products', 'material_id')) {
+                DB::statement('ALTER TABLE products MODIFY material_id BIGINT UNSIGNED NULL');
+            }
+        }
+
+        if (Schema::hasTable('prod_images') && Schema::hasColumn('prod_images', 'product_id')) {
+            DB::statement('ALTER TABLE prod_images MODIFY product_id BIGINT UNSIGNED NULL');
+        }
+
+        // Null/delete orphans before adding constraints.
         if (Schema::hasTable('subcats') && Schema::hasTable('cats')) {
             DB::statement('UPDATE subcats SET cat_id = NULL WHERE cat_id IS NOT NULL AND cat_id NOT IN (SELECT id FROM cats)');
         }
@@ -31,25 +51,20 @@ return new class extends Migration
             DB::statement('DELETE FROM prod_images WHERE product_id IS NOT NULL AND product_id NOT IN (SELECT id FROM products)');
         }
 
-        Schema::table('subcats', function (Blueprint $table) {
-            if (!$this->foreignExists('subcats', 'subcats_cat_id_foreign')) {
-                $table->foreign('cat_id')->references('id')->on('cats')->nullOnDelete();
-            }
+        $this->addForeignIfMissing('subcats', 'subcats_cat_id_foreign', function (Blueprint $table) {
+            $table->foreign('cat_id')->references('id')->on('cats')->nullOnDelete();
         });
 
-        Schema::table('products', function (Blueprint $table) {
-            if (!$this->foreignExists('products', 'products_subcat_id_foreign')) {
-                $table->foreign('subcat_id')->references('id')->on('subcats')->nullOnDelete();
-            }
-            if (!$this->foreignExists('products', 'products_material_id_foreign')) {
-                $table->foreign('material_id')->references('id')->on('materials')->nullOnDelete();
-            }
+        $this->addForeignIfMissing('products', 'products_subcat_id_foreign', function (Blueprint $table) {
+            $table->foreign('subcat_id')->references('id')->on('subcats')->nullOnDelete();
         });
 
-        Schema::table('prod_images', function (Blueprint $table) {
-            if (!$this->foreignExists('prod_images', 'prod_images_product_id_foreign')) {
-                $table->foreign('product_id')->references('id')->on('products')->cascadeOnDelete();
-            }
+        $this->addForeignIfMissing('products', 'products_material_id_foreign', function (Blueprint $table) {
+            $table->foreign('material_id')->references('id')->on('materials')->nullOnDelete();
+        });
+
+        $this->addForeignIfMissing('prod_images', 'prod_images_product_id_foreign', function (Blueprint $table) {
+            $table->foreign('product_id')->references('id')->on('products')->cascadeOnDelete();
         });
     }
 
@@ -79,6 +94,15 @@ return new class extends Migration
                 $table->dropForeign(['cat_id']);
             }
         });
+    }
+
+    protected function addForeignIfMissing(string $table, string $constraint, callable $callback): void
+    {
+        if (! Schema::hasTable($table) || $this->foreignExists($table, $constraint)) {
+            return;
+        }
+
+        Schema::table($table, $callback);
     }
 
     protected function foreignExists(string $table, string $constraint): bool
