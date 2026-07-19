@@ -104,8 +104,8 @@
                     <div class="filter-wrap p-b15 center">
                         <ul class="masonry-filter link-style  text-uppercase white">
                                 <li class="active"><a data-filter="*" href="#">{{ __('All') }}</a></li>
-                                @foreach($refs as $ref)
-                                    <li><a data-filter=".{{ ref->year }}" href="#">{{ ref->year }}</a></li>
+                                @foreach($refs->pluck('year')->unique()->filter() as $year)
+                                    <li><a data-filter=".{{ $year }}" href="#">{{ $year }}</a></li>
                                 @endforeach
                         </ul>
                     </div>

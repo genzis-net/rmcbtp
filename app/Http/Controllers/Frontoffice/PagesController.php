@@ -104,20 +104,35 @@ class PagesController extends Controller
         return view('pages.consulting');
     }
 
-    public function renovation(){
-        $refs=Reference::Where('project_type', 'Renovation')->OrderBy('updated_at', 'DESC')->paginate(8);
+    public function renovation()
+    {
+        $refs = Reference::query()
+            ->with('images')
+            ->where('project_type', 'Renovation')
+            ->orderByDesc('updated_at')
+            ->paginate(8);
+
         return view('pages.renovation', compact('refs'));
     }
 
-    public function construction(){
-        $refs=Reference::Where('project_type', 'Construction')->OrderBy('updated_at', 'DESC')->paginate(8);
+    public function construction()
+    {
+        $refs = Reference::query()
+            ->with('images')
+            ->where('project_type', 'Construction')
+            ->orderByDesc('updated_at')
+            ->paginate(8);
+
         return view('pages.construction', compact('refs'));
     }
 
+    public function projects()
+    {
+        $refs = Reference::query()
+            ->with('images')
+            ->orderByDesc('updated_at')
+            ->paginate(12);
 
-
-    public function projects(){
-        $refs=Reference::OrderBy('updated_at', 'DESC')->paginate(12);
         return view('pages.projects', compact('refs'));
     }
 
@@ -128,11 +143,14 @@ class PagesController extends Controller
         return view('pages.readproject', ['ref' => $project]);
     }
 
-    public function newsletter(){
-        return view('emails.newsletter.list-campaigns');
+    public function newsletter()
+    {
+        // Legacy admin newsletter UI is not a public page.
+        return redirect()->route('homepage', ['language' => app()->getLocale()]);
     }
 
-    public function viewCampaign(){
-        return view('emails.newsletter.view-campaign');
+    public function viewCampaign()
+    {
+        return redirect()->route('homepage', ['language' => app()->getLocale()]);
     }
 }
