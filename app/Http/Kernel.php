@@ -14,12 +14,25 @@ class Kernel extends HttpKernel
     protected $middleware = [
         \App\Http\Middleware\TrustHosts::class,
         \App\Http\Middleware\TrustProxies::class,
-        \Illuminate\Http\Middleware\HandleCors::class,
+        // HandleCors is appended in the constructor when the framework package is present.
         \App\Http\Middleware\PreventRequestsDuringMaintenance::class,
         \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
         \App\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
     ];
+
+    public function __construct(
+        \Illuminate\Contracts\Foundation\Application $app,
+        \Illuminate\Routing\Router $router
+    ) {
+        if (class_exists(\Illuminate\Http\Middleware\HandleCors::class)) {
+            array_splice($this->middleware, 2, 0, [
+                \Illuminate\Http\Middleware\HandleCors::class,
+            ]);
+        }
+
+        parent::__construct($app, $router);
+    }
 
     /**
      * The application's route middleware groups.
