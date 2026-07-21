@@ -51,7 +51,7 @@
             class="{{ $errors->has('password') ? 'is-invalid' : '' }}"
         >
         <button type="button" class="login-password-toggle" id="toggle-password" aria-label="{{ __('Toggle password') }}">
-            <img src="https://unpkg.com/lucide-static@0.454.0/icons/eye.svg" width="18" height="18" alt="" id="toggle-password-icon">
+            <img src="{{ asset('icons/lucide/eye.svg') }}" width="18" height="18" alt="" id="toggle-password-icon">
         </button>
         @error('password')
             <div class="error">{{ $message }}</div>
@@ -70,7 +70,7 @@
 
     <button type="submit" class="genzis-btn genzis-btn--primary genzis-btn--lg">
         {{ __('Sign in') }}
-        <img class="genzis-icon genzis-icon--white" src="https://unpkg.com/lucide-static@0.454.0/icons/arrow-right.svg" width="18" height="18" alt="">
+        <img class="genzis-icon genzis-icon--white" src="{{ asset('icons/lucide/arrow-right.svg') }}" width="18" height="18" alt="">
     </button>
 </form>
 @endsection
@@ -86,8 +86,8 @@
             var show = input.type === 'password';
             input.type = show ? 'text' : 'password';
             icon.src = show
-                ? 'https://unpkg.com/lucide-static@0.454.0/icons/eye-off.svg'
-                : 'https://unpkg.com/lucide-static@0.454.0/icons/eye.svg';
+                ? @json(asset('icons/lucide/eye-off.svg'))
+                : @json(asset('icons/lucide/eye.svg'));
         });
     })();
 </script>

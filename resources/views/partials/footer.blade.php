@@ -80,6 +80,7 @@
                             <li><a href="{{ route('about', $locale) }}">{{ __('About us') }}</a></li>
                             <li><a href="{{ route('projects.index', $locale) }}">{{ __('Our Work') }}</a></li>
                             <li><a href="{{ route('contact', $locale) }}">{{ __('Contact us') }}</a></li>
+                            <li><a href="{{ route('privacy', $locale) }}">{{ __('Privacy Policy') }}</a></li>
                         </ul>
                     </div>
                 </div>
@@ -96,6 +97,7 @@
                         © {{ date('Y') }} RMC BTP SARL.
                         {{ __('Delivered by') }}
                         <a href="https://genzis.net" target="_blank" rel="noopener noreferrer">Genzis</a>.
+                        <a href="{{ route('privacy', $locale) }}">{{ __('Privacy Policy') }}</a>
                     </span>
                 </div>
             </div>

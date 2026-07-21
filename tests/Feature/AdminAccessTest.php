@@ -26,9 +26,18 @@ class AdminAccessTest extends TestCase
         $response->assertForbidden();
     }
 
+    public function test_unverified_admin_cannot_access_admin_dashboard(): void
+    {
+        $user = User::factory()->unverified()->admin()->create();
+
+        $response = $this->actingAs($user)->get('/en/admin/dashboard');
+
+        $response->assertRedirect();
+    }
+
     public function test_admin_can_access_admin_dashboard(): void
     {
-        $user = User::factory()->create(['is_admin' => true]);
+        $user = User::factory()->admin()->create();
 
         $response = $this->actingAs($user)->get('/en/admin/dashboard');
 

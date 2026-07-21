@@ -97,7 +97,7 @@
                             <?php 
                                 $truncated = Str::of($ref->{'content_'.app()->getLocale()})->limit(200);
                             ?>
-                            <p class="trimmed">{!! $truncated !!}</p>
+                            <p class="trimmed">{{ $truncated }}</p>
                             <a href="{{ route('readproject', ['language' => app()->getLocale(), 'project' => $ref->id]) }}" class="site-button-link" data-hover="Read More">{{ __('More') }} <i class="fa fa-angle-right arrow-animation"></i></a>
                         </div>
                     </div>

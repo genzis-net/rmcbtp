@@ -55,7 +55,7 @@ Route::group(['prefix' => '{language}', 'middleware' => 'localization'], functio
         return view('welcome', compact('refs'));
     })->name('homepage');
 
-    Auth::routes(['register' => false]);
+    Auth::routes(['register' => false, 'verify' => true]);
 
     Route::get('/contact-us', [App\Http\Controllers\Frontoffice\PagesController::class, 'contact'])->name('contact');
     Route::get('/sims-decor', [App\Http\Controllers\Frontoffice\PagesController::class, 'simsdecor'])->name('simsdecor');
@@ -71,12 +71,13 @@ Route::group(['prefix' => '{language}', 'middleware' => 'localization'], functio
     Route::get('/services/construction', [App\Http\Controllers\Frontoffice\PagesController::class, 'construction'])->name('construction');
     Route::get('/services/renovation', [App\Http\Controllers\Frontoffice\PagesController::class, 'renovation'])->name('renovation');
     Route::get('/about-us', [App\Http\Controllers\Frontoffice\PagesController::class, 'about'])->name('about');
+    Route::get('/privacy', [App\Http\Controllers\Frontoffice\PagesController::class, 'privacy'])->name('privacy');
     Route::get('/projects', [App\Http\Controllers\Frontoffice\PagesController::class, 'projects'])->name('projects.index');
     Route::get('/projects/{project}', [App\Http\Controllers\Frontoffice\PagesController::class, 'readproject'])->name('readproject');
     Route::get('/newsletter', [App\Http\Controllers\Frontoffice\PagesController::class, 'newsletter'])->name('newsletter');
     Route::get('/view-campaign', [App\Http\Controllers\Frontoffice\PagesController::class, 'viewCampaign'])->name('view-campaign');
 
-    Route::prefix('admin')->middleware(['auth', 'admin'])->name('admin.')->group(function () {
+    Route::prefix('admin')->middleware(['auth', 'verified', 'admin'])->name('admin.')->group(function () {
         Route::get('/dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('dashboard');
 
         Route::resource('blog-posts', \App\Http\Controllers\Admin\BlogPostController::class);
@@ -98,6 +99,9 @@ Route::group(['prefix' => '{language}', 'middleware' => 'localization'], functio
         Route::delete('/projects/{project}/images/{image}', [\App\Http\Controllers\Admin\ProjectController::class, 'destroyImage'])->name('projects.images.destroy');
 
         Route::resource('faqs', \App\Http\Controllers\Admin\FaqController::class);
+
+        Route::resource('contact-emails', \App\Http\Controllers\Admin\ContactEmailController::class)
+            ->only(['index', 'show', 'destroy']);
 
         Route::get('/settings', [\App\Http\Controllers\Admin\SettingController::class, 'index'])->name('settings');
         Route::post('/settings', [\App\Http\Controllers\Admin\SettingController::class, 'update'])->name('settings.update');

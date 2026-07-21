@@ -30,28 +30,35 @@ class TestDataSeeder extends Seeder
      */
     public function run(): void
     {
-        $adminEmail = env('ADMIN_EMAIL', 'admin@example.com');
-        $adminPassword = env('ADMIN_PASSWORD', 'password');
+        $adminEmail = env('ADMIN_EMAIL');
+        $adminPassword = env('ADMIN_PASSWORD');
+        $adminName = env('ADMIN_NAME', 'RMC BTP Admin');
 
-        User::updateOrCreate(
-            ['email' => $adminEmail],
-            [
-                'name' => env('ADMIN_NAME', 'RMC BTP Admin'),
-                'password' => Hash::make($adminPassword),
-                'email_verified_at' => now(),
-                'is_admin' => true,
-            ]
-        );
+        if (!is_string($adminEmail) || $adminEmail === '') {
+            throw new \RuntimeException('ADMIN_EMAIL must be set before seeding.');
+        }
 
-        User::updateOrCreate(
-            ['email' => 'manager@example.com'],
-            [
+        if (!is_string($adminPassword) || strlen($adminPassword) < 12) {
+            throw new \RuntimeException('ADMIN_PASSWORD must be set and at least 12 characters.');
+        }
+
+        $admin = User::query()->firstOrNew(['email' => $adminEmail]);
+        $admin->forceFill([
+            'name' => $adminName,
+            'password' => Hash::make($adminPassword),
+            'email_verified_at' => now(),
+            'is_admin' => true,
+        ])->save();
+
+        if (app()->environment('local') && filter_var(env('SEED_TEST_USERS', false), FILTER_VALIDATE_BOOLEAN)) {
+            $manager = User::query()->firstOrNew(['email' => 'manager@example.com']);
+            $manager->forceFill([
                 'name' => 'Test Manager',
-                'password' => Hash::make('password'),
+                'password' => Hash::make(env('SEED_TEST_USER_PASSWORD', $adminPassword)),
                 'email_verified_at' => now(),
                 'is_admin' => false,
-            ]
-        );
+            ])->save();
+        }
 
         // Create Blog Posts (Articles) - matching actual table structure
         $blogPosts = [
@@ -343,7 +350,7 @@ class TestDataSeeder extends Seeder
 
         $this->command->info('✅ Test data created successfully!');
         $this->command->info('📊 Created:');
-        $this->command->info('   - 2 Users (admin + test manager)');
+        $this->command->info('   - Admin user (and test manager if SEED_TEST_USERS=true)');
         $this->command->info('   - 3 Blog Posts (Articles)');
         $this->command->info('   - 3 Testimonials');
         $this->command->info('   - 3 References/Projects');

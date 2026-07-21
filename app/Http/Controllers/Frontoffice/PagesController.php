@@ -143,6 +143,11 @@ class PagesController extends Controller
         return view('pages.readproject', ['ref' => $project]);
     }
 
+    public function privacy()
+    {
+        return view('pages.privacy');
+    }
+
     public function newsletter()
     {
         // Legacy admin newsletter UI is not a public page.

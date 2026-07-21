@@ -96,6 +96,11 @@
                                         <textarea name="message" class="form-control " id="textareamsg" required placeholder="Message">{{ $quoteMessage }}</textarea>
                                     </div>
 
+                                    <p class="m-b15" style="font-size: 0.85rem; opacity: 0.85;">
+                                        {{ __('By submitting this form, you agree that we may use your details to respond to your inquiry.') }}
+                                        <a href="{{ route('privacy', app()->getLocale()) }}">{{ __('Privacy Policy') }}</a>
+                                    </p>
+
                                     <div id="saveform_errList"></div>
                                     <div class="m-b15 site-button outline green text-uppercase m-r15" role="alert" id="success_message" style="display: none;">
                                         <span id="the_message"></span>

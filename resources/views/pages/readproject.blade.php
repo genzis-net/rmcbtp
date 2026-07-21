@@ -90,7 +90,7 @@
                 </div>
 
                 <div class="mt-post-text">
-                    {!! $ref->{'content_'.app()->getLocale()} !!}
+                    {!! nl2br(e($ref->{'content_'.app()->getLocale()})) !!}
                 </div>
             </div>
         </div>
